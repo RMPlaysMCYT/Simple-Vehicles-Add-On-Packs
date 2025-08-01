@@ -1,0 +1,24 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "aspire:plane_spawn_egg",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 0
+						},
+						{
+							"function": "set_data",
+							"data": 12
+						}
+					]
+				}
+			]
+		}
+	]
+}

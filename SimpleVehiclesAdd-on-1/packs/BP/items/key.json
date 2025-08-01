@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aspire:key",
+            "is_experimental": false,
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:allow_off_hand": false,
+            "minecraft:stacked_by_data": false,
+            "minecraft:max_stack_size": 16,
+            "minecraft:icon": "stick"
+        }
+    }
+}
