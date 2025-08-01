@@ -1,0 +1,59 @@
+## Comments can be added anywhere on a valid line by starting with '##'
+##
+## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
+## comment on the same line, use TABs.
+accessibility.disableTTS=Text To Speech disabled
+accessibility.enableTTS=Text To Speech enabled
+
+## Translator note:
+## This section of phrases will be given audibly to the user using text to speech
+
+entity.aspire:car.name=Car 
+entity.aspire:mini-bus_v2.name=Small Bus 
+entity.aspire:taxi.name=Taxi 
+entity.aspire:ambulance.name=Ambulance
+entity.aspire:apv.name=AUV Car
+entity.aspire:aquatopia.name=Aquatopia
+entity.aspire:bus.name=	Bus
+entity.aspire:mini_bus.name=Mini Bus
+entity.aspire:car4x4_1.name=Off Road Car
+entity.aspire:police_car.name=Police Car
+entity.aspire:montero.name=Mitsubishi Montero
+entity.aspire:speedboat.name=Speed Boat
+entity.aspire:tank.name=Tank
+entity.aspire:ranger.name=Ford Ranger 
+entity.aspire:sports_car.name=Sports Car
+entity.aspire:plane.name=Plane
+entity.aspire:fire_truck.name=Fire Truck
+entity.aspire:helicopter.name=Helicopter
+entity.aspire:ford_mustang.name=Ford Mustang
+entity.aspire:land_cruiser.name=Toyota Land Cruiser
+entity.aspire:motor_bike.name=MotorBike
+entity.aspire:estrada:car.name=Mitsubishi Estrada
+entity.aspire:limmo.name=Limousine
+
+item.spawn_egg.entity.aspire:mini-bus_v2.name=Small Bus 
+item.spawn_egg.entity.aspire:limmo.name=Limousine
+item.spawn_egg.entity.aspire:car.name=Car
+item.spawn_egg.entity.aspire:estrada.name=Mitsubishi Estrada
+item.spawn_egg.entity.aspire:taxi.name=Taxi
+item.spawn_egg.entity.aspire:ambulance.name=Ambulance
+item.spawn_egg.entity.aspire:bus.name=Bus
+item.spawn_egg.entity.aspire:car4x4_1.name=Off Road Car
+item.spawn_egg.entity.aspire:apv.name=AUV Car
+item.spawn_egg.entity.aspire:police_car.name=Police Car
+item.spawn_egg.entity.aspire:aquatopia.name=Aquatopia
+item.spawn_egg.entity.aspire:mini_bus.name=Mini Bus
+item.spawn_egg.entity.aspire:ranger.name=Ford Ranger 
+item.spawn_egg.entity.aspire:tank.name=Tank
+item.spawn_egg.entity.aspire:plane.name=Plane
+item.spawn_egg.entity.aspire:fire_truck.name=Fire Truck
+item.spawn_egg.entity.aspire:montero.name=Mitsubishi Montero
+item.spawn_egg.entity.aspire:sports_car.name=Sports Car
+item.spawn_egg.entity.aspire:helicopter.name=Helicopter
+item.spawn_egg.entity.aspire:speedboat.name=Speed Boat
+item.spawn_egg.entity.aspire:ford_mustang.name=Ford Mustang
+item.spawn_egg.entity.aspire:land_cruiser.name=Toyota Land Cruiser
+item.spawn_egg.entity.aspire:motor_bike.name=MotorBike
+
+action.hint.exit.unknown=Use saddle so drive and jump to exit

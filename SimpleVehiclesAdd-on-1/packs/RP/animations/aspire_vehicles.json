@@ -1,0 +1,158 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plane.jump": {
+			"loop": true,
+			"animation_length": 1.0002,
+			"anim_time_update": "query.can_power_jump",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.apv.move": {
+			"loop": true,
+			"animation_length": 1.0002,
+			"override": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg2": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.car.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.car4x4_1.move": {
+			"loop": true,
+			"animation_length": 0.5,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.jeep.move": {
+			"loop": true,
+			"animation_length": 1.00692,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.truck.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.plane.move": {
+			"loop": true,
+			"animation_length": 1.01356,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.tank.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.turret.look_at_target.default": {
+			"loop": true,
+			"bones": {}
+		},
+		"animation.turret.base_pose": {
+			"loop": true,
+			"bones": {}
+		},
+		"animation.aquatopia.new": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {}
+		},
+		"animation.lamborghini.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.mustang.move": {
+			"loop": true,
+			"animation_length": 1.00028,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		},
+		"animation.helicopter.spin": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg1": {
+					"rotation": ["(Math.cos(query.anim_time * 38.17) * 360.0) - this", 0, 0]
+				}
+			}
+		}
+	}
+}

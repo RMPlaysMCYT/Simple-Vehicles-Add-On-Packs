@@ -1,0 +1,41 @@
+{
+	"materials": {	
+		"version": "1.0.0",
+		"glow:entity_emissive_alpha": {
+		},
+		"glow_glass_blender:entity_emissive_alpha": {
+			"+defines": [ 
+				"USE_ONLY_EMISSIVE"
+			]
+		},
+		"translucence:entity_alphatest": {},
+		"glass:entity": {
+			"+states": [ 
+				"Blending"
+			]
+		},
+		"charged:charged_creeper": {
+			"+states": [ 
+				"Blending", 
+				"DisableCulling"
+			]
+		},
+		"glint:entity_alphatest_glint": {
+		},
+		"cars:entity_alphatest_glint": {
+		},
+		"aspire:entity_alphatest": {      
+		},
+		"rmplayspe:entity_alphatest": {      
+		},
+		"sdlmido_16:entity_alphatest": {      
+		},
+		"nicz_003:entity_alphatest": {      
+		},		
+		"vehicles:entity_alphatest_glint": {
+			"+defines": [ 
+				"USE_ONLY_EMISSIVE"
+			]
+		}	
+	}
+}

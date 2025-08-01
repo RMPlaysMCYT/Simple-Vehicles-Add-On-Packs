@@ -1,0 +1,25 @@
+{
+	"format_version" : 2,
+	"header" : {
+		"description" : "Made By RMPlaysMC YT\nAdds Lots of vehicles in Minecraft\nAvailable on https://github.com/RMPlaysMCYT/Simple-Vehicles-Add-On-Packs and create,edit and do it whatever you want UNDERL GPL V3 License",
+		"name" : "Simple Vehicles v1(Classic)(Former Aspire Vehicles) §a§l§o::§r§b RESOURCES",
+		"uuid" : "1bf1195b-009f-4217-aeec-8953b16f58cc",
+		"version" : [ 1, 0, 0 ]
+	},
+	"modules" : [
+		{
+			"description" : "Made By RMPlaysPE YT and Nicz_003\nAdds Lots of vehicles in Minecraft\nSupport me on IG:rmplayspe",
+			"type" : "resources",
+			"uuid" : "25ba700d-b016-41d0-accc-1ebfdc15b2d1",
+			"version" : [ 1, 0, 0 ]
+		}
+	],	
+	"metadata":{
+		"authors": [
+			"RMPlaysMC YT"
+		],
+		"license": "GPL V3",
+		"product_type": "addon",
+		"url": "https://github.com/RMPlaysMCYT/Simple-Vehicles-Add-On-Packs"
+	}
+}

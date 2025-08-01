@@ -1,0 +1,77 @@
+{
+	"vehicles.drive": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/vehicles/loop1",
+				"volume": 1.34550,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/vehicles/loop2",
+				"volume": 1.44330,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/vehicles/loop3",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/vehicles/loop4",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/vehicles/loop5",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			},
+			{
+				"name": "sounds/vehicles/loop6",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			}			
+		]
+	},
+    "vehicles.sirene": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/vehicles/sirene",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"vehicles.police_car": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/vehicles/police_car",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"vehicles.hit": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/vehicles/hit",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			}
+		]
+	},
+	"vehicles.horn": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/vehicles/horn",
+				"volume": 1.0,
+				"load_on_low_memory": true
+			}
+		]
+	}
+}
