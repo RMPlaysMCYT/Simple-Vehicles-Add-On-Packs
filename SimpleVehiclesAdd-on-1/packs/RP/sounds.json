@@ -1,354 +1,282 @@
 {
-	"entity_sounds": {
-		"entities": {
-			"aspire:car": {
-				"volume": 1,
-				"pitch": [
-				0,
-				0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:bus": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:formula": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},			
-			"aspire:car4x4_1": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:police_car": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.police_car",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:apv": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:jeep": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:ambulance": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.sirene",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:aquatopia": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.sirene",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:mini_bus": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.sirene",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:motor_bike": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.sirene",
-					"hurt": "vehicles.hit",
-					"step": [ 
-						"vehicles.bike1",
-						"vehicles.drive"
-					],
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:ranger": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:tank": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:fire_truck": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:sports_car": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:mustang": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"flap": " "
-				}
-			},
-			"aspire:speedboat": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},
-			"aspire:taxi": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},
-			"aspire:montero": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},
-			"aspire:land_cruiser": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},
-			"aspire:estrada": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},
-			"aspire:mini-bus_v2": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			},				
-			"aspire:limmo": {
-				"volume": 1,
-				"pitch": [
-					0,
-					0.2
-				],
-				"events": {
-					"mad": " ",
-					"ambient": "vehicles.horn",
-					"hurt": "vehicles.hit",
-					"step": "vehicles.drive",
-					"death": "vehicles.hit",
-					"swim": "vehicles.drive"
-				}
-			}				
-		}
-	}
+  "entity_sounds": {
+    "entities": {
+      "aspire:car": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:bus": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:formula": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:car4x4_1": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:police_car": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.police_car",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:apv": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:jeep": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:ambulance": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.sirene",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:aquatopia": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.sirene",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:mini_bus": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.sirene",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:motor_bike": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.sirene",
+          "hurt": "vehicles.hit",
+          "step": ["vehicles.bike1", "vehicles.drive"],
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:ranger": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:tank": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:fire_truck": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:sports_car": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:mustang": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "flap": " "
+        }
+      },
+      "aspire:speedboat": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:taxi": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:montero": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:land_cruiser": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:estrada": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:mini-bus_v2": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      },
+      "aspire:limmo": {
+        "volume": 1,
+        "pitch": [1, 1],
+        "events": {
+          "mad": " ",
+          "ambient": "vehicles.horn",
+          "hurt": "vehicles.hit",
+          "step": "vehicles.drive",
+          "death": "vehicles.hit",
+          "swim": "vehicles.drive"
+        }
+      }
+    }
+  }
 }
