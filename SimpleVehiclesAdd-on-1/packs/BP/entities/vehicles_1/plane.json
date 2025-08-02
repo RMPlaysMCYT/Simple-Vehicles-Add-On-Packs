@@ -178,9 +178,6 @@
           "delay": 0.1,
           "drop_equipment": true
         },
-        "minecraft:equipment": {
-          "table": "loot_tables/entities/nonek.json"
-        },
         "minecraft:scale": {
           "value": 0.1
         }
@@ -308,7 +305,7 @@
         "minecraft:spawn_entity": {
           "entities": [
             {
-              "spawn_entity": "plane",
+              "spawn_entity": "aspire:plane",
               "spawn_event": "minecraft:f7m",
               "spawn_method": "born",
               "spawn_sound": "random.click",
@@ -342,7 +339,6 @@
         "value": 1.3
       },
       "minecraft:rideable": {
-        "priority": 8,
         "seat_count": 4,
         "crouching_skip_interact": true,
         "family_types": ["player"],

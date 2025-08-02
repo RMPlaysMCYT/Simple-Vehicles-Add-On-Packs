@@ -11,7 +11,6 @@
       "minecraft:ranger": {
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
-          "priority": 0,
           "seat_count": 2,
           "crouching_skip_interact": true,
           "family_types": ["player"],
@@ -68,16 +67,6 @@
             "on_unequip": {
               "event": "minecraft:horse_unsaddled"
             }
-          },
-          {
-            "slot": 1,
-            "item": "horsearmoriron",
-            "accepted_items": [
-              "horsearmorleather",
-              "horsearmoriron",
-              "horsearmorgold",
-              "horsearmordiamond"
-            ]
           }
         ]
       },
@@ -103,8 +92,13 @@
         "container_type": "horse",
         "private": false
       },
-      "minecraft:fall_damage": {
-        "value": 0.0
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          }
+        ]
       },
       "minecraft:movement": {
         "value": {
@@ -134,56 +128,66 @@
         "priority": 0
       },
       "minecraft:is_chested": {},
-      "minecraft:interact": [
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:1"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:1"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_red"
             },
-            "event": "minecraft:turn_red"
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Red?"
           },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Red?"
-        },
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:18"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:18"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_blue"
             },
-            "event": "minecraft:turn_blue"
-          },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Blue?"
-        }
-      ],
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Blue?"
+          }
+        ]
+      },
       "minecraft:physics": {}
     },
     "events": {

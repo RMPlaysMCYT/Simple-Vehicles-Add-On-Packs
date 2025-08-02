@@ -78,25 +78,11 @@
             "on_unequip": {
               "event": "minecraft:horse_unsaddled"
             }
-          },
-          {
-            "slot": 1,
-            "item": "horsearmoriron",
-            "accepted_items": [
-              "horsearmorleather",
-              "horsearmoriron",
-              "horsearmorgold",
-              "horsearmordiamond"
-            ]
           }
         ]
       },
       "minecraft:type_family": {
         "family": ["horse"]
-      },
-      "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
       },
       "minecraft:collision_box": {
         "width": 1.4,
@@ -113,8 +99,13 @@
         "container_type": "horse",
         "private": false
       },
-      "minecraft:fall_damage": {
-        "value": 0.0
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          }
+        ]
       },
       "minecraft:movement": {
         "value": {
@@ -144,104 +135,122 @@
         "priority": 0
       },
       "minecraft:is_chested": {},
-      "minecraft:interact": [
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:1"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:1"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_red"
             },
-            "event": "minecraft:turn_red"
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Red?"
           },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Red?"
-        },
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:2"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:2"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_green"
             },
-            "event": "minecraft:turn_green"
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Green?"
           },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Green?"
-        },
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:18"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:18"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_blue"
             },
-            "event": "minecraft:turn_blue"
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Blue?"
           },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Blue?"
-        },
-        {
-          "on_interact": {
-            "filters": {
-              "all_of": [
-                {
-                  "test": "has_equipment",
-                  "subject": "other",
-                  "domain": "hand",
-                  "value": "dye:11"
-                },
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "has_ability",
-                  "subject": "other",
-                  "value": "instabuild"
-                }
-              ]
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "dye:11"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "instabuild"
+                  }
+                ]
+              },
+              "event": "minecraft:turn_yellow"
             },
-            "event": "minecraft:turn_yellow"
-          },
-          "use_item": true,
-          "play_sounds": "explode",
-          "interact_text": "Paint into Yellow?"
-        }
-      ],
+            "use_item": true,
+            "play_sounds": "explode",
+            "interact_text": "Paint into Yellow?"
+          }
+        ]
+      },
       "minecraft:physics": {}
     },
 

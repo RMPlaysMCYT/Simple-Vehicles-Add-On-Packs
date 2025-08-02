@@ -11,7 +11,6 @@
       "minecraft:ranger": {
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
-          "priority": 0,
           "seat_count": 4,
           "crouching_skip_interact": true,
           "family_types": ["player"],
@@ -56,25 +55,11 @@
             "on_unequip": {
               "event": "minecraft:horse_unsaddled"
             }
-          },
-          {
-            "slot": 1,
-            "item": "horsearmoriron",
-            "accepted_items": [
-              "horsearmorleather",
-              "horsearmoriron",
-              "horsearmorgold",
-              "horsearmordiamond"
-            ]
           }
         ]
       },
       "minecraft:type_family": {
         "family": ["horse"]
-      },
-      "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
       },
       "minecraft:collision_box": {
         "width": 1.4,
@@ -91,8 +76,13 @@
         "container_type": "horse",
         "private": false
       },
-      "minecraft:fall_damage": {
-        "value": 0.0
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          }
+        ]
       },
       "minecraft:movement": {
         "value": {

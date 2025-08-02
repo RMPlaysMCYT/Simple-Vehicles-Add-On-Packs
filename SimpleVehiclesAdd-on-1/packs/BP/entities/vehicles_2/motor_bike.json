@@ -11,15 +11,10 @@
       "minecraft:minecar": {
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
-          "priority": 0,
           "seat_count": 1,
           "crouching_skip_interact": false,
           "family_types": ["player", "villager", "cat", "npc"],
           "interact_text": "Drive",
-          "swing": true,
-          "particle_on_start": {
-            "particle_type": "lava"
-          },
           "pull_in_entities": true,
           "seats": [{ "position": [0.0, 0.4, 0.0] }]
         }
@@ -87,16 +82,6 @@
             "on_unequip": {
               "event": "minecraft:horse_unsaddled"
             }
-          },
-          {
-            "slot": 1,
-            "item": "horsearmoriron",
-            "accepted_items": [
-              "horsearmorleather",
-              "horsearmoriron",
-              "horsearmorgold",
-              "horsearmordiamond"
-            ]
           }
         ]
       },
@@ -105,10 +90,6 @@
       },
       "minecraft:horse.jump_strength": {
         "value": 3.1
-      },
-      "minecraft:breathable": {
-        "totalSupply": 10,
-        "suffocateTime": 0
       },
       "minecraft:is_chested": {},
       "minecraft:loot": {

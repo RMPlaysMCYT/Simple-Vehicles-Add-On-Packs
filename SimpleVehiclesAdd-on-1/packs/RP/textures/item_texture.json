@@ -4,25 +4,30 @@
 	"texture_data": {
 		"Vehicles": { 
 			"textures": [
-				"textures/items/ambulance", //0
-				"textures/items/apv", //1
-				"textures/items/aquatopia", //2
-				"textures/items/bus", //3
-				"textures/items/car", //4
-				"textures/items/car4x4_1", //5
-				"textures/items/fire_truck", //12
-				"textures/items/helicopter", //13	
+				"textures/items/ambulance", 
+				"textures/items/apv",
+				"textures/items/aquatopia",
+				"textures/items/bus", 
+				"textures/items/car", 
+				"textures/items/car4x4_1",
+				"textures/items/fire_truck", 
+				"textures/items/helicopter", 
 				"textures/items/limo",				
-				"textures/items/mini_bus", //6
-				"textures/items/motor", //16
-				"textures/items/mustang", //14				
-				"textures/items/plane", //7
-				"textures/items/police_car", //8
-				"textures/items/speedboat", //9
-				"textures/items/sports_car", //11
+				"textures/items/mini_bus", 
+				"textures/items/motor", 
+				"textures/items/mustang",
+				"textures/items/plane", 
+				"textures/items/police_car",
+				"textures/items/speedboat", 
+				"textures/items/sports_car", 
 
-				"textures/items/tank", //10				
-				"textures/items/taxi" //15
+				"textures/items/tank", 
+				"textures/items/taxi" 
+			]
+		},
+		"asipre_key": {
+			"textures": [
+				"textures/items/Key"
 			]
 		}
 	}
