@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.firetruck": {
+	"geometry.fire_truck": {
 		"texturewidth": 432,
 		"textureheight": 432,
 		"visible_bounds_width": 7,

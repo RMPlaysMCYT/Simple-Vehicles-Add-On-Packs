@@ -10,7 +10,7 @@
                 "default": "textures/entity/firetruck"
             },
             "geometry": {
-                "default": "geometry.firetruck"
+                "default": "geometry.fire_truck"
             },
             "animations": {
                 "move": "animation.villager.move"
