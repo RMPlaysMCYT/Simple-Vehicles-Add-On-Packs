@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ambulance.move": {
+			"animation_length": 2.25,
+			"bones": {
+				"body0": {
+					"rotation": ["query.modified_move_speed * -2", 0, "variable.steering / 10 * query.modified_move_speed * 2"]
+				},
+				"leg1": {
+					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
+				},
+				"wheel1": {
+					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
+				},
+				"wheel0": {
+					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
+				}
+			}
+		}
+	}
+}

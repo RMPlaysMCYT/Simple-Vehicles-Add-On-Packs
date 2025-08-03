@@ -73,10 +73,6 @@
       "minecraft:type_family": {
         "family": ["horse"]
       },
-      "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
-      },
       "minecraft:collision_box": {
         "width": 1.4,
         "height": 1.6
@@ -245,9 +241,6 @@
         }
       },
       "minecraft:bugfix": {
-        "add": {
-          "component_groups": ["minecraft:minecar"]
-        },
         "remove": {
           "component_groups": ["minecraft:bugfixer"]
         }
