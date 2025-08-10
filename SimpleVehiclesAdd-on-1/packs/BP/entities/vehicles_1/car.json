@@ -98,7 +98,7 @@
 
     "components": {
       "minecraft:scale": {
-        "value": 1.5
+        "value": 1.0
       },
       "minecraft:equippable": {
         "slots": [
