@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "aspire:aquatopia"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "A", 
+      "ADR", 
+      "CRC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:black_concrete"
+      },
+      "C": {
+        "item": "minecraft:black_wool"
+      },
+      "D": {
+        "item": "minecraft:oak_stairs"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "aspire:aquatopia_spawn_egg",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "aspire:apv_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "AA", 
+      "ADG", 
+      "CRC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:gray_concrete"
+      },
+      "C": {
+        "item": "minecraft:black_concrete"
+      },
+      "D": {
+        "item": "minecraft:oak_stairs"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "aspire:apv_spawn_egg",
+      "count": 1
+    }
+  }
+}

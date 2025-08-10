@@ -1,0 +1,38 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "nature",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "aspire:ambulance_spawn_egg",
+                            "name": "Aspire Vehicles"
+                        },
+                        "items": [
+                            "aspire:ambulance_spawn_egg",
+                            "aspire:apv_spawn_egg",
+                            "aspire:aquatopia_spawn_egg",
+                            "aspire:bus_spawn_egg",
+                            "aspire:car4x4_1_spawn_egg",
+                            "aspire:car_spawn_egg",
+                            "aspire:fire_truck_spawn_egg",
+                            "aspire:ford_mustang_spawn_egg",
+                            "aspire:helicopter_spawn_egg",
+                            "aspire:limmo_spawn_egg",
+                            "aspire:mini_bus_spawn_egg",
+                            "aspire:motor_bike_spawn_egg",
+                            "aspire:plane_spawn_egg",
+                            "aspire:speedboat_spawn_egg",
+                            "aspire:police_car_spawn_egg",
+                            "aspire:sports_car_spawn_egg",
+                            "aspire:tank_spawn_egg",
+                            "aspire:taxi_spawn_egg"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
