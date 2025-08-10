@@ -159,6 +159,7 @@
 			"entities\\vehicles_2\\mustang.json",
 			"entities\\vehicles_2\\sports_car.json",
 			"entities\\vehicles_2\\taxi_car.json",
+			"item_catalog\\cratfing_item_catalog.json",
 			"items\\key.json",
 			"loot_tables\\entities\\ambulance.json",
 			"loot_tables\\entities\\apv.json",
@@ -176,6 +177,16 @@
 			"manifest.json",
 			"pack_icon.png",
 			"recipes\\items\\key.json",
+			"recipes\\vehicles\\ambulance.recipe.json",
+			"recipes\\vehicles\\apv.recipe.json",
+			"recipes\\vehicles\\aquatopia.recipe.json",
+			"recipes\\vehicles\\bus.recipe.json",
+			"recipes\\vehicles\\car.recipe.json",
+			"recipes\\vehicles\\car_4x4.recipe.json",
+			"recipes\\vehicles\\minibus.recipe.json",
+			"recipes\\vehicles\\police_car.recipe.json",
+			"recipes\\vehicles\\speedboat.recipe.json",
+			"recipes\\vehicles\\tank.recipe.json",
 			"scripts\\main.js"
 		]
 	}
