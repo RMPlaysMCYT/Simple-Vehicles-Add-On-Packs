@@ -6,6 +6,7 @@
 			"animations\\aspire_vehicles.json",
 			"animations\\car4x4_1.json",
 			"animations\\minibus.animation.json",
+			"contents.json",
 			"entity\\ambulance.json",
 			"entity\\apv.json",
 			"entity\\aquatopia.json",
@@ -141,6 +142,7 @@
 	},
 	"bp": {
 		"C:\\Users\\Ronnel Mitra\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang/development_behavior_packs/Simple Vehicles v1_bp": [
+			"contents.json",
 			"entities\\vehicles_1\\ambulance.json",
 			"entities\\vehicles_1\\apv.json",
 			"entities\\vehicles_1\\aquatopia.json",
