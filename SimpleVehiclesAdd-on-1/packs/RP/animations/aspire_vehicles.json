@@ -14,7 +14,6 @@
 		"animation.apv.move": {
 			"loop": true,
 			"animation_length": 1.0002,
-			"override": true,
 			"anim_time_update": "query.modified_distance_moved",
 			"bones": {
 				"leg0": {

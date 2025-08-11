@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.car.move": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["query.modified_move_speed * -2", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.modified_move_speed * -2", 0, 0]
+				},
+				"bone5": {
+					"rotation": [0, "variable.steering / 10 * query.modified_move_speed * 2", 0]
+				}
+			}
+		},
+		"animation.car.idle": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

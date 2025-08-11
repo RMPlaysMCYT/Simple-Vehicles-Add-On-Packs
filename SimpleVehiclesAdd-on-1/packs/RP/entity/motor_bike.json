@@ -1,35 +1,37 @@
 {
-    "format_version": "1.8.0",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "aspire:motor_bike",
-            "materials": {
-                "default": "witch"
-            },
-            "textures": {
-                "blue": "textures/entity/motor",
-				"yellow": "textures/entity/motor/motor_yellow",
-				"green": "textures/entity/motor/motor_green",
-				"white": "textures/entity/motor/motor_white",
-				"purple": "textures/entity/motor/motor_purple",
-				"black": "textures/entity/motor/motor_black"
-            },
-            "geometry": {
-                "default": "geometry.motor"
-            },
-            "animations": {
-                "move": "animation.villager.move"
-            },
-            "animation_controllers": [
-                { 
-				    "move": "controller.animation.villager.move"
-				}
-            ],
-            "render_controllers": [ "controller.render.motor" ],
-            "spawn_egg": {
-                "texture": "Vehicles",
-                "texture_index": 10
-            }
-        }
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aspire:motor_bike",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "blue": "textures/entity/motor",
+        "yellow": "textures/entity/motor/motor_yellow",
+        "green": "textures/entity/motor/motor_green",
+        "white": "textures/entity/motor/motor_white",
+        "purple": "textures/entity/motor/motor_purple",
+        "black": "textures/entity/motor/motor_black"
+      },
+      "geometry": {
+        "default": "geometry.motor"
+      },
+      "animations": {
+        "move": "animation.motor.move"
+      },
+      "scripts": {
+        "initialize": ["variable.steering = 0;"],
+        "pre_animation": [
+          "query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+        ],
+        "animate": ["move"]
+      },
+      "render_controllers": ["controller.render.motor"],
+      "spawn_egg": {
+        "texture": "Vehicles",
+        "texture_index": 10
+      }
     }
+  }
 }

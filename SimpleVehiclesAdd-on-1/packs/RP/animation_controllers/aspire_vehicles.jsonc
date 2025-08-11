@@ -1,0 +1,174 @@
+//IF YOU OPEN THIS FILE THIS IS NOW DEPRECATED And now working on new separated files
+
+// {
+//     "format_version": "1.8.0",
+//     "animation_controllers": {
+//        "controller.animation.apv.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+//                             "query.modified_move_speed" 
+//                         ],
+//                          "animations": [
+//                             {
+//                             "move": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+// 	    "controller.animation.car.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+//                         "query.modified_move_speed"
+//                     ],
+//                     "animations": [
+//                         {
+//                             "move": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                 }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+//         "controller.animation.car4x4_1.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+//                             "query.modified_move_speed" 
+//                         ],
+//                          "animations": [
+//                             {
+//                             "move": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+//         "controller.animation.truck.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [
+//                             "query.modified_move_speed" 
+//                         ],
+//                         "animations": [
+//                             {
+//                             "move": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+//         "controller.animation.plane.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+//                             "query.modified_move_speed" 
+//                         ],
+//                          "animations": [
+//                             {
+//                             "move": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+//         "controller.animation.lamborghini.move": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+//                             "query.modified_move_speed" 
+//                         ],
+//                          "animations": [
+//                             {
+//                             "move":
+//                         }
+//                     ]
+//                 }
+//             }
+//         },		
+//         "controller.animation.plane.jump": {
+//             "states": {
+//                 "default": {
+//                     "parameters": [ 
+                            // "query.jump_strength"
+//                         ],
+//                         "animations": [
+//                             {
+//                             "move": [
+//                                 {
+//                                     "0.0": 90.0
+//                                }
+//                             ]
+//                         }
+//                     ]
+//                 }
+//             }
+//         },
+// 		"controller.animation.turret.look_at_target": {
+// 			"states": {
+// 				"default": {
+// 					"animations": [ 
+//                         { 
+//                             "look_at_target_default": [
+//                             ] 
+//                         } 
+//                     ]
+// 				}
+// 			}
+// 		},
+// 		"controller.animation.turret.general": {
+// 			"states": {
+// 				"default": {
+// 					"animations": [
+// 						{ 
+//                             "base_pose"
+//                         }
+// 					]
+// 				}
+// 			}
+// 		},
+// 		"controller.animation.helicopter.spin": {
+// 			"states": {
+// 				"default": {
+// 					"animations": [
+// 						{ 
+//                             "spin": [
+//                                 {
+//                                     "0.0": 0.0,
+//                                     "1.0": 1.0
+//                                }
+//                             ]
+//                         }						
+// 					]
+// 				}
+// 			}
+// 		}        
+//     }
+// }		
+

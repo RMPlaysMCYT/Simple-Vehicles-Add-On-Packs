@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.motor.move": {
+			"loop": true,
+			"bones": {
+				"body1": {
+					"rotation": [0, "variable.steering / 10 * query.modified_move_speed * 2", 0]
+				},
+				"leg0": {
+					"rotation": ["query.modified_move_speed * -2", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.modified_move_speed * -2", 0, 0]
+				}
+			}
+		}
+	}
+}
