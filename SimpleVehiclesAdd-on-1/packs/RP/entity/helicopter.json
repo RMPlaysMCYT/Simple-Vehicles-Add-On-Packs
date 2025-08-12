@@ -13,8 +13,7 @@
                 "default": "geometry.helicopter"
             },
             "animations": {
-                "move": "animation.helicopter.spin",
-				"spin": "animation.helicopter.spin"
+                "move": "animation.helicopter.spin"
             },
             "animation_controllers": [
                 { 
