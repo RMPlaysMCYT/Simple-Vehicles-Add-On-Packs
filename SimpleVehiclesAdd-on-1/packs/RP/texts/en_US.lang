@@ -57,3 +57,5 @@ item.spawn_egg.entity.aspire:land_cruiser.name=Toyota Land Cruiser
 item.spawn_egg.entity.aspire:motor_bike.name=MotorBike
 
 action.hint.exit.unknown=Use saddle so drive and jump to exit
+
+item.aspire:key=Key
