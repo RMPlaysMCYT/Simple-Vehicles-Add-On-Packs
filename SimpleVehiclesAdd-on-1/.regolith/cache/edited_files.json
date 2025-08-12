@@ -192,6 +192,7 @@
 			"recipes\\vehicles\\police_car.recipe.json",
 			"recipes\\vehicles\\speedboat.recipe.json",
 			"recipes\\vehicles\\tank.recipe.json",
+			"scripts\\_hud.js",
 			"scripts\\main.js"
 		]
 	}
