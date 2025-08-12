@@ -3,7 +3,6 @@
     "minecraft:item": {
         "description": {
             "identifier": "aspire:key",
-            "is_experimental": false,
             "menu_category": {
                 "category": "items"
             }
