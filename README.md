@@ -11,3 +11,8 @@ I guess not for now But the Aspire Vehicles and Simple Vehicles Add-on 1 and 2 w
  - Simple Vehicles Add-on v1: GPL V3
  - Simple Vehicles Add-on v2: --TBA--
  - Simple Vehicles Add-on v3: Proprietary
+
+Tools used for developing such as 
+- Blockbench
+- VSCode or VSCodium (For Version 1 and Version 2)
+- Bridge V2 (For Version 3)
