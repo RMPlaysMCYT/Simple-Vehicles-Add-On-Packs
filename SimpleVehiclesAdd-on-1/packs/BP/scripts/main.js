@@ -1,4 +1,4 @@
-import '_hud';
+import './_hud';
 
 import { system, world } from "@minecraft/server";
 
