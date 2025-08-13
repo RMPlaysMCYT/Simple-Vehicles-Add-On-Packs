@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.car": {
+	"geometry.simple_vehicles_classic_car": {
 		"texturewidth": 256,
 		"textureheight": 256,
 		"visible_bounds_width": 7,

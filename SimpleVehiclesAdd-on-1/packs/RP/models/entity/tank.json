@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.tank": {
+	"geometry.simple_vehicles_classic_tank": {
 		"texturewidth": 304,
 		"textureheight": 304,
 		"visible_bounds_width": 8,

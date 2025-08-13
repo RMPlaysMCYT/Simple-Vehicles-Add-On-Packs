@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.fire_truck": {
+	"geometry.simple_vehicles_classic_fire_truck": {
 		"texturewidth": 432,
 		"textureheight": 432,
 		"visible_bounds_width": 7,

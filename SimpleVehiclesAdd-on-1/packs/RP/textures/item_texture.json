@@ -4,30 +4,29 @@
 	"texture_data": {
 		"Vehicles": { 
 			"textures": [
-				"textures/items/ambulance", 
-				"textures/items/apv",
-				"textures/items/aquatopia",
-				"textures/items/bus", 
-				"textures/items/car", 
-				"textures/items/car4x4_1",
-				"textures/items/fire_truck", 
-				"textures/items/helicopter", 
-				"textures/items/limo",				
-				"textures/items/mini_bus", 
-				"textures/items/motor", 
-				"textures/items/mustang",
-				"textures/items/plane", 
-				"textures/items/police_car",
-				"textures/items/speedboat", 
-				"textures/items/sports_car", 
-
-				"textures/items/tank", 
-				"textures/items/taxi" 
+				"textures/simple_vehicles_classic/items/ambulance", 
+				"textures/simple_vehicles_classic/items/apv",
+				"textures/simple_vehicles_classic/items/aquatopia",
+				"textures/simple_vehicles_classic/items/bus", 
+				"textures/simple_vehicles_classic/items/car", 
+				"textures/simple_vehicles_classic/items/car4x4_1",
+				"textures/simple_vehicles_classic/items/fire_truck", 
+				"textures/simple_vehicles_classic/items/helicopter", 
+				"textures/simple_vehicles_classic/items/limo",				
+				"textures/simple_vehicles_classic/items/mini_bus", 
+				"textures/simple_vehicles_classic/items/motor", 
+				"textures/simple_vehicles_classic/items/mustang",
+				"textures/simple_vehicles_classic/items/plane", 
+				"textures/simple_vehicles_classic/items/police_car",
+				"textures/simple_vehicles_classic/items/speedboat", 
+				"textures/simple_vehicles_classic/items/sports_car",
+				"textures/simple_vehicles_classic/items/tank", 
+				"textures/simple_vehicles_classic/items/taxi" 
 			]
 		},
 		"asipre_key": {
 			"textures": [
-				"textures/items/Key"
+				"textures/simple_vehicles_classic/items/Key"
 			]
 		}
 	}

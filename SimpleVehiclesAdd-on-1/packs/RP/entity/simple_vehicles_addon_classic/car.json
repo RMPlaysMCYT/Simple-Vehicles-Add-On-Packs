@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aspire:car",
+      "materials": {
+        "default": "aspire"
+      },
+      "textures": {
+        "grey": "textures/simple_vehicles_classic/entity/car",
+        "red": "textures/simple_vehicles_classic/entity/car/car_red",
+        "green": "textures/simple_vehicles_classic/entity/car/car_green",
+        "blue": "textures/simple_vehicles_classic/entity/car/car_blue",
+        "yellow": "textures/simple_vehicles_classic/entity/car/car_yellow",
+        "pink": "textures/simple_vehicles_classic/entity/car/car_pink",
+        "black": "textures/simple_vehicles_classic/entity/car/car_black",
+        "purple": "textures/simple_vehicles_classic/entity/car/car_purple",
+        "orange": "textures/simple_vehicles_classic/entity/car/car_naranja",
+        "brown": "textures/simple_vehicles_classic/entity/car/car_cafe",
+        "cyan": "textures/simple_vehicles_classic/entity/car/car_cyan"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_classic_car"
+      },
+      "animations": {
+        "move": "animation.car.move"
+      },
+      "scripts": {
+        "initialize": ["variable.steering = 0;"],
+        "pre_animation": [
+          "query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+        ],
+        "animate": ["move"]
+      },
+      "render_controllers": ["controller.render.car"],
+      "spawn_egg": {
+        "texture": "Vehicles",
+        "texture_index": 4
+      }
+    }
+  }
+}

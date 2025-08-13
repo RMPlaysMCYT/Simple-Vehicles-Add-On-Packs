@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.car4x4_1": {
+	"geometry.simple_vehicles_classic_car4x4_1": {
 		"texturewidth": 1024,
 		"textureheight": 256,
 		"visible_bounds_width": 8,

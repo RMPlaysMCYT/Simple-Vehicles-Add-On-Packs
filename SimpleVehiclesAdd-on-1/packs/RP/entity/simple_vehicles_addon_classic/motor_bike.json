@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aspire:motor_bike",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "blue": "textures/simple_vehicles_classic/entity/motor",
+        "yellow": "textures/simple_vehicles_classic/entity/motor/motor_yellow",
+        "green": "textures/simple_vehicles_classic/entity/motor/motor_green",
+        "white": "textures/simple_vehicles_classic/entity/motor/motor_white",
+        "purple": "textures/simple_vehicles_classic/entity/motor/motor_purple",
+        "black": "textures/simple_vehicles_classic/entity/motor/motor_black"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_classic_motor"
+      },
+      "animations": {
+        "move": "animation.motor.move"
+      },
+      "scripts": {
+        "initialize": ["variable.steering = 0;"],
+        "pre_animation": [
+          "query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+        ],
+        "animate": ["move"]
+      },
+      "render_controllers": ["controller.render.motor"],
+      "spawn_egg": {
+        "texture": "Vehicles",
+        "texture_index": 10
+      }
+    }
+  }
+}

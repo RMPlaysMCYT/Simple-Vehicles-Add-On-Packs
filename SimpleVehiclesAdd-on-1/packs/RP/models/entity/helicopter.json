@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.helicopter": {
+	"geometry.simple_vehicles_classic_helicopter": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 10,

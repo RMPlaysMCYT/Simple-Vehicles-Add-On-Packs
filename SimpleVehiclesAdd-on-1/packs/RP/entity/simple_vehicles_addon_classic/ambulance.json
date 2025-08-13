@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aspire:ambulance",
+            "materials": {
+                "default": "aspire"
+            },
+            "textures": {
+                "default": "textures/simple_vehicles_classic/entity/ambulance"
+            },
+            "geometry": {
+                "default": "geometry.simple_vehicles_classic_ambulance"
+            },
+            "spawn_egg": {
+                "texture": "Vehicles",
+                "texture_index": 0
+            },
+            "animations": {
+                "move": "animation.ambulance.move"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.steering = 0;"
+                ],
+                "pre_animation": [
+                    "query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+                ],
+                "animate": [
+                    "move"
+                ]
+            },
+            "render_controllers":
+    		[
+                "controller.render.police_car"
+            ]
+        }
+    }
+}

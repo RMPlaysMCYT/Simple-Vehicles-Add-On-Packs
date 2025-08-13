@@ -1,6 +1,6 @@
 {
   "format_version": "1.10.0",
-  "geometry.aquatopia": {
+  "geometry.simple_vehicles_classic_aquatopia": {
     "texturewidth": 288,
     "textureheight": 288,
     "visible_bounds_width": 4,

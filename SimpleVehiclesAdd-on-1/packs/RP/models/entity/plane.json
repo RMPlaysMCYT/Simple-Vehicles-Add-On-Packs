@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.plane": {
+	"geometry.simple_vehicles_classic_plane": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 10,

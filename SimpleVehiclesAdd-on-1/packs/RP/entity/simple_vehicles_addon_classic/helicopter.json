@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aspire:helicopter",
+            "materials": {
+                "default": "witch"
+            },
+            "textures": {
+                "default": "textures/simple_vehicles_classic/entity/helicopter"
+            },
+            "geometry": {
+                "default": "geometry.simple_vehicles_classic_helicopter"
+            },
+            "animations": {
+                "move": "animation.helicopter.spin"
+            },
+            "animation_controllers": [
+                { 
+			        "move": "controller.animation.helicopter.spin"
+			    }				
+            ],
+            "render_controllers": [ "controller.render.car4x4" ],
+            "spawn_egg": {
+                "texture": "Vehicles",
+                "texture_index": 7
+            }
+        }
+    }
+}

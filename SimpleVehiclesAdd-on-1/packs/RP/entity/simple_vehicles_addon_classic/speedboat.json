@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aspire:speedboat",
+            "materials": {
+                "default": "aspire"
+            },
+            "textures": {
+                "default": "textures/simple_vehicles_classic/entity/speedboat"
+            },
+            "geometry": {
+                "default": "geometry.simple_vehicles_classic_speedboat"
+            },
+            "spawn_egg": {
+                "texture": "Vehicles",
+                "texture_index": 14
+            },
+            "animations": {
+                "move": "animation.villager.move"
+            },
+            "animation_controllers": [
+                { 
+				    "move": "controller.animation.villager.move"
+				}
+            ],
+            "render_controllers":
+    		[
+                "controller.render.apv"
+            ]
+        }
+    }
+}

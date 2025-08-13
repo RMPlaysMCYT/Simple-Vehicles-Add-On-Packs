@@ -1,6 +1,6 @@
 {
   "format_version": "1.10.0",
-  "geometry.ambulance": {
+  "geometry.simple_vehicles_classic_ambulance": {
     "texturewidth": 1024,
     "textureheight": 512,
     "visible_bounds_width": 13,
