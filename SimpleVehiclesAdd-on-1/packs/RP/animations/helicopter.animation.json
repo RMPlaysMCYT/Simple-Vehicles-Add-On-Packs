@@ -3,9 +3,13 @@
 	"animations": {
 		"animation.simple_vehicles_classic_helicopter.loop": {
 			"loop": true,
+			"animation_length": 3,
 			"bones": {
 				"propeller": {
-					"rotation": [0, "query.modified_distance_moved * 10", 0]
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.0": [0, -1080, 0]
+					}
 				}
 			}
 		},
