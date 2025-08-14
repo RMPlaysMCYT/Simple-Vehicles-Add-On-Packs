@@ -13,7 +13,7 @@
                 "default": "geometry.simple_vehicles_classic_helicopter"
             },
             "animations": {
-                "move": "animation.simple_vehicles_classic_helicopter.loop",
+                "loop": "animation.simple_vehicles_classic_helicopter.loop",
                 "loop_idle": "animation.simple_vehicles_classic_helicopter.loop_idle",
                 "off": "animation.simple_vehicles_classic_helicopter.off",
                 "loop_ac": "controller.animation.simple_vehicles_classic_helicopter.loop"

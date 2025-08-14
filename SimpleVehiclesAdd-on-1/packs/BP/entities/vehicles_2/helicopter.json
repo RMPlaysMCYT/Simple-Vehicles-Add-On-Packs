@@ -88,7 +88,7 @@
         ]
       },
       "minecraft:type_family": {
-        "family": ["horse"]
+        "family": ["aspire:helicopter"]
       },
       "minecraft:collision_box": {
         "width": 1.4,
@@ -120,7 +120,7 @@
         }
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/ranger.json"
+        "table": "loot_tables/entities/helicopter.json"
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,
@@ -131,10 +131,7 @@
       "minecraft:jump.static": {},
       "minecraft:nameable": {},
       "minecraft:horse.jump_strength": {
-        "value": {
-          "range_min": 0.4,
-          "range_max": 1.0
-        }
+        "value": 0
       },
       "minecraft:balloonable": {},
       "minecraft:behavior.float": {
