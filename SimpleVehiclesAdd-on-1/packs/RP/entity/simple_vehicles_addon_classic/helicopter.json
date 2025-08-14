@@ -1,5 +1,5 @@
 {
-    "format_version": "1.8.0",
+    "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
             "identifier": "aspire:helicopter",
@@ -13,13 +13,16 @@
                 "default": "geometry.simple_vehicles_classic_helicopter"
             },
             "animations": {
-                "move": "animation.helicopter.spin"
+                "move": "animation.simple_vehicles_classic_helicopter.loop",
+                "loop_idle": "animation.simple_vehicles_classic_helicopter.loop_idle",
+                "off": "animation.simple_vehicles_classic_helicopter.off",
+                "loop_ac": "controller.animation.simple_vehicles_classic_helicopter.loop"
             },
-            "animation_controllers": [
-                { 
-			        "move": "controller.animation.helicopter.spin"
-			    }				
-            ],
+            "scripts": {
+                "animate": [
+                    "loop_ac"
+                ]
+            },
             "render_controllers": [ "controller.render.car4x4" ],
             "spawn_egg": {
                 "texture": "Vehicles",
