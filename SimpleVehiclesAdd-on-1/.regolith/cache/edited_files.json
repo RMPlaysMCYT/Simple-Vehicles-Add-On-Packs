@@ -2,10 +2,12 @@
 	"rp": {
 		"C:\\Users\\Ronnel Mitra\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang/development_resource_packs/Simple Vehicles v1_rp": [
 			"animation_controllers\\aspire_vehicles.jsonc",
+			"animation_controllers\\helicopter.animation_controllers.json",
 			"animations\\ambulance.animation.json",
 			"animations\\aspire_vehicles.json",
 			"animations\\car.animation.json",
 			"animations\\car4x4_1.json",
+			"animations\\helicopter.animation.json",
 			"animations\\minibus.animation.json",
 			"animations\\motor_v1.animation.json",
 			"animations\\police_car.animation.json",
