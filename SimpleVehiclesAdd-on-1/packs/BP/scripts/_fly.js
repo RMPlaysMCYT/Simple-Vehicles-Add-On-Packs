@@ -22,7 +22,7 @@ class Utils {
             y: this.player.isJumping ? flySpeed : fallSpeed,
             z: 0,
         };
-        this.entity.addEffect("speed", 5, {
+        this.entity.addEffect("speed",2, {
             showParticles: false,
             amplifier: XZspeed,
         });
