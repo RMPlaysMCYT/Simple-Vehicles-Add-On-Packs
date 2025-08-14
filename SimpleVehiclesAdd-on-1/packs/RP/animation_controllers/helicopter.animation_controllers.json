@@ -7,14 +7,14 @@
 				"idle": {
 					"animations": ["off"],
 					"transitions": [
-						{"walking": "!queryis_saddled"}
+						{"walking": "!query.is_saddled"}
 					],
 					"blend_transition": 0.2
 				},
 				"walking": {
 					"animations": ["loop_idle"],
 					"transitions": [
-						{"idle": "queryis_saddled"},
+						{"idle": "query.is_saddled"},
 						{"flying": "!query.is_on_ground"}
 					],
 					"blend_transition": 0.2
