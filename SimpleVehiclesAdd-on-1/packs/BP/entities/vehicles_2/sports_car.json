@@ -11,7 +11,6 @@
       "minecraft:ranger": {
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
-          "priority": 0,
           "seat_count": 2,
           "crouching_skip_interact": true,
           "family_types": ["player"],
@@ -114,7 +113,7 @@
         }
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/ranger.json"
+        "table": "loot_tables/entities/sports_car.json"
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,

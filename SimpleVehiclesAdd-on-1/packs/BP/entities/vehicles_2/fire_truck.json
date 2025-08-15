@@ -95,7 +95,7 @@
         }
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/ranger.json"
+        "table": "loot_tables/entities/fire_truck.json"
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,
