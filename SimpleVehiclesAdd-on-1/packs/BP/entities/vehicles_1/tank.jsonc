@@ -225,14 +225,9 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "randomize": [
-          {
-            "weight": 360,
-            "add": {
-              "component_groups": ["minecraft:ranger"]
-            }
-          }
-        ]
+        "add": {
+          "component_groups": ["minecraft:ranger"]
+        }
       },
       "minecraft:horse_saddled": {
         "add": {

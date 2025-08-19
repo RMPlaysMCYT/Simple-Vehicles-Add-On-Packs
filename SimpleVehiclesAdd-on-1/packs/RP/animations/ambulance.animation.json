@@ -10,10 +10,7 @@
 				"leg1": {
 					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
 				},
-				"wheel1": {
-					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
-				},
-				"wheel0": {
+				"leg0": {
 					"rotation": ["query.modified_distance_moved * 50", "variable.steering / 4", 0]
 				}
 			}

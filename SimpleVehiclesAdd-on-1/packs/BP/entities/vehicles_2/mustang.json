@@ -190,14 +190,9 @@
       "minecraft:entity_spawned": {
         "sequence": [
           {
-            "randomize": [
-              {
-                "weight": 360,
-                "add": {
-                  "component_groups": ["minecraft:ranger"]
-                }
-              }
-            ]
+            "add": {
+              "component_groups": ["minecraft:ranger"]
+            }
           },
           {
             "randomize": [

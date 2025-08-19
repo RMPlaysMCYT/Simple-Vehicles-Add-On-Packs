@@ -70,8 +70,7 @@
         "value": 0.5
       },
       "minecraft:breathable": {
-        "totalSupply": 10,
-        "suffocateTime": 0
+        "breathes_air": true
       },
       "minecraft:is_chested": {},
       "minecraft:collision_box": {
@@ -98,7 +97,6 @@
       "minecraft:physics": {
         "has_gravity": true
       },
-      "minecraft:fire_immune": true,
       "minecraft:knockback_resistance": {
         "value": 100,
         "max": 100
@@ -120,14 +118,9 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "randomize": [
-          {
-            "weight": 100,
-            "add": {
-              "component_groups": ["minecraft:minecar"]
-            }
-          }
-        ]
+        "add": {
+          "component_groups": ["minecraft:minecar"]
+        }
       },
       "minecraft:horse_saddled": {
         "add": {

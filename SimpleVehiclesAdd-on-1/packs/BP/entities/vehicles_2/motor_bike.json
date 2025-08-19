@@ -119,7 +119,6 @@
       "minecraft:physics": {
         "has_gravity": true
       },
-      "minecraft:fire_immune": true,
       "minecraft:knockback_resistance": {
         "value": 100,
         "max": 100
@@ -143,14 +142,9 @@
       "minecraft:entity_spawned": {
         "sequence": [
           {
-            "randomize": [
-              {
-                "weight": 100,
-                "add": {
-                  "component_groups": ["minecraft:minecar"]
-                }
-              }
-            ]
+            "add": {
+              "component_groups": ["minecraft:minecar"]
+            }
           },
           {
             "randomize": [

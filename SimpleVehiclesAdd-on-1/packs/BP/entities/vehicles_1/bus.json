@@ -133,14 +133,10 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "randomize": [
+        "add":
           {
-            "weight": 100,
-            "add": {
-              "component_groups": ["minecraft:vehicle"]
-            }
+            "component_groups": ["minecraft:vehicle"]
           }
-        ]
       },
       "minecraft:horse_saddled": {
         "add": {

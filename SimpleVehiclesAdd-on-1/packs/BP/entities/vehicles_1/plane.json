@@ -150,7 +150,7 @@
                 },
                 "event": "h4"
               },
-              "deals_damage": false
+              "deals_damage": "no"
             }
           ]
         }
@@ -167,7 +167,7 @@
                 },
                 "event": "remove"
               },
-              "deals_damage": false
+              "deals_damage": "no"
             }
           ]
         }
