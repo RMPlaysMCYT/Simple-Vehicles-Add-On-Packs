@@ -13,7 +13,7 @@
         "default": "geometry.simple_vehicles_classic_police_car"
       },
       "spawn_egg": {
-        "texture": "Vehicles",
+        "texture": "aspire_vehicles",
         "texture_index": 13
       },
       "animations": {

@@ -309,7 +309,7 @@
               "spawn_event": "minecraft:f7m",
               "spawn_method": "born",
               "spawn_sound": "random.click",
-              "min_wait_time": 0.015,
+              "min_wait_time": 0,
               "max_wait_time": 0
             }
           ]
@@ -317,8 +317,7 @@
         "minecraft:transformation": {
           "into": "minecraft:area_effect_cloud",
           "delay": 0.02,
-          "drop_equipment": true,
-          "add": { "component_groups": "minecraft:removed" }
+          "drop_equipment": true
         },
         "minecraft:timer": {
           "time": [2, 2],

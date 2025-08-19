@@ -2,7 +2,7 @@
 	"resource_pack_name": "AspireVehi",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"Vehicles": { 
+		"aspire_vehicles": { 
 			"textures": [
 				"textures/simple_vehicles_classic/items/ambulance", 
 				"textures/simple_vehicles_classic/items/apv",

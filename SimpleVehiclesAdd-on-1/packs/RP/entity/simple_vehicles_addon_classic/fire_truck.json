@@ -22,7 +22,7 @@
             ],
             "render_controllers": [ "controller.render.car4x4" ],
             "spawn_egg": {
-                "texture": "Vehicles",
+                "texture": "aspire_vehicles",
                 "texture_index": 6
             }
         }

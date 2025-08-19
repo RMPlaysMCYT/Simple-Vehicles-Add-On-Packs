@@ -23,7 +23,7 @@
             ],
             "render_controllers": [ "controller.render.mustang" ],
             "spawn_egg": {
-                "texture": "Vehicles",
+                "texture": "aspire_vehicles",
                 "texture_index": 11
             }
         }

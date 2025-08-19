@@ -25,7 +25,7 @@
             ],
             "render_controllers": [ "controller.render.sports_car" ],
             "spawn_egg": {
-                "texture": "Vehicles",
+                "texture": "aspire_vehicles",
                 "texture_index": 13
             }
         }
