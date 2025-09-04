@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vehicles_command": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"a": "1"
+						}
+					],
+					"on_entry": [
+						"/function booster/car"
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "1"
+						}
+					],
+					"on_entry": [
+						"/function booster/car"
+					]
+				}
+			}
+		},
+		"controller.animation.vehicles_move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @s remove vehicle_ride"
+					],
+					"transitions": [
+						{
+							"a": "query.is_moving"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "!query.is_moving"
+						}
+					],
+					"on_entry": [
+						"/tag @s add vehicle_ride"
+					]
+				}
+			}
+		}
+	}
+}

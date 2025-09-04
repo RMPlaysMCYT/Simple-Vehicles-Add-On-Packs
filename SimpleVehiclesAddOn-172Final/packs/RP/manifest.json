@@ -1,0 +1,51 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "ec6c3abb-bb34-473f-a99c-3fa25c8100f6",
+        "version": [
+            1,
+            7,
+            3
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            100
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "c9b9c46c-9e22-4187-bfc5-4344b09c8cbd",
+            "version": [
+                1,
+                7,
+                3
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "version": [
+                1,
+                7,
+                3
+            ],
+            "uuid": "28c14a2b-5546-489e-9385-0ce061204120"
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "RMPlaysMC YT"
+        ],
+        "license": "All rights reserved",
+        "generated_with": {
+            "bridge": [
+                "2.1.1",
+                "2.1.5"
+            ]
+        }
+    }
+}

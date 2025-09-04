@@ -1,0 +1,1 @@
+playanimation @e[type=simple_vehicles:school_bus] animation.school_bus.wiper

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:plane",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/plane"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.plane"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 23
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

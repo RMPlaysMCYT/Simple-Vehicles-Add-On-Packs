@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tank",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/tank"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.tank"
+			},
+			"render_controllers": [
+				"controller.render.ambulance"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 28
+			},
+			"animations": {
+				"look_at_target": "animation.tank.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target"
+				]
+			}
+		}
+	}
+}

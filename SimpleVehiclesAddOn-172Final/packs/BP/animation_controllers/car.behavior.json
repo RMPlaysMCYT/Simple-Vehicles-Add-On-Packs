@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.car.ride_test": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ride_info": "query.is_riding"
+						}
+					],
+					"on_entry": [
+						"/tag @p[r=1] remove ride_vehicle"
+					]
+				},
+				"ride_info": {
+					"transitions": [
+						{
+							"default": "!query.is_riding&&query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/tag @p[r=1] add ride_vehicle",
+						"/function booster/player",
+						"/scoreboard objectives add speed dummy",
+						"/scoreboard objectives add oil dummy",
+						"/scoreboard objectives add durability dummy",
+						"/scoreboard objectives add tick dummy"
+					]
+				}
+			}
+		}
+	}
+}

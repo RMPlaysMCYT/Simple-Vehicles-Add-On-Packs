@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:isuzu_dmax",
+      "textures": {
+        "black": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_black",
+				"white": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_white",
+				"orange": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_orange",
+				"magenta": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_magenta",
+				"light_blue": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_light_blue",
+				"yellow": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_yellow",
+				"lime": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_lime",
+				"pink": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_pink",
+				"gray": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_gray",
+				"silver": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_silver",
+				"cyan": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_cyan",
+				"purple": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_purple",
+				"blue": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_blue",
+				"brown": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_brown",
+				"green": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_green",
+				"red": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_red"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_isuzu_dmax"
+      },
+      "render_controllers": [
+        "controller.render.simple_car"
+      ],
+      "spawn_egg": {
+        "texture": "simple_vehicles:isuzu_dmax",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.simple_vehicles_isuzu_dmax.move_2",
+        "idle": "animation.simple_vehicles_isuzu_dmax.idle"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

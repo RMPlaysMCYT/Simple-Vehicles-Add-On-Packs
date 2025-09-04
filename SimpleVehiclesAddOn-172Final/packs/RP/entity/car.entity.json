@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:car",
+			"materials": {
+				"default": "witch"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.car"
+			},
+			"textures": {
+				"black": "textures/entity/car",
+				"white": "textures/entity/car/car_white",
+				"orange": "textures/entity/car/car_naranja",
+				"magenta": "textures/entity/car/car_magenta",
+				"light_blue": "textures/entity/car/car_light_blue",
+				"yellow": "textures/entity/car/car_yellow",
+				"lime": "textures/entity/car/car_lime",
+				"pink": "textures/entity/car/car_pink",
+				"gray": "textures/entity/car/car_grey",
+				"silver": "textures/entity/car/car_silver",
+				"cyan": "textures/entity/car/car_cyan",
+				"purple": "textures/entity/car/car_purple",
+				"blue": "textures/entity/car/car_blue",
+				"brown": "textures/entity/car/car_cafe",
+				"green": "textures/entity/car/car_green",
+				"red": "textures/entity/car/car_red"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 4
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.car.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general"
+				]
+			}
+		}
+	}
+}

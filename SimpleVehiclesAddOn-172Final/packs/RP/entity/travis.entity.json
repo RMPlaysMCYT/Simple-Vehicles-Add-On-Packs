@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:travis",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/travis"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.travis"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 16
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.travis.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

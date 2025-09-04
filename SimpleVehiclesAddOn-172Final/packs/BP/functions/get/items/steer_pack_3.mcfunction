@@ -1,0 +1,14 @@
+give @p simple_vehicles:steer_cadillac_dts_2010
+give @p simple_vehicles:steer_century_luxury
+give @p simple_vehicles:steer_container_van
+give @p simple_vehicles:steer_double_deck_bus
+give @p simple_vehicles:steer_hafei_zhongyi
+give @p simple_vehicles:steer_honda_accord_2019
+give @p simple_vehicles:steer_hyundai_starex
+give @p simple_vehicles:steer_ice_cream
+give @p simple_vehicles:steer_opel_astra
+give @p simple_vehicles:steer_opel_crosa
+give @p simple_vehicles:steer_scooter_A
+give @p simple_vehicles:steer_speedboat_2
+give @p simple_vehicles:steer_VAN_V2
+give @p simple_vehicles:steer_VM_Beetle

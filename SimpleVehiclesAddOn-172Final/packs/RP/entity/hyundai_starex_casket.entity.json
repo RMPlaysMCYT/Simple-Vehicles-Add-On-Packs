@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hyundai_starex_casket",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/hyundai_starex/hyundai_starex_white_casket"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.hyundai_starex"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 42
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"animations": {
+				"move": "animation.cadillac_dts_2010.move",
+				"turn": "animation.hyundai_starex.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_distance_moved"
+					},
+					"general"
+				]
+			}
+		}
+	}
+}

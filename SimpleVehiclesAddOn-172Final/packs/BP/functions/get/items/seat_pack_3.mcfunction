@@ -1,0 +1,15 @@
+give @p simple_vehicles:seat_cadillac_dts_2010
+give @p simple_vehicles:seat_century_luxury
+give @p simple_vehicles:seat_container_van
+give @p simple_vehicles:seat_double_deck_bus
+give @p simple_vehicles:seat_hafei_zhongyi
+give @p simple_vehicles:seat_honda_accord_2019
+give @p simple_vehicles:seat_hyundai_starex_with_casket
+give @p simple_vehicles:seat_hyundai_starex
+give @p simple_vehicles:seat_ice_cream
+give @p simple_vehicles:seat_opel_astra
+give @p simple_vehicles:seat_opel_crosa
+give @p simple_vehicles:seat_scooter_A
+give @p simple_vehicles:seat_speedboat_2
+give @p simple_vehicles:seat_VAN_V2
+give @p simple_vehicles:seat_VM_Beetle

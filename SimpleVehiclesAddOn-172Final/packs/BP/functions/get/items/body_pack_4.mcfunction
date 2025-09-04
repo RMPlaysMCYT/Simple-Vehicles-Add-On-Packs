@@ -1,0 +1,15 @@
+give @p simple_vehicles:body_cadillac_dts_2010
+give @p simple_vehicles:body_century_luxury
+give @p simple_vehicles:body_container_van
+give @p simple_vehicles:body_double_deck_bus
+give @p simple_vehicles:body_hafei_zhongyi
+give @p simple_vehicles:body_honda_accord_2019
+give @p simple_vehicles:body_hyundai_starex_with_casket
+give @p simple_vehicles:body_hyundai_starex
+give @p simple_vehicles:body_ice_cream
+give @p simple_vehicles:body_opel_astra
+give @p simple_vehicles:body_opel_crosa
+give @p simple_vehicles:body_scooter_A
+give @p simple_vehicles:body_speedboat_two
+give @p simple_vehicles:body_VAN_V2
+give @p simple_vehicles:body_VM_Beetle

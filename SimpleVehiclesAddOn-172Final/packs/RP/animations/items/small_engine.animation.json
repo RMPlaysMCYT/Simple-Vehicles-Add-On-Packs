@@ -1,0 +1,60 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.large_engine.hold": {
+			"loop": true,
+			"bones": {
+				"small_engine": {
+					"rotation": [
+						20,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						-7
+					]
+				},
+				"large_engine": {
+					"position": [
+						0,
+						0,
+						-2
+					],
+					"scale": 0.5
+				}
+			}
+		},
+		"animation.large_engine.first_person.hold": {
+			"loop": true,
+			"bones": {
+				"small_engine": {
+					"rotation": [
+						27.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						-3
+					]
+				},
+				"large_engine": {
+					"rotation": [
+						87.5,
+						52.5,
+						-7.5
+					],
+					"position": [
+						0,
+						4,
+						-4
+					],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

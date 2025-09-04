@@ -1,0 +1,13 @@
+give @p simple_vehicles:tire_cadillac_dts_2010
+give @p simple_vehicles:tire_century_luxury
+give @p simple_vehicles:tire_container_van
+give @p simple_vehicles:tire_double_deck_bus
+give @p simple_vehicles:tire_hafei_zhongyi
+give @p simple_vehicles:tire_honda_accord_2019
+give @p simple_vehicles:tire_hyundai_starex
+give @p simple_vehicles:tire_ice_cream
+give @p simple_vehicles:tire_opel_astra
+give @p simple_vehicles:tire_opel_crosa
+give @p simple_vehicles:tire_scooter_A
+give @p simple_vehicles:tire_VAN_V2
+give @p simple_vehicles:tire_VM_Beetle

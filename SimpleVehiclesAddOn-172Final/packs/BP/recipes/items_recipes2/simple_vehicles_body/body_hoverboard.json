@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_hoverboard"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_hoverboard"
+			}
+		]
+	}
+}

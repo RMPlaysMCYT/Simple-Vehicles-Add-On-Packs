@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:isuzu_dmax_pink",
+      "textures": {
+        "default": "textures/entity/pamobile/simple_vehicles_isuzu_dmax_pink"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_isuzu_dmax"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "simple_vehicles:isuzu_dmax_pink",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.simple_vehicles_isuzu_dmax_pink.move_2",
+        "idle": "animation.simple_vehicles_isuzu_dmax_pink.idle"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tesla_truck",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/tesla_truck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.tesla_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 19
+			},
+			"animations": {
+				"move": "animation.tesla_truck.move",
+				"turn": "animation.tesla_truck.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.tesla"
+			]
+		}
+	}
+}

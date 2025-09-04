@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:van",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/van"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.van"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 29
+			},
+			"animations": {
+				"move": "animation.van.move",
+				"turn": "animation.van.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

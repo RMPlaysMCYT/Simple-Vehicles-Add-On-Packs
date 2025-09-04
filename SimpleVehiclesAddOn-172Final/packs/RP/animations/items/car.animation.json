@@ -1,0 +1,109 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.car_body.hold": {
+			"loop": true,
+			"bones": {
+				"car_body": {
+					"position": [
+						-10,
+						3,
+						-16
+					],
+					"scale": 0.3
+				},
+				"bus_body": {
+					"rotation": [
+						5,
+						0,
+						0
+					],
+					"position": [
+						-8,
+						6,
+						-13
+					],
+					"scale": 0.2
+				}
+			}
+		},
+		"animation.bus_body.hold": {
+			"loop": true,
+			"bones": {
+				"car_body": {
+					"position": [
+						-10,
+						3,
+						-16
+					],
+					"scale": 0.3
+				},
+				"bus_body": {
+					"rotation": [
+						5,
+						0,
+						0
+					],
+					"position": [
+						-8,
+						6,
+						-13
+					],
+					"scale": 0.2
+				}
+			}
+		},
+		"animation.car_body.first_person.hold": {
+			"loop": true,
+			"bones": {
+				"car_body": {
+					"position": [
+						-10,
+						3,
+						-16
+					],
+					"scale": 0.3
+				},
+				"bus_body": {
+					"rotation": [
+						35,
+						45,
+						45
+					],
+					"position": [
+						-8,
+						6,
+						-13
+					],
+					"scale": 0.2
+				}
+			}
+		},
+		"animation.bus_body.first_person.hold": {
+			"loop": true,
+			"bones": {
+				"car_body": {
+					"position": [
+						-10,
+						3,
+						-16
+					],
+					"scale": 0.3
+				},
+				"bus_body": {
+					"rotation": [
+						35,
+						45,
+						45
+					],
+					"position": [
+						-8,
+						6,
+						-13
+					],
+					"scale": 0.2
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.key": {
+			"textures": [
+				"texture.key"
+			],
+			"geometry": "geometry.key",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			]
+		}
+	}
+}

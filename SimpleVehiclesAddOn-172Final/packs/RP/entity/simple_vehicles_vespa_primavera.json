@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:vespa_primavera",
+      "textures": {
+        "default": "textures/entity/pamobile/simple_vehicles_vespa_primavera"
+      },
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_vespa_primavera"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "simple_vehicles:vespa_primavera",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.simple_vehicles_vespa_primavera.move",
+        "idle": "animation.simple_vehicles_vespa_primavera.idle",
+				"turn": "animation.bike.turn",
+				"v_turn": "controller.animation.vehicle.v_turn"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          "turn",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tractor",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/tractor"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.tractor"
+			},
+			"render_controllers": [
+				"controller.render.tractor"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 22
+			},
+			"animations": {
+				"turn": "animation.tractor.turn"
+			},
+			"animation_controllers": [
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			]
+		}
+	}
+}

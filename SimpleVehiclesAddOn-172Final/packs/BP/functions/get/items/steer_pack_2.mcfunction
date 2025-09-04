@@ -1,0 +1,15 @@
+give @p simple_vehicles:steer_pick_up_truck
+give @p simple_vehicles:steer_plane
+give @p simple_vehicles:steer_police_car
+give @p simple_vehicles:steer_rancher
+give @p simple_vehicles:steer_sabre
+give @p simple_vehicles:steer_school_bus
+give @p simple_vehicles:steer_speedboat
+give @p simple_vehicles:steer_submarine
+give @p simple_vehicles:steer_taxi
+give @p simple_vehicles:steer_tesla_truck
+give @p simple_vehicles:steer_tractor
+give @p simple_vehicles:steer_travis
+give @p simple_vehicles:steer_trucks
+give @p simple_vehicles:steer_van
+give @p simple_vehicles:steer_volt_bike

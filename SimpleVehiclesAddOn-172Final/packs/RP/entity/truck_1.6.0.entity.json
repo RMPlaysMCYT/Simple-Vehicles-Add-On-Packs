@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:truck",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"black": "textures/entity/truck/truck_black",
+				"white": "textures/entity/truck/truck_white",
+				"orange": "textures/entity/truck/truck_orange",
+				"magenta": "textures/entity/truck/truck_magenta",
+				"light_blue": "textures/entity/truck/truck_light_blue",
+				"yellow": "textures/entity/truck/truck_yellow",
+				"lime": "textures/entity/truck/truck_lime",
+				"pink": "textures/entity/truck/truck_pink",
+				"gray": "textures/entity/truck",
+				"silver": "textures/entity/truck/truck_silver",
+				"cyan": "textures/entity/truck/truck_cyan",
+				"purple": "textures/entity/truck/truck_purple",
+				"blue": "textures/entity/truck/truck_blue",
+				"brown": "textures/entity/truck/truck_brown",
+				"green": "textures/entity/truck/truck_green",
+				"red": "textures/entity/truck/truck_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 15
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.truck.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"sound_effects": {
+				"move": "vehicles.drive"
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:pajero",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/pajero"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.pajero"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 26
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.pajero.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

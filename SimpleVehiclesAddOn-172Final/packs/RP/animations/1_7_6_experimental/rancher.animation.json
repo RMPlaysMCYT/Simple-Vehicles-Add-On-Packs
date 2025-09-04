@@ -1,0 +1,126 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rancher.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wheel0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							"360 *1",
+							0,
+							0
+						]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							"360 *1",
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.rancher.look_at_target": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-30,math.min(30,query.yaw_speed*0.5))*1"
+					]
+				},
+				"wheel0": {
+					"rotation": [
+						0,
+						"math.max(-26,math.min(26,query.yaw_speed*0.5))",
+						0
+					]
+				}
+			}
+		},
+		"animation.rancher.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door_1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							-60,
+							0
+						]
+					}
+				},
+				"door_0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							60,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.rancher.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door_1": {
+					"rotation": {
+						"0.0": [
+							0,
+							-60,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"door_0": {
+					"rotation": {
+						"0.0": [
+							0,
+							60,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:pick_up_truck",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/pick_up_truck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.pick_up_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 27
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.pick_up_truck.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.pick_up_truck"
+			]
+		}
+	}
+}

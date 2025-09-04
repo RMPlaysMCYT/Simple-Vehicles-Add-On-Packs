@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tricycle",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/tricycle"
+			},
+			"geometry": {
+				"default": "geometry.tricycle"
+			},
+			"animations": {
+				"move": "animation.rancher.move"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 4
+			},
+			"enable_attachables": true
+		}
+	}
+}

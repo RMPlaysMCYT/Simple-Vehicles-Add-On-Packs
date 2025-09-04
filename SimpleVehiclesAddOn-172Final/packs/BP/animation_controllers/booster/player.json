@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.pl_cmd": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"a": "1"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "1"
+						}
+					],
+					"on_entry": [
+						"/function booster/player"
+					]
+				}
+			}
+		},
+		"controller.animation.pl_ride": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @s remove ride"
+					],
+					"transitions": [
+						{
+							"a": "query.is_riding"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "!query.is_riding"
+						}
+					],
+					"on_entry": [
+						"/tag @s add ride"
+					]
+				}
+			}
+		},
+		"controller.animation.pl_join": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/function booster/objectives"
+					]
+				}
+			}
+		}
+	}
+}

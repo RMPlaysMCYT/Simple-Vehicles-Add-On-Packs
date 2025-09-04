@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:vehicle_builder_3",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/vehicle_builder_3"
+			},
+			"geometry": {
+				"default": "geometry.vehicle_builder_3"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#CE154E",
+				"overlay_color": "#2CDA26"
+			},
+			"animations": {
+				"float": "animation.vehicle_builder.float"
+			},
+			"scripts": {
+				"animate": [
+					"float"
+				]
+			}
+		}
+	}
+}

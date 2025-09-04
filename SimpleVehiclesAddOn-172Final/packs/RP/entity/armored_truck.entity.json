@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:armored_truck",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/armored_truck"
+			},
+			"geometry": {
+				"default": "geometry.armored_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 8
+			},
+			"animations": {
+				"move": "animation.armored_truck.move",
+				"setup": "animation.armored_truck.setup",
+				"wipe": "animation.armored_truck.wipe"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"setup",
+					{
+						"wipe": "query.is_in_water_or_rain&&query.is_saddled&&query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.rancher"
+			]
+		}
+	}
+}

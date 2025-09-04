@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Simple Vehicles Addon v1.7.2 Pack 1 RP"
+		},
+		{
+			"path": "..\\Simple Vehicles Addon v1.7.2 Pack 2 RP"
+		},
+		{
+			"path": "..\\..\\development_behavior_packs\\Simple Vehicles Addon v1.7.2 Pack 1 BP"
+		},
+		{
+			"path": "..\\..\\development_behavior_packs\\Simple Vehicles Addon v1.7.2 Pack 2 BP"
+		},
+		{
+			"path": "..\\..\\development_behavior_packs\\Simple Vehicles Addon v1.7.2 Pack 3 [ITEMS] BP"
+		}
+	]
+}

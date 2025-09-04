@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ford_mustang_blue",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"blue": "textures/entity/mustang",
+				"red": "textures/entity/mustang/mustang_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.mustang"
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.mustang.turn",
+				"setup": "animation.mustang.setup"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				},
+				{
+					"setup": "controller.animation.mustang.setup"
+				}
+			],
+			"render_controllers": [
+				"controller.render.mustang"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 11
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:motorcycle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BS",
+			"MM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_grummanllv"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_grummanllv"
+			},
+			"S": {
+				"item": "simple_vehicles:steer_motorcycle"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": "query.get_actor_info_id('simple_vehicles:grummanllv')"
+			}
+		]
+	}
+}

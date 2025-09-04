@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bike.stand_by": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"riding": "1"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_bike"
+					]
+				},
+				"riding": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_bike"
+					]
+				}
+			}
+		},
+		"controller.animation.bike.ride_test": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"ride_info": "1"
+						}
+					],
+					"on_entry": [
+						"/tag @p[r=1] remove ride_vehicle"
+					]
+				},
+				"ride_info": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/tag @p[r=1] add ride_vehicle",
+						"/function ride_info/_bike"
+					]
+				}
+			}
+		}
+	}
+}

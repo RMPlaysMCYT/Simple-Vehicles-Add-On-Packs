@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "simple_vehicles:custom_block",
+            "menu_category": {
+                "category": "construction", 
+                "group": "minecraft:itemGroup.name.concrete", 
+                "is_hidden_in_commands": false 
+            }
+        },
+        "components": {
+			"minecraft:geometry":{
+				"identifier": ""
+			}
+		} 
+    }
+}

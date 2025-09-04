@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ice_cream_truck",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"blue": "textures/entity/ice_cream_truck",
+				"red": "textures/entity/ice_cream_truck/ice_cream_truck_red",
+				"purple": "textures/entity/ice_cream_truck/ice_cream_truck_purple"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.ice_cream_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 40
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.ice_cream_truck.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.ice_cream_truck"
+			]
+		}
+	}
+}

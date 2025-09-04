@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hyundai_starex",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"grey": "textures/entity/hyundai_starex",
+				"white": "textures/entity/hyundai_starex/hyundai_starex_white",
+				"black": "textures/entity/hyundai_starex/hyundai_starex_black",
+				"brown": "textures/entity/hyundai_starex/hyundai_starex_brown"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.hyundai_starex"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 41
+			},
+			"render_controllers": [
+				"controller.render.hyundai_starex_variant"
+			],
+			"animations": {
+				"move": "animation.cadillac_dts_2010.move",
+				"turn": "animation.hyundai_starex.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_distance_moved"
+					},
+					"general"
+				]
+			}
+		}
+	}
+}

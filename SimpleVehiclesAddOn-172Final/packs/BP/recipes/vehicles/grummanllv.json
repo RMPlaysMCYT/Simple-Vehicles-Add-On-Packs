@@ -1,0 +1,29 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:grummanllv"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_grummanllv"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_grummanllv"
+			}
+		},
+		"result": [
+			{
+				"item": "minecraft:spawn_egg",
+				"data": "query.get_actor_info_id('simple_vehicles:grummanllv')"
+			}
+		]
+	}
+}

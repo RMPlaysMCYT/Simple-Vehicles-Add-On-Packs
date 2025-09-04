@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:sabre",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"black": "textures/entity/sabre/sabre_black",
+				"white": "textures/entity/sabre/sabre_white",
+				"orange": "textures/entity/sabre/sabre_orange",
+				"magenta": "textures/entity/sabre/sabre_magenta",
+				"light_blue": "textures/entity/sabre/sabre_light_blue",
+				"yellow": "textures/entity/sabre/sabre_yellow",
+				"lime": "textures/entity/sabre/sabre_lime",
+				"pink": "textures/entity/sabre/sabre_pink",
+				"gray": "textures/entity/sabre/sabre_gray",
+				"silver": "textures/entity/sabre/sabre_silver",
+				"cyan": "textures/entity/sabre/sabre_cyan",
+				"purple": "textures/entity/sabre/sabre_purple",
+				"blue": "textures/entity/sabre/sabre_blue",
+				"brown": "textures/entity/sabre/sabre_brown",
+				"green": "textures/entity/sabre/sabre_green",
+				"red": "textures/entity/sabre"
+			},
+			"geometry": {
+				"default": "geometry.sabre"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 7
+			},
+			"animations": {
+				"move": "animation.grummanllv.move"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"sound_effects": {
+				"move": "mob.irongolem.walk"
+			}
+		}
+	}
+}

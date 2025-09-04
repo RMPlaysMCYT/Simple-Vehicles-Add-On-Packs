@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:land_cruiser",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.land_cruiser"
+			},
+			"textures": {
+				"default": "textures/entity/land_cruiser"
+			},
+			"animations": {
+				"move": "animation.land_cruiser.move",
+				"setup": "animation.land_cruiser.setup",
+				"smoke_move": "animation.land_cruiser.smoke_move"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"smoke_move": "query.modified_move_speed"
+					},
+					{
+						"move": "query.modified_move_speed"
+					},
+					"setup"
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 6
+			},
+			"render_controllers": [
+				"controller.render.grummanllv"
+			],
+			"particle_effects": {
+				"smoke_particle_effect": "simple_vehicles:smoke_particle_effect"
+			}
+		}
+	}
+}

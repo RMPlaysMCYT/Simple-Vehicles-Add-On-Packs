@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.large_engine": {
+			"textures": [
+				"texture.large_engine"
+			],
+			"geometry": "geometry.large_engine",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			]
+		}
+	}
+}

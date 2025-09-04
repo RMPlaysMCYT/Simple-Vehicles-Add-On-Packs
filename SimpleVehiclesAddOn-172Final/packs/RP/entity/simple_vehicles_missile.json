@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:missile",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/pamobile/simple_vehicles_missile"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles_missile"
+			},
+			"scripts": {
+				"animate": [
+					"target"
+				]
+			},
+			"animations": {
+				"target": "animation.simple_vehicles_missile.target"
+			},
+			"render_controllers": [
+				"controller.render.slime"
+			]
+		}
+	}
+}

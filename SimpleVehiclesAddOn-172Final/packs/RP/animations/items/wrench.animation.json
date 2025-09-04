@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wrench.hold": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [
+						7.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						6
+					]
+				}
+			}
+		},
+		"animation.wrench.first_person.hold": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [
+						7.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						6
+					]
+				}
+			}
+		},
+		"animation.wrench_first_person.hold": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [
+						7.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						0,
+						6
+					]
+				}
+			}
+		}
+	}
+}

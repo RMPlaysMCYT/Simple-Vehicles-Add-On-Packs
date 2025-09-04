@@ -1,0 +1,182 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:rancher",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:vehicle": {
+				"minecraft:is_tamed": {},
+				"minecraft:rideable": {
+					"seat_count": 2,
+					"crouching_skip_interact": false,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0.6,
+								0.8,
+								0.1
+							]
+						},
+						{
+							"position": [
+								-0.6,
+								0.8,
+								0.1
+							]
+						}
+					]
+				}
+			},
+			"minecraft:bugfixer": {
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:bugfix",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:horse_saddled": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {},
+				"minecraft:behavior.player_ride_tamed": {}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 0.8
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key",
+						"accepted_items": [
+							"simple_vehicles:key"
+						],
+						"on_equip": {
+							"event": "minecraft:horse_saddled"
+						},
+						"on_unequip": {
+							"event": "minecraft:horse_unsaddled"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"jeep_traditional"
+				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.5
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/rancher.json"
+			},
+			"minecraft:breathable": {
+				"totalSupply": 10,
+				"suffocateTime": 0
+			},
+			"minecraft:is_chested": {},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 120,
+					"range_max": 120
+				}
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse",
+				"private": false
+			},
+			"minecraft:movement": {
+				"value": 0.19
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:walk_animation_speed": {
+				"value": 20
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 100,
+						"add": {
+							"component_groups": [
+								"minecraft:vehicle"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:horse_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:horse_unsaddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:bugfix": {
+				"add": {
+					"component_groups": [
+						"minecraft:vehicle"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				}
+			}
+		}
+	}
+}

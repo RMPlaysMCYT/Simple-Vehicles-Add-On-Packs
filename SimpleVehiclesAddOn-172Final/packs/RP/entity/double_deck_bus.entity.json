@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:double_deck_bus",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"black": "textures/entity/double_deck_bus",
+				"white": "textures/entity/double_deck_bus/double_deck_bus_white",
+				"orange": "textures/entity/double_deck_bus/double_deck_bus_orange",
+				"magenta": "textures/entity/double_deck_bus/double_deck_bus_magenta",
+				"light_blue": "textures/entity/double_deck_bus/double_deck_bus_light_blue",
+				"yellow": "textures/entity/double_deck_bus/double_deck_bus_yellow",
+				"lime": "textures/entity/double_deck_bus/double_deck_bus_lime",
+				"pink": "textures/entity/double_deck_bus/double_deck_bus_pink",
+				"gray": "textures/entity/double_deck_bus/double_deck_bus_gray",
+				"silver": "textures/entity/double_deck_bus/double_deck_bus_silver",
+				"cyan": "textures/entity/double_deck_bus/double_deck_bus_cyan",
+				"purple": "textures/entity/double_deck_bus/double_deck_bus_purple",
+				"blue": "textures/entity/double_deck_bus/double_deck_bus_blue",
+				"brown": "textures/entity/double_deck_bus/double_deck_bus_brown",
+				"green": "textures/entity/double_deck_bus/double_deck_bus_green",
+				"red": "textures/entity/double_deck_bus/double_deck_bus_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.double_deck_bus"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 49
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.double_deck_bus.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.van_v2"
+			]
+		}
+	}
+}

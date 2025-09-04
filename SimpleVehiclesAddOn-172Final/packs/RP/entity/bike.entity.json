@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:bike",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/bike/bike_black",
+				"white": "textures/entity/bike/bike_white",
+				"orange": "textures/entity/bike/bike_orange",
+				"magenta": "textures/entity/bike/bike_magenta",
+				"light_blue": "textures/entity/bike/bike_light_blue",
+				"yellow": "textures/entity/bike/bike_yellow",
+				"lime": "textures/entity/bike/bike_lime",
+				"pink": "textures/entity/bike/bike_pink",
+				"gray": "textures/entity/bike/bike_gray",
+				"silver": "textures/entity/bike/bike_silver",
+				"cyan": "textures/entity/bike/bike_cyan",
+				"purple": "textures/entity/bike/bike_purple",
+				"blue": "textures/entity/bike/bike_blue",
+				"brown": "textures/entity/bike/bike_brown",
+				"green": "textures/entity/bike/bike_green",
+				"red": "textures/entity/bike_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.bike"
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.bike.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 32
+			}
+		}
+	}
+}

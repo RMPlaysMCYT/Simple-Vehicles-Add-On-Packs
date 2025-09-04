@@ -1,0 +1,60 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.land_cruiser.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.land_cruiser.setup": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"scale": [
+						0.7,
+						0.7,
+						1
+					]
+				}
+			}
+		},
+		"animation.land_cruiser.smoke_move": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "smoke_particle_effect",
+					"locator": "smoke"
+				}
+			}
+		}
+	}
+}

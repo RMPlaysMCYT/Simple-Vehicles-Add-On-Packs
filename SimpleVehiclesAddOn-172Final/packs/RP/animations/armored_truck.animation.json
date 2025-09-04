@@ -1,0 +1,159 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.armored_truck.setup": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"scale": [
+						0.6,
+						1,
+						0.6
+					]
+				}
+			}
+		},
+		"animation.armored_truck.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.armored_truck.wipe": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"wiper0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.56": [
+							30,
+							25,
+							120
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"1.32": [
+							30,
+							25,
+							112.5
+						],
+						"1.6": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"wiper1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.56": [
+							30,
+							25,
+							117.5
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"1.32": [
+							30,
+							25,
+							112.5
+						],
+						"1.6": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.armored_truck.wipe2": {
+			"loop": true,
+			"animation_length": 0.4,
+			"bones": {
+				"wiper0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							30,
+							25,
+							117
+						],
+						"0.4": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"wiper1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							30,
+							25,
+							117
+						],
+						"0.4": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

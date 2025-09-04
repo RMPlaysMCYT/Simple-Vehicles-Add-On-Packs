@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:car_lowrider_jump3_item"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" A ",
+			"   ",
+			"   "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:jump3_item"
+			}
+		]
+	}
+}

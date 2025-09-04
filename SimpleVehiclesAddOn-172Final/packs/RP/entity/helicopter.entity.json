@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:helicopter",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/helicopter",
+				"white": "textures/entity/helicopter/helicopter_white",
+				"orange": "textures/entity/helicopter/helicopter_orange",
+				"magenta": "textures/entity/helicopter/helicopter_magenta",
+				"light_blue": "textures/entity/helicopter/helicopter_light_blue",
+				"yellow": "textures/entity/helicopter/helicopter_yellow",
+				"lime": "textures/entity/helicopter/helicopter_lime",
+				"pink": "textures/entity/helicopter/helicopter_pink",
+				"gray": "textures/entity/helicopter/helicopter_gray",
+				"silver": "textures/entity/helicopter/helicopter_silver",
+				"cyan": "textures/entity/helicopter/helicopter_cyan",
+				"purple": "textures/entity/helicopter/helicopter_purple",
+				"blue": "textures/entity/helicopter/helicopter_blue",
+				"brown": "textures/entity/helicopter/helicopter_brown",
+				"green": "textures/entity/helicopter/helicopter_green",
+				"red": "textures/entity/helicopter/helicopter_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.helicopter"
+			},
+			"animations": {
+				"loop": "animation.helicopter.loop"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"loop": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.bus_colors"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 7
+			}
+		}
+	}
+}

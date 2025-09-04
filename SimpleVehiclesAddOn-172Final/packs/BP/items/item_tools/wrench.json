@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:wrench",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:ignores_permission": true,
+			"minecraft:icon": {
+				"texture": "wrench"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:allow_off_hand": false,
+			"minecraft:damage": 2,
+			"minecraft:use_duration": 200,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.tools"
+			}
+		},
+		"events": {}
+	}
+}

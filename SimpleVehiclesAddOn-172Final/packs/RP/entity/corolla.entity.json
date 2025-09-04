@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:corolla",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"black": "textures/entity/corolla",
+				"white": "textures/entity/corolla/corolla_white",
+				"orange": "textures/entity/corolla/corolla_orange",
+				"magenta": "textures/entity/corolla/corolla_magenta",
+				"light_blue": "textures/entity/corolla/corolla_light_blue",
+				"yellow": "textures/entity/corolla/corolla_yellow",
+				"lime": "textures/entity/corolla/corolla_lime",
+				"pink": "textures/entity/corolla/corolla_pink",
+				"gray": "textures/entity/corolla/corolla_gray",
+				"silver": "textures/entity/corolla/corolla_silver",
+				"cyan": "textures/entity/corolla/corolla_cyan",
+				"purple": "textures/entity/corolla/corolla_purple",
+				"blue": "textures/entity/corolla/corolla_blue",
+				"brown": "textures/entity/corolla/corolla_brown",
+				"green": "textures/entity/corolla/corolla_green",
+				"red": "textures/entity/corolla/corolla_red"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.corolla"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 17
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.corolla.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.simple_car"
+			]
+		}
+	}
+}

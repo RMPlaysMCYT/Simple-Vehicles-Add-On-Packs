@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:apv",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/auv_car"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.auv_car"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 1
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.auv_car.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"render_controllers": [
+				"controller.render.ambulance"
+			],
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_distance_moved"
+					},
+					"general"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:car4x4_1",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/car_4x4"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.car_4x4"
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.car4x4_1.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.car4x4"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 5
+			}
+		}
+	}
+}

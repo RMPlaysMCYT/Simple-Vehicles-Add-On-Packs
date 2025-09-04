@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:opel_corsa",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/opel_corsa"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.opel_corsa"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 35
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.opel_corsa.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

@@ -1,0 +1,15 @@
+give @p simple_vehicles:tire_pajero
+give @p simple_vehicles:tire_pick_up_truck
+give @p simple_vehicles:tire_plane
+give @p simple_vehicles:tire_police_car
+give @p simple_vehicles:tire_rancher
+give @p simple_vehicles:tire_sabre
+give @p simple_vehicles:tire_school_bus
+give @p simple_vehicles:tire_small_tractor
+give @p simple_vehicles:tire_taxi
+give @p simple_vehicles:tire_tesla_truck
+give @p simple_vehicles:tire_travis
+give @p simple_vehicles:tire_tricycle
+give @p simple_vehicles:tire_trucks
+give @p simple_vehicles:tire_van
+give @p simple_vehicles:tire_volt_bike

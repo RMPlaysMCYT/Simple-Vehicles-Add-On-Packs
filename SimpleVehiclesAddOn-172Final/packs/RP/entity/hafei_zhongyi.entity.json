@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hafei_zhongyi",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"white": "textures/entity/hafei_zhongyi",
+				"red": "textures/entity/hafei_zhongyi/hafei_zhongyi_red",
+				"blue": "textures/entity/hafei_zhongyi/hafei_zhongyi_blue"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.hafei_zhongyi"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 46
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.hafei_zhongyi.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.hafei_zhongyi"
+			]
+		}
+	}
+}

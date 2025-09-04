@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ae86",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"classic": "textures/entity/ae86",
+				"doraemon": "textures/entity/ae86/ae86_Doraemon",
+				"white_livery": "textures/entity/ae86/ae86_donut_paint_white_livery",
+				"mushroom_mario": "textures/entity/ae86/ae86_mushroom_from_mario"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.ae86"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 25
+			},
+			"particle_effects": {
+				"smoke_particle_0": "minecraft:large_explosion"
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.ae86.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.ae86"
+			],
+			"particle_emitters": {
+				"smoke_particle_0": "minecraft:large_explosion"
+			}
+		}
+	}
+}

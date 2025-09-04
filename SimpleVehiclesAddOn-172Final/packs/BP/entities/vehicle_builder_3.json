@@ -1,0 +1,75 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:vehicle_builder_3",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 2
+			},
+			"minecraft:collision_box": {
+				"width": 3,
+				"height": 1
+			},
+			"minecraft:physics": {
+				"has_collision": true
+			},
+			"minecraft:type_family": {
+				"family": [
+					"simple_vehicles",
+					"vehicles",
+					"vehicle_builder"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/vehicle_builder3.json"
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 2
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"randomInterval": true,
+				"time": [
+					40,
+					60
+				],
+				"time_down_event": {
+					"event": "simple_vehicles:upsetted",
+					"target": "self"
+				}
+			},
+			"minecraft:economy_trade_table": {
+				"display_name": "trading.simple_vehicles:vehicle_builder.name",
+				"table": "trading/vehicle_builder_2.json",
+				"new_screen": true,
+				"show_trade_screen": true
+			}
+		},
+		"component_groups": {
+			"upsetted": {
+				"minecraft:transformation": {
+					"into": "simple_vehicles:vehicle_builder_3",
+					"delay": 0.5
+				}
+			}
+		},
+		"events": {
+			"simple_vehicles:upsetted": {
+				"add": {
+					"component_groups": [
+						"upsetted"
+					]
+				}
+			}
+		}
+	}
+}

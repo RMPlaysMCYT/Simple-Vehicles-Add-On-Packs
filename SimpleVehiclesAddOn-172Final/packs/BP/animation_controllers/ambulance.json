@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ambulance.honk": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"sirene": "query.is_riding&&query.is_jumping"
+						}
+					]
+				},
+				"sirene": {
+					"transitions": [
+						{
+							"default": "query.is_riding&&!query.is_jumping"
+						}
+					],
+					"on_entry": [
+						"/playsound vehicles.horn"
+					]
+				}
+			}
+		}
+	}
+}

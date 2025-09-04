@@ -1,0 +1,147 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:land_cruiser",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"component_groups": {
+			"simple_vehicles:vehicle": {
+				"minecraft:rideable": {
+					"controlling_seat": 0,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "action.ride.land_cruiser",
+					"pull_in_entities": false,
+					"seat_count": 2,
+					"seats": [
+						{
+							"position": [
+								0.6,
+								0.5,
+								0.2
+							]
+						},
+						{
+							"position": [
+								-0.6,
+								0.5,
+								0.2
+							]
+						}
+					]
+				}
+			},
+			"simple_vehicles:vehicle_activated": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement": {
+					"value": 0.2
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key",
+						"accepted_items": [
+							"simple_vehicles:key"
+						],
+						"on_equip": {
+							"event": "simple_vehicles:activated"
+						},
+						"on_unequip": {
+							"event": "simple_vehicles:deactivated"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"jeep_traditional"
+				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.5
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/land_cruiser.json"
+			},
+			"minecraft:breathable": {
+				"totalSupply": 10,
+				"suffocateTime": 0
+			},
+			"minecraft:is_chested": {},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 120,
+					"range_max": 120
+				}
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse",
+				"private": false
+			},
+			"minecraft:movement": {
+				"value": 0.19
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:walk_animation_speed": {
+				"value": 20
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:nameable": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:vehicle"
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:vehicle_activated"
+					]
+				}
+			},
+			"simple_vehicles:deactivated": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:vehicle_activated"
+					]
+				}
+			}
+		}
+	}
+}

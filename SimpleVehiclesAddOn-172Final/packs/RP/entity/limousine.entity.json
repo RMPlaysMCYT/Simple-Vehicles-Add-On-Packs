@@ -1,0 +1,15 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:limmo",
+            "materials": { "default": "witch" },
+            "textures": { "default": "textures/entity/limmo" },
+            "geometry": { "default": "geometry.simple_vehicles.limmo" },
+            "animations": { "move": "animation.vehicles.move", "turn": "animation.limmo.turn" },
+            "animation_controllers": [{ "move": "controller.animation.vehicles.move" }, { "v_turn": "controller.animation.vehicle.v_turn" }],
+            "render_controllers": [ "controller.render.single_color" ],
+            "spawn_egg": { "texture": "vehicles", "texture_index": 8 }
+        }
+    }
+}

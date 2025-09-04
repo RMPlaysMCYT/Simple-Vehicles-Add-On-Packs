@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.ride_hoverboard": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"riding_hoverboard_idle": "query.is_riding && query.mark_variant == 1"
+						},
+						{
+							"riding_hoverboard_move": "query.is_riding && query.mark_variant == 2"
+						}
+					]
+				},
+				"riding_hoverboard_idle": {
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"riding_hoverboard_0"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_riding"
+						},
+						{
+							"riding_hoverboard_move": "query.ground_speed > 0.0 && query.is_riding"
+						}
+					]
+				},
+				"riding_hoverboard_move": {
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"riding_hoverboard_1"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_riding"
+						},
+						{
+							"riding_hoverboard_idle": "query.ground_speed == 0.0 && query.is_riding"
+						}
+					]
+				}
+			}
+		}
+	}
+}

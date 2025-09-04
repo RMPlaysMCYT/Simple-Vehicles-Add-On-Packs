@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:container_van",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.container_van"
+			},
+			"textures": {
+				"black": "textures/entity/container_van",
+				"white": "textures/entity/container_van/container_van_white",
+				"orange": "textures/entity/container_van/container_van_orange",
+				"magenta": "textures/entity/container_van/container_van_magenta",
+				"light_blue": "textures/entity/container_van/container_van_light_blue",
+				"yellow": "textures/entity/container_van/container_van_yellow",
+				"lime": "textures/entity/container_van/container_van_lime",
+				"pink": "textures/entity/container_van/container_van_pink",
+				"gray": "textures/entity/container_van/container_van_gray",
+				"silver": "textures/entity/container_van/container_van_silver",
+				"cyan": "textures/entity/container_van/container_van_cyan",
+				"purple": "textures/entity/container_van/container_van_purple",
+				"blue": "textures/entity/container_van/container_van_blue",
+				"brown": "textures/entity/container_van/container_van_brown",
+				"green": "textures/entity/container_van/container_van_green",
+				"red": "textures/entity/container_van/container_van_red"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 44
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.container_van.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general"
+				]
+			},
+			"render_controllers": [
+				"controller.render.container_van"
+			]
+		}
+	}
+}

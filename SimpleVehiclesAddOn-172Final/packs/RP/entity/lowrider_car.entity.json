@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:car_lowrider",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/car_lowrider"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.car_lowrider"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 24
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.car_lowrider.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

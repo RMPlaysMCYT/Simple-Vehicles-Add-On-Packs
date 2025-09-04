@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:modern_jeep_ph",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/modern_jeep_ph"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.modern_jeep_ph"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 33
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.jeep_ph.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.apv"
+			]
+		}
+	}
+}

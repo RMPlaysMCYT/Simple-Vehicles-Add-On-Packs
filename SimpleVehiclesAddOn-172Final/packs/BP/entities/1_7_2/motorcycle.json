@@ -1,0 +1,163 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:motorcycle",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"motorcycle_ride": "controller.animation.motorcycle_ride",
+				"horn": "controller.animation.motorcycle.horn"
+			},
+			"scripts": {
+				"animate": [
+					"motorcycle_ride",
+					"horn"
+				]
+			}
+		},
+		"component_groups": {
+			"simple_vehicles:motorcycle": {
+				"minecraft:rideable": {
+					"controlling_seat": 0,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "action.hint.ride.vehicle",
+					"pull_in_entities": false,
+					"rider_can_interact": false,
+					"seat_count": 2,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.75,
+								0
+							]
+						},
+						{
+							"position": [
+								0,
+								0.75,
+								-0.6
+							]
+						}
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement": {
+					"value": 0.3
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:can_power_jump": {},
+				"minecraft:horse.jump_strength": {
+					"value": 0.01
+				}
+			},
+			"simple_vehicles:not_worked_on_water": {
+				"minecraft:movement": {
+					"value": 0.0001
+				}
+			},
+			"simple_vehicles:not_worked_on_ground": {
+				"minecraft:movement": {
+					"value": 0.1
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 0.8
+			},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 100
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.generic": {
+				"is_amphibious": true
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"accepted_items": [
+							"simple_vehicles:key"
+						],
+						"item": "simple_vehicles:key",
+						"on_equip": {
+							"event": "simple_vehicles:activated",
+							"target": "self"
+						},
+						"on_unequip": {
+							"event": "simple_vehicles:deactivated",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.8,
+				"height": 1.5
+			},
+			"minecraft:physics": {},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"generates_bubbles": true,
+				"suffocate_time": 10
+			},
+			"minecraft:is_chested": {},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100
+			},
+			"minecraft:inventory": {
+				"container_type": "horse",
+				"inventory_size": 10
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100
+					}
+				],
+				"force_use": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/motorcycle.json"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:motorcycle"
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:deactivated": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			}
+		}
+	}
+}

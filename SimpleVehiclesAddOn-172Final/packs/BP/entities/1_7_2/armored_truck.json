@@ -1,0 +1,233 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:armored_truck",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"item": "controller.animation.armored_truck.item"
+			},
+			"scripts": {
+				"animate": [
+					"item"
+				]
+			}
+		},
+		"component_groups": {
+			"simple_vehicles:vehicle": {
+				"minecraft:rideable": {
+					"controlling_seat": 0,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "action.hint.ride.grummanllv",
+					"seat_count": 2,
+					"seats": [
+						{
+							"position": [
+								0.6,
+								0.7,
+								1
+							]
+						},
+						{
+							"position": [
+								-0.6,
+								0.7,
+								1
+							]
+						}
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement": {
+					"value": 0.3
+				},
+				"minecraft:can_power_jump": {},
+				"minecraft:horse.jump_strength": {
+					"value": 0.2
+				},
+				"minecraft:is_saddled": {}
+			},
+			"simple_vehicles:destructive_mode": {
+				"minecraft:break_blocks": {
+					"breakable_blocks": [
+						"minecraft:concrete",
+						"minecraft:cobblestone",
+						"minecraft:brick_block",
+						"minecraft:stonebrick",
+						"minecraft:brick_stairs",
+						"minecraft:stone_brick_stairs",
+						"minecraft:iron_block",
+						"minecraft:gold_block",
+						"minecraft:planks",
+						"minecraft:crimson_planks",
+						"minecraft:warped_planks",
+						"minecraft:stone",
+						"minecraft:glass",
+						"minecraft:glass_pane",
+						"minecraft:stained_glass_pane",
+						"minecraft:hard_glass_pane",
+						"minecraft:hard_stained_glass_pane",
+						"minecraft:stained_glass",
+						"minecraft:hard_glass",
+						"minecraft:hard_stained_glass"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 120
+			},
+			"minecraft:type_family": {
+				"family": [
+					"vehicles",
+					"grummanllv"
+				]
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.generic": {},
+			"minecraft:can_climb": {},
+			"minecraft:physics": {
+				"has_collision": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 10
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 20
+					}
+				],
+				"force_use": true
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:inventory": {
+				"inventory_size": 64,
+				"container_type": "horse",
+				"additional_slots_per_strength": 0,
+				"can_be_siphoned_from": true,
+				"restrict_to_owner": false,
+				"private": false
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"accepted_items": [
+							"simple_vehicles:key"
+						],
+						"item": "simple_vehicles:key",
+						"on_equip": {
+							"event": "simple_vehicles:activated",
+							"target": "self"
+						},
+						"on_unequip": {
+							"event": "simple_vehicles:deactivated",
+							"target": "self"
+						},
+						"slot": 0
+					},
+					{
+						"accepted_items": [
+							"simple_vehicles:breakable_item"
+						],
+						"item": "simple_vehicles:breakable_item",
+						"on_equip": {
+							"event": "simple_vehicles:mode_breakable",
+							"target": "self"
+						},
+						"on_unequip": {
+							"event": "simple_vehicles:mode_reset",
+							"target": "self"
+						},
+						"slot": 1
+					}
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/armored_truck.json"
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 2.8,
+						"height": 2.5,
+						"pivot": [
+							0,
+							0,
+							1.5
+						]
+					},
+					{
+						"width": 2.8,
+						"height": 2.5,
+						"pivot": [
+							0,
+							0,
+							-1.5
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:vehicle"
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:deactivated": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:mode_breakable": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:destructive_mode"
+					]
+				}
+			},
+			"simple_vehicles:mode_reset": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:destructive_mode"
+					]
+				}
+			}
+		}
+	}
+}

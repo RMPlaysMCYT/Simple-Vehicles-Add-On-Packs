@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:vehicle_seller3",
+			"materials": {
+				"default": "villager"
+			},
+			"textures": {
+				"default": "textures/entity/vehicle_seller/vehicle_seller3"
+			},
+			"geometry": {
+				"default": "geometry.vehicle_seller"
+			},
+			"scripts": {
+				"scale": 1
+			},
+			"animations": {
+				"general": "animation.vehicle_seller.general",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.vehicle_seller.move"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.vehicle_seller.general"
+				},
+				{
+					"raise_arms": "controller.animation.vehicle_seller_v2.raise_arms"
+				},
+				{
+					"move": "controller.animation.vehicle_seller.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.vehicle_seller3"
+			],
+			"spawn_egg": {
+				"base_color": "#53443E",
+				"overlay_color": "#2E6854"
+			}
+		}
+	}
+}

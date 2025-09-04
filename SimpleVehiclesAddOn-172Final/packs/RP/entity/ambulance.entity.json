@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ambulance",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/ambulance"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.ambulance"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 0
+			},
+			"particle_effects": {
+				"smoke_particle_0": "minecraft:large_explosion"
+			},
+			"particle_emitters": {
+				"smoke_particle_0": "minecraft:large_explosion"
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.ambulance.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.ambulance"
+			]
+		}
+	}
+}

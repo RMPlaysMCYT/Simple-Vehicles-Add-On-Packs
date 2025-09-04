@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bike.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						"-this",
+						"math.max(-15,math.min(30,query.yaw_speed*0.2))*query.modified_move_speed*3",
+						"-this"
+					]
+				}
+			}
+		}
+	}
+}

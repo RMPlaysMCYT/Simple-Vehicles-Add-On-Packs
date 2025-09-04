@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:fire_truck",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/firetruck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.firetruck"
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.firetruck.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.car4x4"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 6
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:minicar_blue",
+      "textures": {
+        "default": "textures/entity/pamobile/simple_vehicles_minicar_blue"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_minicar"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "simple_vehicles:minicar_blue",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.vehicles.walk",
+        "idle": "animation.moto.idle"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "idle": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

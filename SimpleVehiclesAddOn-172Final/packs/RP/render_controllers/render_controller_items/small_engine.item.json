@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.small_engine": {
+			"textures": [
+				"texture.small_engine"
+			],
+			"geometry": "geometry.small_engine",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:corolla_v1",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/corolla"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.corolla"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 17
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"turn": "animation.corolla.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}

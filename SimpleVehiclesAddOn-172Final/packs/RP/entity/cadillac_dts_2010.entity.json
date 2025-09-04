@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:cadillac_dts_2010",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/cadillac_dts_2010"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.cadillac_dts_2010"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 38
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"animations": {
+				"move": "animation.cadillac_dts_2010.move",
+				"turn": "animation.cadillac_dts_2010.turn",
+				"general": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_distance_moved"
+					},
+					"general"
+				]
+			}
+		}
+	}
+}

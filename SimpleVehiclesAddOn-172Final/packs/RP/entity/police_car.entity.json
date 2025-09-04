@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:police_car",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/police_car"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.police_car"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 12
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.police_car.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.bus"
+			]
+		}
+	}
+}

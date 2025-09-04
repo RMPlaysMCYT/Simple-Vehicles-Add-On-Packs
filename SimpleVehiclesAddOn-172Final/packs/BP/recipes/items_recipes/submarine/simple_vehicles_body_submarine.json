@@ -1,0 +1,36 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:vanilla_body_submarine"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BBG",
+			"BSW",
+			"BBG"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane",
+				"data": 0
+			},
+			"S": {
+				"item": "simple_vehicles:seat_submarine"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_submarine"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_submarine"
+			}
+		]
+	}
+}

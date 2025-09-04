@@ -1,0 +1,333 @@
+
+pack.name=Simple Vehicles Addon v1.7.3 Pack 3 [ITEMS and DATA] Resources
+pack.description=Addon by RMPlaysMC YT and this is an REQUIRED PACK for Simple Vehicles Addon It adds more Items and few tweaks such as new behaviors
+
+item.simple_vehicles:wheels=Wheels
+item.simple_vehicles:wrench=Wrench
+item.simple_vehicles:bus_body=Bus Body
+item.simple_vehicles:key=Key
+item.simple_vehicles:car_body=Car Body
+
+item.simple_vehicles:black_spray=Black Spray
+item.simple_vehicles:brown_spray=Brown Spray
+item.simple_vehicles:blue_spray=Blue Spray
+item.simple_vehicles:cyan_spray=Cyan Spray
+item.simple_vehicles:gray_spray=Gray Spray
+item.simple_vehicles:green_spray=Green Spray
+item.simple_vehicles:light_blue_spray=Light Blue Spray
+item.simple_vehicles:lime_spray=Lime Spray
+item.simple_vehicles:magenta_spray=Magenta Spray
+item.simple_vehicles:orange_spray=Orange Spray
+item.simple_vehicles:pink_spray=Pink Spray
+item.simple_vehicles:purple_spray=Purple Spray
+item.simple_vehicles:red_spray=Red Spray
+item.simple_vehicles:silver_spray=Silver Spray
+item.simple_vehicles:white_spray=White Spray
+item.simple_vehicles:yellow_spray=Yellow Spray
+item.simple_vehicles:spray_cap=Spray Cap
+item.simple_vehicles:empty_spray=Empty Spray
+item.simple_vehicles:small_engine=Small Engine
+item.simple_vehicles:large_engine=Large Engine
+item.simple_vehicles:gear=Gear
+
+
+crafting_table.simple_vehicles:vehicle_workbench=Vehicle Workbench
+trading.simple_vehicles:vehicle_builder.name=[Simple Vehicles] Vehicle Builder
+
+item.spawn_egg.entity.simple_vehicles:vehicle_builder.name=[Simple Vehicles] Vehicle Builder
+item.spawn_egg.entity.simple_vehicles:vehicle_builder_2.name=[Simple Vehicles] Vehicle Builder 2
+item.spawn_egg.entity.simple_vehicles:vehicle_builder_3.name=[Simple Vehicles] Vehicle Builder 3
+entity.simple_vehicles:vehicle_builder.name=[Simple Vehicles] Vehicle Builder
+entity.simple_vehicles:vehicle_builder_2.name=[Simple Vehicles] Vehicle Builder 2
+entity.simple_vehicles:vehicle_builder_3.name=[Simple Vehicles] Vehicle Builder 3
+
+tile.simple_vehicles:vehicle_workbench.name=[Simple Vehicles] Vehicle Workbench
+
+item.simple_vehicles:missile=[Simple Vehicles] Missile
+entity.simple_vehicles:missile_projectile.name=[Simple Vehicles] Missile
+item.simple_vehicles:honk_item=[Simple Vehicles] Honk item
+
+item.simple_vehicles:body_grummanllv=[Simple Vehicles] [Body] Grummanllv
+item.simple_vehicles:body_jetmax=[Simple Vehicles] [Body] Jetmax
+item.simple_vehicles:body_land_cruiser=[Simple Vehicles] [Body] Land Cruiser
+item.simple_vehicles:body_motorcycle=[Simple Vehicles] [Body] Motorcycle
+item.simple_vehicles:body_rancher=[Simple Vehicles] [Body] Rancher
+item.simple_vehicles:body_sabre=[Simple Vehicles] [Body] Sabre
+item.simple_vehicles:body_submarine=[Simple Vehicles] [Body] Submarine
+item.simple_vehicles:body_tricycle=[Simple Vehicles] [Body] Tricycle
+item.simple_vehicles:body_armored_truck=[Simple Vehicles] [Body] Armored Truck
+item.simple_vehicles:body_school_bus=[Simple Vehicles] Body School Bus
+
+item.simple_vehicles:steer_grummanllv=[Simple Vehicles] [Steer] Grummanllv
+item.simple_vehicles:steer_jetmax=[Simple Vehicles] [Steer] Jetmax
+item.simple_vehicles:steer_land_cruiser=[Simple Vehicles] [Steer] Land Cruiser
+item.simple_vehicles:steer_motorcycle=[Simple Vehicles] [Steer] Motorcycle
+item.simple_vehicles:steer_rancher=[Simple Vehicles] [Steer] Rancher
+item.simple_vehicles:steer_sabre=[Simple Vehicles] [Steer] Sabre
+item.simple_vehicles:steer_submarine=[Simple Vehicles] [Steer] Submarine
+item.simple_vehicles:steer_tricycle=[Simple Vehicles] [Steer] Tricycle
+item.simple_vehicles:steer_armored_truck=[Simple Vehicles] Steer Armored Truck
+item.simple_vehicles:steer_school_bus=[Simple Vehicles] Steer School Bus
+
+item.simple_vehicles:propeller_submarine=[Simple Vehicles] [Propeller] Submarine
+
+item.simple_vehicles:seat_tricycle=[Simple Vehicles] [Seat] Tricycle
+item.simple_vehicles:seat_jetmax=[Simple Vehicles] [Seat] Jetmax
+item.simple_vehicles:seat_land_cruiser=[Simple Vehicles] [Seat Land] Cruiser
+item.simple_vehicles:seat_motorcycle=[Simple Vehicles] [Seat] Motorcycle
+item.simple_vehicles:seat_rancher=[Simple Vehicles] [Seat] Rancher
+item.simple_vehicles:seat_sabre=[Simple Vehicles] [Seat] Sabre
+item.simple_vehicles:seat_submarine=[Simple Vehicles] [Seat] Submarine
+item.simple_vehicles:seat_grummanllv=[Simple Vehicles] [Seat] Grummanllv
+item.simple_vehicles:seat_armored_truck=[Simple Vehicles] Seat Armored Truck
+item.simple_vehicles:seat_school_bus=[Simple Vehicles] Seat School Bus
+
+item.simple_vehicles:tire_grummanllv=[Simple Vehicles] [Tire] Grummanllv
+item.simple_vehicles:tire_land_cruiser=[Simple Vehicles] [Tire] Land Cruiser
+item.simple_vehicles:tire_motorcycle=[Simple Vehicles] [Tire] Motorcycle
+item.simple_vehicles:tire_rancher=[Simple Vehicles] [Tire] Rancher
+item.simple_vehicles:tire_sabre=[Simple Vehicles] [Tire] Sabre
+item.simple_vehicles:tire_tricycle=[Simple Vehicles] [Tire] Tricycle
+item.simple_vehicles:tire_armored_truck=[Simple Vehicles] Tire Armored Truck
+item.simple_vehicles:tire_school_bus=[Simple Vehicles] Tire School Bus
+
+item.simple_vehicles:body_ae86=[Simple Vehicles] Body Toyota AE86
+item.simple_vehicles:body_ambulance=[Simple Vehicles] Body Ambulance
+item.simple_vehicles:body_auv_car=[Simple Vehicles] Body Auv Car
+item.simple_vehicles:body_bike=[Simple Vehicles] Body Bike
+item.simple_vehicles:body_bus=[Simple Vehicles] Body Bus v1
+item.simple_vehicles:body_busv2=[Simple Vehicles] Body Bus v2
+item.simple_vehicles:body_c_sled=[Simple Vehicles] Body Sleigh
+item.simple_vehicles:body_car=[Simple Vehicles] Body Car
+item.simple_vehicles:body_car4x4=[Simple Vehicles] Body Off-road Truck
+item.simple_vehicles:body_corolla=[Simple Vehicles] Body Corolla
+item.simple_vehicles:body_ev4=[Simple Vehicles] Body Ev4 
+item.simple_vehicles:body_fire_truck=[Simple Vehicles] Body Fire Truck
+item.simple_vehicles:body_helicopter=[Simple Vehicles] Body Helicopter
+item.simple_vehicles:body_hoverboard=[Simple Vehicles] Body Hoverboard
+item.simple_vehicles:body_jeep_ph=[Simple Vehicles] Body Traditional Jeep PH
+item.simple_vehicles:body_limmo=[Simple Vehicles] Body Limousine
+item.simple_vehicles:body_lowrider_car=[Simple Vehicles] Body Lowrider Car
+item.simple_vehicles:body_mini_bus=[Simple Vehicles] Body Auv Car
+item.simple_vehicles:body_modern_jeep_ph=[Simple Vehicles] Body Modern Jeep PH
+item.simple_vehicles:body_motor=[Simple Vehicles] Body Motorbike 
+item.simple_vehicles:body_mustang=[Simple Vehicles] Body Ford Mustang
+item.simple_vehicles:body_ob_van=[Simple Vehicles] Body OB Van
+item.simple_vehicles:body_pajero=[Simple Vehicles] Body Mitsubishi Pajero
+item.simple_vehicles:body_pick_up_truck=[Simple Vehicles] Body Pick-Up Truck
+item.simple_vehicles:body_plane=[Simple Vehicles] Body Plane v1
+item.simple_vehicles:body_police_car=[Simple Vehicles] Body Police Car
+item.simple_vehicles:body_speedboat=[Simple Vehicles] Body Speedboat
+item.simple_vehicles:body_tank=[Simple Vehicles] Body Tank
+item.simple_vehicles:body_tank_bottom=[Simple Vehicles] Body Tank Bottom
+item.simple_vehicles:body_taxi=[Simple Vehicles] Body Taxi
+item.simple_vehicles:body_tesla_truck=[Simple Vehicles] Body Tesla Truck 
+item.simple_vehicles:body_tractor=[Simple Vehicles] Body Tractor
+item.simple_vehicles:body_travis=[Simple Vehicles] Body Isuzu Travis
+item.simple_vehicles:body_trucks=[Simple Vehicles] Body Truck
+item.simple_vehicles:body_van=[Simple Vehicles] Body Van
+item.simple_vehicles:body_volt_bike=[Simple Vehicles] Body Volt Bike
+
+item.simple_vehicles:seat_ae86=[Simple Vehicles] Seat Toyota AE86
+item.simple_vehicles:seat_ambulance=[Simple Vehicles] Seat Ambulance
+item.simple_vehicles:seat_auv_car=[Simple Vehicles] Seat Auv Car
+item.simple_vehicles:seat_bike=[Simple Vehicles] Seat Bike
+item.simple_vehicles:seat_bus=[Simple Vehicles] Seat Bus v1
+item.simple_vehicles:seat_bus_v2=[Simple Vehicles] Seat Bus v2
+item.simple_vehicles:seat_c_sled=[Simple Vehicles] Seat Sleigh
+item.simple_vehicles:seat_car=[Simple Vehicles] Seat Car
+item.simple_vehicles:seat_car_4x4=[Simple Vehicles] Seat Off-road Truck
+item.simple_vehicles:seat_corolla=[Simple Vehicles] Seat Corolla
+item.simple_vehicles:seat_ev_4=[Simple Vehicles] Seat Ev4 
+item.simple_vehicles:seat_fire_truck=[Simple Vehicles] Seat Fire Truck
+item.simple_vehicles:seat_helicopter=[Simple Vehicles] Seat Helicopter
+item.simple_vehicles:seat_hoverboard=[Simple Vehicles] Seat Hoverboard
+item.simple_vehicles:seat_jeep_ph=[Simple Vehicles] Seat Traditional Jeep PH
+item.simple_vehicles:seat_limmo=[Simple Vehicles] Seat Limousine
+item.simple_vehicles:seat_lowrider_car=[Simple Vehicles] Seat Lowrider Car
+item.simple_vehicles:seat_mini_bus=[Simple Vehicles] Seat Auv Car
+item.simple_vehicles:seat_modern_jeep_ph=[Simple Vehicles] Seat Modern Jeep PH
+item.simple_vehicles:seat_motor=[Simple Vehicles] Seat Motorbike 
+item.simple_vehicles:seat_mustang=[Simple Vehicles] Seat Ford Mustang
+item.simple_vehicles:seat_ob_van=[Simple Vehicles] Seat OB Van
+item.simple_vehicles:seat_pajero=[Simple Vehicles] Seat Mitsubishi Pajero
+item.simple_vehicles:seat_pick_up_truck=[Simple Vehicles] Seat Pick-Up Truck
+item.simple_vehicles:seat_plane=[Simple Vehicles] Seat Plane v1
+item.simple_vehicles:seat_police_car=[Simple Vehicles] Seat Police Car
+item.simple_vehicles:seat_speedboat=[Simple Vehicles] Seat Speedboat
+item.simple_vehicles:seat_tank=[Simple Vehicles] Seat Tank
+item.simple_vehicles:seat_taxi=[Simple Vehicles] Seat Taxi
+item.simple_vehicles:seat_tesla_truck=[Simple Vehicles] Seat Tesla Truck 
+item.simple_vehicles:seat_tractor=[Simple Vehicles] Seat Tractor
+item.simple_vehicles:seat_travis=[Simple Vehicles] Seat Isuzu Travis
+item.simple_vehicles:seat_trucks=[Simple Vehicles] Seat Truck
+item.simple_vehicles:seat_van=[Simple Vehicles] Seat Van
+item.simple_vehicles:seat_volt_bike=[Simple Vehicles] Seat Volt Bike
+
+
+item.simple_vehicles:steer_ae86=[Simple Vehicles] Steer Toyota AE86
+item.simple_vehicles:steer_ambulance=[Simple Vehicles] Steer Ambulance
+item.simple_vehicles:steer_auv_car=[Simple Vehicles] Steer Auv Car
+item.simple_vehicles:steer_bike=[Simple Vehicles] Steer Bike
+item.simple_vehicles:steer_bus=[Simple Vehicles] Steer Bus v1
+item.simple_vehicles:steer_bus_v2=[Simple Vehicles] Steer Bus v2
+item.simple_vehicles:steer_c_sled=[Simple Vehicles] Steer Sleigh
+item.simple_vehicles:steer_car=[Simple Vehicles] Steer Car
+item.simple_vehicles:steer_car_4x4=[Simple Vehicles] Steer Off-road Truck
+item.simple_vehicles:steer_corolla=[Simple Vehicles] Steer Corolla
+item.simple_vehicles:steer_ev_4=[Simple Vehicles] Steer Ev4 
+item.simple_vehicles:steer_fire_truck=[Simple Vehicles] Steer Fire Truck
+item.simple_vehicles:steer_helicopter=[Simple Vehicles] Steer Helicopter
+item.simple_vehicles:steer_hoverboard=[Simple Vehicles] Steer Hoverboard
+item.simple_vehicles:steer_jeep_ph=[Simple Vehicles] Steer Traditional Jeep PH
+item.simple_vehicles:steer_limmo=[Simple Vehicles] Steer Limousine
+item.simple_vehicles:steer_lowrider_car=[Simple Vehicles] Steer Lowrider Car
+item.simple_vehicles:steer_mini_bus=[Simple Vehicles] Steer Auv Car
+item.simple_vehicles:steer_modern_jeep_ph=[Simple Vehicles] Steer Modern Jeep PH
+item.simple_vehicles:steer_motor=[Simple Vehicles] Steer Motorbike 
+item.simple_vehicles:steer_mustang=[Simple Vehicles] Steer Ford Mustang
+item.simple_vehicles:steer_ob_van=[Simple Vehicles] Steer OB Van
+item.simple_vehicles:steer_pajero=[Simple Vehicles] Steer Mitsubishi Pajero
+item.simple_vehicles:steer_pick_up_truck=[Simple Vehicles] Steer Pick-Up Truck
+item.simple_vehicles:steer_plane=[Simple Vehicles] Steer Plane v1
+item.simple_vehicles:steer_police_car=[Simple Vehicles] Steer Police Car
+item.simple_vehicles:steer_speedboat=[Simple Vehicles] Steer Speedboat
+item.simple_vehicles:steer_tank=[Simple Vehicles] Steer Tank
+item.simple_vehicles:steer_taxi=[Simple Vehicles] Steer Taxi
+item.simple_vehicles:steer_tesla_truck=[Simple Vehicles] Steer Tesla Truck 
+item.simple_vehicles:steer_tractor=[Simple Vehicles] Steer Tractor
+item.simple_vehicles:steer_travis=[Simple Vehicles] Steer Isuzu Travis
+item.simple_vehicles:steer_trucks=[Simple Vehicles] Steer Truck
+item.simple_vehicles:steer_van=[Simple Vehicles] Steer Van
+item.simple_vehicles:steer_volt_bike=[Simple Vehicles] Steer Volt Bike
+
+item.simple_vehicles:tire_ae86=[Simple Vehicles] Tire Toyota AE86
+item.simple_vehicles:tire_ambulance=[Simple Vehicles] Tire Ambulance
+item.simple_vehicles:tire_auv_car=[Simple Vehicles] Tire Auv Car
+item.simple_vehicles:tire_bike=[Simple Vehicles] Tire Bike
+item.simple_vehicles:tire_bus=[Simple Vehicles] Tire Bus v1
+item.simple_vehicles:tire_bus_v2=[Simple Vehicles] Tire Bus v2
+item.simple_vehicles:tire_c_sled=[Simple Vehicles] Tire Sleigh
+item.simple_vehicles:tire_car=[Simple Vehicles] Tire Car
+item.simple_vehicles:tire_car_4x4=[Simple Vehicles] Tire Off-road Truck
+item.simple_vehicles:tire_corolla=[Simple Vehicles] Tire Corolla
+item.simple_vehicles:tire_ev_4=[Simple Vehicles] Tire Ev4 
+item.simple_vehicles:tire_fire_truck=[Simple Vehicles] Tire Fire Truck
+item.simple_vehicles:tire_helicopter=[Simple Vehicles] Tire Helicopter
+item.simple_vehicles:tire_hoverboard=[Simple Vehicles] Tire Hoverboard
+item.simple_vehicles:tire_jeep_ph=[Simple Vehicles] Tire Traditional Jeep PH
+item.simple_vehicles:tire_limmo=[Simple Vehicles] Tire Limousine
+item.simple_vehicles:tire_lowrider_car=[Simple Vehicles] Tire Lowrider
+item.simple_vehicles:tire_mini_bus=[Simple Vehicles] Tire Auv Car
+item.simple_vehicles:tire_modern_jeep_ph=[Simple Vehicles] Tire Modern Jeep PH
+item.simple_vehicles:tire_motor=[Simple Vehicles] Tire Motorbike 
+item.simple_vehicles:tire_mustang=[Simple Vehicles] Tire Ford Mustang
+item.simple_vehicles:tire_ob_van=[Simple Vehicles] Tire OB Van
+item.simple_vehicles:tire_pajero=[Simple Vehicles] Tire Mitsubishi Pajero
+item.simple_vehicles:tire_pick_up_truck=[Simple Vehicles] Tire Pick-Up Truck
+item.simple_vehicles:tire_plane=[Simple Vehicles] Tire Plane v1
+item.simple_vehicles:tire_police_car=[Simple Vehicles] Tire Police Car
+item.simple_vehicles:tire_speedboat=[Simple Vehicles] Tire Speedboat
+item.simple_vehicles:tire_tank=[Simple Vehicles] Tire Tank
+item.simple_vehicles:tire_taxi=[Simple Vehicles] Tire Taxi
+item.simple_vehicles:tire_tesla_truck=[Simple Vehicles] Tire Tesla Truck 
+item.simple_vehicles:tire_small_tractor=[Simple Vehicles] Tire Tractor
+item.simple_vehicles:tire_large_tractor=[Simple Vehicles] Tire Tractor
+item.simple_vehicles:tire_travis=[Simple Vehicles] Tire Isuzu Travis
+item.simple_vehicles:tire_trucks=[Simple Vehicles] Tire Truck
+item.simple_vehicles:tire_van=[Simple Vehicles] Tire Van
+item.simple_vehicles:tire_volt_bike=[Simple Vehicles] Tire Volt Bike
+
+
+
+
+item.simple_vehicles:body_cadillac_dts_2010=[Simple Vehicles] Body Cadillac DTS 2010
+item.simple_vehicles:body_century_luxury=[Simple Vehicles] Body Century Luxury
+item.simple_vehicles:body_container_van=[Simple Vehicles] Body Container Van
+item.simple_vehicles:body_double_deck_bus=[Simple Vehicles] Body Double Deck Bus
+item.simple_vehicles:body_hafei_zhongyi=[Simple Vehicles] Body Hafei Zhongyi
+item.simple_vehicles:body_honda_accord_2019=[Simple Vehicles] Body Honda Accord 2019
+item.simple_vehicles:body_hyundai_starex_with_casket=[Simple Vehicles] Body Hyundai Starex
+item.simple_vehicles:body_hyundai_starex=[Simple Vehicles] Body Hyundai Starex
+item.simple_vehicles:body_ice_cream=[Simple Vehicles] Body Ice Cream Truck
+item.simple_vehicles:body_opel_astra=[Simple Vehicles] Body Opel Astra
+item.simple_vehicles:body_opel_crosa=[Simple Vehicles] Body Opel Corsa 
+item.simple_vehicles:body_scooter_A=[Simple Vehicles] Body Scooter
+item.simple_vehicles:body_speedboat_two=[Simple Vehicles] Body Speedboat v2
+item.simple_vehicles:body_VAN_V2=[Simple Vehicles] Body Van v2
+item.simple_vehicles:body_VM_Beetle=[Simple Vehicles] Body Volkswagen Beetle
+
+
+
+
+
+item.simple_vehicles:seat_cadillac_dts_2010=[Simple Vehicles] Seat Cadillac DTS 2010
+item.simple_vehicles:seat_century_luxury=[Simple Vehicles] Seat Century Luxury
+item.simple_vehicles:seat_container_van=[Simple Vehicles] Seat Container Van
+item.simple_vehicles:seat_double_deck_bus=[Simple Vehicles] Seat Double Deck Bus
+item.simple_vehicles:seat_hafei_zhongyi=[Simple Vehicles] Seat Hafei Zhongyi
+item.simple_vehicles:seat_honda_accord_2019=[Simple Vehicles] Seat Honda Accord 2019
+item.simple_vehicles:seat_hyundai_starex_with_casket=[Simple Vehicles] Seat Hyundai Starex
+item.simple_vehicles:seat_hyundai_starex=[Simple Vehicles] Seat Hyundai Starex
+item.simple_vehicles:seat_ice_cream=[Simple Vehicles] Seat Ice Cream Truck
+item.simple_vehicles:seat_opel_astra=[Simple Vehicles] Seat Opel Astra
+item.simple_vehicles:seat_opel_crosa=[Simple Vehicles] Seat Opel Corsa 
+item.simple_vehicles:seat_scooter_A=[Simple Vehicles] Seat Scooter
+item.simple_vehicles:seat_speedboat_two=[Simple Vehicles] Seat Speedboat v2
+item.simple_vehicles:seat_VAN_V2=[Simple Vehicles] Seat Van v2
+item.simple_vehicles:seat_VM_Beetle=[Simple Vehicles] Seat Volkswagen Beetle
+
+
+
+
+
+item.simple_vehicles:steer_cadillac_dts_2010=[Simple Vehicles] Steer Cadillac DTS 2010
+item.simple_vehicles:steer_century_luxury=[Simple Vehicles] Steer Century Luxury
+item.simple_vehicles:steer_container_van=[Simple Vehicles] Steer Container Van
+item.simple_vehicles:steer_double_deck_bus=[Simple Vehicles] Steer Double Deck Bus
+item.simple_vehicles:steer_hafei_zhongyi=[Simple Vehicles] Steer Hafei Zhongyi
+item.simple_vehicles:steer_honda_accord_2019=[Simple Vehicles] Steer Honda Accord 2019
+item.simple_vehicles:steer_hyundai_starex_with_casket=[Simple Vehicles] Steer Hyundai Starex
+item.simple_vehicles:steer_hyundai_starex=[Simple Vehicles] Steer Hyundai Starex
+item.simple_vehicles:steer_ice_cream=[Simple Vehicles] Steer Ice Cream Truck
+item.simple_vehicles:steer_opel_astra=[Simple Vehicles] Steer Opel Astra
+item.simple_vehicles:steer_opel_crosa=[Simple Vehicles] Steer Opel Corsa 
+item.simple_vehicles:steer_scooter_A=[Simple Vehicles] Steer Scooter
+item.simple_vehicles:steer_speedboat_two=[Simple Vehicles] Steer Speedboat v2
+item.simple_vehicles:steer_VAN_V2=[Simple Vehicles] Steer Van v2
+item.simple_vehicles:steer_VM_Beetle=[Simple Vehicles] Steer Volkswagen Beetle
+
+
+
+
+
+item.simple_vehicles:tire_cadillac_dts_2010=[Simple Vehicles] Tire Cadillac DTS 2010
+item.simple_vehicles:tire_century_luxury=[Simple Vehicles] Tire Century Luxury
+item.simple_vehicles:tire_container_van=[Simple Vehicles] Tire Container Van
+item.simple_vehicles:tire_double_deck_bus=[Simple Vehicles] Tire Double Deck Bus
+item.simple_vehicles:tire_hafei_zhongyi=[Simple Vehicles] Tire Hafei Zhongyi
+item.simple_vehicles:tire_honda_accord_2019=[Simple Vehicles] Tire Honda Accord 2019
+item.simple_vehicles:tire_hyundai_starex_with_casket=[Simple Vehicles] Tire Hyundai Starex
+item.simple_vehicles:tire_hyundai_starex=[Simple Vehicles] Tire Hyundai Starex
+item.simple_vehicles:tire_ice_cream=[Simple Vehicles] Tire Ice Cream Truck
+item.simple_vehicles:tire_opel_astra=[Simple Vehicles] Tire Opel Astra
+item.simple_vehicles:tire_opel_crosa=[Simple Vehicles] Tire Opel Corsa 
+item.simple_vehicles:tire_scooter_A=[Simple Vehicles] Tire Scooter
+item.simple_vehicles:tire_speedboat_two=[Simple Vehicles] Tire Speedboat v2
+item.simple_vehicles:tire_VAN_V2=[Simple Vehicles] Tire Van v2
+item.simple_vehicles:tire_VM_Beetle=[Simple Vehicles] Tire Volkswagen Beetle
+
+item.simple_vehicles:breakable_item=Breakable item
+item.simple_vehicles:wings_plane=[Simple Vehicles] Wings Plane
+item.simple_vehicles:track_tank=[Simple Vehicles] Tank Tracks
+item.simple_vehicles:landing_skid_c_sled=[Simple Vehicles] Sleigh Landing Skids
+item.simple_vehicles:landing_skid_helicopter=[Simple Vehicles] Helicopter Landing Skids
+entity.simple_vehicles:breakable_item_projectile.name=Breakable item
+item.simple_vehicles:turret:tank=[Simple Vehicles] Turret Tank
+item.simple_vehicles:body_plane_1=[Simple Vehicles] Body Plane
+item.simple_vehicles:seat_speedboat_2=[Simple Vehicles] Seat Speedboat
+item.simple_vehicles:body_lower_double_deck_bus=[Simple Vehicles] Body Lower Double Deck Bus
+item.simple_vehicles:body_upper_double_deck_bus=[Simple Vehicles] Body Upper Double Deck Bus
+action.hint.interact.vehicle_builder=Switch It to Page 2??
+action.hint.interact.vehicle_builde2=Switch It to Page 3??
+action.hint.interact.vehicle_builde1=Switch It to Page 1??

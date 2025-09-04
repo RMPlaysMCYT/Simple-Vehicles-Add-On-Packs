@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.submarine.dive": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"diving": "1"
+						}
+					],
+					"on_entry": [
+						"/function diving_system/submarine"
+					]
+				},
+				"diving": {
+					"transitions": [
+						{
+							"default": "query.is_in_water&&query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function diving_system/submarine"
+					]
+				}
+			}
+		},
+		"controller.animation.submarine.down": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"diving": "1"
+						}
+					]
+				},
+				"diving": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						}
+					]
+				}
+			}
+		}
+	}
+}

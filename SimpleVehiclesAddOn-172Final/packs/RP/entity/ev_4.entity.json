@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ev_4",
+			"materials": {
+				"default": "aspire"
+			},
+			"textures": {
+				"default": "textures/entity/ev_4"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.ev_4"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 31
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"turn": "animation.ev_4.turn"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			]
+		}
+	}
+}
