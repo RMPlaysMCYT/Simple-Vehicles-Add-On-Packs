@@ -331,3 +331,6 @@ item.simple_vehicles:body_upper_double_deck_bus=[Simple Vehicles] Body Upper Dou
 action.hint.interact.vehicle_builder=Switch It to Page 2??
 action.hint.interact.vehicle_builde2=Switch It to Page 3??
 action.hint.interact.vehicle_builde1=Switch It to Page 1??
+
+
+crafting_table.name.vehicle_workbench=Vehicle Workbench

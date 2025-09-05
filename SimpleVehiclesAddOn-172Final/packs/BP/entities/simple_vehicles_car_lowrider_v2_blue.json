@@ -141,9 +141,6 @@
 				"height": 2.5,
 				"width": 2
 			},
-			"minecraft:fall_damage": {
-				"value": 1
-			},
 			"minecraft:horse.jump_strength": {
 				"value": 0.35
 			},

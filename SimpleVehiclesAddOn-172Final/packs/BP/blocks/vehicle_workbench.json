@@ -11,8 +11,21 @@
         },
         "components": {
 			"minecraft:geometry":{
-				"identifier": ""
-			}
+				"identifier": "geometry.vehicle_workbench"
+			},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "vehicle_workbench",
+                    "render_method": "alpha_test",
+                    "isotropic": false
+                }
+            },
+            "minecraft:crafting_table": {
+                "crafting_tags": [
+                    "vehicle_workbench"
+                ],
+                "table_name": "crafting_table.name.vehicle_workbench"
+            }
 		} 
     }
 }
