@@ -1,36 +1,17 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "simple_vehicles:jump2_item",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:stacked_by_data": true,
-			"minecraft:hand_equipped": true,
-			"minecraft:max_stack_size": 1,
-			"minecraft:icon": {
-				"texture": "jump1_item"
-			},
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "simple_vehicles:jump1"
-				}
-			}
-		},
-		"events": {
-			"simple_vehicles:jump1": {
-				"run_command": {
-					"command": [
-						"playanimation @e[type=simple_vehicles:lowrider_v2_black,c=1,r=1] animation.car_lowrider_v2.jump2 f 10",
-						"playanimation @e[type=simple_vehicles:lowrider_v2_white,c=1,r=1] animation.car_lowrider_v2.jump2 f 10",
-						"playanimation @e[type=simple_vehicles:lowrider_v2_red,c=1,r=1] animation.car_lowrider_v2.jump2 f 10",
-						"playanimation @e[type=simple_vehicles:lowrider_v2_green,c=1,r=1] animation.car_lowrider_v2.jump2 f 10",
-						"playanimation @e[type=simple_vehicles:lowrider_v2_blue,c=1,r=1] animation.car_lowrider_v2.jump2 f 10",
-						"playanimation @p[r=1] animation.player.riding.lowrider2  controller.animation.player.base 10"
-					]
-				}
-			}
-		}
-	}
+    "format_version": "1.21.50",
+    "minecraft:item": {
+        "description": {
+            "identifier": "simple_vehicles:jump2_item",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:allow_off_hand": false,
+            "minecraft:stacked_by_data": false,
+            "minecraft:max_stack_size": 16,
+            "minecraft:icon": "jump1_item"
+        }
+    }
 }
