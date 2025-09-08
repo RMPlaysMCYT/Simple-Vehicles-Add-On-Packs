@@ -1,2 +1,1 @@
-import {world, server} from '@minecraft/server';
-
+import { itemDataBase } from "./itemInteraction/item_db";
