@@ -11,8 +11,8 @@
         ],
         "min_engine_version": [
             1,
-            16,
-            100
+            21,
+            10
         ]
     },
     "modules": [
@@ -40,7 +40,7 @@
         "authors": [
             "RMPlaysMC YT"
         ],
-        "license": "All rights reserved",
+        "license": "GNU General Public License v3",
         "generated_with": {
             "bridge": [
                 "2.1.1",

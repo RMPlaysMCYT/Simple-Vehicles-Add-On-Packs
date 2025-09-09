@@ -6,7 +6,7 @@
 				"default": {
 					"transitions": [
 						{
-							"riding": "1"
+							"riding": "!query.has_rider"
 						}
 					],
 					"on_entry": [
