@@ -1,0 +1,1 @@
+execute as @e[r=2,type=simple_vehicles:helicopter] at @s positioned ~ ~ ~ run effect @s slowness 2 5 true

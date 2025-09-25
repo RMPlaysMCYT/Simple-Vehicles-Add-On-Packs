@@ -1,3 +1,4 @@
 
 diagnostic.disable.resourcepack.model.bone.missing=true
 diagnostic.disable.1=true
+diagnostic.disable.behaviorpack.trading.missing=true

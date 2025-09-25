@@ -1,0 +1,16 @@
+give @s simple_vehicles:black_spray
+give @s simple_vehicles:blue_spray
+give @s simple_vehicles:brown_spray
+give @s simple_vehicles:cyan_spray
+give @s simple_vehicles:gray_spray
+give @s simple_vehicles:green_spray
+give @s simple_vehicles:light_blue_spray
+give @s simple_vehicles:lime_spray
+give @s simple_vehicles:magenta_spray
+give @s simple_vehicles:orange_spray
+give @s simple_vehicles:pink_spray
+give @s simple_vehicles:purple_spray
+give @s simple_vehicles:red_spray
+give @s simple_vehicles:silver_spray
+give @s simple_vehicles:white_spray
+give @s simple_vehicles:yellow_spray

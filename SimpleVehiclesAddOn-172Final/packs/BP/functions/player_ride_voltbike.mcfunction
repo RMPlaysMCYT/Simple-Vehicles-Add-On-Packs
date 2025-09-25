@@ -1,1 +1,2 @@
 playanimation @p[r=1] animation.player.volt_bike.ride controller.animation.player.base 0 "!query.is_riding"
+playanimation @p[r=1] animation.player.volt_bike.ride controller.animation.player.base 0 "!query.is_riding"

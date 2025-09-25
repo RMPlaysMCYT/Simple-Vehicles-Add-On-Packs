@@ -1,0 +1,1 @@
+playsound vehicles.sirene @a[r=12]
