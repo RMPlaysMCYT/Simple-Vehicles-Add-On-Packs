@@ -10,7 +10,7 @@
 				"default": "textures/entity/hyundai_starex/hyundai_starex_white_casket"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.hyundai_starex"
+				"default": "geometry.hyundai_starex"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

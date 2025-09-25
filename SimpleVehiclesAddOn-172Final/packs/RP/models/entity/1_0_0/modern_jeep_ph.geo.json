@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.simple_vehicles.modern_jeep_ph",
+				"identifier": "geometry.modern_jeep_ph",
 				"texture_width": 1024,
 				"texture_height": 1024,
 				"visible_bounds_width": 9,

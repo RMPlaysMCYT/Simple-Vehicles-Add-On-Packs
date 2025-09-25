@@ -7,7 +7,7 @@
 				"default": "aspire"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.VW_Beetle"
+				"default": "geometry.VW_Beetle"
 			},
 			"textures": {
 				"black": "textures/entity/VW_Beetle",

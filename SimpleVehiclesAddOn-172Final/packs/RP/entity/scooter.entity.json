@@ -25,7 +25,7 @@
 				"red": "textures/entity/scooter/scooter_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.scooter"
+				"default": "geometry.scooter"
 			},
 			"animations": {
 				"move": "animation.car_v2.move",

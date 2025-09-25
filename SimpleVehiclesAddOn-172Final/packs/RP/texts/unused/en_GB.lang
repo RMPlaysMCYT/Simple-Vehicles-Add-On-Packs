@@ -1,9 +1,8 @@
 accessibility.disableTTS=Text To Speech disabled
 accessibility.enableTTS=Text To Speech enabled
-
 entity.aspire:car.name=Car 
 entity.aspire:corolla.name=Toyota Corolla 
-entity.aspire:taxi.name=Taxi 
+entity.aspire:taxi.name=Taxi
 entity.aspire:ambulance.name=Ambulance
 entity.aspire:apv.name=AUV Car
 entity.aspire:bus.name=Bus
@@ -19,7 +18,6 @@ entity.aspire:helicopter.name=Helicopter
 entity.aspire:ford_mustang.name=Ford Mustang[Red]
 entity.aspire:motor_bike.name=MotorBike
 entity.aspire:limmo.name=Limousine
-entity.aspire:taxi.name=Taxi
 entity.aspire:pajero.name=Mitsubishi Pajero
 entity.aspire:c_sled.name=Christmas Sled
 entity.aspire:tesla_truck.name=Tesla Truck
@@ -51,8 +49,6 @@ entity.aspire:speedboat_two.name=Speedboat B
 entity.aspire:century.name=Century Luxury Car
 entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
 entity.aspire:container_van.name=Container Van
-
-
 item.spawn_egg.entity.aspire:ford_mustang.name=Ford Mustang
 item.spawn_egg.entity.aspire:corolla.name=Toyota Corolla 
 item.spawn_egg.entity.aspire:bus_2.name=Shuttle Bus
@@ -101,7 +97,6 @@ item.spawn_egg.entity.aspire:speedboat_two.name=Speedboat B
 item.spawn_egg.entity.aspire:century.name=Century Luxury Car
 item.spawn_egg.entity.aspire:container_van.name=Container Van
 item.spawn_egg.entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
-
 action.hint.exit.unknown=Use saddle to drive and jump to exit
 action.hint.exit.aspire:pajero=Use saddle to drive and jump to exit
 action.hint.exit.aspire:truck=Use saddle to drive and jump to exit
@@ -118,7 +113,6 @@ action.hint.exit.aspire:corolla=Use saddle to drive and jump to exit
 action.hint.exit.aspire:fire_truck=Use saddle to drive and jump to exit
 action.hint.exit.aspire:helicopter=Use saddle to drive and jump to exit
 action.hint.exit.aspire:speedboat=Just jump to exit
-action.hint.exit.aspire:truck=Use saddle to drive and jump to exit
 action.hint.exit.aspire:apv=Use saddle to drive and jump to exit
 action.hint.exit.aspire:c_sled=Use saddle to drive and jump to exit
 action.hint.exit.aspire:tesla_truck=Use saddle to drive and jump to exit
@@ -149,10 +143,8 @@ action.hint.exit.aspire:speedboat_two=Use saddle to drive and jump to exit
 action.hint.exit.aspire:hafei_zhongyi=Use saddle to drive and jump to exit
 action.hint.exit.aspire:container_van=Use saddle to drive and jump to exit
 action.hint.exit.aspire:century=Use saddle to drive and jump to exit
-
 item.rmplaysmcyt:wheels=Wheels
 item.rmplaysmcyt:wrench=Wrench
-
 item.rmplaysmcyt:black_spray=Black Spray
 item.rmplaysmcyt:brown_spray=Brown Spray
 item.rmplaysmcyt:blue_spray=Blue Spray

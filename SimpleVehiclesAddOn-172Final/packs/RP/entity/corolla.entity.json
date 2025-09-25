@@ -25,7 +25,7 @@
 				"red": "textures/entity/corolla/corolla_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.corolla"
+				"default": "geometry.corolla"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

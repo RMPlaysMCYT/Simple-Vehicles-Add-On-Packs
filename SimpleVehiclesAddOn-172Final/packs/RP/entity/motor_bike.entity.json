@@ -25,7 +25,7 @@
 				"red": "textures/entity/motor/motor_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.motor"
+				"default": "geometry.motor"
 			},
 			"animations": {
 				"move": "animation.vehicles.move"

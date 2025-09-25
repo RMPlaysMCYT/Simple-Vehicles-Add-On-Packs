@@ -25,7 +25,7 @@
 				"red": "textures/entity/double_deck_bus/double_deck_bus_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.double_deck_bus"
+				"default": "geometry.double_deck_bus"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

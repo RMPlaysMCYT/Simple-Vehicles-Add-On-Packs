@@ -10,17 +10,11 @@
 				"default": "textures/entity/ambulance"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.ambulance"
+				"default": "geometry.ambulance"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",
 				"texture_index": 0
-			},
-			"particle_effects": {
-				"smoke_particle_0": "minecraft:large_explosion"
-			},
-			"particle_emitters": {
-				"smoke_particle_0": "minecraft:large_explosion"
 			},
 			"animations": {
 				"move": "animation.ambulance.move",

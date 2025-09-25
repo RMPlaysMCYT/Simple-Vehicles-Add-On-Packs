@@ -10,7 +10,7 @@
                 "default": "textures/entity/sim_veh_items/wrench"
             },
             "geometry": {
-                "default": "geometry.simple_vehicles.wrench"
+                "default": "geometry.wrench"
             },
             "render_controllers": [
                 "controller.render.default"

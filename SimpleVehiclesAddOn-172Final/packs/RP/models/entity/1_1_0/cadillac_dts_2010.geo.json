@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.simple_vehicles.cadillac_dts_2010",
+				"identifier": "geometry.cadillac_dts_2010",
 				"texture_width": 512,
 				"texture_height": 512,
 				"visible_bounds_width": 7,

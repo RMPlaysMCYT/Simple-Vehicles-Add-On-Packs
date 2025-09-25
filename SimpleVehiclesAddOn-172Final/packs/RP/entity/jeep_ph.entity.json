@@ -10,7 +10,7 @@
 				"default": "textures/entity/jeep_ph"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.jeep_ph"
+				"default": "geometry.jeep_ph"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

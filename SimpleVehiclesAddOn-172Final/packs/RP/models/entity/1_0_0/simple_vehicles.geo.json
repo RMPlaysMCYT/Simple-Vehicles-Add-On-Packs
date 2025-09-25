@@ -1,5 +1,5 @@
 {
-	"geometry.simple_vehicles.taxi_1.10": {
+	"geometry.taxi_1.10": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 6,
@@ -224,7 +224,7 @@
 			}
 		]
 	},
-	"geometry.simple_vehicles.estrada": {
+	"geometry.estrada": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 10,
@@ -334,7 +334,7 @@
 			}
 		]
 	},
-	"geometry.simple_vehicles.speedboat": {
+	"geometry.speedboat": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 7,
@@ -433,7 +433,7 @@
 			}
 		]
 	},
-	"geometry.simple_vehicles.flying_chair": {
+	"geometry.flying_chair": {
 		"texturewidth": 256,
 		"textureheight": 256,
 		"visible_bounds_width": 4,
@@ -566,7 +566,7 @@
 			}
 		]
 	},
-	"geometry.simple_vehicles.mail_truck": {
+	"geometry.mail_truck": {
 		"texturewidth": 1024,
 		"textureheight": 1024,
 		"visible_bounds_width": 12,
@@ -737,11 +737,11 @@
 			}
 		]
 	},
-	"geometry.simple_vehicles.dmax": {
+	"geometry.dmax": {
 		"texturewidth": 256,
 		"textureheight": 128
 	},
-	"geometry.simple_vehicles.mini_plane": {
+	"geometry.mini_plane": {
 		"texturewidth": 512,
 		"textureheight": 512,
 		"visible_bounds_width": 9,

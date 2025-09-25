@@ -10,7 +10,7 @@
 				"default": "textures/entity/tank"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.tank"
+				"default": "geometry.tank"
 			},
 			"render_controllers": [
 				"controller.render.ambulance"

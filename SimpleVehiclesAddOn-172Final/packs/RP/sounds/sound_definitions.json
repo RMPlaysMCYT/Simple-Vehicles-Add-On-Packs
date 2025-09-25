@@ -1,1 +1,211 @@
-{}
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "vehicles.pick_up_truck.run": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/vehicles/pick_up_truck/move0",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.bus.move": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/vehicles/bus/move0"
+      ]
+    },
+    "vehicles.motor.move": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/vehicles/motorcycle/move0",
+        "sounds/vehicles/motorcycle/move1",
+        "sounds/vehicles/motorcycle/move2"
+      ]
+    },
+    "vehicles.motor.saddled": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/vehicles/motorcycle/activated"
+      ]
+    },
+    "vehicles.drive": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/illegal.logging",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/illegal.eating",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/carhit1",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/carhit2",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/carhit3",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/carhit4",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.helicopter": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/vehicles/helicopter/heli0",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/vehicles/helicopter/heli1",
+          "load_on_low_memory": true,
+          "volume": 1
+        }
+      ]
+    },
+    "vehicles.saddled": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/mightybond",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/mightybond",
+          "volume": 2,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.horn": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/leveledupfart",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.hit": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/carhit1",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/carhit2",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.sirene": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/grannyshoutedme",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "motor.drive": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/poopcannon",
+          "volume": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/data/meltedsaliva",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "vehicles.police_car": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/data/fbiopenup",
+          "volume": 1,
+          "load_on_low_memory": true
+        }
+      ]
+    },
+    "mob.vehicle_seller.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/death"
+      ]
+    },
+    "mob.vehicle_seller.haggle": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/haggle1",
+        "sounds/mob/vehicle_seller/haggle2",
+        "sounds/mob/vehicle_seller/haggle3"
+      ]
+    },
+    "mob.vehicle_seller.hit": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/hit1",
+        "sounds/mob/vehicle_seller/hit2",
+        "sounds/mob/vehicle_seller/hit3",
+        "sounds/mob/vehicle_seller/hit4"
+      ]
+    },
+    "mob.vehicle_seller.idle": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/idle1",
+        "sounds/mob/vehicle_seller/idle2",
+        "sounds/mob/vehicle_seller/idle3"
+      ]
+    },
+    "mob.vehicle_seller.no": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/no1"
+      ]
+    },
+    "mob.vehicle_seller.yes": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/vehicle_seller/yes1",
+        "sounds/mob/vehicle_seller/yes2",
+        "sounds/mob/vehicle_seller/yes3"
+      ]
+    },
+    "vehicles.ambulance.move": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/vehicles/ambulance/move"
+      ]
+    }
+  }
+}

@@ -12,7 +12,7 @@
 				"purple": "textures/entity/ice_cream_truck/ice_cream_truck_purple"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.ice_cream_truck"
+				"default": "geometry.ice_cream_truck"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

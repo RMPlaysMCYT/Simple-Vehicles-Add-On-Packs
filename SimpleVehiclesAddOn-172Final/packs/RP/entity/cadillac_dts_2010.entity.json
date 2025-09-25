@@ -10,7 +10,7 @@
 				"default": "textures/entity/cadillac_dts_2010"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.cadillac_dts_2010"
+				"default": "geometry.cadillac_dts_2010"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

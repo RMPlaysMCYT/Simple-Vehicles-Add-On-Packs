@@ -25,7 +25,7 @@
 				"red": "textures/entity/bike_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.bike"
+				"default": "geometry.bike"
 			},
 			"animations": {
 				"move": "animation.vehicles.move",

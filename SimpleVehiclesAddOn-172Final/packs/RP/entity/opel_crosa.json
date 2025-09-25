@@ -10,7 +10,7 @@
 				"default": "textures/entity/opel_corsa"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.opel_corsa"
+				"default": "geometry.opel_corsa"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

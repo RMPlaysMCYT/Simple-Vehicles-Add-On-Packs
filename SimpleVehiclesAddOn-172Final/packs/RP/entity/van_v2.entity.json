@@ -22,7 +22,7 @@
                 "green": "textures/entity/van_v2/van_v2_green",
                 "red": "textures/entity/van_v2/van_red"
             },
-            "geometry": { "default": "geometry.simple_vehicles.van_v2" },
+            "geometry": { "default": "geometry.van_v2" },
             "spawn_egg": { "texture": "vehicles", "texture_index": 47 },
             "animations": { "move": "animation.car_v2.move", "turn": "animation.van_v2.turn", "general": "controller.animation.vehicle.v_turn" },
             "scripts": { "animate": [{ "move": "query.modified_move_speed" }, "general" ]},

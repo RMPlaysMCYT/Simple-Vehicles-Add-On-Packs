@@ -10,7 +10,7 @@
 				"default": "textures/entity/century_luxury"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.century_luxury"
+				"default": "geometry.century_luxury"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

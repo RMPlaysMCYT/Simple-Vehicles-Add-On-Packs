@@ -25,7 +25,7 @@
 				"red": "textures/entity/truck/truck_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.truck"
+				"default": "geometry.truck"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

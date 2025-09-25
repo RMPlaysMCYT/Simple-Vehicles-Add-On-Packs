@@ -10,7 +10,7 @@
 				"default": "textures/entity/pick_up_truck"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.pick_up_truck"
+				"default": "geometry.pick_up_truck"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.simple_vehicles.opel_astra",
+				"identifier": "geometry.opel_astra",
 				"texture_width": 512,
 				"texture_height": 512,
 				"visible_bounds_width": 8,

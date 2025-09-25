@@ -25,7 +25,7 @@
 				"red": "textures/entity/hoverboard/hoverboard_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.hoverboard"
+				"default": "geometry.hoverboard"
 			},
 			"animations": {
 				"move": "animation.hoverboard.move",

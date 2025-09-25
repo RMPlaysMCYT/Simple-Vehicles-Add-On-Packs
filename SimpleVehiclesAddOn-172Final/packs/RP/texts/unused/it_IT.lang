@@ -1,6 +1,5 @@
 accessibility.disableTTS=Text To Speech disabilitato
 accessibility.enableTTS=Text To Speech abilitato
-
 entity.aspire:car.name=Macchina
 entity.aspire:corolla.name=Toyota Corolla
 entity.aspire:taxi.name=Taxi
@@ -9,7 +8,7 @@ entity.aspire:apv.name=Auto AUV
 entity.aspire:bus.name=Autobus
 entity.aspire:bus_2.name=Bus navetta
 entity.aspire:truck.name=Camion
-entity.aspire:ref_truck.name=Camion più fresco
+entity.aspire:ref_truck.name=Camion piÃ¹ fresco
 entity.aspire:mini_bus.name=Mini Bus
 entity.aspire:car4x4_1.name=Fuoristrada
 entity.aspire:police_car.name=Auto della polizia
@@ -19,7 +18,6 @@ entity.aspire:helicopter.name=Elicottero
 entity.aspire:ford_mustang.name=Ford Mustang [rossa]
 entity.aspire:motor_bike.name=MotorBike
 entity.aspire:limmo.name=Limousine
-entity.aspire:taxi.name=Taxi
 entity.aspire:pajero.name=Mitsubishi Pajero
 entity.aspire:c_sled.name=Slitta di Natale
 entity.aspire:tesla_truck.name=Tesla Truck
@@ -51,8 +49,6 @@ entity.aspire:speedboat_two.name=Motoscafo B
 entity.aspire:century.name=Century Luxury Car
 entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
 entity.aspire:container_van.name=Container Van
-
-
 item.spawn_egg.entity.aspire:ford_mustang.name=Ford Mustang
 item.spawn_egg.entity.aspire:corolla.name=Toyota Corolla
 item.spawn_egg.entity.aspire:bus_2.name=Bus navetta
@@ -101,7 +97,6 @@ item.spawn_egg.entity.aspire:speedboat_two.name=Motoscafo B
 item.spawn_egg.entity.aspire:century.name=Century Luxury Car
 item.spawn_egg.entity.aspire:container_van.name=Container Van
 item.spawn_egg.entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
-
 action.hint.exit.unknown=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:pajero=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:truck=Usa la sella per guidare e salta per uscire
@@ -118,7 +113,6 @@ action.hint.exit.aspire:corolla=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:fire_truck=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:helicopter=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:speedboat=Basta saltare per uscire
-action.hint.exit.aspire:truck=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:apv=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:c_sled=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:tesla_truck=Usa la sella per guidare e salta per uscire
@@ -149,10 +143,8 @@ action.hint.exit.aspire:speedboat_two=Usa la sella per guidare e salta per uscir
 action.hint.exit.aspire:hafei_zhongyi=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:container_van=Usa la sella per guidare e salta per uscire
 action.hint.exit.aspire:century=Usa la sella per guidare e salta per uscire
-
 item.rmplaysmcyt:wheels=Ruote
 item.rmplaysmcyt:wrench=Chiave inglese
-
 item.rmplaysmcyt:black_spray=Spray nero
 item.rmplaysmcyt:brown_spray=Spray marrone
 item.rmplaysmcyt:blue_spray=Spray blu

@@ -10,7 +10,7 @@
 				"default": "textures/entity/van"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.van"
+				"default": "geometry.van"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

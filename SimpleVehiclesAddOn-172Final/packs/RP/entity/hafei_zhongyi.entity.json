@@ -12,7 +12,7 @@
 				"blue": "textures/entity/hafei_zhongyi/hafei_zhongyi_blue"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.hafei_zhongyi"
+				"default": "geometry.hafei_zhongyi"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

@@ -25,7 +25,7 @@
 				"red": "textures/entity/helicopter/helicopter_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.helicopter"
+				"default": "geometry.helicopter"
 			},
 			"animations": {
 				"loop": "animation.helicopter.loop"

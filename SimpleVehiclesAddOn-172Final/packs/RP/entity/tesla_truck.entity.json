@@ -10,7 +10,7 @@
 				"default": "textures/entity/tesla_truck"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.tesla_truck"
+				"default": "geometry.tesla_truck"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

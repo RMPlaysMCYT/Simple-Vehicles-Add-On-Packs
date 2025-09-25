@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.simple_vehicles.opel_corsa",
+				"identifier": "geometry.opel_corsa",
 				"texture_width": 304,
 				"texture_height": 304,
 				"visible_bounds_width": 7,

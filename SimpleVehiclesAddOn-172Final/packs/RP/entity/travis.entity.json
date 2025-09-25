@@ -10,7 +10,7 @@
 				"default": "textures/entity/travis"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.travis"
+				"default": "geometry.travis"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

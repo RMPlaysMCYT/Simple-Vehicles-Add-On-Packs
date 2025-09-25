@@ -10,7 +10,7 @@
 				"default": "textures/entity/mini_bus"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.mini_bus"
+				"default": "geometry.mini_bus"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

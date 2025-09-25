@@ -7,7 +7,7 @@
 				"default": "entity_alphatest"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.container_van"
+				"default": "geometry.container_van"
 			},
 			"textures": {
 				"black": "textures/entity/container_van",

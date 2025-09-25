@@ -10,7 +10,7 @@
                 "default": "textures/entity/sim_veh_items/key"
             },
             "geometry": {
-                "default": "geometry.simple_vehicles.key"
+                "default": "geometry.key"
             },
             "render_controllers": [
                 "controller.render.default"

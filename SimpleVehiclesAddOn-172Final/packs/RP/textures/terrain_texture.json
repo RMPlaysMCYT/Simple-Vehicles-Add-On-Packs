@@ -1,14 +1,13 @@
-//bridge-file-version: #0
 {
-	"resource_pack_name": "simple_vehicles_pack_3",
-	"texture_name": "atlas.terrain",
-	"padding": 8,
-	"num_mip_levels": 4,
-	"texture_data": {
-		"vehicle_workbench": {
-			"textures": [
-				"textures/blocks/vehicle_workbench"
-			]
-		}
-	}
+  "resource_pack_name": "simple_vehicles_pack_3",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "vehicle_workbench": {
+      "textures": [
+        "textures/blocks/vehicle_workbench"
+      ]
+    }
+  }
 }

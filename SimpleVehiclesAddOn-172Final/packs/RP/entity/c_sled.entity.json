@@ -10,7 +10,7 @@
 				"default": "textures/entity/c_sled"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.c_sled"
+				"default": "geometry.c_sled"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

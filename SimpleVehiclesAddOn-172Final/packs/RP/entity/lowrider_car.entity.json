@@ -10,7 +10,7 @@
 				"default": "textures/entity/car_lowrider"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.car_lowrider"
+				"default": "geometry.car_lowrider"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

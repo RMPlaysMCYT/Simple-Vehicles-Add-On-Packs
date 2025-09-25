@@ -1,6 +1,5 @@
 accessibility.disableTTS=Tekst-naar-spraak uitgeschakeld
 accessibility.enableTTS=Tekst-naar-spraak ingeschakeld
-
 entity.aspire:car.name=Auto
 entity.aspire:corolla.name=Toyota Corolla
 entity.aspire:taxi.name=Taxi
@@ -19,7 +18,6 @@ entity.aspire:helicopter.name=Helikopter
 entity.aspire:ford_mustang.name=Ford Mustang [Rood]
 entity.aspire:motor_bike.name=Motorbike
 entity.aspire:limmo.name=Limousine
-entity.aspire:taxi.name=Taxi
 entity.aspire:pajero.name=Mitsubishi Pajero
 entity.aspire:c_sled.name=Kerst slee
 entity.aspire:tesla_truck.name=Tesla Truck
@@ -51,8 +49,6 @@ entity.aspire:speedboat_two.name=Speedboot B
 entity.aspire:century.name=Eeuwse luxeauto
 entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
 entity.aspire:container_van.name=Container Van
-
-
 item.spawn_egg.entity.aspire:ford_mustang.name=Ford Mustang
 item.spawn_egg.entity.aspire:corolla.name=Toyota Corolla
 item.spawn_egg.entity.aspire:bus_2.name=Pendelbus
@@ -101,7 +97,6 @@ item.spawn_egg.entity.aspire:speedboat_two.name=Speedboot B
 item.spawn_egg.entity.aspire:century.name=Eeuwse luxeauto
 item.spawn_egg.entity.aspire:container_van.name=Container Van
 item.spawn_egg.entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
-
 action.hint.exit.unknown=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:pajero=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:truck=Gebruik het zadel om te rijden en spring om af te sluiten
@@ -118,7 +113,6 @@ action.hint.exit.aspire:corolla=Gebruik het zadel om te rijden en spring om af t
 action.hint.exit.aspire:fire_truck=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:helicopter=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:speedboat=Spring gewoon om af te sluiten
-action.hint.exit.aspire:truck=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:apv=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:c_sled=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:tesla_truck=Gebruik het zadel om te rijden en spring om af te sluiten
@@ -149,10 +143,8 @@ action.hint.exit.aspire:speedboat_two=Gebruik het zadel om te rijden en spring o
 action.hint.exit.aspire:hafei_zhongyi=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:container_van=Gebruik het zadel om te rijden en spring om af te sluiten
 action.hint.exit.aspire:century=Gebruik het zadel om te rijden en spring om af te sluiten
-
 item.rmplaysmcyt:wheels=Wielen
 item.rmplaysmcyt:wrench=Moersleutel
-
 item.rmplaysmcyt:black_spray=Zwarte spray
 item.rmplaysmcyt:brown_spray=Bruine Spray
 item.rmplaysmcyt:blue_spray=Blauwe Spray

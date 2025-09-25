@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.simple_vehicles.car_new",
+				"identifier": "geometry.car_new",
 				"texture_width": 512,
 				"texture_height": 256,
 				"visible_bounds_width": 11,

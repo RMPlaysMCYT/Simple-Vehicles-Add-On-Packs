@@ -10,7 +10,7 @@
 				"default": "textures/entity/auv_car"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.auv_car"
+				"default": "geometry.auv_car"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

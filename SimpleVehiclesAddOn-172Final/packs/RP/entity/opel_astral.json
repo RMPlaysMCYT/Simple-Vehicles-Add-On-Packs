@@ -10,7 +10,7 @@
 				"default": "textures/entity/opel_astra"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.opel_astra"
+				"default": "geometry.opel_astra"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

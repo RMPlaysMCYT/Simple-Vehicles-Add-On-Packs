@@ -10,7 +10,7 @@
 				"default": "textures/entity/speedboat"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.speedboat_1.14"
+				"default": "geometry.speedboat_1.14"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

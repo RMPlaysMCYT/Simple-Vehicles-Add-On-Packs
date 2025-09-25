@@ -4,7 +4,7 @@
         "description": {
             "identifier": "simple_vehicles:speedboat_two",
             "materials": { "default": "aspire" },
-            "geometry": { "default": "geometry.simple_vehicles.speeboat_two" },
+            "geometry": { "default": "geometry.speeboat_two" },
             "textures": {
                 "red": "textures/entity/speeboat_two",
                 "green": "textures/entity/speedboat_b/speeboat_two_green",

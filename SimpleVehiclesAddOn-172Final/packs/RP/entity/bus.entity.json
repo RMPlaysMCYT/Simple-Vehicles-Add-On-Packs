@@ -7,7 +7,7 @@
 				"default": "aspire"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.bus"
+				"default": "geometry.bus"
 			},
 			"textures": {
 				"black": "textures/entity/bus/bus_black",

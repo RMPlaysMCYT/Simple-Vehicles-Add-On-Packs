@@ -14,7 +14,7 @@
 				"blue": "textures/entity/honda_accord_2019/honda_accord_2019_blue"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.honda_accord_2019"
+				"default": "geometry.honda_accord_2019"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

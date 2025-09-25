@@ -25,7 +25,7 @@
 				"red": "textures/entity/taxi/taxi_red"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.taxi"
+				"default": "geometry.taxi"
 			},
 			"animations": {
 				"move": "animation.vehicles.move",

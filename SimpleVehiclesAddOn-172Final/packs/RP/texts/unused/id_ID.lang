@@ -1,6 +1,5 @@
 accessibility.disableTTS=Text To Speech dinonaktifkan
 accessibility.enableTTS=Text To Speech diaktifkan
-
 entity.aspire:car.name=Mobil
 entity.aspire:corolla.name=Toyota Corolla
 entity.aspire:taxi.name=Taksi
@@ -19,7 +18,6 @@ entity.aspire:helicopter.name=Helikopter
 entity.aspire:ford_mustang.name=Ford Mustang [Merah]
 entity.aspire:motor_bike.name=Sepeda motor
 entity.aspire:limmo.name=Limousine
-entity.aspire:taxi.name=Taksi
 entity.aspire:pajero.name=Mitsubishi Pajero
 entity.aspire:c_sled.name=Kereta Luncur Natal
 entity.aspire:tesla_truck.name=Truk Tesla
@@ -51,8 +49,6 @@ entity.aspire:speedboat_two.name=Perahu Cepat B
 entity.aspire:century.name=Century Luxury Car
 entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
 entity.aspire:container_van.name=Van Kontainer
-
-
 item.spawn_egg.entity.aspire:ford_mustang.name=Ford Mustang
 item.spawn_egg.entity.aspire:corolla.name=Toyota Corolla
 item.spawn_egg.entity.aspire:bus_2.name=Bus Antar Jemput
@@ -101,7 +97,6 @@ item.spawn_egg.entity.aspire:speedboat_two.name=Perahu Cepat B
 item.spawn_egg.entity.aspire:century.name=Century Luxury Car
 item.spawn_egg.entity.aspire:container_van.name=Van Kontainer
 item.spawn_egg.entity.aspire:hafei_zhongyi.name=Hafei Zhongyi
-
 action.hint.exit.unknown=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:pajero=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:truck=Gunakan pelana untuk mengemudi dan melompat untuk keluar
@@ -118,7 +113,6 @@ action.hint.exit.aspire:corolla=Gunakan pelana untuk mengemudi dan melompat untu
 action.hint.exit.aspire:fire_truck=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:helicopter=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:speedboat=Langsung saja keluar
-action.hint.exit.aspire:truck=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:apv=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:c_sled=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:tesla_truck=Gunakan pelana untuk mengemudi dan melompat untuk keluar
@@ -149,10 +143,8 @@ action.hint.exit.aspire:speedboat_two=Gunakan pelana untuk mengemudi dan melompa
 action.hint.exit.aspire:hafei_zhongyi=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:container_van=Gunakan pelana untuk mengemudi dan melompat untuk keluar
 action.hint.exit.aspire:century=Gunakan pelana untuk mengemudi dan melompat untuk keluar
-
 item.rmplaysmcyt:wheels=Roda
 item.rmplaysmcyt:wrench=Kunci
-
 item.rmplaysmcyt:black_spray=Semprotan Hitam
 item.rmplaysmcyt:brown_spray=Semprotan Coklat
 item.rmplaysmcyt:blue_spray=Semprotan Biru

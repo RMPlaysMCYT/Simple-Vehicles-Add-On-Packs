@@ -10,7 +10,7 @@
 				"default": "textures/entity/tractor"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.tractor"
+				"default": "geometry.tractor"
 			},
 			"render_controllers": [
 				"controller.render.tractor"

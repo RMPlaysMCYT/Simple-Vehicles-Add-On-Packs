@@ -10,7 +10,7 @@
 				"default": "textures/entity/plane"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.plane"
+				"default": "geometry.plane"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

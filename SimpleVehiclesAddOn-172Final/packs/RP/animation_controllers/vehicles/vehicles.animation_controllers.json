@@ -6,7 +6,7 @@
 				"default": {
 					"animations": [
 						{
-							"move": "query.modified_move_speed&&query.is_saddled"
+							"move": "query.modified_move_speed"
 						}
 					]
 				}

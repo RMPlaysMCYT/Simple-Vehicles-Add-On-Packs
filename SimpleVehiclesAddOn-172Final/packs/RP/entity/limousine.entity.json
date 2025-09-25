@@ -5,7 +5,7 @@
             "identifier": "simple_vehicles:limmo",
             "materials": { "default": "witch" },
             "textures": { "default": "textures/entity/limmo" },
-            "geometry": { "default": "geometry.simple_vehicles.limmo" },
+            "geometry": { "default": "geometry.limmo" },
             "animations": { "move": "animation.vehicles.move", "turn": "animation.limmo.turn" },
             "animation_controllers": [{ "move": "controller.animation.vehicles.move" }, { "v_turn": "controller.animation.vehicle.v_turn" }],
             "render_controllers": [ "controller.render.single_color" ],

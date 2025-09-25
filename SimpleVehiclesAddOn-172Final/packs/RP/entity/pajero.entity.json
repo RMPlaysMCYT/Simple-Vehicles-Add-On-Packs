@@ -10,7 +10,7 @@
 				"default": "textures/entity/pajero"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.pajero"
+				"default": "geometry.pajero"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

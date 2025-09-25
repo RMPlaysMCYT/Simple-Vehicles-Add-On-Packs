@@ -7,7 +7,7 @@
 				"default": "witch"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.car"
+				"default": "geometry.car"
 			},
 			"textures": {
 				"black": "textures/entity/car",

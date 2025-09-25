@@ -10,7 +10,7 @@
 				"default": "textures/entity/police_car"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.police_car"
+				"default": "geometry.police_car"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

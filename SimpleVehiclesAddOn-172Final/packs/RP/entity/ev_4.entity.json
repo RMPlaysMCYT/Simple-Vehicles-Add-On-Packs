@@ -10,7 +10,7 @@
 				"default": "textures/entity/ev_4"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.ev_4"
+				"default": "geometry.ev_4"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",

@@ -10,7 +10,7 @@
 				"default": "textures/entity/car_4x4"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.car_4x4"
+				"default": "geometry.car_4x4"
 			},
 			"animations": {
 				"move": "animation.vehicles.move",

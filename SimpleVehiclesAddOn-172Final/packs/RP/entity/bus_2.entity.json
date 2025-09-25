@@ -10,7 +10,7 @@
 				"default": "textures/entity/bus_v2"
 			},
 			"geometry": {
-				"default": "geometry.simple_vehicles.bus_v2"
+				"default": "geometry.bus_v2"
 			},
 			"spawn_egg": {
 				"texture": "vehicles",
