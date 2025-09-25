@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "simple_vehicles:car",
+			"identifier": "simple_vehicles:taxi",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -10,6 +10,7 @@
 		"component_groups": {
 			"minecraft:minecar": {
 				"minecraft:rideable": {
+					"priority": 0,
 					"seat_count": 4,
 					"crouching_skip_interact": true,
 					"family_types": [
@@ -20,34 +21,38 @@
 						"npc"
 					],
 					"interact_text": "Drive",
+					"swing": true,
+					"particle_on_start": {
+						"particle_type": "lava"
+					},
 					"pull_in_entities": true,
 					"seats": [
 						{
 							"position": [
-								0.6,
-								0.3,
-								0.1
+								0.5,
+								0.4,
+								-0.2
 							]
 						},
 						{
 							"position": [
-								-0.6,
-								0.3,
-								0.1
+								-0.5,
+								0.4,
+								-0.2
 							]
 						},
 						{
 							"position": [
-								-0.6,
-								0.3,
-								-0.95
+								0.5,
+								0.4,
+								-1.1
 							]
 						},
 						{
 							"position": [
-								0.6,
-								0.3,
-								-0.95
+								-0.5,
+								0.4,
+								-1.2
 							]
 						}
 					]
@@ -182,16 +187,19 @@
 					"car"
 				]
 			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.5
+			},
 			"minecraft:breathable": {
 				"totalSupply": 10,
 				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
 			"minecraft:loot": {
-				"table": "loot_tables/entities/car.json"
+				"table": "loot_tables/entities/simple_vehicles/taxi.json"
 			},
 			"minecraft:collision_box": {
-				"width": 3,
+				"width": 4.5,
 				"height": 2
 			},
 			"minecraft:health": {
@@ -220,15 +228,13 @@
 				"max": 100
 			},
 			"minecraft:navigation.walk": {
+				"can_float": true,
 				"avoid_water": false
 			},
 			"minecraft:movement.basic": {},
 			"minecraft:jump.static": {},
 			"minecraft:walk_animation_speed": {
 				"value": 20
-			},
-			"minecraft:horse.jump_strength": {
-				"value": 0
 			},
 			"minecraft:push_through": {
 				"value": 1

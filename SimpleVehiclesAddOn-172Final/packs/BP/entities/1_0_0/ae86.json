@@ -1,0 +1,236 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:ae86",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:corolla": {
+				"minecraft:is_tamed": {},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"slot": 0,
+							"item": "simple_vehicles:key",
+							"accepted_items": [
+								"simple_vehicles:key"
+							],
+							"on_equip": {
+								"event": "minecraft:donkey_saddled",
+								"target": "self"
+							},
+							"on_unequip": {
+								"event": "minecraft:donkey_unsaddled",
+								"target": "self"
+							}
+						}
+					]
+				},
+				"minecraft:rideable": {
+					"seat_count": 2,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"seats": [
+						{
+							"position": [
+								0.52,
+								0.32,
+								0
+							]
+						},
+						{
+							"position": [
+								-0.52,
+								0.32,
+								0
+							]
+						}
+					]
+				}
+			},
+			"minecraft:donkey_saddled": {
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {}
+			},
+			"simple_vehicles:classic": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:doraemon": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"simple_vehicles:white_livery": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"simple_vehicles:mushroom_mario": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "math.min(query.player_level*7,100)"
+			},
+			"minecraft:scale": {
+				"value": 1.1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"ae86"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 15,
+					"range_max": 30
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 16,
+				"container_type": "horse"
+			},
+			"minecraft:movement": {
+				"value": 0.175
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:horse.jump_strength": {
+				"value": 0
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:balloonable": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/ae86.json"
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "rmplaysmc:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 80,
+								"add": {
+									"component_groups": [
+										"minecraft:corolla"
+									]
+								}
+							}
+						]
+					},
+					{
+						"randomize": [
+							{
+								"add": {
+									"component_groups": [
+										"simple_vehicles:classic"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"simple_vehicles:doraemon"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"simple_vehicles:white_livery"
+									]
+								}
+							},
+							{
+								"add": {
+									"component_groups": [
+										"simple_vehicles:mushroom_mario"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"minecraft:donkey_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			},
+			"minecraft:donkey_unsaddled": {
+				"remove": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			}
+		}
+	}
+}

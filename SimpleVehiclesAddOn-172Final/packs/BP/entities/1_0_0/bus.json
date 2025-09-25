@@ -2,16 +2,18 @@
 	"format_version": "1.13.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "simple_vehicles:car",
+			"identifier": "simple_vehicles:bus",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
 		"component_groups": {
-			"minecraft:minecar": {
+			"minecraft:vehicle": {
+				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"seat_count": 4,
-					"crouching_skip_interact": true,
+					"priority": 0,
+					"seat_count": 10,
+					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
@@ -24,30 +26,72 @@
 					"seats": [
 						{
 							"position": [
-								0.6,
-								0.3,
-								0.1
+								0.7,
+								0.7,
+								2.25
 							]
 						},
 						{
 							"position": [
-								-0.6,
-								0.3,
-								0.1
+								-0.7,
+								0.7,
+								1.6
 							]
 						},
 						{
 							"position": [
-								-0.6,
-								0.3,
-								-0.95
+								0.7,
+								0.7,
+								1.6
 							]
 						},
 						{
 							"position": [
-								0.6,
-								0.3,
-								-0.95
+								0.7,
+								0.7,
+								0.6
+							]
+						},
+						{
+							"position": [
+								-0.7,
+								0.7,
+								0.6
+							]
+						},
+						{
+							"position": [
+								0.7,
+								0.7,
+								-0.4
+							]
+						},
+						{
+							"position": [
+								0.7,
+								0.7,
+								-1.6
+							]
+						},
+						{
+							"position": [
+								-0.7,
+								0.7,
+								-1.6
+							]
+						},
+						{
+							"position": [
+								0.7,
+								0.7,
+								-3.1
+							]
+						},
+						{
+							"position": [
+								-0.7,
+								0.7,
+								-3.1
 							]
 						}
 					]
@@ -157,7 +201,7 @@
 				"on_death": "math.min(query.player_level*7,100)"
 			},
 			"minecraft:scale": {
-				"value": 1
+				"value": 0.9
 			},
 			"minecraft:equippable": {
 				"slots": [
@@ -173,25 +217,35 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
+					},
+					{
+						"slot": 1,
+						"item": "horsearmoriron",
+						"accepted_items": [
+							"horsearmorleather",
+							"horsearmoriron",
+							"horsearmorgold",
+							"horsearmordiamond"
+						]
 					}
 				]
 			},
 			"minecraft:type_family": {
 				"family": [
 					"aspire",
-					"car"
+					"bus"
 				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0
 			},
 			"minecraft:breathable": {
 				"totalSupply": 10,
 				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/car.json"
-			},
 			"minecraft:collision_box": {
-				"width": 3,
+				"width": 4,
 				"height": 2
 			},
 			"minecraft:health": {
@@ -227,13 +281,14 @@
 			"minecraft:walk_animation_speed": {
 				"value": 20
 			},
-			"minecraft:horse.jump_strength": {
-				"value": 0
-			},
 			"minecraft:push_through": {
 				"value": 1
 			},
 			"minecraft:nameable": {},
+			"minecraft:equipment": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/bus.json"
+			},
 			"minecraft:healable": {
 				"items": [
 					{
@@ -758,10 +813,10 @@
 					{
 						"randomize": [
 							{
-								"weight": 100,
+								"weight": 10,
 								"add": {
 									"component_groups": [
-										"minecraft:minecar"
+										"minecraft:vehicle"
 									]
 								}
 							}
@@ -893,26 +948,9 @@
 				}
 			},
 			"minecraft:horse_unsaddled": {
-				"add": {
-					"component_groups": [
-						"minecraft:bugfixer"
-					]
-				},
 				"remove": {
 					"component_groups": [
 						"minecraft:horse_saddled"
-					]
-				}
-			},
-			"minecraft:bugfix": {
-				"add": {
-					"component_groups": [
-						"minecraft:minecar"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"minecraft:bugfixer"
 					]
 				}
 			},
@@ -955,13 +993,6 @@
 				"add": {
 					"component_groups": [
 						"rmplaysmcyt:yellow"
-					]
-				}
-			},
-			"rmplaysmcyt:turn_lime": {
-				"add": {
-					"component_groups": [
-						"rmplaysmcyt:lime"
 					]
 				}
 			},
@@ -1025,6 +1056,13 @@
 				"add": {
 					"component_groups": [
 						"rmplaysmcyt:red"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_lime": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:lime"
 					]
 				}
 			}

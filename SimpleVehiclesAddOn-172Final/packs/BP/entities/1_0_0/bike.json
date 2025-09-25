@@ -8,13 +8,11 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"stand_by",
-					"ride_test"
+					"stand_by"
 				]
 			},
 			"animations": {
-				"stand_by": "controller.animation.bike.stand_by",
-				"ride_test": "controller.animation.bike.ride_test"
+				"stand_by": "controller.animation.bike.stand_by"
 			}
 		},
 		"component_groups": {

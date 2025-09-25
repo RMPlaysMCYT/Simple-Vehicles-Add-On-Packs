@@ -1,53 +1,37 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "simple_vehicles:car",
+			"identifier": "simple_vehicles:helicopter",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"fly",
+					"remove_effect"
+				]
+			},
+			"animations": {
+				"fly": "controller.animation.helicopter.fly2",
+				"remove_effect": "controller.animation.c_sled.remove_effect"
+			}
 		},
 		"component_groups": {
-			"minecraft:minecar": {
+			"minecraft:ranger": {
 				"minecraft:rideable": {
-					"seat_count": 4,
+					"seat_count": 1,
 					"crouching_skip_interact": true,
 					"family_types": [
-						"player",
-						"villager",
-						"cat",
-						"human",
-						"npc"
+						"player"
 					],
 					"interact_text": "Drive",
-					"pull_in_entities": true,
 					"seats": [
 						{
 							"position": [
+								0.5,
 								0.6,
-								0.3,
-								0.1
-							]
-						},
-						{
-							"position": [
-								-0.6,
-								0.3,
-								0.1
-							]
-						},
-						{
-							"position": [
-								-0.6,
-								0.3,
-								-0.95
-							]
-						},
-						{
-							"position": [
-								0.6,
-								0.3,
-								-0.95
+								0.4
 							]
 						}
 					]
@@ -67,9 +51,11 @@
 				}
 			},
 			"minecraft:horse_saddled": {
+				"minecraft:movement": {
+					"value": 0.42
+				},
 				"minecraft:input_ground_controlled": {},
-				"minecraft:can_power_jump": {},
-				"minecraft:behavior.player_ride_tamed": {}
+				"minecraft:can_power_jump": {}
 			},
 			"rmplaysmcyt:black": {
 				"minecraft:variant": {
@@ -153,103 +139,8 @@
 			}
 		},
 		"components": {
-			"minecraft:experience_reward": {
-				"on_death": "math.min(query.player_level*7,100)"
-			},
 			"minecraft:scale": {
 				"value": 1
-			},
-			"minecraft:equippable": {
-				"slots": [
-					{
-						"slot": 0,
-						"item": "simple_vehicles:key",
-						"accepted_items": [
-							"simple_vehicles:key"
-						],
-						"on_equip": {
-							"event": "minecraft:horse_saddled"
-						},
-						"on_unequip": {
-							"event": "minecraft:horse_unsaddled"
-						}
-					}
-				]
-			},
-			"minecraft:type_family": {
-				"family": [
-					"aspire",
-					"car"
-				]
-			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
-			},
-			"minecraft:is_chested": {},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/car.json"
-			},
-			"minecraft:collision_box": {
-				"width": 3,
-				"height": 2
-			},
-			"minecraft:health": {
-				"value": {
-					"range_min": 120,
-					"range_max": 120
-				}
-			},
-			"minecraft:inventory": {
-				"inventory_size": 15,
-				"container_type": "horse",
-				"private": false
-			},
-			"minecraft:movement": {
-				"value": {
-					"range_min": 0.2,
-					"range_max": 0.22
-				}
-			},
-			"minecraft:physics": {
-				"has_gravity": true
-			},
-			"minecraft:fire_immune": true,
-			"minecraft:knockback_resistance": {
-				"value": 100,
-				"max": 100
-			},
-			"minecraft:navigation.walk": {
-				"avoid_water": false
-			},
-			"minecraft:movement.basic": {},
-			"minecraft:jump.static": {},
-			"minecraft:walk_animation_speed": {
-				"value": 20
-			},
-			"minecraft:horse.jump_strength": {
-				"value": 0
-			},
-			"minecraft:push_through": {
-				"value": 1
-			},
-			"minecraft:nameable": {},
-			"minecraft:healable": {
-				"items": [
-					{
-						"item": "rmplaysmc:wrench",
-						"heal_amount": 100,
-						"effects": [
-							{
-								"name": "absorption",
-								"chance": 0.8,
-								"duration": 5,
-								"amplifier": 5
-							}
-						]
-					}
-				],
-				"force_use": true
 			},
 			"minecraft:interact": {
 				"interactions": [
@@ -750,7 +641,75 @@
 						"interact_text": "Paint on it!"
 					}
 				]
-			}
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key",
+						"accepted_items": [
+							"simple_vehicles:key"
+						],
+						"on_equip": {
+							"event": "minecraft:horse_saddled"
+						},
+						"on_unequip": {
+							"event": "minecraft:horse_unsaddled"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"helicopter",
+					"simple_vehicles",
+					"vehicles"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 100,
+					"range_max": 100
+				}
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse",
+				"private": false
+			},
+			"minecraft:movement": {
+				"value": {
+					"range_min": 0,
+					"range_max": 0
+				}
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/helicopter.json"
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": false,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {},
+			"minecraft:horse.jump_strength": {
+				"value": {
+					"range_min": 0.4,
+					"range_max": 1
+				}
+			},
+			"minecraft:balloonable": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:is_chested": {},
+			"minecraft:physics": {}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
@@ -758,10 +717,10 @@
 					{
 						"randomize": [
 							{
-								"weight": 100,
+								"weight": 10,
 								"add": {
 									"component_groups": [
-										"minecraft:minecar"
+										"minecraft:ranger"
 									]
 								}
 							}
@@ -907,7 +866,7 @@
 			"minecraft:bugfix": {
 				"add": {
 					"component_groups": [
-						"minecraft:minecar"
+						"minecraft:ranger"
 					]
 				},
 				"remove": {
@@ -955,13 +914,6 @@
 				"add": {
 					"component_groups": [
 						"rmplaysmcyt:yellow"
-					]
-				}
-			},
-			"rmplaysmcyt:turn_lime": {
-				"add": {
-					"component_groups": [
-						"rmplaysmcyt:lime"
 					]
 				}
 			},
@@ -1025,6 +977,13 @@
 				"add": {
 					"component_groups": [
 						"rmplaysmcyt:red"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_lime": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:lime"
 					]
 				}
 			}
