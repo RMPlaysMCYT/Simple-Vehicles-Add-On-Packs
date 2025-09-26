@@ -1,2 +1,2 @@
 playanimation @p[r=1] animation.player.bike_move.ride controller.animation.player.base 0 "!query.is_riding && query.modified_distance_moved"
-playanimation @p[r=1] animation.player.bike_move.ride controller.animation.player.base 0 "!query.is_riding && query.modified_distance_moved"
+# playanimation @p[r=1] animation.player.bike_move.ride controller.animation.player.base 0 "!query.is_riding && query.modified_distance_moved"
