@@ -1,3 +1,4 @@
+tag @s add move
 scoreboard players operation @p[r=5,tag=ride] speed = @s speed
 scoreboard players operation @p[r=5,tag=ride] oil = @s oil
 scoreboard players add @s[tag=move] tick 1

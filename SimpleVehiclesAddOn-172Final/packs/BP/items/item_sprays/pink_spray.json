@@ -2,7 +2,7 @@
 	"format_version": "1.21.20",
 	"minecraft:item": {
 		"description": {
-			"identifier": "simple_vehicles:pinks_spray",
+			"identifier": "simple_vehicles:pink_spray",
 			"menu_category": {
 				"category": "items"
 			}

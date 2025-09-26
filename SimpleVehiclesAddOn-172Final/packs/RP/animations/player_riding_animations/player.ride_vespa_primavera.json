@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.player.scooter.ride": {
+		"animation.player.ride.vespa_primavera": {
 			"loop": true,
 			"bones": {
 				"waist": {
@@ -34,15 +34,15 @@
 				},
 				"leftArm": {
 					"rotation": [
-						-5,
-						0,
+						-42.5,
+						-10,
 						0
 					]
 				},
 				"rightArm": {
 					"rotation": [
-						-5,
-						0,
+						-45,
+						10,
 						0
 					]
 				}
