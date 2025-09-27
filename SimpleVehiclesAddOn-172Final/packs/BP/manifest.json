@@ -28,7 +28,7 @@
 		{
 			"description": "JavaScriptPack",
 			"type": "script",
-			"entry": "main.js",
+			"entry": "scripts/main.js",
 			"language": "javascript",
 			"uuid": "f82289e5-aec4-4b0c-9f4f-0d94724a7fef",
 			"version": [
