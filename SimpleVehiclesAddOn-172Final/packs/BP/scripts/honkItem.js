@@ -7,7 +7,7 @@ world.afterEvents.itemCompleteUse.subscribe(eventData => {
     if (!item) return;
 
     if (item.typeId === "simple_vehicles:honk_item") {
-        source.playSound("random.toast", { volume: 1, pitch: 1 });
+        source.runCommand(`playsound "random.toast" @s ~ ~ ~ 1`);
     }
 });
 
