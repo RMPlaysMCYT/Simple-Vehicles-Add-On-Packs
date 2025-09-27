@@ -1,30 +1,16 @@
-import {world, system, ItemComponentTypes, ItemStack } from '@minecraft/server';
+import {
+  system,
+  world,
+  ItemStack,
+} from "@minecraft/server";
 
-world.afterEvents.itemCompleteUse.subscribe(eventData => {
-    const { source, itemStack } = eventData;
-    const item = itemStack;
-
-    if (!item) return;
-
-    if (item.typeId === "simple_vehicles:honk_item") {
-        source.runCommand(`playsound "random.toast" @s ~ ~ ~ 1`);
-    }
+world.afterEvents.itemUse.subscribe(({ dimension, source, itemStack }) => {
+  const item = itemStack;
+  if (!item) return;
+  if (item.typeId === "simple_vehicles:honk_item") {
+    // source.addEffect("fire_resistance", 5, { amplifier: 1 });
+    // source.addEffect("night_vision", 10, { amplifier: 1 });
+    // source.runCommand("playsound random.toast @p");
+    source.runCommand("playsound vehicles.horn @p");
+  }
 });
-
-// import { system, world, ItemComponentTypes, ItemStack } from "@minecraft/server";
-
-// world.afterEvents.itemCompleteUse.subscribe(({source, itemStack }) => {
-  
-//   const item = itemStack;
-
-//   if (!item) return;
-  
-//   if (item.typeId === "beest:arowana") {
-//   source.addEffect('fire_resistance', 200, {amplifier:1});
-// source.addEffect('night_vision', 300, {amplifier:1});
-//   }
-  
-//   if (item.typeId === "beest:zebra_fish") {
-//   source.runCommand(`effect @s resistance 30 2`);
-//   }
-// });

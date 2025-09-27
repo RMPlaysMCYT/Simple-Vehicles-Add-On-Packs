@@ -1,6 +1,5 @@
 // import { itemDatabaseSave } from "./itemInteraction/item_db";
-import { System, world } from "@minecraft/server";
-import './honkItem';
+
 // import { itemSet1 } from "./itemInteraction/itemStuff";
 // itemDatabaseSave();
 
@@ -9,3 +8,7 @@ import './honkItem';
 // world.afterEvents.playerInteractWithEntity.subscribe(activated => {
 
 // })
+
+
+import { System, world } from "@minecraft/server";
+import './honkItem';
