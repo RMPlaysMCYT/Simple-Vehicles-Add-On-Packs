@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.20",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "simple_vehicles:body_opel_astra",

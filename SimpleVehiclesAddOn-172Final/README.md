@@ -23,7 +23,7 @@ Tools used for developing such as
 
 
 # What's available in version 2?
-This was based from the 1.7.2 in year 2022 after three years these were now on development for the latest stable version of Minecraft Bedrock which requires 1.21 and above and currently in stable versions and trying to jive between Global and China Edition so that's why it's very too long to finish and continue the development for version 3
+This was based from the 1.7.2 in year 2022 after three years these were now on development for the latest stable version of Minecraft Bedrock which requires 1.21 and above and currently in stable versions and trying to jive between Global and China Edition so that's why it's very too long to finish and continue the development for version 3. All Items are now in stable state and works for Minecraft China 1.21 and Global Bedrock 1.21 and Above
 
 # What happen to version 3?
 It's still there and stick to 3.6.0 as of now since I've paused it for this development of remake for latest stable versions 
