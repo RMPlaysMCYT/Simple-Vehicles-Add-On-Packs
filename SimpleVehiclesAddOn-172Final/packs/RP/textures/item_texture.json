@@ -1374,6 +1374,11 @@
       "textures": [
         "textures/items/items_parts_3/body_upper_double_deck_bus"
       ]
+    },
+    "jump1_item":{ 
+      "textures": [
+        "textures/items/ae86"
+      ]
     }
   }
 }
