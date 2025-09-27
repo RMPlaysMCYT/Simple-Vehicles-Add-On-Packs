@@ -24,6 +24,16 @@
 				7,
 				3
 			]
+		},
+		{
+			"description": "JavaScriptPack",
+			"type": "script",
+			"entry": "main.js",
+			"language": "javascript",
+			"uuid": "f82289e5-aec4-4b0c-9f4f-0d94724a7fef",
+			"version": [
+				1, 7, 3
+			]
 		}
 	],
 	"dependencies": [
@@ -34,6 +44,10 @@
 				3
 			],
 			"uuid": "7def086d-e0c5-4e7e-8fe0-3914d0660da7"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
 		}
 	],
 	"metadata": {
