@@ -12,3 +12,4 @@
 
 import { System, world } from "@minecraft/server";
 import './honkItem';
+import './setLoreInfo';
