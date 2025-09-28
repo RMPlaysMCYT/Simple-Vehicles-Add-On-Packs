@@ -2,3 +2,5 @@
 diagnostic.disable.resourcepack.model.bone.missing=true
 diagnostic.disable.1=true
 diagnostic.disable.behaviorpack.trading.missing=true
+diagnostic.disable.molang.array.undefined=true
+diagnostic.disable.molang.texture.undefined=true

@@ -37,7 +37,7 @@
 				"general": "controller.animation.vehicle.v_turn"
 			},
 			"render_controllers": [
-				"controller.render.simple_car"
+				"controller.render.car"
 			],
 			"scripts": {
 				"animate": [

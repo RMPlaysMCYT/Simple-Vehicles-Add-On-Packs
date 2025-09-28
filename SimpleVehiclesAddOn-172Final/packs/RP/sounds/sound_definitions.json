@@ -6,8 +6,7 @@
       "sounds": [
         {
           "name": "sounds/vehicles/pick_up_truck/move0",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -36,33 +35,27 @@
       "sounds": [
         {
           "name": "sounds/data/illegal.logging",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/illegal.eating",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/carhit1",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/carhit2",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/carhit3",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/carhit4",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -71,12 +64,10 @@
       "sounds": [
         {
           "name": "sounds/vehicles/helicopter/heli0",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/vehicles/helicopter/heli1",
-          "load_on_low_memory": true,
           "volume": 1
         }
       ]
@@ -86,13 +77,11 @@
       "sounds": [
         {
           "name": "sounds/data/mightybond",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/mightybond",
-          "volume": 2,
-          "load_on_low_memory": true
+          "volume": 2
         }
       ]
     },
@@ -101,8 +90,7 @@
       "sounds": [
         {
           "name": "sounds/data/leveledupfart",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -111,13 +99,11 @@
       "sounds": [
         {
           "name": "sounds/data/carhit1",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/carhit2",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -126,8 +112,7 @@
       "sounds": [
         {
           "name": "sounds/data/grannyshoutedme",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -136,13 +121,11 @@
       "sounds": [
         {
           "name": "sounds/data/poopcannon",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         },
         {
           "name": "sounds/data/meltedsaliva",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
@@ -151,8 +134,7 @@
       "sounds": [
         {
           "name": "sounds/data/fbiopenup",
-          "volume": 1,
-          "load_on_low_memory": true
+          "volume": 1
         }
       ]
     },
