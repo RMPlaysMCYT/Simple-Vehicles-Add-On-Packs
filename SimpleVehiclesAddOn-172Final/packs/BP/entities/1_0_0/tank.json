@@ -113,9 +113,6 @@
 			"minecraft:scale": {
 				"value": 1
 			},
-			"minecraft:fall_damage": {
-				"value": 0
-			},
 			"minecraft:is_stackable": {},
 			"minecraft:push_through": {
 				"value": 1
@@ -147,16 +144,6 @@
 							"event": "minecraft:horse_unsaddled",
 							"target": "self"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -223,6 +210,23 @@
 			"minecraft:input_ground_controlled": {},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/simple_vehicles/tank.json"
+			},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
 			}
 		},
 		"events": {

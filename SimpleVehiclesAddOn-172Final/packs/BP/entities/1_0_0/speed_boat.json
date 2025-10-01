@@ -33,7 +33,6 @@
 		"component_groups": {
 			"saddled": {
 				"minecraft:input_ground_controlled": {},
-				"minecraft:behavior.controlled_by_player": {},
 				"minecraft:is_saddled": {},
 				"minecraft:behavior.player_ride_tamed": {}
 			},
@@ -74,6 +73,7 @@
 			"minecraft:underwater_movement": {
 				"value": 0.5
 			},
+			"minecraft:navigation.generic": {},
 			"minecraft:movement.basic": {},
 			"minecraft:rideable": {
 				"seat_count": 5,
@@ -150,6 +150,23 @@
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/speedboat.json"
+			},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
 			}
 		}
 	}

@@ -94,16 +94,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -119,10 +109,6 @@
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/simple_vehicles/travis.json"
-			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
@@ -146,7 +132,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -163,7 +148,24 @@
 			"minecraft:push_through": {
 				"value": 1
 			},
-			"minecraft:nameable": {}
+			"minecraft:nameable": {},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
+			}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
