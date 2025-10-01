@@ -28,7 +28,6 @@
 					]
 				},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 2,
 					"crouching_skip_interact": true,
 					"family_types": [
@@ -50,8 +49,7 @@
 								0
 							]
 						}
-					],
-					"minecraft:behavior.player_ride_tamed": {}
+					]
 				}
 			},
 			"minecraft:donkey_saddled": {
@@ -131,7 +129,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

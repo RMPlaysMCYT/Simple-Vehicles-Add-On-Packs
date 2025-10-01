@@ -87,16 +87,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -104,10 +94,6 @@
 				"family": [
 					"fire_truck"
 				]
-			},
-			"minecraft:breathable": {
-				"totalSupply": 15,
-				"suffocateTime": 0
 			},
 			"minecraft:collision_box": {
 				"width": 2,
@@ -159,7 +145,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

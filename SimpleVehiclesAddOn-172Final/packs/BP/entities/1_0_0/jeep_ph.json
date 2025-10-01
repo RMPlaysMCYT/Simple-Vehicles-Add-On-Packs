@@ -99,16 +99,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -123,10 +113,6 @@
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/jeep_ph.json"
-			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
@@ -153,7 +139,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -174,7 +159,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

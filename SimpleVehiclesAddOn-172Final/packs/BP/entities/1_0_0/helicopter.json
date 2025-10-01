@@ -8,13 +8,11 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"fly",
-					"remove_effect"
+					"fly"
 				]
 			},
 			"animations": {
-				"fly": "controller.animation.helicopter.fly2",
-				"remove_effect": "controller.animation.c_sled.remove_effect"
+				"fly": "controller.animation.helicopter.fly2"
 			}
 		},
 		"component_groups": {
@@ -709,7 +707,24 @@
 				"priority": 0
 			},
 			"minecraft:is_chested": {},
-			"minecraft:physics": {}
+			"minecraft:physics": {},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"heal_amount": 200,
+						"item": "simple_vehicles:wrench",
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
+			}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
