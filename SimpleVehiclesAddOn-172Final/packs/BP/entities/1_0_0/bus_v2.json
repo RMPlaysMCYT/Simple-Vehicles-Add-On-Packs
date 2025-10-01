@@ -11,14 +11,12 @@
 			"minecraft:vehicle": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 10,
 					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -123,16 +121,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -144,10 +132,6 @@
 			},
 			"minecraft:horse.jump_strength": {
 				"value": 0
-			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
@@ -177,7 +161,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -197,7 +180,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

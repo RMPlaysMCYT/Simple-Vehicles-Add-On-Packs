@@ -26,7 +26,6 @@
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -194,7 +193,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

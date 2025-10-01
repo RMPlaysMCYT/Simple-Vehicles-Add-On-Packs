@@ -154,7 +154,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

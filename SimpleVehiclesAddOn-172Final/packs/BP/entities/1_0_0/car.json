@@ -16,7 +16,6 @@
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -182,10 +181,6 @@
 					"car"
 				]
 			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
-			},
 			"minecraft:is_chested": {},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/car.json"
@@ -237,7 +232,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

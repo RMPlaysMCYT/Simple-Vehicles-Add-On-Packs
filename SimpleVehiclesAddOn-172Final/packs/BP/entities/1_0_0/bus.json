@@ -18,7 +18,6 @@
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -217,16 +216,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
@@ -292,7 +281,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{
