@@ -11,21 +11,15 @@
 			"minecraft:minecar": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 4,
 					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
-					"swing": true,
-					"particle_on_start": {
-						"particle_type": "lava"
-					},
 					"pull_in_entities": true,
 					"seats": [
 						{
@@ -81,21 +75,15 @@
 			},
 			"minecraft:passenger_mode": {
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 4,
 					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
-					"swing": true,
-					"particle_on_start": {
-						"particle_type": "lava"
-					},
 					"pull_in_entities": true,
 					"seats": [
 						{
@@ -211,7 +199,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

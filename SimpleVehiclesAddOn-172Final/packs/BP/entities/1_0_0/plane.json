@@ -112,10 +112,6 @@
 					"vehicles"
 				]
 			},
-			"minecraft:breathable": {
-				"totalSupply": 15,
-				"suffocateTime": 0
-			},
 			"minecraft:collision_box": {
 				"width": 7,
 				"height": 1.6
@@ -165,6 +161,23 @@
 				"triggers": [
 					{
 						"cause": "fall"
+					}
+				]
+			},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
 					}
 				]
 			}

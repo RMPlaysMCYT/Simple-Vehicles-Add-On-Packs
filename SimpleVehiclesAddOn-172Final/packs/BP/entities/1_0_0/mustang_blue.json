@@ -113,10 +113,6 @@
 					"mustang"
 				]
 			},
-			"minecraft:breathable": {
-				"totalSupply": 15,
-				"suffocateTime": 0
-			},
 			"minecraft:collision_box": {
 				"width": 2,
 				"height": 2
@@ -170,7 +166,7 @@
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "rmplaysmc:wrench",
+						"item": "simple_vehicles:wrench",
 						"heal_amount": 100,
 						"effects": [
 							{

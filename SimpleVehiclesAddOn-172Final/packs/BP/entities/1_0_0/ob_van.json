@@ -11,21 +11,15 @@
 			"minecraft:vehicle": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 1,
 					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
-					"swing": true,
-					"particle_on_start": {
-						"particle_type": "lava"
-					},
 					"pull_in_entities": true,
 					"seats": [
 						{
@@ -90,10 +84,6 @@
 			"minecraft:horse.jump_strength": {
 				"value": 0.5
 			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
-			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
 				"width": 4,
@@ -122,7 +112,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -139,7 +128,24 @@
 			"minecraft:push_through": {
 				"value": 1
 			},
-			"minecraft:nameable": {}
+			"minecraft:nameable": {},
+			"minecraft:healable": {
+				"force_use": false,
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				]
+			}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
