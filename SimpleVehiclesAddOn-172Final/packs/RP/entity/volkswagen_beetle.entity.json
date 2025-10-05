@@ -33,7 +33,7 @@
 			},
 			"animations": {
 				"move": "animation.vw_beetle.move",
-				"turn": "animation.VW_beetle.turn",
+				"turn": "animation.vw_beetle.turn",
 				"general": "controller.animation.vehicle.v_turn"
 			},
 			"render_controllers": [
