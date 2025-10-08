@@ -1,288 +1,244 @@
 {
-	"format_version": "1.16.0",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "simple_vehicles:tank",
-			"is_spawnable": true,
-			"is_summonable": true,
-			"is_experimental": false,
-			"scripts": {
-				"animate": [
-					"weapon",
-					"rider"
-				]
-			},
-			"animations": {
-				"weapon": "controller.animation.tank_weapon",
-				"rider": "controller.animation.tank_rider"
-			}
-		},
-		"component_groups": {
-			"minecraft:minecar": {
-				"minecraft:is_tamed": {},
-				"minecraft:rideable": {
-					"seat_count": 1,
-					"rider_can_interact": true,
-					"crouching_skip_interact": true,
-					"family_types": [
-						"player"
-					],
-					"interact_text": "Ride Tank",
-					"seats": {
-						"position": [
-							0,
-							1.2,
-							0
-						]
-					}
-				}
-			},
-			"simple_vehicle:ready": {
-				"minecraft:interact": {
-					"interactions": [
-						{
-							"on_interact": {
-								"filters": {
-									"all_of": [
-										{
-											"test": "is_family",
-											"subject": "other",
-											"value": "player"
-										},
-										{
-											"test": "is_riding",
-											"subject": "other",
-											"value": true
-										}
-									]
-								},
-								"target": "self",
-								"event": "simple_vehicle:cooldown"
-							},
-							"play_sounds": "random.explode",
-							"use_item": false,
-							"interact_text": "§lFIRE",
-							"spawn_entities": [
-								"simple_vehicles:missile"
-							]
-						}
-					]
-				}
-			},
-			"simple_vehicle:cooldown": {
-				"minecraft:spawn_entity": {
-					"entities": {
-						"max_wait_time": 1,
-						"min_wait_time": 1,
-						"num_to_spawn": 1,
-						"spawn_entity": "simple_vehicles:missile",
-						"single_use": true
-					}
-				},
-				"minecraft:timer": {
-					"time": [
-						0,
-						1
-					],
-					"time_down_event": {
-						"event": "simple_vehicle:ready",
-						"target": "self"
-					}
-				}
-			},
-			"minecraft:horse_saddled": {
-				"minecraft:movement": {
-					"value": 0.42
-				},
-				"minecraft:input_ground_controlled": {},
-				"minecraft:can_power_jump": {},
-				"minecraft:behavior.player_ride_tamed": {}
-			}
-		},
-		"components": {
-			"minecraft:type_family": {
-				"family": [
-					"tank",
-					"simple_vehicles"
-				]
-			},
-			"minecraft:collision_box": {
-				"width": 2,
-				"height": 2.3
-			},
-			"minecraft:scale": {
-				"value": 1
-			},
-			"minecraft:is_stackable": {},
-			"minecraft:push_through": {
-				"value": 1
-			},
-			"minecraft:health": {
-				"value": {
-					"range_min": 40,
-					"range_max": 40
-				}
-			},
-			"minecraft:navigation.generic": {},
-			"minecraft:inventory": {
-				"container_type": "horse",
-				"inventory_size": 5
-			},
-			"minecraft:equippable": {
-				"slots": [
-					{
-						"slot": 0,
-						"item": "simple_vehicles:key",
-						"accepted_items": [
-							"simple_vehicles:key"
-						],
-						"on_equip": {
-							"event": "minecraft:horse_saddled",
-							"target": "self"
-						},
-						"on_unequip": {
-							"event": "minecraft:horse_unsaddled",
-							"target": "self"
-						}
-					}
-				]
-			},
-			"minecraft:attack": {
-				"damage": 3
-			},
-			"minecraft:behavior.melee_attack": {
-				"track_target": false,
-				"speed_multiplier": 1
-			},
-			"minecraft:behavior.nearest_attackable_target": {
-				"priority": 2,
-				"must_see": true,
-				"reselect_targets": true,
-				"within_radius": 25,
-				"must_see_forget_duration": 17,
-				"entity_types": [
-					{
-						"filters": {
-							"any_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "mob"
-								},
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "spider"
-								},
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "zombie"
-								}
-							]
-						},
-						"max_dist": 30
-					}
-				]
-			},
-			"minecraft:movement.basic": {},
-			"minecraft:jump.static": {},
-			"minecraft:nameable": {},
-			"minecraft:movement": {
-				"value": 0
-			},
-			"minecraft:damage_sensor": {
-				"triggers": [
-					{
-						"cause": "fall",
-						"damage_multiplier": 0,
-						"deals_damage": false
-					}
-				]
-			},
-			"minecraft:fire_immune": true,
-			"minecraft:knockback_resistance": {
-				"value": 1
-			},
-			"minecraft:physics": {
-				"has_gravity": true
-			},
-			"minecraft:input_ground_controlled": {},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/simple_vehicles/tank.json"
-			},
-			"minecraft:healable": {
-				"force_use": false,
-				"items": [
-					{
-						"item": "simple_vehicles:wrench",
-						"heal_amount": 100,
-						"effects": [
-							{
-								"name": "absorption",
-								"chance": 0.8,
-								"duration": 5,
-								"amplifier": 5
-							}
-						]
-					}
-				]
-			}
-		},
-		"events": {
-			"minecraft:entity_spawned": {
-				"add": {
-					"component_groups": [
-						"simple_vehicle:ready",
-						"minecraft:minecar"
-					]
-				}
-			},
-			"simple_vehicle:spawn": {
-				"remove": {
-					"component_groups": [
-						"simple_vehicle:ready"
-					]
-				}
-			},
-			"minecraft:horse_saddled": {
-				"add": {
-					"component_groups": [
-						"minecraft:horse_saddled"
-					]
-				}
-			},
-			"minecraft:horse_unsaddled": {
-				"remove": {
-					"component_groups": [
-						"minecraft:horse_saddled"
-					]
-				}
-			},
-			"simple_vehicle:cooldown": {
-				"add": {
-					"component_groups": [
-						"simple_vehicle:cooldown"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"simple_vehicle:ready"
-					]
-				}
-			},
-			"simple_vehicle:ready": {
-				"add": {
-					"component_groups": [
-						"simple_vehicle:ready"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"simple_vehicle:cooldown"
-					]
-				}
-			}
-		}
-	}
+  "format_version": "1.14.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:tank",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:minecar": {
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "Ride Tank",
+          "seats": {
+            "position": [0, 1.2, 0]
+          }
+        }
+      },
+      "simple_vehicle:ready": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "value": true
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "simple_vehicle:cooldown"
+              },
+              "play_sounds": "random.explode",
+              "use_item": false,
+              "interact_text": "§lFIRE",
+              "spawn_entities": "simple_vehicles:missile"
+            }
+          ]
+        }
+      },
+      "simple_vehicle:cooldown": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "max_wait_time": 1,
+            "min_wait_time": 1,
+            "num_to_spawn": 1,
+            "spawn_entity": "simple_vehicles:missile",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "time": [0, 1],
+          "time_down_event": {
+            "event": "simple_vehicle:ready",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:horse_saddled": {
+        "minecraft:movement": {
+          "value": 0.42
+        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:behavior.player_ride_tamed": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["tank", "simple_vehicles"]
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 2.3
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:health": {
+        "value": {
+          "range_min": 40,
+          "range_max": 40
+        }
+      },
+      "minecraft:navigation.generic": {},
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "inventory_size": 5
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "simple_vehicles:key",
+            "accepted_items": ["simple_vehicles:key"],
+            "on_equip": {
+              "event": "minecraft:horse_saddled",
+              "target": "self"
+            },
+            "on_unequip": {
+              "event": "minecraft:horse_unsaddled",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:behavior.melee_attack": {
+        "track_target": false,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 25,
+        "must_see_forget_duration": 17,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "mob"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "spider"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "zombie"
+                }
+              ]
+            },
+            "max_dist": 30
+          }
+        ]
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "damage_multiplier": 0,
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/simple_vehicles/tank.json"
+      },
+      "minecraft:healable": {
+        "force_use": false,
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["simple_vehicle:ready", "minecraft:minecar"]
+        }
+      },
+      "simple_vehicle:spawn": {
+        "remove": {
+          "component_groups": ["simple_vehicle:ready"]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "add": {
+          "component_groups": ["minecraft:horse_saddled"]
+        }
+      },
+      "minecraft:horse_unsaddled": {
+        "remove": {
+          "component_groups": ["minecraft:horse_saddled"]
+        }
+      },
+      "simple_vehicle:cooldown": {
+        "add": {
+          "component_groups": ["simple_vehicle:cooldown"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicle:ready"]
+        }
+      },
+      "simple_vehicle:ready": {
+        "add": {
+          "component_groups": ["simple_vehicle:ready"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicle:cooldown"]
+        }
+      }
+    }
+  }
 }

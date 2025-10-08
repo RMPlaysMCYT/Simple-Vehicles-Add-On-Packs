@@ -131,16 +131,6 @@
 							"event": "minecraft:horse_unsaddled",
 							"target": "self"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},
