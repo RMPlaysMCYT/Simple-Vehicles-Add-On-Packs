@@ -19,7 +19,6 @@
 			"minecraft:minecar": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 1,
 					"crouching_skip_interact": false,
 					"family_types": [
@@ -173,7 +172,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100

@@ -99,10 +99,6 @@
 			"minecraft:horse.jump_strength": {
 				"value": 0
 			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
-			},
 			"minecraft:is_chested": {},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/ambulance.json"
@@ -131,7 +127,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100

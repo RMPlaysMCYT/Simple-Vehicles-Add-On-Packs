@@ -1,11 +1,12 @@
+//bridge-file-version: #0
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
 					"type": "item",
-					"name": "simple_vehicles:ford_rancherogt_sass_red_spawn_egg",
+					"name": "simple_vehicles:jeep_wrangler_spawn_egg",
 					"weight": 1,
 					"functions": [
 						{
@@ -17,7 +18,7 @@
 						}
 					]
 				}
-      		]
-    	}
-  	]
+			]
+		}
+	]
 }

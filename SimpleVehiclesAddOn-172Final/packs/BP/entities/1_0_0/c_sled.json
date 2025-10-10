@@ -10,22 +10,17 @@
 				"animate": [
 					{
 						"fly": "1"
-					},
-					{
-						"remove_effect": "1"
 					}
 				]
 			},
 			"animations": {
-				"fly": "controller.animation.c_sled.fly",
-				"remove_effect": "controller.animation.c_sled.remove_effect"
+				"fly": "controller.animation.c_sled.fly"
 			}
 		},
 		"component_groups": {
 			"minecraft:ranger": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 1,
 					"crouching_skip_interact": true,
 					"family_types": [
