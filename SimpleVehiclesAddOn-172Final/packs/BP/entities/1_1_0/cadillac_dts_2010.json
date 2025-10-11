@@ -28,7 +28,6 @@
 					]
 				},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 4,
 					"crouching_skip_interact": true,
 					"family_types": [
@@ -64,8 +63,7 @@
 								-0.3
 							]
 						}
-					],
-					"minecraft:behavior.player_ride_tamed": {}
+					]
 				}
 			},
 			"minecraft:donkey_saddled": {
