@@ -11,14 +11,12 @@
 			"minecraft:vehicle": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 10,
 					"crouching_skip_interact": false,
 					"family_types": [
 						"player",
 						"villager",
 						"cat",
-						"human",
 						"npc"
 					],
 					"interact_text": "Drive",
@@ -228,10 +226,6 @@
 			},
 			"minecraft:horse.jump_strength": {
 				"value": 0
-			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
 			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
