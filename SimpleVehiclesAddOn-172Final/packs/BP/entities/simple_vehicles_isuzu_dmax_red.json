@@ -10,7 +10,6 @@
     "component_groups": {
 			"minecraft:vehicle": {
       "minecraft:rideable": {
-        "priority": 0,
         "seat_count": 4,
         "crouching_skip_interact": true,
         "family_types": [
@@ -82,10 +81,6 @@
           "vehicles"
         ]
       },
-      "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
-      },
       "minecraft:collision_box": {
         "height": 1.8,
         "width": 2.8
@@ -128,16 +123,6 @@
 						"on_unequip": {
 							"event": "minecraft:horse_unsaddled"
 						}
-					},
-					{
-						"slot": 1,
-						"item": "horsearmoriron",
-						"accepted_items": [
-							"horsearmorleather",
-							"horsearmoriron",
-							"horsearmorgold",
-							"horsearmordiamond"
-						]
 					}
 				]
 			},

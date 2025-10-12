@@ -147,7 +147,6 @@
       "minecraft:underwater_movement": {
         "value": 0.5
       },
-      "minecraft:movement.basic": {},
       "minecraft:rideable": {
         "seat_count": 4,
         "controlling_seat": 1,
