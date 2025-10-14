@@ -8,18 +8,16 @@
 			"vehicle_workbench"
 		],
 		"pattern": [
-			0,
+			"",
 			"WWG",
-			0
+			""
 		],
 		"key": {
 			"W": {
-				"item": "minecraft:wool",
-				"data": 10
+				"item": "minecraft:black_wool"
 			},
 			"G": {
-				"item": "minecraft:iron_ingot",
-				"data": 0
+				"item": "minecraft:iron_ingot"
 			}
 		},
 		"result": [

@@ -9,8 +9,7 @@
 		],
 		"pattern": [
 			"IFI",
-			"ICI",
-			{}
+			"ICI"
 		],
 		"key": {
 			"I": {
