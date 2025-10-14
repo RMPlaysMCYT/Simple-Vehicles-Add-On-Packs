@@ -2,7 +2,7 @@
   "format_version": "1.20.50",
   "minecraft:block": {
     "description": {
-      "identifier": "simple_vehicles:custom_block",
+      "identifier": "simple_vehicles:vehicle_workbench",
       "menu_category": {
         "category": "construction",
         "is_hidden_in_commands": false

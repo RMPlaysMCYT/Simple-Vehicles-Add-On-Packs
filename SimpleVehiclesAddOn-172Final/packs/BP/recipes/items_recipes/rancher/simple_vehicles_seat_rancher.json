@@ -20,10 +20,10 @@
 				"item": "minecraft:iron_ingot"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:seat_rancher"
 			}
-		]
+		
 	}
 }

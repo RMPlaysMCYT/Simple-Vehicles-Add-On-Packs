@@ -1,36 +1,28 @@
 {
-	"format_version": "1.13.0",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "simple_vehicles:vehicle_workbench"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"   ",
-			"BIB",
-			"CHC"
-		],
-		"key": {
-			"C": {
-				"item": "minecraft:stick"
-			},
-			"H": {
-				"item": "minecraft:crafting_table"
-			},
-			"B":{
-			  "item": "minecraft:stone"
-			},
-			"I":{
-			  "item": "minecraft:iron_ingot"
-			}
-		},
-		"result": [
-			{
-				"count": 1,
-				"item": "simple_vehicles:vehicle_workbench"
-			}
-		]
-	}
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "simple_vehicles:vehicle_workbench_item"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["   ", "BIB", "CHC"],
+    "key": {
+      "C": {
+        "item": "minecraft:stick"
+      },
+      "H": {
+        "item": "minecraft:crafting_table"
+      },
+      "B": {
+        "item": "minecraft:stone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "count": 1,
+      "item": "simple_vehicles:vehicle_workbench"
+    }
+  }
 }
