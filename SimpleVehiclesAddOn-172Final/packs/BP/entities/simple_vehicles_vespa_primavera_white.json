@@ -6,74 +6,57 @@
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
-	  "scripts": {
-		"animate": [
-		    "vespa_primavera_ride"
-		]
-	  },
-	  "animations": {
-		"vespa_primavera_ride": "controller.animation.vespa_primavera.player_ride"
-	  }
+      "scripts": {
+        "animate": ["vespa_primavera_ride"]
+      },
+      "animations": {
+        "vespa_primavera_ride": "controller.animation.vespa_primavera.player_ride"
+      }
     },
     "component_groups": {
-			"minecraft:corolla": {
-				"minecraft:is_tamed": {},
-				"minecraft:equippable": {
-					"slots": [
-						{
-							"slot": 0,
-							"item": "simple_vehicles:key",
-							"accepted_items": [
-								"simple_vehicles:key"
-							],
-							"on_equip": {
-								"event": "minecraft:donkey_saddled",
-								"target": "self"
-							},
-							"on_unequip": {
-								"event": "minecraft:donkey_unsaddled",
-								"target": "self"
-							}
-						}
-					]
-				},
-				"minecraft:rideable": {
-					"seat_count": 2,
-					"crouching_skip_interact": true,
-					"family_types": [
-						"player"
-					],
-					"interact_text": "Drive",
-					"seats": [
-						{
-							"position": [
-								0.0,
-								0.85,
-								-0.2
-							]
-						},
-						{
-							"position": [
-								0.0,
-								0.85,
-								-0.62
-							]
-						}
-					]
-				}
-			},
-			"minecraft:donkey_saddled": {
-				"minecraft:is_saddled": {},
-				"minecraft:input_ground_controlled": {},
-				"minecraft:can_power_jump": {}
-			}
+      "minecraft:corolla": {
+        "minecraft:is_tamed": {},
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "item": "simple_vehicles:key",
+              "accepted_items": ["simple_vehicles:key"],
+              "on_equip": {
+                "event": "minecraft:donkey_saddled",
+                "target": "self"
+              },
+              "on_unequip": {
+                "event": "minecraft:donkey_unsaddled",
+                "target": "self"
+              }
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "seat_count": 2,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "Drive",
+          "seats": [
+            {
+              "position": [0.0, 0.85, -0.2]
+            },
+            {
+              "position": [0.0, 0.85, -0.62]
+            }
+          ]
+        }
+      },
+      "minecraft:donkey_saddled": {
+        "minecraft:is_saddled": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {}
+      }
     },
     "components": {
       "minecraft:type_family": {
-        "family": [
-          "moto",
-          "vespa_primavera"
-        ]
+        "family": ["moto", "vespa_primavera"]
       },
       "minecraft:collision_box": {
         "height": 0.9,
@@ -95,31 +78,26 @@
         "value": 50,
         "max": 50
       },
-      "minecraft:nameable": {
-        "alwaysShow": false,
-        "allowNameTagRenaming": false
+      "minecraft:inventory": {
+        "inventory_size": 16,
+        "container_type": "horse"
       },
-      "minecraft:fire_immune": true,
-			"minecraft:inventory": {
-				"inventory_size": 16,
-				"container_type": "horse"
-			},
-			"minecraft:healable": {
-				"items": [
-					{
-						"item": "simple_vehicles:wrench",
-						"heal_amount": 100,
-						"effects": [
-							{
-								"name": "absorption",
-								"chance": 0.8,
-								"duration": 5,
-								"amplifier": 5
-							}
-						]
-					}
-				]
-			},
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ]
+      },
       "minecraft:physics": {},
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 10 : 0"
@@ -167,36 +145,30 @@
       }
     },
     "events": {
-			"minecraft:entity_spawned": {
-				"sequence": [
-					{
-						"randomize": [
-							{
-								"weight": 80,
-								"add": {
-									"component_groups": [
-										"minecraft:corolla"
-									]
-								}
-							}
-						]
-					}
-				]
-			},
-			"minecraft:donkey_saddled": {
-				"add": {
-					"component_groups": [
-						"minecraft:donkey_saddled"
-					]
-				}
-			},
-			"minecraft:donkey_unsaddled": {
-				"remove": {
-					"component_groups": [
-						"minecraft:donkey_saddled"
-					]
-				}
-			},
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 80,
+                "add": {
+                  "component_groups": ["minecraft:corolla"]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:donkey_saddled": {
+        "add": {
+          "component_groups": ["minecraft:donkey_saddled"]
+        }
+      },
+      "minecraft:donkey_unsaddled": {
+        "remove": {
+          "component_groups": ["minecraft:donkey_saddled"]
+        }
+      },
       "on:death": {
         "run_command": {
           "command": []
