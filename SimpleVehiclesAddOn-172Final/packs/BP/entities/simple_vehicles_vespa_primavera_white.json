@@ -108,9 +108,6 @@
       "minecraft:scale": {
         "value": 1
       },
-      "minecraft:addrider": {
-        "entity_type": null
-      },
       "minecraft:can_climb": {},
       "minecraft:on_death": {
         "event": "on:death",
