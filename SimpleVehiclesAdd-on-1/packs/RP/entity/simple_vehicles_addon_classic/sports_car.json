@@ -1,33 +1,33 @@
 {
-    "format_version": "1.8.0",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "aspire:sports_car",
-            "materials": {
-                "default": "witch"
-            },
-            "textures": {
-                "red": "textures/simple_vehicles_classic/entity/sports_car",
-				"yellow": "textures/simple_vehicles_classic/entity/sports_car/sports_car_yellow",
-				"green": "textures/simple_vehicles_classic/entity/sports_car/sports_car_green",
-				"blue": "textures/simple_vehicles_classic/entity/sports_car/sports_car_blue"
-            },
-            "geometry": {
-                "default": "geometry.simple_vehicles_classic_sports_car"
-            },
-            "animations": {
-                "move": "animation.villager.move"
-            },
-            "animation_controllers": [
-                { 
-				    "move": "controller.animation.villager.move"
-				}
-            ],
-            "render_controllers": [ "controller.render.sports_car" ],
-            "spawn_egg": {
-                "texture": "aspire_vehicles",
-                "texture_index": 15
-            }
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aspire:sports_car",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "red": "textures/simple_vehicles_classic/entity/sports_car",
+        "yellow": "textures/simple_vehicles_classic/entity/sports_car/sports_car_yellow",
+        "green": "textures/simple_vehicles_classic/entity/sports_car/sports_car_green",
+        "blue": "textures/simple_vehicles_classic/entity/sports_car/sports_car_blue"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_classic_sports_car"
+      },
+      "animations": {
+        "move": "animation.villager.move"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.villager.move"
         }
+      ],
+      "render_controllers": ["controller.render.sports_car"],
+      "spawn_egg": {
+        "texture": "aspire_vehicles",
+        "texture_index": 15
+      }
     }
+  }
 }

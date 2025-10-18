@@ -1,33 +1,30 @@
- {
-    "format_version": "1.8.0",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "aspire:plane",
-            "materials": {
-                "default": "witch"
-            },
-            "textures": {
-                "default": "textures/simple_vehicles_classic/entity/plane"
-            },
-            "geometry": {
-                "default": "geometry.simple_vehicles_classic_plane"
-            },
-            "spawn_egg": {
-                "texture": "aspire_vehicles",
-                "texture_index": 12
-            },
-            "animations": {
-                "move": "animation.villager.move"
-            },
-            "animation_controllers": [
-                { 
-				    "move": "controller.animation.villager.move"
-				}
-            ],
-            "render_controllers":
-    		[
-                "controller.render.mini_bus"
-            ]
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aspire:plane",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "default": "textures/simple_vehicles_classic/entity/plane"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_classic_plane"
+      },
+      "spawn_egg": {
+        "texture": "aspire_vehicles",
+        "texture_index": 12
+      },
+      "animations": {
+        "move": "animation.villager.move"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.villager.move"
         }
+      ],
+      "render_controllers": ["controller.render.mini_bus"]
     }
+  }
 }
