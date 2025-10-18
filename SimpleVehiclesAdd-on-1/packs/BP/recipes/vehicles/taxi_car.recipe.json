@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "aspire:taxi_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["A", "ADG", "CRC"],
+    "key": {
+      "A": {
+        "item": "minecraft:gray_concrete"
+      },
+      "C": {
+        "item": "minecraft:black_concrete"
+      },
+      "D": {
+        "item": "minecraft:oak_stairs"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "aspire:taxi_spawn_egg",
+      "count": 1
+    }
+  }
+}
