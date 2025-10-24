@@ -420,6 +420,10 @@
         "inventory_size": 15,
         "container_type": "horse",
         "private": false
+      },
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": true
       }
     },
 

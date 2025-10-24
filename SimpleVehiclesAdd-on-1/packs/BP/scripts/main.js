@@ -16,6 +16,10 @@ world.afterEvents.entitySpawn.subscribe(({ entity }) => {
     entity.nameTag = "Car";
   }else if (entity?.typeId === "aspire:mini_bus") {
     entity.nameTag = "Minibus";
+  } else if (entity?.typeId === "aspire:plane") {
+    entity.nameTag = "Plane";
+  }else if (entity?.typeId === "aspire:police_car") {
+    entity.nameTag = "Police Car";
   }
 });
 

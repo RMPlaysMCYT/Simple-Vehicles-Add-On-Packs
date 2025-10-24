@@ -91,7 +91,10 @@
       },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
-      "minecraft:nameable": {},
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": true
+      },
       "minecraft:horse.jump_strength": {
         "value": {
           "range_min": 0.4,

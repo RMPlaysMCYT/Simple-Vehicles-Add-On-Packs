@@ -492,7 +492,10 @@
       "minecraft:push_through": {
         "value": 1
       },
-      "minecraft:nameable": {}
+      "minecraft:nameable": {
+        "always_show": false,
+        "allow_name_tag_renaming": true
+      }
     },
 
     "events": {
