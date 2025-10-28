@@ -32,3 +32,20 @@ export const APV = {
         seatCapacity: 4
     }
 }
+
+export const Aquatopia = {
+    typeId: "aspire:aquatopia",
+    optiones: {
+        vehicleGroundable: {},
+        fuelSize: {
+            fuelMax: 4000,
+            fuelInitial: 4000,
+            burnRate: 1
+        }
+    },
+    dictionaryVehicleInfo: {
+        bio: "Amphibian Based Vehicle which can cross both land and water",
+        speed: "Mid",
+        seatCapacity: 2
+    }
+}
