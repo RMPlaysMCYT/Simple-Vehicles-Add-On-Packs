@@ -32,3 +32,7 @@ system.runInterval(() => {
         utils.flySystem(0.09, 0.007, 5);
     }
 });
+
+world.afterEvents.playerSpawn.subscribe(event => {
+  
+})
