@@ -206,7 +206,12 @@
 			"recipes\\vehicles\\taxi_car.recipe.json",
 			"scripts\\_fly.js",
 			"scripts\\_hud.js",
-			"scripts\\main.js"
+			"scripts\\fuel.js",
+			"scripts\\main.js",
+			"scripts\\utilities\\vec3.js",
+			"scripts\\vehicles\\config.js",
+			"scripts\\vehicles\\properties.js",
+			"scripts\\vehiclesystem.js"
 		]
 	}
 }

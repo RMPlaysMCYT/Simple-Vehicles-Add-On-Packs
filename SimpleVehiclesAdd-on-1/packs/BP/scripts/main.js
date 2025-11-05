@@ -1,5 +1,6 @@
 import "./_hud";
 import Utils from"./_fly";
+import "./fuel";
 
 import { system, world } from "@minecraft/server";
 

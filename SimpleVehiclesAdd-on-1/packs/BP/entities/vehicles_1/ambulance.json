@@ -5,7 +5,17 @@
       "identifier": "aspire:ambulance",
       "is_spawnable": true,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties": {
+        "aspire:fuel":{
+          "client_sync": false,
+          "default": "0",
+          "type": "int",
+          "range": [
+            0, 4000
+          ]
+        }
+      }
     },
     "component_groups": {
       "minecraft:minecar": {
