@@ -6,5 +6,8 @@ export const CUSTOM_ITEMS = {
   ],
   "simple_vehicles:key": [
     "This is an required item tho for every vehicle"
+  ],
+  "simple_vehicles:wrench": [
+    "This items works for fixing the vehicle"
   ]
 };
