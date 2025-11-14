@@ -11,5 +11,8 @@
 
 
 import { System, world } from "@minecraft/server";
+
+import './booksGuide';
+
 import './honkItem';
 import './setLoreInfo';
