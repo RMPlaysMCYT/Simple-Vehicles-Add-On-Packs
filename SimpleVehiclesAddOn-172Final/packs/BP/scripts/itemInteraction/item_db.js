@@ -1,27 +1,29 @@
 import { EntityComponentTypes, StructureSaveMode, StructureAnimationMode as X, world } from '@minecraft/server';
-export function itemDatabaseSave(btch){
-    let bro = btch.getComponent(EntityComponentTypes.Inventory)
-    if (!bro) return;
-    let hoe = btch.dimension.spawnEntity("simple_vehicles:item_db", btch.location)
 
-    hoe.addTag(btch.id);
-    let sis = hoe.getComponent("Inventory");
-    if (!sis) return;
-    let yword = [];
-    for (let i = 0; i < 9; i++) {
-        let azyk = bro.container?.getItem(i);
-        sis.container?.setItem(i, azyk), yword.push(azyk)
+var iTEMDBFCK = class{
+    itemDatabaseSave(btch){
+        let bro = btch.getComponent(EntityComponentTypes.Inventory)
+        if (!bro) return;
+        let hoe = btch.dimension.spawnEntity("simple_vehicles:item_db", btch.location)
+
+        hoe.addTag(btch.id);
+        let sis = hoe.getComponent("Inventory");
+        if (!sis) return;
+        let yword = [];
+        for (let i = 0; i < 9; i++) {
+            let azyk = bro.container?.getItem(i);
+            sis.container?.setItem(i, azyk), yword.push(azyk)
+        }
+        world.structureManager.delete(`simple_vehicles:item_db_${btch.id}`),
+        world.structureManager.createFromWorld(`simple_vehicles:item_db_${btch.id}`,
+        btch.dimension, hoe.location, hoe.location, {
+            includeBlocks: !1,
+            includeEntities: !0,
+            saveMode: StructureSaveMode.World
+        }), hoe.remove();
     }
-    world.structureManager.delete(`simple_vehicles:item_db_${btch.id}`),
-    world.structureManager.createFromWorld(`simple_vehicles:item_db_${btch.id}`,
-    btch.dimension, hoe.location, hoe.location, {
-        includeBlocks: !1,
-        includeEntities: !0,
-        saveMode: StructureSaveMode.World
-    }), hoe.remove();
-};
 
-export function itemDatabaseDrop(btch){
+    itemDatabaseDrop(btch){
     let bro = btch.structureManager.get(`simple_vehicles:item_db_${btch.id}`);
     if (!bro) return !1;
     let hoe = btch.location;
@@ -55,7 +57,8 @@ export function itemDatabaseDrop(btch){
 };
 
 
-export function itemDatabaseLoad(btch){
+
+itemDatabaseLoad(btch){
     let bro = btch.getComponent(EntityComponentTypes.Inventory);
     if (!bro) return !1;
     let hoe = world.structureManager.get(`simple_vehicles:item_db${btch.id}`);
@@ -97,11 +100,95 @@ export function itemDatabaseLoad(btch){
     return i
 };
 
-export function itemDatabaseClearOnExit(btch) {
+
+itemDatabaseClearOnExit(btch) {
     let bro = btch.getComponent(EntityComponentTypes.Inventory);
     if (!bro) return !1;
     for (let hoe = 0; hoe < 9; hoe++) bro.container?.setItem(hoe, void 0);
     return !0
 };
 
+
+}, itemSave = new iTEMDBFCK();
+
 export var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0]
+
+
+
+
+
+itemSet1 = {
+    default: "simple_vehicles:honk_item",
+    toggledState: "simple_vehicles:honk_item",
+    getItem: function(activated){
+        return activated.getDynamicProperty("simple_vehicles:honk_set")?!this.toggledState:this.default
+    }
+}
+
+
+const hotbars = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0, void 0, void 0, void 0, void 0];
+
+const ae86 = {
+    "simple_vehiclesL:ae86": {
+        hotbar:[[itemSet1]]
+    }
+}
+
+
+
+var Fck = {
+    hotbars: []
+},
+FCK2 = class {
+    _DataP = new Map();
+    _Data = new Map();
+    loadPlayerData(e){
+        let bas = e.getDynamicProperty("simple_vehicles:player_data");
+        if (bas) return JSON.parse(bas);
+    }
+    savePlayerData(e, r){
+        e.setDynamicProperty("simple_vehicles:player_data", JSON.stringify(r));
+    }
+    addPlayerData(e){
+        let bas = this.loadPlayerData(e);
+        bas || ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
+        for (let t in Fck) t in bas || (bas[t] = Fck[t]);
+        this._DataP.set(e.id, e), this._Data.set(e.id, bas);
+    }
+    removePlayerData(e){
+        for (let [r] of this._Data)
+        if (r === e.id) {
+            this._Data.delete(r);
+            break;
+        }
+        for (let [r] of this._DataP)
+        if (r === e.id) {
+            this._DataP.delete(r);
+            break;
+        }
+    }
+}
+RMPlayerDATA = new FCK2();
+
+var SimpleVehicleRiderData = class {
+    SimpleVehicles_VehiclesBeingRidden = [];
+    runPlayerDataInventory(e){
+        if (!e.getComponent(EntityComponentTypes.Riding)){
+            if(e.hasTag("simple_vehicles_vehiRide")){
+                if (e.hasTag("simple_vehicles_vehiRideHotbar")) {
+                    if (!e.getComponent(EntityComponentTypes.Inventory) || !T.loadItems(e)) return;
+                    e.removeTag("simple_vehicles_vehiRideHotbar");
+                }
+                e.removeTag("simple_vehicles_vehiRide")
+            }
+        }
+    }
+    simplevehiclesGiveHotBar(e, r, t){
+        let n = p[t.entity.typeId];
+        if (!(!n || !n.hotbars))
+            for (let bth = 0; bth < 9; bth++){
+        if (
+            bth > n.hotbars[]
+        )}
+    }
+}

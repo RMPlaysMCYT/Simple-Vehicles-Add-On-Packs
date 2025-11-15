@@ -3,7 +3,7 @@ import { _Page1GettingStarted } from "./_Page01GettingStarted";
 import { system, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 
-function showCustomForm(player) {
+export function showCustomForm(player) {
   const GettingStarted = new ActionFormData();
   GettingStarted.title("Vehicle Title");
 
