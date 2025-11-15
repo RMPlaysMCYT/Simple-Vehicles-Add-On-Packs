@@ -104,4 +104,4 @@ export function itemDatabaseClearOnExit(btch) {
     return !0
 };
 
-export var btchsItems = [void 0, void 0, "simple_vehicles:honk_item"]
+export var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0]

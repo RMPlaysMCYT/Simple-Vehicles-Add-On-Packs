@@ -13,6 +13,6 @@
 import { System, world } from "@minecraft/server";
 
 import './booksGuide';
-
+import './documentation/MainMenu';
 import './honkItem';
 import './setLoreInfo';
