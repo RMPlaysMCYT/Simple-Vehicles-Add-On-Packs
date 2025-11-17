@@ -31,4 +31,14 @@ export function playerLoadItemInventory(player, vehicle){
     player.selectedSlotIndex = slotIndex ? slotIndex : 0;
 }
 
-function playerInventoryItems
+export function playerInventoryItems(player, vehicle){
+    const ItemInventory = player.getComponent("minecraft:inventory").container;
+    ItemInventory.addItem(new ItemStack("simple_vehicles:honl_item"));
+}
+
+export function playerDeleteItemInventory(player, vehicle){
+    const playerInventory = player.getComponent("minecraft:inventory").container;
+    for (let index = 0; index < 9; index++) {
+        playerInventory.setItem(index, undefined);
+    }
+}
