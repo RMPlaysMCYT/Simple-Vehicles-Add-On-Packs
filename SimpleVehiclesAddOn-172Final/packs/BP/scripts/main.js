@@ -10,7 +10,7 @@
 // })
 
 
-import { System, world } from "@minecraft/server";
+import { system, world } from "@minecraft/server";
 
 import './booksGuide';
 import './documentation/MainMenu';
@@ -20,7 +20,7 @@ import './setLoreInfo';
 import * as fck from "./itemInteraction/playerOnEnter"
 
 async function onWorldTicks() {
-    fck.onPlayerEnter(world.getPlayers()[0]);
+    fck.onWorldTicks();
 }
 
 async function Loop() {
@@ -28,4 +28,4 @@ async function Loop() {
     system.run(Loop);
 }
 
-system.run(Loop)
+system.run(Loop);
