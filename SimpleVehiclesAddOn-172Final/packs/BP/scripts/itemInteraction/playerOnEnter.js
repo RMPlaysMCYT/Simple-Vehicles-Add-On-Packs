@@ -19,7 +19,7 @@ import {
 let accelerationSpeed = 0;
 const VehiclesMounted = {};
 
-export function onWorldTicks() {
+export async function onWorldTicks() {
   ++accelerationSpeed;
   for (const player of world.getAllPlayers()) {
     try {
@@ -59,7 +59,7 @@ function getPlayerSimpleVehicles(player) {
     !ridingEntity.isValid() ||
     !vehicleLists.includes(ridingEntity.typeId)
   )
-    return undefined;
+  return undefined;
   return ridingEntity;
 }
 
