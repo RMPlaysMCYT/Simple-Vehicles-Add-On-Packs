@@ -1,6 +1,7 @@
 import { system, world } from "@minecraft/server";
 import { CUSTOM_ITEMS } from "./utils/customItems";
 
+
 function updatePlayerInventoryLore() {
   for (const player of world.getPlayers()) {
     const inventory = player.getComponent("minecraft:inventory").container;

@@ -99,7 +99,7 @@
 			},
 			"minecraft:health": {
 				"value": {
-					"range_min": 15,
+					"range_min": 30,
 					"range_max": 30
 				}
 			},
