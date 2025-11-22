@@ -19,6 +19,9 @@ import './setLoreInfo';
 
 import * as fck from "./itemInteraction/playerOnEnter"
 
+let onWorldStartedSetup = false;
+let onWorldFinishedSetup = false;
+
 async function onWorldTicks() {
     fck.onWorldTicks();
 }
@@ -26,6 +29,10 @@ async function onWorldTicks() {
 async function Loop() {
     system.run(onWorldTicks);
     system.run(Loop);
+
+    
+    system.run(Loop);   
 }
+
 
 system.run(Loop);
