@@ -16,5 +16,15 @@ export const VEHICLES_EGGS = {
         "Speed: 43 km/h",
         `Size: {${VehicleSizes[0]}}`
         `Health: {${HealthTypes[11]}}`,
+    ],
+    "simple_vehicles:bus_egg": [
+        "Speed: 43 km/h",
+        `Size: {${VehicleSizes[0]}}`
+        `Health: {${HealthTypes[11]}}`,
+    ],
+    "simple_vehicles:bus_egg": [
+        "Speed: 43 km/h",
+        `Size: {${VehicleSizes[0]}}`
+        `Health: {${HealthTypes[11]}}`,
     ]
 }

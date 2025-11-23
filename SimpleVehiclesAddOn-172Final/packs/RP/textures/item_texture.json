@@ -1379,6 +1379,11 @@
       "textures": [
         "textures/items/ae86"
       ]
+    },
+    "book_documents": {
+      "textures": [
+        "textures/items/SimpleVehiclesBook"
+      ]
     }
   }
 }
