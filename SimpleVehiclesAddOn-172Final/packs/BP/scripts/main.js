@@ -17,22 +17,22 @@ import './documentation/MainMenu';
 import './honkItem';
 import './setLoreInfo';
 
-import * as fck from "./itemInteraction/playerOnEnter"
+// import * as fck from "./itemInteraction/playerOnEnter"
 
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
 
-async function onWorldTicks() {
-    fck.onWorldTicks();
-}
+// async function onWorldTicks() {
+//     fck.onWorldTicks();
+// }
 
-async function Loop() {
-    system.run(onWorldTicks);
-    system.run(Loop);
+// async function Loop() {
+//     system.run(onWorldTicks);
+//     system.run(Loop);
 
     
-    system.run(Loop);   
-}
+//     system.run(Loop);   
+// }
 
 
-system.run(Loop);
+// system.run(Loop);

@@ -33,7 +33,7 @@ world.beforeEvents.itemUse.subscribe((ev) => {
   const item = ev.itemStack;
   const player = ev.source;
 
-  if (item.typeId == "minecraft:stick") {
+  if (item.typeId == "simple_vehicles:book_documents") {
     system.run(() => {
       showCustomForm(player);
     });
