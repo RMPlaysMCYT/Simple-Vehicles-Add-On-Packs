@@ -2,34 +2,34 @@ import { HealthTypes, VehicleSizes } from "./customVehicleItems";
 
 
 export const VEHICLES_EGGS = {
-    "simple_vehicles:ae86_egg": [
+    "simple_vehicles:ae86_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[2]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[2]}`,
     ],
-    "simple_vehicles:ambulance_egg": [
+    "simple_vehicles:ambulance_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[11]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
     ],
-    "simple_vehicles:bus_egg": [
+    "simple_vehicles:bus_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[11]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
     ],
-    "simple_vehicles:bus_egg": [
+    "simple_vehicles:bus_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[11]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
     ],
-    "simple_vehicles:bus_egg": [
+    "simple_vehicles:bus_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[11]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
     ], 
-    "simple_vehicles:car_egg": [
+    "simple_vehicles:car_spawn_egg": [
         "Speed: 43 km/h",
-        `Size: {${VehicleSizes[0]}}`
-        `Health: {${HealthTypes[11]}}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
     ],
 }

@@ -9,5 +9,17 @@ export const CUSTOM_ITEMS = {
   ],
   "simple_vehicles:wrench": [
     "This items works for fixing the vehicle"
-  ]
+  ],
+  "simple_vehicles:small_engine": [
+    "This items works for adding engine to the vehicle"
+  ],
+  "simple_vehicles:large_engine": [
+    "This items works for adding the biggest engine to the vehicle"
+  ],
 };
+
+export const SPRAY_ITEMS = {
+  "simple_vehicles:black_spray": [
+    "This color spray makes it feels professional but deadly"
+  ]
+}
