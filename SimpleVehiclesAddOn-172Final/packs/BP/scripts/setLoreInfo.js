@@ -1,6 +1,7 @@
 import { system, world } from "@minecraft/server";
 import { CUSTOM_ITEMS, SPRAY_ITEMS } from "./utils/customItems";
 import { VEHICLES_EGGS } from "./utils/customVehicleEggs";
+import { CUSTOM_BLOCKS } from "./utils/customBlocks";
 
 function updatePlayerInventoryLore() {
   for (const player of world.getPlayers()) {
@@ -19,6 +20,10 @@ function updatePlayerInventoryLore() {
       }
       if (item && SPRAY_ITEMS[item.typeId]) {
         item.setLore(SPRAY_ITEMS[item.typeId]);
+        inventory.setItem(i, item);
+      }
+      if (item && CUSTOM_BLOCKS[item.typeId]) {
+        item.setLore(CUSTOM_BLOCKS[item.typeId]);
         inventory.setItem(i, item);
       }
     }
