@@ -1,6 +1,6 @@
 export const CUSTOM_BLOCKS = {
     "simple_vehicles:vehicle_workbench": [
-        "This block has craftable parts for vehicles",
-        "It's survival friendly as well"
+        "\xA7rThis block has craftable parts for vehicles",
+        "\xA7rIt's survival friendly as well"
     ]
 }
