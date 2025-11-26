@@ -31,5 +31,13 @@ function updatePlayerInventoryLore() {
 
   system.runTimeout(updatePlayerInventoryLore, 1);
 }
+// function loreFormattedUnSlashed(FormalLore){
+//   return [
+//     "",
+//     "\xA7r\xA7l" + "-".repeat(25),
+//     ...FormalLore.map((line)=>"\xA7r"+line),
+//     "\xA7r\xA7l" + "-".repeat(25)
+//   ];
+// }
 
 updatePlayerInventoryLore();

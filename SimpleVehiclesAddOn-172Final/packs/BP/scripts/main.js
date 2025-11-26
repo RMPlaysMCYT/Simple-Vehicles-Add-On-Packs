@@ -11,7 +11,7 @@
 
 
 import { system, world } from "@minecraft/server";
-
+import { itemLoreFormal } from "./utils/customBlocks";
 import './booksGuide';
 import './documentation/MainMenu';
 import './honkItem';
@@ -35,5 +35,7 @@ let onWorldFinishedSetup = false;
 //     system.run(Loop);   
 // }
 
-
+system.runInterval(() => {
+    itemLoreFormal(player);
+}, 1);
 // system.run(Loop);
