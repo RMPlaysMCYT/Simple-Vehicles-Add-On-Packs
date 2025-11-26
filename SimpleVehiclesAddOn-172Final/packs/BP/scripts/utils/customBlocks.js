@@ -24,6 +24,13 @@ var loreSetup = class {
           "\xA76Information:",
           "\xA7rThis Block is used to craft vehicles and it's a gateway to become a survival gameplay compatible",
           ])
+      },
+      {
+        item: "simple_vehicles:jump1_item",
+        lore: formatLore([
+          "\xA76Information:",
+          "\xA7rThis Item use to jump on a lowrider",
+          ])
       }
     ];
   }
