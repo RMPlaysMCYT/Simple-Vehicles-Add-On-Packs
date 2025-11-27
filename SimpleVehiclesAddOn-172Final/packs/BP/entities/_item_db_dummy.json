@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehciles:_item_db_dummy",
+      "is_spawnable": "true",
+      "is_summonable": "true",
+      "is_experimental": "false"
+    },
+    "component_groups": {
+      "simple_vehciles:drop_items_and_despawn": {
+        "minecraft:transformation": {
+          "drop_equipment": true,
+          "drop_inventory": true,
+          "into": "simple_vehciles:item_dummy<simple_vehciles:instant_despawn>"
+        }
+      },
+      "simple_vehciles:instant_despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+			"minecraft:inventory": {
+				"inventory_size": 9,
+				"container_type": "inventory",
+				"can_be_siphoned_from": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:persistent": {},
+			"minecraft:breathable": {
+				"breathes_air": true,
+				"breathes_water": true,
+				"breathes_lava": true,
+				"breathes_solids": true
+			},
+			"minecraft:collision_box": {
+				"height": 0,
+				"width": 0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"simple_vehciles:drop_items_and_despawn": {
+				"add": {
+					"component_groups": ["simple_vehciles:drop_items_and_despawn"]
+				}
+			},
+			"simple_vehciles:instant_despawn": {
+				"add": {
+					"component_groups": ["simple_vehciles:instant_despawn"]
+				}
+			}
+		}
+  }
+}
