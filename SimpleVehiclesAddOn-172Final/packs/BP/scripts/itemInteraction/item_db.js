@@ -1,5 +1,5 @@
 import {
-  EquipmentSlot as P,
+  EquipmentSlot,
   ItemLockMode as K,
   ItemStack as f,
   EntityComponentTypes,
@@ -19,7 +19,7 @@ var iTEMDBFCK = class {
       );
 
       hoe.addTag(btch.id);
-      let sis = hoe.getComponent("Inventory");
+      let sis = hoe.getComponent(EntityComponentTypes.Inventory);
       if (!sis) return;
       let yword = [];
       for (let i = 0; i < 9; i++) {
@@ -51,7 +51,7 @@ var iTEMDBFCK = class {
       let noe = btch.dimension.getEntities({
         location: hoe,
         maxDistance: 50,
-        minDistance: 50,
+        minDistance: 0,
       });
       for (let azyk of noe) azyk.addTag("simple_vehicles_itemDBStay");
       world.structureManager.place(bro, btch.dimension, hoe, {
@@ -59,7 +59,7 @@ var iTEMDBFCK = class {
         includeEntities: !0,
         animationMode: X.None,
       }),
-        world.structureManager.delete(`simple_vehicles:_item_db_${btch.id}`);
+        world.structureManager.delete(bro);
       let yword = btch.dimension.getEntities({
         type: "simple_vehicles:item_db",
         tags: [btch.id],
@@ -80,7 +80,7 @@ var iTEMDBFCK = class {
           azyk.remove();
       for (let azyk of noe)
         !azyk.isValid() ||
-          azyk.hasTag("simple_vehicles_itemDBStay") ||
+          !azyk.hasTag("simple_vehicles_itemDBStay") ||
           azyk.removeTag("simple_vehicles_itemDBStay");
       return !0;
     }
@@ -127,14 +127,9 @@ var iTEMDBFCK = class {
       for (let desire of ayzk)
         desire.hasTag("simple_vehicles_itemDBStay") || desire.remove();
       for (let desire of noe) {
-        if (!desire.isValid()) continue;
-
-        if (!desire.hasTag("simple_vehicles_itemDBStay")) {
-          if (desire.hasTag("simple_vehicles_itemDBStay"))
-            desire.removeTag("simple_vehicles_itemDBStay");
-
-          desire.remove();
-        }
+        !desire.isValid() ||
+          !desire.hasTag("simple_vehicles_itemDBStay") ||
+          desire.removeTag("simple_vehicles_itemDBStay");
       }
       return i;
     }
@@ -148,7 +143,17 @@ var iTEMDBFCK = class {
   },
   itemSave = new iTEMDBFCK();
 
-var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0],
+var btchsItems = [
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    "minecraft:stick",
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+  ],
   itemSet1 = {
     default: "simple_vehicles:honk_item",
     toggledState: "simple_vehicles:honk_item",
@@ -159,8 +164,8 @@ var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0],
     },
   },
   hotbars = [
-    itemSet1,
     void 0,
+    itemSet1,
     "simple_vehicles:book_documents",
     void 0,
     void 0,
@@ -171,6 +176,9 @@ var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0],
   ],
   vehiclesAndShit = {
     "simple_vehicles:ae86": {
+      hotbar: [[hotbars, void 0], btchsItems],
+    },
+    "simple_vehicles:ambulance": {
       hotbar: [[hotbars, void 0], btchsItems],
     },
   };
@@ -235,7 +243,7 @@ var SimpleVehicleRiderData = class {
       for (let e of RMPlayerDATA.allPlayers) {
         if (!e.isSneaking) continue;
         let r = e.dimension.getEntities({
-          families: ["aurrora_ve.inventory"],
+          families: ["simple_vehicles.item_dbinventory"],
           maxDistance: 30,
           location: e.location,
         });
@@ -263,6 +271,26 @@ var SimpleVehicleRiderData = class {
           (c.lockMode = K.slot), r.container?.setItem(bth, c);
         }
     }
+    simpleVehiclesGetRidingEntitiers(e) {
+      for (let btch of e.dimension.getEntities({
+        families: ["simple_vehicles_vehicles"],
+        maxDistance: 30,
+        location: e.location,
+      })) {
+        let asts = btch.getComponent(EntityComponentTypes.Rideable);
+        if (!asts) continue;
+        let asds = asts.getRider();
+        if (asds === e) {
+          for (let sis = 0; sis < asds.length; sis++) {
+            if (asds[sis].id === e.id)
+              return {
+                entity: btch,
+                seatPosition: sis,
+              };
+          }
+        }
+      }
+    }
     ItemUseAfterEvent(e) {
       switch (e.ItemStack.typeId) {
         case "simple_vehicles:honk_item":
@@ -274,8 +302,7 @@ var SimpleVehicleRiderData = class {
   BtchAll = new SimpleVehicleRiderData();
 
 function BtchAsTick() {
-  for (let Enti of RMPlayerDATA.allPlayers)
-    BtchAll.runPlayerDataInventory(Enti);
+  for (let a of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(a);
   BtchAll.tick();
 }
 
