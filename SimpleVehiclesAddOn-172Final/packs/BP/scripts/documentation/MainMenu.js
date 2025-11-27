@@ -18,7 +18,7 @@ export function showCustomForm(player) {
   GettingStarted.button("About");
 
   GettingStarted.show(player).then((r) => {
-    if (r.selection) return;
+    if (r.canceled) return;
     switch (r.selection) {
       case 0:
         _Page1GettingStarted(player);

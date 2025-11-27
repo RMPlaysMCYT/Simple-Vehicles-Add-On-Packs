@@ -1,6 +1,7 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "./MainMenu";
+import { showCustomForm } from "../MainMenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_Page02Vehicles";
 
 export function AmbulanceInformation(player) {
   const CreditsForm = new ActionFormData();
@@ -12,10 +13,9 @@ export function AmbulanceInformation(player) {
       },
       { text: "\n" },
       { text: "===============================" },
-      { text: "\n" },
-      { text: "Specifictaions" },
-      { text: `Speed: 120 km/h` },
-      { text: `Size: ${VehicleSizes[2]}` },
+      { text: "Specifictaions \n" },
+      { text: `Speed: 120 km/h \n` },
+      { text: `Size: ${VehicleSizes[2]} \n` },
       { text: `Health: ${HealthTypes[6]}` },
     ],
   });
@@ -24,7 +24,7 @@ export function AmbulanceInformation(player) {
     if (response.canceled) {
       showCustomForm(player);
     } else if (response.selection === 0) {
-      showCustomForm(player);
+      _Page2Vehicles(player);
     }
   });
 }

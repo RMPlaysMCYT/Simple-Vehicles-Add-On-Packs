@@ -1,6 +1,7 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "./MainMenu";
+import { showCustomForm } from "../MainMenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_Page02Vehicles";
 
 export function Ae86Information(player) {
   const CreditsForm = new ActionFormData();
@@ -12,11 +13,10 @@ export function Ae86Information(player) {
       },
       { text: "\n" },
       { text: "===============================" },
-      { text: "\n" },
-      { text: "Specifictaions" },
-      { text: `Speed: 120 km/h` },
-      { text: `Size: ${VehicleSizes[0]}` },
-      { text: `Health: ${HealthTypes[2]}` },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
     ],
   });
   CreditsForm.button("Go Back");
@@ -24,7 +24,7 @@ export function Ae86Information(player) {
     if (response.canceled) {
       showCustomForm(player);
     } else if (response.selection === 0) {
-      showCustomForm(player);
+      _Page2Vehicles(player);
     }
   });
 }

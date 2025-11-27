@@ -4,9 +4,9 @@ import { Ae86Information } from "./_Vehicles/ae86";
 import { AmbulanceInformation } from "./_Vehicles/ambulance";
 
 export function _Page2Vehicles(player) {
-  const CreditsForm = new ActionFormData();
-  CreditsForm.title("Vehicles");
-  CreditsForm.body({
+  const Page2Vehicles = new ActionFormData();
+  Page2Vehicles.title("Vehicles");
+  Page2Vehicles.body({
     rawtext: [
       { text: "simveh172.text1" },
       { text: "\n" },
@@ -16,13 +16,17 @@ export function _Page2Vehicles(player) {
       { text: "\n" },
     ],
   });
-  CreditsForm.button("AE 86", Ae86Information);
-  CreditsForm.button("Ambulance", AmbulanceInformation);
-  CreditsForm.button("Go Back");
-  CreditsForm.show(player).then((response) => {
+  Page2Vehicles.button("AE 86");
+  Page2Vehicles.button("Ambulance");
+  Page2Vehicles.button("Go Back");
+  Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
       showCustomForm(player);
     } else if (response.selection === 0) {
+      Ae86Information(player);
+    } else if (response.selection === 1) {
+      AmbulanceInformation(player);
+    } else if (response.selection === 2) {
       showCustomForm(player);
     }
   });
