@@ -1,4 +1,7 @@
 import {
+  EquipmentSlot as P,
+  ItemLockMode as K,
+  ItemStack as f,
   EntityComponentTypes,
   StructureSaveMode,
   StructureAnimationMode as X,
@@ -137,22 +140,21 @@ var iTEMDBFCK = class {
   itemSave = new iTEMDBFCK();
 
 export var btchsItems = [
-  void 0,
-  void 0,
-  "simple_vehicles:honk_item",
-  void 0,
-  void 0,
-],
-
-itemSet1 = {
-  default: "simple_vehicles:honk_item",
-  toggledState: "simple_vehicles:honk_item",
-  getItem: function (activated) {
-    return activated.getDynamicProperty("simple_vehicles:honk_set")
-      ? !this.toggledState
-      : this.default;
-  },
-};
+    void 0,
+    void 0,
+    "simple_vehicles:honk_item",
+    void 0,
+    void 0,
+  ],
+  itemSet1 = {
+    default: "simple_vehicles:honk_item",
+    toggledState: "simple_vehicles:honk_item",
+    getItem: function (activated) {
+      return activated.getDynamicProperty("simple_vehicles:honk_set")
+        ? !this.toggledState
+        : this.default;
+    },
+  };
 
 hotbars = [
   void 0,
@@ -168,12 +170,7 @@ hotbars = [
 
 vehiclesAndShit = {
   "simple_vehicles:ae86": {
-    hotbar: [
-            [
-            "simple_vehicles:honk_item",
-            ],
-            btchsItems,
-        ]
+    hotbar: [["simple_vehicles:honk_item"], btchsItems],
   },
 };
 
@@ -229,19 +226,19 @@ var SimpleVehicleRiderData = class {
       }
     }
   }
-  tick(){
-      for (let e of RMPlayerDATA.allPlayers) {
-        if (!e.isSneaking) continue;
-        let r = e.dimension.getEntities({
-          families: ["aurrora_ve.inventory"],
-          maxDistance: 30,
-          location: e.location,
+  tick() {
+    for (let e of RMPlayerDATA.allPlayers) {
+      if (!e.isSneaking) continue;
+      let r = e.dimension.getEntities({
+        families: ["aurrora_ve.inventory"],
+        maxDistance: 30,
+        location: e.location,
+      });
+      for (let t of r)
+        t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
+          players: [e.name],
         });
-        for (let t of r)
-          t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
-            players: [e.name],
-          });
-      }
+    }
   }
   simplevehiclesGiveHotBar(e, r, t) {
     let n = p[t.entity.typeId];
@@ -271,9 +268,9 @@ var SimpleVehicleRiderData = class {
 };
 BtchAll = new SimpleVehicleRiderData();
 
-function BtchAsTick(){
-    for (let e of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(e);
-    BtchAll.tick()
+function BtchAsTick() {
+  for (let e of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(e);
+  BtchAll.tick();
 }
 
 system.runInterval(BtchAsTick, 0);
