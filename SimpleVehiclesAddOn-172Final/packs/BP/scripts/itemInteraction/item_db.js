@@ -42,7 +42,9 @@ var iTEMDBFCK = class {
     }
 
     itemDatabaseDrop(btch) {
-      let bro = btch.structureManager.get(`simple_vehicles:item_db_${btch.id}`);
+      let bro = world.structureManager.get(
+        `simple_vehicles:item_db_${btch.id}`
+      );
       if (!bro) return !1;
       let hoe = btch.location;
       for (; hoe.y > btch.dimension.heightRange.max; ) hoe.y -= 1;
@@ -67,8 +69,8 @@ var iTEMDBFCK = class {
 
       let hap = btch.dimension.getEntities({
         location: hoe,
-        maxDistance: 50,
         minDistance: 0,
+        maxDistance: 50,
       });
 
       for (let azyk of hap)
@@ -86,7 +88,9 @@ var iTEMDBFCK = class {
     itemDatabaseLoad(btch) {
       let bro = btch.getComponent(EntityComponentTypes.Inventory);
       if (!bro) return !1;
-      let hoe = world.structureManager.get(`simple_vehicles:item_db${btch.id}`);
+      let hoe = world.structureManager.get(
+        `simple_vehicles:item_db_${btch.id}`
+      );
       if (!hoe) return !0;
       if (btch.location.y > btch.dimension.heightRange.max) return !1;
       let noe = btch.dimension.getEntities({
@@ -122,11 +126,16 @@ var iTEMDBFCK = class {
       });
       for (let desire of ayzk)
         desire.hasTag("simple_vehicles_itemDBStay") || desire.remove();
-      for (let desire of noe)
-        !desire.isValid() ||
-          desire.hasTag("simple_vehicles_itemDBStay") ||
-          azyk.removeTag("simple_vehicles_itemDBStay") ||
-          azyk.remove();
+      for (let desire of noe) {
+        if (!desire.isValid()) continue;
+
+        if (!desire.hasTag("simple_vehicles_itemDBStay")) {
+          if (desire.hasTag("simple_vehicles_itemDBStay"))
+            desire.removeTag("simple_vehicles_itemDBStay");
+
+          desire.remove();
+        }
+      }
       return i;
     }
 
@@ -139,40 +148,32 @@ var iTEMDBFCK = class {
   },
   itemSave = new iTEMDBFCK();
 
-export var btchsItems = [
-    void 0,
-    void 0,
-    "simple_vehicles:honk_item",
-    void 0,
-    void 0,
-  ],
+var btchsItems = [void 0, void 0, "simple_vehicles:honk_item", void 0, void 0],
   itemSet1 = {
     default: "simple_vehicles:honk_item",
     toggledState: "simple_vehicles:honk_item",
     getItem: function (activated) {
       return activated.getDynamicProperty("simple_vehicles:honk_set")
-        ? !this.toggledState
+        ? this.toggledState
         : this.default;
     },
-  };
-
-hotbars = [
-  void 0,
-  void 0,
-  "simple_vehicles:honk_item",
-  void 0,
-  void 0,
-  void 0,
-  void 0,
-  void 0,
-  void 0,
-];
-
-vehiclesAndShit = {
-  "simple_vehicles:ae86": {
-    hotbar: [["simple_vehicles:honk_item"], btchsItems],
   },
-};
+  hotbars = [
+    itemSet1,
+    void 0,
+    "simple_vehicles:book_documents",
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+  ],
+  vehiclesAndShit = {
+    "simple_vehicles:ae86": {
+      hotbar: [[hotbars, void 0], btchsItems],
+    },
+  };
 
 var Fck = {
     hotbars: [],
@@ -217,13 +218,17 @@ var SimpleVehicleRiderData = class {
         if (e.hasTag("simple_vehicles_vehiRideHotbar")) {
           if (
             !e.getComponent(EntityComponentTypes.Inventory) ||
-            !T.loadItems(e)
+            !itemSave.loadItems(e)
           )
             return;
           e.removeTag("simple_vehicles_vehiRideHotbar");
         }
         e.removeTag("simple_vehicles_vehiRide");
       }
+      e.hasTag("simple_vehicles_vehiRideHotbar") &&
+        itemSave.clearHotBar(e) &&
+        e.removeTag("simple_vehicles_vehiRideHotbar");
+      return;
     }
   }
   tick() {
@@ -241,7 +246,7 @@ var SimpleVehicleRiderData = class {
     }
   }
   simplevehiclesGiveHotBar(e, r, t) {
-    let n = p[t.entity.typeId];
+    let n = vehiclesAndShit[t.entity.typeId];
     if (!(!n || !n.hotbars))
       for (let bth = 0; bth < 9; bth++) {
         if (
