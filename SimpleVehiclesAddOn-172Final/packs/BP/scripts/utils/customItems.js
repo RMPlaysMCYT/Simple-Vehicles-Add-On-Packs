@@ -21,5 +21,32 @@ export const CUSTOM_ITEMS = {
 export const SPRAY_ITEMS = {
   "simple_vehicles:black_spray": [
     "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:blue_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:brown_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:cyan_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:gray_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:green_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:light_blue_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:lime_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:magenta_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:orange_spray": [
+    "This color spray makes it feels professional but deadly"
   ]
 }
