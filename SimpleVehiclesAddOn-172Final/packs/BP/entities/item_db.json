@@ -2,20 +2,20 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "simple_vehciles:item_db",
-      "is_spawnable": "true",
-      "is_summonable": "true",
-      "is_experimental": "false"
+      "identifier": "simple_vehicles:item_db",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
     },
     "component_groups": {
-      "simple_vehciles:drop_items_and_despawn": {
+      "simple_vehicles:drop_items_and_despawn": {
         "minecraft:transformation": {
           "drop_equipment": true,
           "drop_inventory": true,
-          "into": "simple_vehciles:item_db<simple_vehciles:instant_despawn>"
+          "into": "simple_vehicles:item_db<simple_vehicles:instant_despawn>"
         }
       },
-      "simple_vehciles:instant_despawn": {
+      "simple_vehicles:instant_despawn": {
         "minecraft:instant_despawn": {}
       }
     },
@@ -53,14 +53,14 @@
       }
     },
     "events": {
-      "simple_vehciles:drop_items_and_despawn": {
+      "simple_vehicles:drop_items_and_despawn": {
         "add": {
-          "component_groups": ["simple_vehciles:drop_items_and_despawn"]
+          "component_groups": ["simple_vehicles:drop_items_and_despawn"]
         }
       },
-      "simple_vehciles:instant_despawn": {
+      "simple_vehicles:instant_despawn": {
         "add": {
-          "component_groups": ["simple_vehciles:instant_despawn"]
+          "component_groups": ["simple_vehicles:instant_despawn"]
         }
       }
     }

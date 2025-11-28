@@ -13,11 +13,7 @@ var iTEMDBFCK = class {
     itemDatabaseSave(btch) {
       let bro = btch.getComponent(EntityComponentTypes.Inventory);
       if (!bro) return;
-      let hoe = btch.dimension.spawnEntity(
-        "simple_vehicles:item_db",
-        btch.location
-      );
-
+      let hoe = btch.dimension.spawnEntity("simple_vehicles:item_db",btch.location);
       hoe.addTag(btch.id);
       let sis = hoe.getComponent(EntityComponentTypes.Inventory);
       if (!sis) return;
@@ -42,9 +38,7 @@ var iTEMDBFCK = class {
     }
 
     itemDatabaseDrop(btch) {
-      let bro = world.structureManager.get(
-        `simple_vehicles:item_db_${btch.id}`
-      );
+      let bro = world.structureManager.get(`simple_vehicles:item_db_${btch.id}`);
       if (!bro) return !1;
       let hoe = btch.location;
       for (; hoe.y > btch.dimension.heightRange.max; ) hoe.y -= 1;
@@ -215,6 +209,18 @@ var Fck = {
           break;
         }
     }
+    modifyPlayerData(e, r) {
+      this._DataP.set(e.id, r), this.savePlayerData(e, r);
+    }
+    get allData() {
+      return Array.from(this._Data.values());
+    }
+    get allPlayers() {
+      return Array.from(this._DataP.values());
+    }
+    getDataByPlayerId(e) {
+      return this._Data.get(e);
+    }
   },
   RMPlayerDATA = new FCK2();
 
@@ -226,7 +232,7 @@ var SimpleVehicleRiderData = class {
           if (e.hasTag("simple_vehicles_vehiRideHotbar")) {
             if (
               !e.getComponent(EntityComponentTypes.Inventory) ||
-              !itemSave.loadItems(e)
+              !itemSave.itemDatabaseLoad(btch)
             )
               return;
             e.removeTag("simple_vehicles_vehiRideHotbar");
@@ -234,9 +240,23 @@ var SimpleVehicleRiderData = class {
           e.removeTag("simple_vehicles_vehiRide");
         }
         e.hasTag("simple_vehicles_vehiRideHotbar") &&
-          itemSave.clearHotBar(e) &&
+          itemSave.itemDatabaseClearOnExit(btch) &&
           e.removeTag("simple_vehicles_vehiRideHotbar");
         return;
+      }
+      let t = this.simpleVehiclesGetRidingEntitiers(e);
+      let fgc = vehiclesAndShit[t.typeId]
+      let btcasa = e.getComponent(EntityComponentTypes.Inventory);
+      if (
+        !e.hasTag("simple_vehicles_vehiRide") && e.location.y <= e.dimension.heightRange.max - 1
+      ) {
+        if (
+          (fgc?.hotbar && 
+            (itemSave.itemDatabaseSave(btch),
+            this.simplevehiclesGiveHotBar(e, btcasa, fgc),
+            e.addTag("simple_vehicles_vehiRide")
+          ))
+        ){}
       }
     }
     tick() {
@@ -253,19 +273,19 @@ var SimpleVehicleRiderData = class {
           });
       }
     }
-    simplevehiclesGiveHotBar(e, r, t) {
-      let n = vehiclesAndShit[t.entity.typeId];
-      if (!(!n || !n.hotbars))
+    simplevehiclesGiveHotBar(e, r, itemSave) {
+      let n = vehiclesAndShit[itemSave.entity.typeId];
+      if (!(!n || !n.hotbar))
         for (let bth = 0; bth < 9; bth++) {
           if (
-            bth > n.hotbars[t.seatPosition].length - 1 ||
-            n.hotbars[t.seatPosition][bth] === void 0
+            bth > n.hotbar[itemSave.seatPosition].length - 1 ||
+            n.hotbar[itemSave.seatPosition][bth] === void 0
           ) {
             let d = new f("simple_vehicles:empty_slot", 1);
             (d.lockMode = K.slot), r.container?.setItem(bth, d);
             continue;
           }
-          let i = n.hotbars[t.seatPosition][bth];
+          let i = n.hotbar[itemSave.seatPosition][bth];
           typeof i == "object" && (i = i.getItem(t.entity));
           let c = new f(i, 1);
           (c.lockMode = K.slot), r.container?.setItem(bth, c);
@@ -274,13 +294,13 @@ var SimpleVehicleRiderData = class {
     simpleVehiclesGetRidingEntitiers(e) {
       for (let btch of e.dimension.getEntities({
         families: ["simple_vehicles_vehicles"],
-        maxDistance: 30,
+        maxDistance: 10,
         location: e.location,
       })) {
         let asts = btch.getComponent(EntityComponentTypes.Rideable);
         if (!asts) continue;
-        let asds = asts.getRider();
-        if (asds === e) {
+        let asds = asts.getRiders();
+        if (asds.length !== e) {
           for (let sis = 0; sis < asds.length; sis++) {
             if (asds[sis].id === e.id)
               return {

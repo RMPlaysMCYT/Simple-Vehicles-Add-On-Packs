@@ -90,6 +90,7 @@
 			"minecraft:type_family": {
 				"family": [
 					"aspire",
+					"simple_vehicles.item_dbinventory",
 					"simple_vehicles_vehicles",
 					"ae86"
 				]
