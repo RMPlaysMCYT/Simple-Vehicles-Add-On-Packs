@@ -1,15 +1,41 @@
 import {
   EquipmentSlot,
-  ItemLockMode as K,
-  ItemStack as f,
+  ItemLockMode,
+  ItemStack,
   EntityComponentTypes,
   StructureSaveMode,
-  StructureAnimationMode as X,
+  StructureAnimationMode,
   system,
   world,
 } from "@minecraft/server";
 
 var iTEMDBFCK = class {
+
+  /* This was work in progress as well */
+    // itemSimpleVehiclesDatabaseSave(event){
+    //   let a = event.getComponent("minecraft:inventory");
+    //   if (!a) return;
+    //   let e = event.dimension.spawnEntity("simple_vehicles:item_db", event.location);
+    //   e.addTag(event.id);
+    //   let t = e.getComponent(EntityComponentTypes.Inventory);
+    //   if (!t) return;
+    //   let n = [];
+    //   for (let i = 0; i < 9; i++) {
+    //     let c = a.container?.getItem(i);
+    //     t.container?.setItem(i, c), n.push(c);
+    //   }
+    //   world.structureManager.delete(`simple_vehicles:item_db_${event.id}`),
+    //     world.structureManager.createFromWorld(
+    //       `simple_vehicles:item_db_${event.id}`,
+    //       event.dimension,
+    //       e.location,
+    //       e.location,
+    //       { includeBlocks: !1, includeEntities: !0, saveMode: StructureSaveMode.World }
+    //     ),
+    //     e.remove();
+    // }
+
+
     itemDatabaseSave(btch) {
       let bro = btch.getComponent(EntityComponentTypes.Inventory);
       if (!bro) return;
@@ -51,7 +77,7 @@ var iTEMDBFCK = class {
       world.structureManager.place(bro, btch.dimension, hoe, {
         includeBlocks: !1,
         includeEntities: !0,
-        animationMode: X.None,
+        animationMode: StructureAnimationMode.None,
       }),
         world.structureManager.delete(bro);
       let yword = btch.dimension.getEntities({
@@ -96,7 +122,7 @@ var iTEMDBFCK = class {
       world.structureManager.place(hoe, btch.dimension, btch.location, {
         includeBlocks: !1,
         includeEntities: !0,
-        animationMode: X.None,
+        animationMode: StructureAnimationMode.None,
       });
       let assist = btch.dimension.getEntities({
           type: "simple_vehicles:item_db",
@@ -273,22 +299,22 @@ var SimpleVehicleRiderData = class {
           });
       }
     }
-    simplevehiclesGiveHotBar(e, r, itemSave) {
-      let n = vehiclesAndShit[itemSave.entity.typeId];
+    simplevehiclesGiveHotBar(e, r, ter) {
+      let n = vehiclesAndShit[ter.entity.typeId];
       if (!(!n || !n.hotbar))
         for (let bth = 0; bth < 9; bth++) {
           if (
-            bth > n.hotbar[itemSave.seatPosition].length - 1 ||
-            n.hotbar[itemSave.seatPosition][bth] === void 0
+            bth > n.hotbar[ter.seatPosition].length - 1 ||
+            n.hotbar[ter.seatPosition][bth] === void 0
           ) {
-            let d = new f("simple_vehicles:empty_slot", 1);
-            (d.lockMode = K.slot), r.container?.setItem(bth, d);
+            let d = new ItemStack("simple_vehicles:empty_slot", 1);
+            (d.lockMode = ItemLockMode.slot), r.container?.setItem(bth, d);
             continue;
           }
-          let i = n.hotbar[itemSave.seatPosition][bth];
-          typeof i == "object" && (i = i.getItem(t.entity));
-          let c = new f(i, 1);
-          (c.lockMode = K.slot), r.container?.setItem(bth, c);
+          let i = n.hotbar[ter.seatPosition][bth];
+          typeof i == "object" && (i = i.getItem(ter.entity));
+          let c = new ItemStack(i, 1);
+          (c.lockMode = ItemLockMode.slot), r.container?.setItem(bth, c);
         }
     }
     simpleVehiclesGetRidingEntitiers(e) {
