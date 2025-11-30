@@ -326,7 +326,7 @@ var SimpleVehicleRiderData = class {
         let asts = btch.getComponent(EntityComponentTypes.Rideable);
         if (!asts) continue;
         let asds = asts.getRiders();
-        if (asds.length !== 0) {
+        if (asds.length !== e) {
           for (let sis = 0; sis < asds.length; sis++) {
             if (asds[sis].id === e.id)
               return {
@@ -338,7 +338,7 @@ var SimpleVehicleRiderData = class {
       }
     }
     ItemUseAfterEvent(e) {
-      switch (e.itemStack.typeId) {
+      switch (e.ItemStack.typeId) {
         case "simple_vehicles:honk_item":
           e.entity.setDynamicProperty("simple_vehicles:honk_set", !0);
           break;
