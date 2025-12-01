@@ -1,5 +1,5 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "simple_vehicles:bus_2",
@@ -27,7 +27,8 @@
 								0.75,
 								0.9,
 								2
-							]
+							],
+							"third_person_camera_radius": 15
 						},
 						{
 							"position": [
