@@ -16,12 +16,12 @@ import './booksGuide';
 import './documentation/MainMenu';
 import './honkItem';
 import './setLoreInfo';
-import './itemInteraction/item_db.js';
+import './itemInteraction/item_db';
 
 // import * as fck from "./itemInteraction/playerOnEnter"
 
-let onWorldStartedSetup = false;
-let onWorldFinishedSetup = false;
+// let onWorldStartedSetup = false;
+// let onWorldFinishedSetup = false;
 
 // async function onWorldTicks() {
 //     fck.onWorldTicks();

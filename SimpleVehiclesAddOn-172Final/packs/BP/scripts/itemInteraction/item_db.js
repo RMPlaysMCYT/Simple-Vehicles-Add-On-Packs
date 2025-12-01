@@ -272,17 +272,25 @@ var SimpleVehicleRiderData = class {
       }
       let t = this.simpleVehiclesGetRidingEntitiers(e);
       let fgc = vehiclesAndShit[t.typeId]
+      t.entity.addTag("simple_vehicles.riding_pushedover") || 
+      (this.SimpleVehicles_VehiclesBeingRidden.push(vehiclesAndShit.entity),
+      vehiclesAndShit.entity.addTag("simple_vehicles.riding_pushover"));
       let btcasa = e.getComponent(EntityComponentTypes.Inventory);
       if (
-        !e.hasTag("simple_vehicles_vehiRide") && e.location.y <= e.dimension.heightRange.max - 1
+        !e.hasTag("simple_vehicles_vehiRide") && 
+        e.location.y <= e.dimension.heightRange.max - 1 &&
+        t.entity.location.y <= e.dimension.heightRange.max - 1 && 
+        btcasa
       ) {
         if (
           (fgc?.hotbar && 
             (itemSave.itemDatabaseSave(btch),
-            this.simplevehiclesGiveHotBar(e, btcasa, fgc),
+            this.simplevehiclesGiveHotBar(e, btcasa, t),
+            e.setDynamicProperty("simple_vehicles.riding_pushover", t.seatPosition),
             e.addTag("simple_vehicles_vehiRide")
           ))
         ){}
+        e.addTag("simple_vehicles_vehiRide");
       }
     }
     tick() {

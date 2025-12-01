@@ -31,6 +31,7 @@
 				},
 				"minecraft:rideable": {
 					"seat_count": 2,
+					"controlling_seat": 0,
 					"crouching_skip_interact": true,
 					"family_types": [
 						"player"
@@ -42,7 +43,8 @@
 								0.52,
 								0.32,
 								0
-							]
+							],
+							"third_person_camera_radius": 15
 						},
 						{
 							"position": [
