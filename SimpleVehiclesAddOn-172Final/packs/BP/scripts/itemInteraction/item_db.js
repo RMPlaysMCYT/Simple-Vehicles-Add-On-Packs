@@ -275,7 +275,7 @@ var SimpleVehicleRiderData = class {
       t.entity.addTag("simple_vehicles.riding_pushedover") || 
       (this.SimpleVehicles_VehiclesBeingRidden.push(vehiclesAndShit.entity),
       vehiclesAndShit.entity.addTag("simple_vehicles.riding_pushover"));
-      let btcasa = e.getComponent(EntityComponentTypes.Inventory);
+      let btcasa = e.getComponent("minecraft:inventory");
       if (
         !e.hasTag("simple_vehicles_vehiRide") && 
         e.location.y <= e.dimension.heightRange.max - 1 &&
@@ -327,11 +327,11 @@ var SimpleVehicleRiderData = class {
     }
     simpleVehiclesGetRidingEntitiers(e) {
       for (let btch of e.dimension.getEntities({
-        families: ["simple_vehicles_vehicles"],
+        families: ["simple_vehicles_vehicles", "vehicles"],
         maxDistance: 10,
         location: e.location,
       })) {
-        let asts = btch.getComponent(EntityComponentTypes.Rideable);
+        let asts = btch.getComponent("minecraft:rideable");
         if (!asts) continue;
         let asds = asts.getRiders();
         if (asds.length !== 0) {
