@@ -9,14 +9,13 @@
 
 // })
 
-
 import { system, world } from "@minecraft/server";
 // import { itemLoreFormal } from "./utils/customBlocks";
-import './booksGuide';
-import './documentation/MainMenu';
-import './honkItem';
-import './setLoreInfo';
-import './itemInteraction/item_db';
+import "./booksGuide";
+import "./documentation/MainMenu";
+import "./honkItem";
+import "./setLoreInfo";
+import { BtchAll, RMPlayerDATA } from "./itemInteraction/item_db";
 
 // import * as fck from "./itemInteraction/playerOnEnter"
 
@@ -31,8 +30,7 @@ import './itemInteraction/item_db';
 //     system.run(onWorldTicks);
 //     system.run(Loop);
 
-    
-//     system.run(Loop);   
+//     system.run(Loop);
 // }
 
 // system.runInterval(() => {
@@ -42,3 +40,10 @@ import './itemInteraction/item_db';
 // }, 1);
 
 // system.run(Loop);
+
+function BtchAsTick() {
+  for (let a of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(a);
+  BtchAll.tick();
+}
+
+system.runInterval(BtchAsTick, 0);

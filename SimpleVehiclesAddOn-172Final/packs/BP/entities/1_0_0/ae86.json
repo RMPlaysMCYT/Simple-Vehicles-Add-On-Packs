@@ -83,6 +83,7 @@
 			}
 		},
 		"components": {
+			"minecraft:is_stackable": {},
 			"minecraft:experience_reward": {
 				"on_death": "math.min(query.player_level*7,100)"
 			},
@@ -98,7 +99,7 @@
 				]
 			},
 			"minecraft:collision_box": {
-				"width": 2,
+				"width": 3,
 				"height": 2
 			},
 			"minecraft:health": {
