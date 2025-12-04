@@ -2,8 +2,10 @@
 
 // import { itemSet1 } from "./itemInteraction/itemStuff";
 // itemDatabaseSave();
+const Version = "172";
 
-// console.log("Addon Loaded")
+console.log("Addon Loaded")
+console.log(`Simple Vehicles Addon ${Version} Loaded`)
 
 // world.afterEvents.playerInteractWithEntity.subscribe(activated => {
 
