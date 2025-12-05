@@ -11,8 +11,8 @@
         ],
         "min_engine_version": [
             1,
-            21,
-            0
+            20,
+            80
         ]
     },
     "modules": [
@@ -37,6 +37,7 @@
         }
     ],
     "metadata": {
+        "product_type": "addon",
         "authors": [
             "RMPlaysMC YT"
         ],
