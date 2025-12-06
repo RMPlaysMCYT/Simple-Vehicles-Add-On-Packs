@@ -10,30 +10,6 @@ import {
 } from "@minecraft/server";
 
 var iTEMDBFCK = class {
-    /* This was work in progress as well */
-    // itemSimpleVehiclesDatabaseSave(event){
-    //   let a = event.getComponent("minecraft:inventory");
-    //   if (!a) return;
-    //   let e = event.dimension.spawnEntity("simple_vehicles:item_db", event.location);
-    //   e.addTag(event.id);
-    //   let t = e.getComponent(EntityComponentTypes.Inventory);
-    //   if (!t) return;
-    //   let n = [];
-    //   for (let i = 0; i < 9; i++) {
-    //     let c = a.container?.getItem(i);
-    //     t.container?.setItem(i, c), n.push(c);
-    //   }
-    //   world.structureManager.delete(`simple_vehicles:item_db_${event.id}`),
-    //     world.structureManager.createFromWorld(
-    //       `simple_vehicles:item_db_${event.id}`,
-    //       event.dimension,
-    //       e.location,
-    //       e.location,
-    //       { includeBlocks: !1, includeEntities: !0, saveMode: StructureSaveMode.World }
-    //     ),
-    //     e.remove();
-    // }
-
     itemDatabaseSave(btch) {
       let bro = btch.getComponent(EntityComponentTypes.Inventory);
       if (!bro) return;
