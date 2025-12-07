@@ -13,12 +13,12 @@ var iTEMDBFCK = class {
     itemDatabaseSave(btch) {
       let bro = btch.getComponent(EntityComponentTypes.Inventory);
       if (!bro) return;
-      let hoe = btch.dimension.spawnEntity(
+      let aa = btch.dimension.spawnEntity(
         "simple_vehicles:item_db",
         btch.location
       );
-      hoe.addTag(btch.id);
-      let sis = hoe.getComponent(EntityComponentTypes.Inventory);
+      aa.addTag(btch.id);
+      let sis = aa.getComponent(EntityComponentTypes.Inventory);
       if (!sis) return;
       let yword = [];
       for (let i = 0; i < 9; i++) {
@@ -29,15 +29,15 @@ var iTEMDBFCK = class {
         world.structureManager.createFromWorld(
           `simple_vehicles:item_db_${btch.id}`,
           btch.dimension,
-          hoe.location,
-          hoe.location,
+          aa.location,
+          aa.location,
           {
             includeBlocks: !1,
             includeEntities: !0,
             saveMode: StructureSaveMode.World,
           }
         ),
-        hoe.remove();
+        aa.remove();
     }
 
     itemDatabaseDrop(btch) {
@@ -45,15 +45,15 @@ var iTEMDBFCK = class {
         `simple_vehicles:item_db_${btch.id}`
       );
       if (!bro) return !1;
-      let hoe = btch.location;
-      for (; hoe.y > btch.dimension.heightRange.max; ) hoe.y -= 1;
+      let aa = btch.location;
+      for (; aa.y > btch.dimension.heightRange.max; ) aa.y -= 1;
       let noe = btch.dimension.getEntities({
-        location: hoe,
+        location: aa,
         maxDistance: 50,
         minDistance: 0,
       });
       for (let azyk of noe) azyk.addTag("simple_vehicles_itemDBStay");
-      world.structureManager.place(bro, btch.dimension, hoe, {
+      world.structureManager.place(bro, btch.dimension, aa, {
         includeBlocks: !1,
         includeEntities: !0,
         animationMode: StructureAnimationMode.None,
@@ -67,7 +67,7 @@ var iTEMDBFCK = class {
         yword[0].addTag("simple_vehicles:drop_items_and_despawn");
 
       let hap = btch.dimension.getEntities({
-        location: hoe,
+        location: aa,
         minDistance: 0,
         maxDistance: 50,
       });
@@ -162,6 +162,28 @@ var btchsItems = [
         : this.default;
     },
   },
+  itemSet2 = {
+    default: "simple_vehicles:jump1_item",
+    toggledState: "simple_vehicles:jump1_item",
+    getItem: function (activated) {
+      return activated.getDynamicProperty(
+        "simple_vehicles:jump1_item_activated"
+      )
+        ? this.toggledState
+        : this.default;
+    },
+  },
+  itemSet3 = {
+    default: "simple_vehicles:jump2_item",
+    toggledState: "simple_vehicles:jump2_item",
+    getItem: function (activated) {
+      return activated.getDynamicProperty(
+        "simple_vehicles:jump2_item_activated"
+      )
+        ? this.toggledState
+        : this.default;
+    },
+  },
   hotbars = [
     void 0,
     itemSet1,
@@ -175,165 +197,179 @@ var btchsItems = [
   ],
   vehiclesAndShit = {
     "simple_vehicles:ae86": {
-      hotbar: [[hotbars, void 0], btchsItems],
+      colission: 3,
+      hotbar: [
+        [
+          void 0, 
+          void 0, 
+          void 0, 
+          void 0, 
+          itemSet1, 
+          itemSet3, 
+          "minecraft:stick",
+          void 0,
+          void 0
+        ], 
+        btchsItems
+      ],
     },
     "simple_vehicles:ambulance": {
-      hotbar: [[hotbars, void 0], btchsItems],
+      hotbar: [hotbars, btchsItems],
     },
   };
 
 export var Fck = {
-  hotbars: [],
-},
-FCK2 = class {
-  _DataP = new Map();
-  _Data = new Map();
-  loadPlayerData(e) {
-    let bas = e.getDynamicProperty("simple_vehicles:player_data");
-    if (bas) return JSON.parse(bas);
-  }
-  savePlayerData(e, r) {
-    e.setDynamicProperty("simple_vehicles:player_data", JSON.stringify(r));
-  }
-  addPlayerData(e) {
-    let bas = this.loadPlayerData(e);
-    bas ||
-      ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
-    for (let t in Fck) t in bas || (bas[t] = Fck[t]);
-    this._DataP.set(e.id, e), this._Data.set(e.id, bas);
-  }
-  removePlayerData(e) {
-    for (let [r] of this._Data)
-      if (r === e.id) {
-        this._Data.delete(r);
-        break;
-      }
-    for (let [r] of this._DataP)
-      if (r === e.id) {
-        this._DataP.delete(r);
-        break;
-      }
-  }
-  modifyPlayerData(e, r) {
-    this._DataP.set(e.id, r), this.savePlayerData(e, r);
-  }
-  get allData() {
-    return Array.from(this._Data.values());
-  }
-  get allPlayers() {
-    return Array.from(this._DataP.values());
-  }
-  getDataByPlayerId(e) {
-    return this._Data.get(e);
-  }
-},
-RMPlayerDATA = new FCK2();
+    hotbars: [],
+  },
+  FCK2 = class {
+    _DataP = new Map();
+    _Data = new Map();
+    loadPlayerData(e) {
+      let bas = e.getDynamicProperty("simple_vehicles:player_data");
+      if (bas) return JSON.parse(bas);
+    }
+    savePlayerData(e, r) {
+      e.setDynamicProperty("simple_vehicles:player_data", JSON.stringify(r));
+    }
+    addPlayerData(e) {
+      let bas = this.loadPlayerData(e);
+      bas ||
+        ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
+      for (let t in Fck) t in bas || (bas[t] = Fck[t]);
+      this._DataP.set(e.id, e), this._Data.set(e.id, bas);
+    }
+    removePlayerData(e) {
+      for (let [r] of this._Data)
+        if (r === e.id) {
+          this._Data.delete(r);
+          break;
+        }
+      for (let [r] of this._DataP)
+        if (r === e.id) {
+          this._DataP.delete(r);
+          break;
+        }
+    }
+    modifyPlayerData(e, r) {
+      this._DataP.set(e.id, r), this.savePlayerData(e, r);
+    }
+    get allData() {
+      return Array.from(this._Data.values());
+    }
+    get allPlayers() {
+      return Array.from(this._DataP.values());
+    }
+    getDataByPlayerId(e) {
+      return this._Data.get(e);
+    }
+  },
+  RMPlayerDATA = new FCK2();
 
 export var SimpleVehicleRiderData = class {
-  SimpleVehicles_VehiclesBeingRidden = [];
-  runPlayerDataInventory(btch) {
-    if (!btch.getComponent(EntityComponentTypes.Riding)) {
-      if (btch.hasTag("simple_vehicles_vehiride")) {
-        if (btch.hasTag("simple_vehicles_vehiridehotbar")) {
-          if (
-            !btch.getComponent(EntityComponentTypes.Inventory) ||
-            !itemSave.itemDatabaseLoad(btch)
-          )
-            return;
+    SimpleVehicles_VehiclesBeingRidden = [];
+    runPlayerDataInventory(btch) {
+      if (!btch.getComponent(EntityComponentTypes.Riding)) {
+        if (btch.hasTag("simple_vehicles_vehiride")) {
+          if (btch.hasTag("simple_vehicles_vehiridehotbar")) {
+            if (
+              !btch.getComponent(EntityComponentTypes.Inventory) ||
+              !itemSave.itemDatabaseLoad(btch)
+            )
+              return;
+            btch.removeTag("simple_vehicles_vehiridehotbar");
+          }
+          btch.removeTag("simple_vehicles_vehiride");
+        }
+        btch.hasTag("simple_vehicles_vehiridehotbar") &&
+          itemSave.itemDatabaseClearOnExit(btch) &&
           btch.removeTag("simple_vehicles_vehiridehotbar");
-        }
-        btch.removeTag("simple_vehicles_vehiride");
+        return;
       }
-      btch.hasTag("simple_vehicles_vehiridehotbar") &&
-        itemSave.itemDatabaseClearOnExit(btch) &&
-        btch.removeTag("simple_vehicles_vehiridehotbar");
-      return;
-    }
-    let t = this.simpleVehiclesGetRidingEntitiers(btch);
-    if (!t) return;
-    let fgc = vehiclesAndShit[t.entity.typeId];
-    t.entity.addTag("simple_vehicles.riding_pushedover") ||
-      (this.SimpleVehicles_VehiclesBeingRidden.push(t.entity),
-      t.entity.addTag("simple_vehicles.riding_pushover"));
-    let btcasa = btch.getComponent("minecraft:inventory");
-    if (
-      !btch.hasTag("simple_vehicles_vehiride") &&
-      btch.location.y <= btch.dimension.heightRange.max - 1 &&
-      t.entity.location.y <= btch.dimension.heightRange.max - 1 &&
-      btcasa
-    ) {
+      let t = this.simpleVehiclesGetRidingEntitiers(btch);
+      if (!t) return;
+      let fgc = vehiclesAndShit[t.entity.typeId];
+      t.entity.addTag("simple_vehicles.riding_pushedover") ||
+        (this.SimpleVehicles_VehiclesBeingRidden.push(t.entity),
+        t.entity.addTag("simple_vehicles.riding_pushover"));
+      let btcasa = btch.getComponent("minecraft:inventory");
       if (
-        fgc?.hotbar &&
-        (itemSave.itemDatabaseSave(btch),
-        this.simplevehiclesGiveHotBar(btch, btcasa, t),
-        btch.setDynamicProperty(
-          "simple_vehicles.riding_pushover",
-          t.seatPosition
-        ),
-        btch.addTag("simple_vehicles_vehiride"))
+        !btch.hasTag("simple_vehicles_vehiride") &&
+        btch.location.y <= btch.dimension.heightRange.max - 1 &&
+        t.entity.location.y <= btch.dimension.heightRange.max - 1 &&
+        btcasa
       ) {
-      }
-      btch.addTag("simple_vehicles_vehiride");
-    }
-  }
-  tick() {
-    for (let e of RMPlayerDATA.allPlayers) {
-      if (!e.isSneaking) continue;
-      let r = e.dimension.getEntities({
-        families: ["simple_vehicles.item_dbinventory"],
-        maxDistance: 30,
-        location: e.location,
-      });
-      for (let t of r)
-        t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
-          players: [e.name],
-        });
-    }
-  }
-  simplevehiclesGiveHotBar(e, r, ter) {
-    let n = vehiclesAndShit[ter.entity.typeId];
-    if (!(!n || !n.hotbar))
-      for (let bth = 0; bth < 9; bth++) {
         if (
-          bth > n.hotbar[ter.seatPosition].length - 1 ||
-          n.hotbar[ter.seatPosition][bth] === void 0
+          fgc?.hotbar &&
+          (itemSave.itemDatabaseSave(btch),
+          this.simplevehiclesGiveHotBar(btch, btcasa, t),
+          btch.setDynamicProperty(
+            "simple_vehicles.riding_pushover",
+            t.seatPosition
+          ),
+          btch.addTag("simple_vehicles_vehiride"))
         ) {
-          let d = new ItemStack("simple_vehicles:empty_slot", 1);
-          (d.lockMode = ItemLockMode.slot), r.container?.setItem(bth, d);
-          continue;
         }
-        let i = n.hotbar[ter.seatPosition][bth];
-        typeof i == "object" && (i = i.getItem(ter.entity));
-        let c = new ItemStack(i, 1);
-        (c.lockMode = ItemLockMode.slot), r.container?.setItem(bth, c);
+        btch.addTag("simple_vehicles_vehiride");
       }
-  }
-  simpleVehiclesGetRidingEntitiers(e) {
-    for (let btch of e.dimension.getEntities({
-      families: ["simple_vehicles_vehicles", "vehicles"],
-      maxDistance: 10,
-      location: e.location,
-    })) {
-      let asts = btch.getComponent("minecraft:rideable");
-      if (!asts) continue;
-      let asds = asts.getRiders();
-      if (asds.length !== 0) {
-        for (let sis = 0; sis < asds.length; sis++) {
-          if (asds[sis].id === e.id)
-            return {
-              entity: btch,
-              seatPosition: sis,
-            };
+    }
+    tick() {
+      for (let e of RMPlayerDATA.allPlayers) {
+        if (!e.isSneaking) continue;
+        let r = e.dimension.getEntities({
+          families: ["simple_vehicles.item_dbinventory"],
+          maxDistance: 30,
+          location: e.location,
+        });
+        for (let t of r)
+          t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
+            players: [e.name],
+          });
+      }
+    }
+    simplevehiclesGiveHotBar(e, r, ter) {
+      let n = vehiclesAndShit[ter.entity.typeId];
+      if (!(!n || !n.hotbar))
+        for (let bth = 0; bth < 9; bth++) {
+          if (
+            bth > n.hotbar[ter.seatPosition].length - 1 ||
+            n.hotbar[ter.seatPosition][bth] === void 0
+          ) {
+            let d = new ItemStack("simple_vehicles:empty_slot", 1);
+            (d.lockMode = ItemLockMode.slot), r.container?.setItem(bth, d);
+            continue;
+          }
+          let i = n.hotbar[ter.seatPosition][bth];
+          typeof i == "object" && (i = i.getItem(ter.entity));
+          let c = new ItemStack(i, 1);
+          (c.lockMode = ItemLockMode.slot), r.container?.setItem(bth, c);
+        }
+    }
+    simpleVehiclesGetRidingEntitiers(e) {
+      for (let btch of e.dimension.getEntities({
+        families: ["simple_vehicles_vehicles", "vehicles"],
+        maxDistance: 10,
+        location: e.location,
+      })) {
+        let asts = btch.getComponent("minecraft:rideable");
+        if (!asts) continue;
+        let asds = asts.getRiders();
+        if (asds.length !== 0) {
+          for (let sis = 0; sis < asds.length; sis++) {
+            if (asds[sis].id === e.id)
+              return {
+                entity: btch,
+                seatPosition: sis,
+              };
+          }
         }
       }
     }
-  }
-  ItemUseAfterEvent(e) {
-    switch (e.itemStack.typeId) {
-      case "simple_vehicles:honk_item":
-        e.entity.setDynamicProperty("simple_vehicles:honk_set", !0);
-        break;
+    ItemUseAfterEvent(e) {
+      switch (e.itemStack.typeId) {
+        case "simple_vehicles:honk_item":
+          e.entity.setDynamicProperty("simple_vehicles:honk_set", !0);
+          break;
+      }
     }
-  }
-},
-BtchAll = new SimpleVehicleRiderData();
+  },
+  BtchAll = new SimpleVehicleRiderData();
