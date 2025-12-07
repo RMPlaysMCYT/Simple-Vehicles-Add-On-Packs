@@ -19,14 +19,7 @@
         "minecraft:rideable": {
           "seat_count": 1,
           "crouching_skip_interact": false,
-          "family_types": [
-            "player",
-            "villager",
-            "cat",
-            "npc",
-            "simple_vehicles_vehicles",
-            "vehicles"
-          ],
+          "family_types": ["player", "villager", "cat", "npc"],
           "interact_text": "Drive",
           "pull_in_entities": true,
           "seats": [
@@ -135,7 +128,7 @@
       "minecraft:behavior.player_ride_tamed": {},
       "minecraft:can_power_jump": {},
       "minecraft:type_family": {
-        "family": ["aspire", "bike"]
+        "family": ["aspire", "bike", "simple_vehicles_vehicles", "vehicles"]
       },
       "minecraft:horse.jump_strength": {
         "value": 0
