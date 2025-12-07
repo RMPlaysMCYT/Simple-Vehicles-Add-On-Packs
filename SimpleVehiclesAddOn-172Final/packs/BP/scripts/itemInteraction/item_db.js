@@ -231,49 +231,49 @@ RMPlayerDATA = new FCK2();
 
 export var SimpleVehicleRiderData = class {
   SimpleVehicles_VehiclesBeingRidden = [];
-  runPlayerDataInventory(e) {
-    if (!e.getComponent(EntityComponentTypes.Riding)) {
-      if (e.hasTag("simple_vehicles_vehiride")) {
-        if (e.hasTag("simple_vehicles_vehiridehotbar")) {
+  runPlayerDataInventory(btch) {
+    if (!btch.getComponent(EntityComponentTypes.Riding)) {
+      if (btch.hasTag("simple_vehicles_vehiride")) {
+        if (btch.hasTag("simple_vehicles_vehiridehotbar")) {
           if (
-            !e.getComponent(EntityComponentTypes.Inventory) ||
+            !btch.getComponent(EntityComponentTypes.Inventory) ||
             !itemSave.itemDatabaseLoad(btch)
           )
             return;
-          e.removeTag("simple_vehicles_vehiridehotbar");
+          btch.removeTag("simple_vehicles_vehiridehotbar");
         }
-        e.removeTag("simple_vehicles_vehiride");
+        btch.removeTag("simple_vehicles_vehiride");
       }
-      e.hasTag("simple_vehicles_vehiridehotbar") &&
+      btch.hasTag("simple_vehicles_vehiridehotbar") &&
         itemSave.itemDatabaseClearOnExit(btch) &&
-        e.removeTag("simple_vehicles_vehiridehotbar");
+        btch.removeTag("simple_vehicles_vehiridehotbar");
       return;
     }
-    let t = this.simpleVehiclesGetRidingEntitiers(e);
+    let t = this.simpleVehiclesGetRidingEntitiers(btch);
     if (!t) return;
     let fgc = vehiclesAndShit[t.entity.typeId];
     t.entity.addTag("simple_vehicles.riding_pushedover") ||
       (this.SimpleVehicles_VehiclesBeingRidden.push(t.entity),
       t.entity.addTag("simple_vehicles.riding_pushover"));
-    let btcasa = e.getComponent("minecraft:inventory");
+    let btcasa = btch.getComponent("minecraft:inventory");
     if (
-      !e.hasTag("simple_vehicles_vehiride") &&
-      e.location.y <= e.dimension.heightRange.max - 1 &&
-      t.entity.location.y <= e.dimension.heightRange.max - 1 &&
+      !btch.hasTag("simple_vehicles_vehiride") &&
+      btch.location.y <= btch.dimension.heightRange.max - 1 &&
+      t.entity.location.y <= btch.dimension.heightRange.max - 1 &&
       btcasa
     ) {
       if (
         fgc?.hotbar &&
         (itemSave.itemDatabaseSave(btch),
-        this.simplevehiclesGiveHotBar(e, btcasa, t),
-        e.setDynamicProperty(
+        this.simplevehiclesGiveHotBar(btch, btcasa, t),
+        btch.setDynamicProperty(
           "simple_vehicles.riding_pushover",
           t.seatPosition
         ),
-        e.addTag("simple_vehicles_vehiride"))
+        btch.addTag("simple_vehicles_vehiride"))
       ) {
       }
-      e.addTag("simple_vehicles_vehiride");
+      btch.addTag("simple_vehicles_vehiride");
     }
   }
   tick() {
