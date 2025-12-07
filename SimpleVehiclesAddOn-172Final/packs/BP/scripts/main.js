@@ -18,7 +18,7 @@ import "./documentation/MainMenu";
 import "./honkItem";
 import "./setLoreInfo";
 import "./_hud";
-import { BtchAll, RMPlayerDATA } from "./itemInteraction/item_db";
+import { BtchAll, RMPlayerDATA, Fck, FCK2,  } from "./itemInteraction/item_db";
 
 // import * as fck from "./itemInteraction/playerOnEnter"
 

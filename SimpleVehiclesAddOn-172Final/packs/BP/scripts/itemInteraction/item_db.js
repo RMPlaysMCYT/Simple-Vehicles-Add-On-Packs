@@ -11,14 +11,14 @@ import {
 
 var iTEMDBFCK = class {
     itemDatabaseSave(btch) {
-      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      let bro = btch.getComponent("minecraft:inventory");
       if (!bro) return;
       let aa = btch.dimension.spawnEntity(
         "simple_vehicles:item_db",
         btch.location
       );
       aa.addTag(btch.id);
-      let sis = aa.getComponent(EntityComponentTypes.Inventory);
+      let sis = aa.getComponent("minecraft:inventory");
       if (!sis) return;
       let yword = [];
       for (let i = 0; i < 9; i++) {
@@ -85,7 +85,7 @@ var iTEMDBFCK = class {
     }
 
     itemDatabaseLoad(btch) {
-      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      let bro = btch.getComponent("minecraft:inventory");
       if (!bro) return !1;
       let hoe = world.structureManager.get(
         `simple_vehicles:item_db_${btch.id}`
@@ -109,7 +109,7 @@ var iTEMDBFCK = class {
         }),
         i = !1;
       if (assist.length !== 0) {
-        let desire = assist[0].getComponent(EntityComponentTypes.Inventory);
+        let desire = assist[0].getComponent("minecraft:inventory");
         if (desire) {
           for (let u = 0; u < 9; u++) {
             let sd = desire.container?.getItem(u);
@@ -134,7 +134,7 @@ var iTEMDBFCK = class {
     }
 
     itemDatabaseClearOnExit(btch) {
-      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      let bro = btch.getComponent("minecraft:inventory");
       if (!bro) return !1;
       for (let hoe = 0; hoe < 9; hoe++) bro.container?.setItem(hoe, void 0);
       return !0;
@@ -251,8 +251,7 @@ export var Fck = {
     }
     addPlayerData(e) {
       let bas = this.loadPlayerData(e);
-      bas ||
-        ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
+      bas || ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
       for (let t in Fck) t in bas || (bas[t] = Fck[t]);
       this._DataP.set(e.id, e), this._Data.set(e.id, bas);
     }
@@ -284,13 +283,15 @@ export var Fck = {
   RMPlayerDATA = new FCK2();
 
 export var SimpleVehicleRiderData = class {
+
     SimpleVehicles_VehiclesBeingRidden = [];
+    
     runPlayerDataInventory(btch) {
-      if (!btch.getComponent(EntityComponentTypes.Riding)) {
+      if (!btch.getComponent("minecraft:rideable")) {
         if (btch.hasTag("simple_vehicles_vehiride")) {
           if (btch.hasTag("simple_vehicles_vehiridehotbar")) {
             if (
-              !btch.getComponent(EntityComponentTypes.Inventory) ||
+              !btch.getComponent("minecraft:inventory") ||
               !itemSave.itemDatabaseLoad(btch)
             )
               return;
@@ -331,20 +332,20 @@ export var SimpleVehicleRiderData = class {
       }
     }
     tick() {
-      for (let e of RMPlayerDATA.allPlayers) {
-        if (!e.isSneaking) continue;
-        let r = e.dimension.getEntities({
+      for (let btch of RMPlayerDATA.allPlayers) {
+        if (!btch.isSneaking) continue;
+        let r = btch.dimension.getEntities({
           families: ["simple_vehicles.item_dbinventory"],
           maxDistance: 30,
-          location: e.location,
+          location: btch.location,
         });
         for (let t of r)
           t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
-            players: [e.name],
+            players: [btch.name],
           });
       }
     }
-    simplevehiclesGiveHotBar(e, r, ter) {
+    simplevehiclesGiveHotBar(btch, r, ter) {
       let n = vehiclesAndShit[ter.entity.typeId];
       if (!(!n || !n.hotbar))
         for (let bth = 0; bth < 9; bth++) {
@@ -362,25 +363,30 @@ export var SimpleVehicleRiderData = class {
           (c.lockMode = ItemLockMode.slot), r.container?.setItem(bth, c);
         }
     }
-    simpleVehiclesGetRidingEntitiers(e) {
-      for (let btch of e.dimension.getEntities({
+    simpleVehiclesGetRidingEntitiers(btch) {
+      for (let ent of btch.dimension.getEntities({
         families: ["simple_vehicles_vehicles", "vehicles"],
         maxDistance: 10,
-        location: e.location,
+        location: btch.location,
       })) {
-        let asts = btch.getComponent("minecraft:rideable");
-        if (!asts) continue;
-        let asds = asts.getRiders();
-        if (asds.length !== 0) {
-          for (let sis = 0; sis < asds.length; sis++) {
-            if (asds[sis].id === e.id)
+
+        let rideable = ent.getComponent("minecraft:rideable");
+        if (!rideable) continue;
+
+        let riders = rideable.getRiders();
+        if (riders.length !== 0) {
+          for (let i = 0; i < riders.length; i++) {
+            if (riders[i].id === btch.id) {
               return {
-                entity: btch,
-                seatPosition: sis,
+                entity: ent,
+                seatPosition: i,
               };
+            }
           }
         }
       }
+
+      return undefined;
     }
     ItemUseAfterEvent(e) {
       switch (e.itemStack.typeId) {
