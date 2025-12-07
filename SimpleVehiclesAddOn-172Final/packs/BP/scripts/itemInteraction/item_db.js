@@ -214,7 +214,25 @@ var btchsItems = [
       ],
     },
     "simple_vehicles:ambulance": {
+      colission: 3,
       hotbar: [hotbars, btchsItems],
+    },
+    "simple_vehicles:bike": {
+      colission: 2,
+      hotbar: [
+        [
+          void 0, 
+          void 0, 
+          void 0, 
+          void 0, 
+          itemSet1, 
+          void 0,
+          void 0,
+          void 0,
+          void 0
+        ], 
+        btchsItems
+      ],
     },
   };
 
