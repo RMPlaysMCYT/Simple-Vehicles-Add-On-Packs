@@ -54,3 +54,27 @@ export const HealthTypes = [
     "390",
     "400"
 ]
+
+export const Classes =[
+    "Residential", //0
+    "Commercial",  //1
+    "Industrial",  //2
+    "Military",    //3
+    "Special"      //4
+]
+
+export const SuitiableFor = [
+    "Town",
+    "Country",
+    "City",
+    "Village",
+    "Provincial",
+    "Regional",
+    "Parks",
+    "Mountains",
+    "Desert",
+    "Jungle",
+    "Ocean",
+    "Sea",
+    "Coast",
+]
