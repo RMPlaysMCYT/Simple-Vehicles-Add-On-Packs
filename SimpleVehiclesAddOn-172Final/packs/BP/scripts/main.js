@@ -18,7 +18,7 @@ import "./documentation/MainMenu";
 import "./honkItem";
 import "./setLoreInfo";
 import "./_hud";
-import { BtchAll, RMPlayerDATA, Fck, FCK2,  } from "./itemInteraction/item_db";
+import * as SimVehSystem from "./itemInteraction/item_db";
 
 // import * as fck from "./itemInteraction/playerOnEnter"
 
@@ -45,8 +45,8 @@ import { BtchAll, RMPlayerDATA, Fck, FCK2,  } from "./itemInteraction/item_db";
 // system.run(Loop);
 
 function BtchAsTick() {
-  for (let a of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(a);
-  BtchAll.tick();
+  for (let a of SimVehSystem.RMPlayerDATA.allPlayers) SimVehSystem.BtchAll.runPlayerDataInventory(a);
+  SimVehSystem.BtchAll.tick();
 }
 
 system.runInterval(BtchAsTick, 0);

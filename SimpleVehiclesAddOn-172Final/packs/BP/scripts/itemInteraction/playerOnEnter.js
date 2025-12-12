@@ -66,7 +66,7 @@ function getPlayerSimpleVehicles(player) {
 function onVehicleEnter(player, simpleVehiclesVehicles) {
   if (!simpleVehiclesVehicles.isValid()) return;
   player.addTag("simplevehicles_player_in_vehicle");
-  // player.setDynamicProperty("simplevehicles_vehicle_id", vehicle.id);
+  player.setDynamicProperty("simplevehicles_vehicle_id", vehicle.id);
   playerSaveItemInventory(player, simpleVehiclesVehicles);
   playerDeleteItemInventory(player);
   playerInventoryItems(player);
