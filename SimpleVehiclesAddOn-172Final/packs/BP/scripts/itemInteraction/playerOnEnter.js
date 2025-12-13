@@ -29,10 +29,7 @@ export async function onWorldTicks() {
         continue;
       };
       if (!player.hasTag("simplevehicles_player_in_vehicle")) onVehicleEnter(player, simpleVehiclesVehicles);
-      VehiclesMounted = [player.id] = {
-        player: player,
-        vehicle: simpleVehiclesVehicles,
-      };
+      VehiclesMounted = [player.id] = {player: player, vehicle: simpleVehiclesVehicles,};
       player.onScreenDisplay("Test Item");
       player.runCommand("hud @s hide horse_health");
     } catch (error) {}
