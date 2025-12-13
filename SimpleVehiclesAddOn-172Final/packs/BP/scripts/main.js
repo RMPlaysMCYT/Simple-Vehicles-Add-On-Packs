@@ -18,35 +18,35 @@ import "./documentation/MainMenu";
 import "./honkItem";
 import "./setLoreInfo";
 import "./_hud";
-import * as SimVehSystem from "./itemInteraction/item_db";
+// import * as SimVehSystem from "./itemInteraction/item_db";
 
 // import * as fck from "./itemInteraction/playerOnEnter"
 
-// let onWorldStartedSetup = false;
-// let onWorldFinishedSetup = false;
+let onWorldStartedSetup = false;
+let onWorldFinishedSetup = false;
 
-// async function onWorldTicks() {
-//     fck.onWorldTicks();
-// }
-
-// async function Loop() {
-//     system.run(onWorldTicks);
-//     system.run(Loop);
-
-//     system.run(Loop);
-// }
-
-// system.runInterval(() => {
-//     world.getAllPlayers().forEach((player) => {
-//         itemLoreFormal(player);
-//     })
-// }, 1);
-
-// system.run(Loop);
-
-function BtchAsTick() {
-  for (let a of SimVehSystem.RMPlayerDATA.allPlayers) SimVehSystem.BtchAll.runPlayerDataInventory(a);
-  SimVehSystem.BtchAll.tick();
+async function onWorldTicks() {
+    fck.onWorldTicks();
 }
 
-system.runInterval(BtchAsTick, 0);
+async function Loop() {
+    system.run(onWorldTicks);
+    system.run(Loop);
+
+    system.run(Loop);
+}
+
+system.runInterval(() => {
+    world.getAllPlayers().forEach((player) => {
+        itemLoreFormal(player);
+    })
+}, 1);
+
+system.run(Loop);
+
+// function BtchAsTick() {
+//   for (let a of SimVehSystem.RMPlayerDATA.allPlayers) SimVehSystem.BtchAll.runPlayerDataInventory(a);
+//   SimVehSystem.BtchAll.tick();
+// }
+
+// system.runInterval(BtchAsTick, 0);

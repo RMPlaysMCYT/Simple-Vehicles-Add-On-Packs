@@ -6,8 +6,6 @@ import {
   HudElement,
 } from "@minecraft/server";
 
-import { items } from "../utils/itemLists";
-import { vehicleLists } from "../utils/vehicleLists";
 
 export function playerSaveItemInventory(player, simpleVehiclesVehicles) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
@@ -42,7 +40,6 @@ export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
 
 export function playerInventoryItems(player) {
   const ItemInventory = player.getComponent("minecraft:inventory").container;
-
   ItemInventory.addItem(new ItemStack("simple_vehicles:honk_item"));
 }
 

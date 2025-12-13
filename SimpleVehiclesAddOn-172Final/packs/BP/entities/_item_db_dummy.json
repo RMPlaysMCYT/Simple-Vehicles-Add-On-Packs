@@ -12,7 +12,7 @@
         "minecraft:transformation": {
           "drop_equipment": true,
           "drop_inventory": true,
-          "into": "simple_vehciles:item_dummy<simple_vehciles:instant_despawn>"
+          "into": "simple_vehciles:_item_db_dummy<simple_vehciles:instant_despawn>"
         }
       },
       "simple_vehciles:instant_despawn": {
