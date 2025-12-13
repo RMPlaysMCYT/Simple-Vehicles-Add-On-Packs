@@ -6,6 +6,7 @@ import {
   playerLockInventory,
   playerSaveItemInventory,
   playerUnlockInventory,
+  playerInventoryItems
 } from "./item_db2";
 
 import {
@@ -23,15 +24,14 @@ export async function onWorldTicks() {
   ++accelerationSpeed;
   for (const player of world.getAllPlayers()) {
     try {
-      const vehicle = getPlayerSimpleVehicles(player);
-      if (!vehicle || simpleVehiclesVehicles.isValid()) {
+      const simpleVehiclesVehicles = getPlayerSimpleVehicles(player);
+      if (!simpleVehiclesVehicles || simpleVehiclesVehicles.isValid()) {
         if (player.hasTag("simplevehicles_player_in_vehicle")) onVehicleLeave(player);
         continue;
       };
       if (!player.hasTag("simplevehicles_player_in_vehicle")) onVehicleEnter(player, simpleVehiclesVehicles);
-      VehiclesMounted = [player.id] = {player: player, vehicle: simpleVehiclesVehicles,};
-      player.onScreenDisplay("Test Item");
-      player.runCommand("hud @s hide horse_health");
+      VehiclesMounted[player.id] = {player: player, simpleVehiclesVehicles: simpleVehiclesVehicles };
+      // player.runCommand("hud @s hide horse_health");
     } catch (error) {}
   }
 }

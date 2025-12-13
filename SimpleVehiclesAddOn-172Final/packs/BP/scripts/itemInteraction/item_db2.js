@@ -38,15 +38,12 @@ export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
   player.selectedSlotIndex = slotIndex ? slotIndex : 0;
 }
 
-export function playerInventoryItems(player) {
+export function playerInventoryItems(player, simpleVehiclesVehicles) {
   const ItemInventory = player.getComponent("minecraft:inventory").container;
   ItemInventory.addItem(new ItemStack("simple_vehicles:honk_item"));
+  ItemInventory.addItem(new ItemStack("simple_vehicles:key"));
 }
 
-/**
- * Deletes all items from the player's inventory.
- * @param {Player} player - The player whose inventory to clear.
- */
 
 export function playerDeleteItemInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;

@@ -20,27 +20,25 @@ import "./setLoreInfo";
 import "./_hud";
 // import * as SimVehSystem from "./itemInteraction/item_db";
 
-// import * as fck from "./itemInteraction/playerOnEnter"
+import * as fck from "./itemInteraction/playerOnEnter"
 
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
 
 async function onWorldTicks() {
-    fck.onWorldTicks();
+  await fck.onWorldTicks();
 }
 
 async function Loop() {
-    system.run(onWorldTicks);
-    system.run(Loop);
-
-    system.run(Loop);
+  system.run(onWorldTicks);
+  system.run(Loop);
 }
 
-system.runInterval(() => {
-    world.getAllPlayers().forEach((player) => {
-        itemLoreFormal(player);
-    })
-}, 1);
+// system.runInterval(() => {
+//     world.getAllPlayers().forEach((player) => {
+//         itemLoreFormal(player);
+//     })
+// }, 1);
 
 system.run(Loop);
 
