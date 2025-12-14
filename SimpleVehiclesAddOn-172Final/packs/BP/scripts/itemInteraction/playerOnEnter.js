@@ -1,4 +1,4 @@
-import { vehicleLists } from "../utils/vehicleLists";
+import { simpleVehiclesVehicles } from "../utils/vehicleLists";
 
 import {
   playerDeleteItemInventory,
@@ -40,17 +40,13 @@ function getPlayerSimpleVehicles(player) {
   const ridingComponent = player.getComponent("minecraft:riding");
   if (!ridingComponent) return undefined;
   const ridingEntity = ridingComponent.entityRidingOn;
-  if (
-    !ridingEntity || !ridingEntity.isValid() || !vehicleLists.includes(ridingEntity.typeId)
-  )
-  return undefined;
+  if ( !ridingEntity || !ridingEntity.isValid() || !simpleVehiclesVehicles.includes(ridingEntity.typeId)) return undefined;
   return ridingEntity;
 }
 
 function onVehicleEnter(player, simpleVehiclesVehicles) {
   if (!simpleVehiclesVehicles.isValid()) return;
   player.addTag("simplevehicles_player_in_vehicle");
-  // player.setDynamicProperty("simplevehicles_vehicle_id", vehicle.id);
   playerSaveItemInventory(player, simpleVehiclesVehicles);
   playerDeleteItemInventory(player);
   playerInventoryItems(player);

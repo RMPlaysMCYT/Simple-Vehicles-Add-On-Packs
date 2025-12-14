@@ -1,4 +1,4 @@
-export const vehicleLists = [
+export const simpleVehiclesVehicles = [
   "simple_vehicles:ae86",
   "simple_vehicles:ambulance",
   "simple_vehicles:apv",
