@@ -1,24 +1,13 @@
-// import { itemDatabaseSave } from "./itemInteraction/item_db";
-
-// import { itemSet1 } from "./itemInteraction/itemStuff";
-// itemDatabaseSave();
 const Version = "172";
-
 console.log("Addon Loaded")
 console.log(`Simple Vehicles Addon ${Version} Loaded`)
 
-// world.afterEvents.playerInteractWithEntity.subscribe(activated => {
-
-// })
-
 import { system, world } from "@minecraft/server";
-// import { itemLoreFormal } from "./utils/customBlocks";
 import "./booksGuide";
 import "./documentation/MainMenu";
 import "./honkItem";
 import "./setLoreInfo";
 import "./_hud";
-// import * as SimVehSystem from "./itemInteraction/item_db";
 
 import * as fck from "./itemInteraction/playerOnEnter"
 
@@ -34,17 +23,4 @@ async function Loop() {
   system.run(Loop);
 }
 
-// system.runInterval(() => {
-//     world.getAllPlayers().forEach((player) => {
-//         itemLoreFormal(player);
-//     })
-// }, 1);
-
 system.run(Loop);
-
-// function BtchAsTick() {
-//   for (let a of SimVehSystem.RMPlayerDATA.allPlayers) SimVehSystem.BtchAll.runPlayerDataInventory(a);
-//   SimVehSystem.BtchAll.tick();
-// }
-
-// system.runInterval(BtchAsTick, 0);
