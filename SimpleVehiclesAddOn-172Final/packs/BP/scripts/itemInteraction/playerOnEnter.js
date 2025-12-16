@@ -18,14 +18,15 @@ import {
 } from "@minecraft/server";
 
 let accelerationSpeed = 0;
+
 const VehiclesMounted = {};
 
-export async function onWorldTicks() {
+export function onWorldTicks() {
   ++accelerationSpeed;
   for (const player of world.getAllPlayers()) {
     try {
-      const simpleVehiclesVehicles = getPlayerSimpleVehicles(player);
-      if (!simpleVehiclesVehicles || simpleVehiclesVehicles.isValid()) {
+      const simplevehicle_vehicle = getPlayerSimpleVehicles(player);
+      if (!simplevehicle_vehicle || simplevehicle_vehicle.isValid()) {
         if (player.hasTag("simplevehicles_player_in_vehicle")) onVehicleLeave(player);
         continue;
       };

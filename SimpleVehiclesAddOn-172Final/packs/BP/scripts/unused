@@ -35,3 +35,16 @@
     // source.addEffect("fire_resistance", 5, { amplifier: 1 });
     // source.addEffect("night_vision", 10, { amplifier: 1 });
     // source.runCommand("playsound random.toast @p");
+
+    
+// function loreFormattedUnSlashed(FormalLore){
+//   return [
+//     "",
+//     "\xA7r\xA7l" + "-".repeat(25),
+//     ...FormalLore.map((line)=>"\xA7r"+line),
+//     "\xA7r\xA7l" + "-".repeat(25)
+//   ];
+// }
+
+
+// import { CUSTOM_BLOCKS } from "./utils/customBlocks";

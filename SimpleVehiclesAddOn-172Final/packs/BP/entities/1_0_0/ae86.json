@@ -5,7 +5,15 @@
 			"identifier": "simple_vehicles:ae86",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"vehicle_items"
+				]
+			},
+			"animations": {
+				"vehicle_items": "controller.animation.simple_vehicles.vehicle_items"
+			}
 		},
 		"component_groups": {
 			"minecraft:corolla": {
@@ -124,7 +132,11 @@
 			},
 			"minecraft:inventory": {
 				"inventory_size": 16,
-				"container_type": "horse"
+				"can_be_siphoned_from": false,
+				"container_type": "horse",
+				"private": false,
+				"restrict_to_owner": true
+				
 			},
 			"minecraft:movement": {
 				"value": 0.175

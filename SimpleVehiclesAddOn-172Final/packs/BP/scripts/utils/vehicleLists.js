@@ -4,5 +4,5 @@ export const simpleVehiclesVehicles = [
   "simple_vehicles:apv",
   "simple_vehicles:bus",
   "simple_vehicles:car",
-  "simple_vehicles:bus_2",
+  "simple_vehicles:bus_2"
 ];

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.simple_vehicles.vehicle_items":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {
+                            "riding" : "query.has_rider"
+                        }
+                    ]
+                },
+                "riding" : {
+                    "transitions" : [
+                        {
+                            "default": "!query.has_rider"
+                        }
+                    ], 
+                    "on_entry": [
+                        "/tag @p[r=1, c=1] add simplevehicles_player_in_vehicle"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -9,17 +9,12 @@ import {
 
 export function playerSaveItemInventory(player, simpleVehiclesVehicles) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  const vehicleInventory = simpleVehiclesVehicles.getComponent(
-    "minecraft:inventory"
-  ).container;
-  for (let index = 0; index < 9; index++) {
+  const vehicleInventory = simpleVehiclesVehicles.getComponent("minecraft:inventory").container;
+  for (let index = 0; index < 8; index++) {
     const item = playerInventory.getItem(index);
     vehicleInventory.setItem(index, item);
   }
-  player.setDynamicProperty(
-    `simplevehicles_selected_slot_index`,
-    player.selectedSlotIndex
-  );
+  player.setDynamicProperty(`simplevehicles_selected_slot_index`,player.selectedSlotIndex);
 }
 
 export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
@@ -27,7 +22,7 @@ export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
   const vehicleInventory = simpleVehiclesVehicles.getComponent(
     "minecraft:inventory"
   ).container;
-  for (let index = 0; index < 9; index++) {
+  for (let index = 0; index < 8; index++) {
     const item = vehicleInventory.getItem(index);
     playerInventory.setItem(index, item);
     vehicleInventory.setItem(index, undefined);
@@ -54,7 +49,7 @@ export function playerDeleteItemInventory(player) {
 
 export function playerLockInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 9; index++) {
+  for (let index = 0; index < 8; index++) {
     const ItemSlot = playerInventory.getSlot(index);
     if (!ItemSlot.getItem()) continue;
     ItemSlot.lockMode = "inventory";
@@ -63,7 +58,7 @@ export function playerLockInventory(player) {
 
 export function playerUnlockInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 9; index++) {
+  for (let index = 0; index < 8; index++) {
     const ItemSlot = playerInventory.getSlot(index);
     if (!ItemSlot.getItem()) continue;
     ItemSlot.lockMode = "none";

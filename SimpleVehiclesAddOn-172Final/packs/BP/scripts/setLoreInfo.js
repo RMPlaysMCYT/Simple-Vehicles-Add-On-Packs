@@ -1,7 +1,6 @@
 import { system, world } from "@minecraft/server";
 import { CUSTOM_ITEMS, SPRAY_ITEMS } from "./utils/customItems";
 import { VEHICLES_EGGS } from "./utils/customVehicleEggs";
-// import { CUSTOM_BLOCKS } from "./utils/customBlocks";
 
 function updatePlayerInventoryLore() {
   for (const player of world.getPlayers()) {
@@ -27,13 +26,5 @@ function updatePlayerInventoryLore() {
 
   system.runTimeout(updatePlayerInventoryLore, 1);
 }
-// function loreFormattedUnSlashed(FormalLore){
-//   return [
-//     "",
-//     "\xA7r\xA7l" + "-".repeat(25),
-//     ...FormalLore.map((line)=>"\xA7r"+line),
-//     "\xA7r\xA7l" + "-".repeat(25)
-//   ];
-// }
 
 updatePlayerInventoryLore();
