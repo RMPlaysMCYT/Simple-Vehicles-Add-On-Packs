@@ -747,16 +747,11 @@
 			"minecraft:entity_spawned": {
 				"sequence": [
 					{
-						"randomize": [
-							{
-								"weight": 100,
-								"add": {
-									"component_groups": [
-										"minecraft:corolla"
-									]
-								}
-							}
-						]
+						"add": {
+							"component_groups": [
+								"minecraft:corolla"
+							]
+						}
 					},
 					{
 						"randomize": [

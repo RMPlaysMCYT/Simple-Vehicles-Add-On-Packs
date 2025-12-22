@@ -43,7 +43,7 @@
 		},
 		"components": {
 			"minecraft:water_movement": {
-				"drag_factor": 0.8
+				"drag_factor": 1
 			},
 			"minecraft:equippable": {
 				"slots": [

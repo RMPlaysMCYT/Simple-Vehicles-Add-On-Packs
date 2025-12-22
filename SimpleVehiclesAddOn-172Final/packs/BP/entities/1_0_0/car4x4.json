@@ -11,7 +11,6 @@
 			"minecraft:minecar": {
 				"minecraft:is_tamed": {},
 				"minecraft:rideable": {
-					"priority": 0,
 					"seat_count": 4,
 					"crouching_skip_interact": false,
 					"family_types": [
@@ -21,10 +20,6 @@
 						"npc"
 					],
 					"interact_text": "Drive",
-					"swing": true,
-					"particle_on_start": {
-						"particle_type": "lava"
-					},
 					"pull_in_entities": true,
 					"seats": [
 						{
@@ -129,7 +124,7 @@
 			"minecraft:movement": {
 				"value": {
 					"range_min": 0.2,
-					"range_max": 0.22
+					"range_max": 0.5
 				}
 			},
 			"minecraft:physics": {
@@ -172,16 +167,11 @@
 		},
 		"events": {
 			"minecraft:entity_spawned": {
-				"randomize": [
-					{
-						"weight": 100,
-						"add": {
-							"component_groups": [
-								"minecraft:minecar"
-							]
-						}
-					}
-				]
+				"add": {
+					"component_groups": [
+						"minecraft:minecar"
+					]
+				}
 			},
 			"minecraft:horse_saddled": {
 				"add": {
