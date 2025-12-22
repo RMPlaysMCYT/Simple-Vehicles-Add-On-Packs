@@ -127,7 +127,7 @@
 				"private": false
 			},
 			"minecraft:movement": {
-				"value": 0.12
+				"value": 0.2
 			},
 			"minecraft:physics": {
 				"has_gravity": true
@@ -200,11 +200,6 @@
 				}
 			},
 			"minecraft:bugfix": {
-				"add": {
-					"component_groups": [
-						"minecraft:minecar"
-					]
-				},
 				"remove": {
 					"component_groups": [
 						"minecraft:bugfixer"

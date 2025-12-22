@@ -47,12 +47,7 @@ export const HealthTypes = [
     "320",
     "330",
     "340",
-    "350",
-    "360",
-    "370",
-    "380",
-    "390",
-    "400"
+    "350"
 ]
 
 export const Classes =[

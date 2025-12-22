@@ -3,7 +3,6 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "simple_vehicles:tractor",
-			"runtime_identifier": {},
 			"is_summonable": true,
 			"is_spawnable": true
 		},
@@ -94,7 +93,7 @@
 				"container_type": "horse"
 			},
 			"minecraft:movement": {
-				"value": 0.175
+				"value": 0.1
 			},
 			"minecraft:navigation.walk": {
 				"can_path_over_water": true,
