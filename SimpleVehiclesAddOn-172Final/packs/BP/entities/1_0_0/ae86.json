@@ -135,7 +135,7 @@
 				"can_be_siphoned_from": false,
 				"container_type": "horse",
 				"private": false,
-				"restrict_to_owner": true
+				"restrict_to_owner": false
 				
 			},
 			"minecraft:movement": {
