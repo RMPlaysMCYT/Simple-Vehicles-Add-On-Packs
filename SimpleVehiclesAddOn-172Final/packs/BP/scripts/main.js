@@ -14,12 +14,12 @@ import * as fck from "./itemInteraction/playerOnEnter"
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
 
-async function onWorldTicks() {
+async function Ticks() {
   await fck.onWorldTicks();
 }
 
 async function Loop() {
-  system.run(onWorldTicks);
+  system.run(Ticks);
   system.run(Loop);
 }
 

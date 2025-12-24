@@ -47,6 +47,7 @@ function getPlayerSimpleVehicles(player) {
 
 function onVehicleEnter(player, simpleVehiclesVehicles) {
   if (!simpleVehiclesVehicles.isValid()) return;
+  player.getComponent("minecraft:rideable");
   player.addTag("simplevehicles_player_in_vehicle");
   playerSaveItemInventory(player, simpleVehiclesVehicles);
   playerDeleteItemInventory(player);
