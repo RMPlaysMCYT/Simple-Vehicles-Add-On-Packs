@@ -11,10 +11,6 @@ import {
 
 import {
   world,
-  system,
-  ItemStack,
-  HudVisibility,
-  HudElement,
 } from "@minecraft/server";
 
 let accelerationSpeed = 0;
