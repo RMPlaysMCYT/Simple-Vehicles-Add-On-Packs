@@ -10,7 +10,7 @@ import {
 export function playerSaveItemInventory(player, simpleVehiclesVehicles) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
   const vehicleInventory = simpleVehiclesVehicles.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 7; index++) {
     const item = playerInventory.getItem(index);
     vehicleInventory.setItem(index, item);
   }
@@ -22,7 +22,7 @@ export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
   const vehicleInventory = simpleVehiclesVehicles.getComponent(
     "minecraft:inventory"
   ).container;
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 7; index++) {
     const item = vehicleInventory.getItem(index);
     playerInventory.setItem(index, item);
     vehicleInventory.setItem(index, undefined);
@@ -35,21 +35,21 @@ export function playerLoadItemInventory(player, simpleVehiclesVehicles) {
 
 export function playerInventoryItems(player, simpleVehiclesVehicles) {
   const ItemInventory = player.getComponent("minecraft:inventory").container;
-  ItemInventory.addItem(new ItemStack("simple_vehicles:honk_item"));
-  ItemInventory.addItem(new ItemStack("simple_vehicles:key"));
+  ItemInventory.addItem(new ItemStack("simple_vehicles:honk_item", 1));
+  ItemInventory.addItem(new ItemStack("simple_vehicles:key", 1));
 }
 
 
 export function playerDeleteItemInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 9; index++) {
+  for (let index = 0; index < 7; index++) {
     playerInventory.setItem(index, undefined);
   }
 }
 
 export function playerLockInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 7; index++) {
     const ItemSlot = playerInventory.getSlot(index);
     if (!ItemSlot.getItem()) continue;
     ItemSlot.lockMode = "inventory";
@@ -58,7 +58,7 @@ export function playerLockInventory(player) {
 
 export function playerUnlockInventory(player) {
   const playerInventory = player.getComponent("minecraft:inventory").container;
-  for (let index = 0; index < 8; index++) {
+  for (let index = 0; index < 7; index++) {
     const ItemSlot = playerInventory.getSlot(index);
     if (!ItemSlot.getItem()) continue;
     ItemSlot.lockMode = "none";

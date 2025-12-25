@@ -91,6 +91,7 @@
 			}
 		},
 		"components": {
+			"minecraft:is_chested": {},
 			"minecraft:is_stackable": {},
 			"minecraft:experience_reward": {
 				"on_death": "math.min(query.player_level*7,100)"
