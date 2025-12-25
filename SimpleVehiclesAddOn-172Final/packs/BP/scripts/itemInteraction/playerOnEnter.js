@@ -1,5 +1,4 @@
-import { simpleVehiclesVehicles } from "../utils/vehiclelists";
-
+import { simpleVehiclesVehicles } from "../utils/vehiclelists"; // Adjust path if needed
 import {
   playerDeleteItemInventory,
   playerLoadItemInventory,
@@ -8,52 +7,76 @@ import {
   playerUnlockInventory,
   playerInventoryItems
 } from "./item_db2";
+import { world } from "@minecraft/server";
 
-import {
-  world,
-} from "@minecraft/server";
-
-let accelerationSpeed = 0;
-
+// Cache: map player.id -> vehicle entity the player is riding
 const VehiclesMounted = {};
 
+/**
+ * Tick loop: detects enter/leave and manages hotbar items & locks.
+ * Call this from main.js via system.runInterval.
+ */
 export function onWorldTicks() {
-  ++accelerationSpeed;
   for (const player of world.getAllPlayers()) {
     try {
-      const simplevehicle_vehicle = getPlayerSimpleVehicles(player);
-      if (!simplevehicle_vehicle || simplevehicle_vehicle.isValid()) {
-        if (player.hasTag("simplevehicles_player_in_vehicle")) onVehicleLeave(player);
+      const currentVehicle = getPlayerSimpleVehicles(player);
+
+      // Not riding a valid vehicle
+      if (!currentVehicle || !currentVehicle.isValid()) {
+        if (player.hasTag("simplevehicles_player_in_vehicle")) {
+          onVehicleLeave(player);
+        }
         continue;
-      };
-      if (!player.hasTag("simplevehicles_player_in_vehicle")) onVehicleEnter(player, simpleVehiclesVehicles);
-      VehiclesMounted[player.id] = {player: player, simpleVehiclesVehicles: simpleVehiclesVehicles };
-    } catch (error) {}
+      }
+
+      // Just entered
+      if (!player.hasTag("simplevehicles_player_in_vehicle")) {
+        onVehicleEnter(player, currentVehicle);
+      }
+
+      // Keep current reference
+      VehiclesMounted[player.id] = currentVehicle;
+    } catch (error) {
+      console.warn(`[Simple Vehicles] tick error: ${error}`);
+    }
   }
 }
 
 function getPlayerSimpleVehicles(player) {
   const ridingComponent = player.getComponent("minecraft:riding");
   if (!ridingComponent) return undefined;
+
   const ridingEntity = ridingComponent.entityRidingOn;
-  if ( !ridingEntity || !ridingEntity.isValid() || !simpleVehiclesVehicles.includes(ridingEntity.typeId)) return undefined;
+  if (!ridingEntity || !ridingEntity.isValid() || !simpleVehiclesVehicles.includes(ridingEntity.typeId)) {
+    return undefined;
+  }
   return ridingEntity;
 }
 
-function onVehicleEnter(player, simpleVehiclesVehicles) {
-  if (!simpleVehiclesVehicles.isValid()) return;
-  player.getComponent("minecraft:rideable");
+function onVehicleEnter(player, vehicleEntity) {
+  if (!vehicleEntity.isValid()) return;
+
   player.addTag("simplevehicles_player_in_vehicle");
-  playerSaveItemInventory(player, simpleVehiclesVehicles);
+
+  // Save inventory (vehicle inventory if present, plus memory snapshot)
+  playerSaveItemInventory(player, vehicleEntity);
+
+  // Replace hotbar items and lock slots
   playerDeleteItemInventory(player);
-  playerInventoryItems(player);
+  playerInventoryItems(player); // deterministic setItem into hotbar
   playerLockInventory(player);
 }
 
 function onVehicleLeave(player) {
-  const simpleVehiclesVehicles = VehiclesMounted[player.id]?.simpleVehiclesVehicles;
+  // Correctly fetch the cached entity (fixes previous typo bug)
+  const vehicleEntity = VehiclesMounted[player.id];
+
   player.removeTag("simplevehicles_player_in_vehicle");
   playerUnlockInventory(player);
   playerDeleteItemInventory(player);
-  playerLoadItemInventory(player, simpleVehiclesVehicles);
+
+  // Restore inventory
+  playerLoadItemInventory(player, vehicleEntity);
+
+  delete VehiclesMounted[player.id];
 }

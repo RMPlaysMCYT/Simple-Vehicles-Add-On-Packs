@@ -91,7 +91,9 @@
 			}
 		},
 		"components": {
-			"minecraft:is_chested": {},
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {},
 			"minecraft:is_stackable": {},
 			"minecraft:experience_reward": {
 				"on_death": "math.min(query.player_level*7,100)"
@@ -132,12 +134,12 @@
 				]
 			},
 			"minecraft:inventory": {
-				"inventory_size": 16,
+				"additional_slots_per_strength": 0,
 				"can_be_siphoned_from": false,
 				"container_type": "horse",
+				"inventory_size": 9,
 				"private": false,
-				"restrict_to_owner": false
-				
+				"restrict_to_owner": true
 			},
 			"minecraft:movement": {
 				"value": 0.175
