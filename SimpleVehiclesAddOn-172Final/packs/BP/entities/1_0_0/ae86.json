@@ -139,7 +139,7 @@
 				"container_type": "horse",
 				"inventory_size": 9,
 				"private": false,
-				"restrict_to_owner": true
+				"restrict_to_owner": false
 			},
 			"minecraft:movement": {
 				"value": 0.175
