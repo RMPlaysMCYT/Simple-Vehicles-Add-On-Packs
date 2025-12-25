@@ -1,7 +1,7 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "../MainMenu";
-import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
-import { _Page2Vehicles } from "../_Page02Vehicles";
+import { showCustomForm } from "../mainmenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
+import { _Page2Vehicles } from "../_page2";
 
 export function Ae86Information(player) {
   const CreditsForm = new ActionFormData();

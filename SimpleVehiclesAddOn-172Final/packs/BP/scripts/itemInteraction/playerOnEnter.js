@@ -1,4 +1,4 @@
-import { simpleVehiclesVehicles } from "../utils/vehicleLists";
+import { simpleVehiclesVehicles } from "../utils/vehiclelists";
 
 import {
   playerDeleteItemInventory,

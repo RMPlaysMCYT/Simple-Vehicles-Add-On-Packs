@@ -1,5 +1,5 @@
-import { _Page1GettingStarted } from "./_Page01GettingStarted";
-import { _Page2Vehicles } from "./_Page02Vehicles";
+import { _Page1GettingStarted } from "./_page1";
+import { _Page2Vehicles } from "./_page2";
 import { system, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 

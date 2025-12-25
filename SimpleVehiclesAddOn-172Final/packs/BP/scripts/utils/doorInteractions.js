@@ -58,5 +58,5 @@ export var DoorInteraction = class {
           break;
         }
     },
-    doorInteractiones new DoorInteraction();
+    doorinteractiones new DoorInteraction();
 }

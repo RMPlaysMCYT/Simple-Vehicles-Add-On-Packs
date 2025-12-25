@@ -1,7 +1,7 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "./MainMenu";
-import { Ae86Information } from "./_Vehicles/ae86";
-import { AmbulanceInformation } from "./_Vehicles/ambulance";
+import { showCustomForm } from "./mainmenu";
+import { Ae86Information } from "./_vehicles/ae86";
+import { AmbulanceInformation } from "./_vehicles/ambulance";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();

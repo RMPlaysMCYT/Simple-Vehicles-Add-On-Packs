@@ -4,12 +4,12 @@ console.log(`Simple Vehicles Addon ${Version} Loaded`)
 
 import * as btch from '@minecraft/server';
 import { system, world } from "@minecraft/server";
-import "./documentation/MainMenu";
+import "./documentation/mainmenu";
 import "honkitem";
-import "setLoreInfo";
+import "setloreinfo";
 import "_hud";
 
-import * as fck from "./itemInteraction/playerOnEnter"
+import * as fck from "./itemInteraction/playeronenter"
 
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
