@@ -14,7 +14,6 @@ import * as fck from "./itemInteraction/playeronenter"
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
 
-
 const DEBUGASSHOLE = false;
 
 var NameSpaces = "SimpleVehiclesAddOn172";

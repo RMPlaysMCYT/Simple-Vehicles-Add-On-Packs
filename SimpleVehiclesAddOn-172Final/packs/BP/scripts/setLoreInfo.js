@@ -1,5 +1,5 @@
 import { system, world } from "@minecraft/server";
-import { CUSTOM_ITEMS, SPRAY_ITEMS } from "./utils/customItems";
+import { CUSTOM_ITEMS, SPRAY_ITEMS } from "./utils/customitems";
 import { VEHICLES_EGGS } from "./utils/customVehicleEggs";
 
 function updatePlayerInventoryLore() {

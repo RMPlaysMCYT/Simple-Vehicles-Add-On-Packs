@@ -4,7 +4,7 @@ import {
   ItemStack,
 } from "@minecraft/server";
 
-world.afterEvents.itemUse.subscribe(({ dimension, source, itemStack }) => {
+world.afterEvents.itemUse.subscribe(({ source, itemStack }) => {
   const item = itemStack;
   if (!item) return;
   if (item.typeId === "simple_vehicles:honk_item") {
