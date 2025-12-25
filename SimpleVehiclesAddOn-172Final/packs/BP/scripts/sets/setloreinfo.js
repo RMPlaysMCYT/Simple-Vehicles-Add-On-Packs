@@ -1,6 +1,6 @@
 import { system, world } from "@minecraft/server";
-import { CUSTOM_ITEMS, SPRAY_ITEMS } from "./utils/customitems";
-import { VEHICLES_EGGS } from "./utils/customvehicleeggs";
+import { CUSTOM_ITEMS, SPRAY_ITEMS } from "../utils/customitems";
+import { VEHICLES_EGGS } from "../utils/customvehicleeggs";
 
 function updatePlayerInventoryLore() {
   for (const player of world.getPlayers()) {

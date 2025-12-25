@@ -32,7 +32,6 @@ export function onWorldTicks() {
       };
       if (!player.hasTag("simplevehicles_player_in_vehicle")) onVehicleEnter(player, simpleVehiclesVehicles);
       VehiclesMounted[player.id] = {player: player, simpleVehiclesVehicles: simpleVehiclesVehicles };
-      // player.runCommand("hud @s hide horse_health");
     } catch (error) {}
   }
 }
@@ -53,7 +52,6 @@ function onVehicleEnter(player, simpleVehiclesVehicles) {
   playerDeleteItemInventory(player);
   playerInventoryItems(player);
   playerLockInventory(player);
-  // world.getDimension("overworld").runCommand("hud @p[r=1] hide horse_health")
 }
 
 function onVehicleLeave(player) {
@@ -62,5 +60,4 @@ function onVehicleLeave(player) {
   playerUnlockInventory(player);
   playerDeleteItemInventory(player);
   playerLoadItemInventory(player, simpleVehiclesVehicles);
-  // world.getDimension("overworld").runCommand("hud @p[r=1] reset horse_health")
 }

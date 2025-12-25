@@ -6,7 +6,7 @@ import * as btch from '@minecraft/server';
 import { system, world } from "@minecraft/server";
 import "./documentation/mainmenu";
 import "./sets/honkitem";
-import "./setloreinfo";
+import "./sets/setloreinfo";
 import "./sets/_hud";
 
 import * as fck from "./iteminteraction/playeronenter"
@@ -34,7 +34,7 @@ btch.world.afterEvents.playerSpawn.subscribe((event)=>{
 
 
 async function Ticks() {
-  await fck.onWorldTicks();
+  fck.onWorldTicks();
 }
 
 async function Loop() {
