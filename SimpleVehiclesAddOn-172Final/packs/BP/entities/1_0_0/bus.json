@@ -104,7 +104,6 @@
 					],
 					"looping": false,
 					"time_down_event": {
-						"event": "minecraft:bugfix",
 						"target": "self"
 					}
 				}
@@ -228,10 +227,6 @@
 			"minecraft:horse.jump_strength": {
 				"value": 0
 			},
-			"minecraft:breathable": {
-				"totalSupply": 10,
-				"suffocateTime": 0
-			},
 			"minecraft:is_chested": {},
 			"minecraft:collision_box": {
 				"width": 4,
@@ -257,7 +252,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100

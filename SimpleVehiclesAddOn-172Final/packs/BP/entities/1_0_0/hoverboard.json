@@ -177,7 +177,6 @@
 			"minecraft:physics": {
 				"has_gravity": true
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:knockback_resistance": {
 				"value": 100,
 				"max": 100
@@ -845,25 +844,6 @@
 						]
 					}
 				]
-			},
-			"minecraft:horse_saddled": {
-				"add": {
-					"component_groups": [
-						"minecraft:horse_saddled"
-					]
-				}
-			},
-			"minecraft:horse_unsaddled": {
-				"add": {
-					"component_groups": [
-						"minecraft:bugfixer"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"minecraft:horse_saddled"
-					]
-				}
 			},
 			"minecraft:bugfix": {
 				"add": {
