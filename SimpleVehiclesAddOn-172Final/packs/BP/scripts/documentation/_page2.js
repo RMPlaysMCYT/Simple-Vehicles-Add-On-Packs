@@ -2,6 +2,13 @@ import { ActionFormData } from "@minecraft/server-ui";
 import { showCustomForm } from "./mainmenu";
 import { Ae86Information } from "./_vehicles/ae86";
 import { AmbulanceInformation } from "./_vehicles/ambulance";
+import { AUVCarInformation } from "./_vehicles/auv_car";
+import { BikeInformation } from "./_vehicles/bike";
+import { BusInformation } from "./_vehicles/bus";
+import { SledInformation } from "./_vehicles/c_sled";
+import { CarInformation } from "./_vehicles/car";
+import { Car4x4Information } from "./_vehicles/car4x4";
+import { CorllaInformation } from "./_vehicles/corolla";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -16,9 +23,16 @@ export function _Page2Vehicles(player) {
       { text: "\n" },
     ],
   });
-  Page2Vehicles.button("AE 86");
-  Page2Vehicles.button("Ambulance");
-  Page2Vehicles.button("Go Back");
+  Page2Vehicles.button("AE 86", "textures/items/ae86"); //0
+  Page2Vehicles.button("Ambulance", "textures/items/ambulance"); //1
+  Page2Vehicles.button("AUV Car", "textures/items/auv_car"); //2
+  Page2Vehicles.button("Bike"); //3
+  Page2Vehicles.button("Bus"); //4
+  Page2Vehicles.button("Sled/Sleigh"); //5
+  Page2Vehicles.button("Car"); //6 
+  Page2Vehicles.button("Car 4X4"); //7
+  Page2Vehicles.button("Toyota Corolla"); //8
+  Page2Vehicles.button("Go Back"); //9
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
       showCustomForm(player);
@@ -27,6 +41,20 @@ export function _Page2Vehicles(player) {
     } else if (response.selection === 1) {
       AmbulanceInformation(player);
     } else if (response.selection === 2) {
+      AUVCarInformation(player);
+    } else if (response.selection === 3) {
+      BikeInformation(player);
+    } else if (response.selection === 4) {
+      BusInformation(player);
+    } else if (response.selection === 5) {
+      SledInformation(player);
+    } else if (response.selection === 6) {
+      CarInformation(player);
+    } else if (response.selection === 7) {
+      Car4x4Information(player);
+    } else if (response.selection === 8) {
+      CorllaInformation(player);
+    } else if (response.selection === 9) {
       showCustomForm(player);
     }
   });

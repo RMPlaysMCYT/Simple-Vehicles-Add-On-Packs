@@ -3,13 +3,13 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function BusInformation(player) {
+export function SledInformation(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Bike");
+  CreditsForm.title("Sled");
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "A sled, skid, sledge, or sleigh, is a land vehicle that slides across a surface, usually of ice or snow. It is built with either a smooth underside or a separate body supported by two or more smooth, relatively narrow, longitudinal runners similar in principle to skis. This reduces the amount of friction, which helps to carry heavy loads. \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },

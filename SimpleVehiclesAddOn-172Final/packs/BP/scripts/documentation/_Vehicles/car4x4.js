@@ -3,13 +3,13 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function BusInformation(player) {
+export function Car4x4Information(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Bike");
+  CreditsForm.title("Car 4X4");
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "An off-road vehicle (ORV) is any vehicle built to travel on rough, unpaved terrain like dirt trails, sand, mud, or rocks, featuring specialized components such as large, deep-treaded tires, high ground clearance, and flexible suspension to handle difficult conditions beyond smooth roads, including ATVs, dirt bikes, dune buggies, and specially modified trucks or SUVs. \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },

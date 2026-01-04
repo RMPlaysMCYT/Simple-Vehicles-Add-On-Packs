@@ -3,13 +3,13 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function BusInformation(player) {
+export function CorllaInformation(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Bike");
+  CreditsForm.title("Toyota Corolla");
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "The Toyota Corolla (Japanese: トヨタ・カローラ, Hepburn: Toyota Karōra) is a series of compact cars (formerly subcompact) manufactured and marketed globally by the Japanese automaker Toyota Motor Corporation. Introduced in 1966, the Corolla has been the world's best-selling automobile of all time since 1997, when it surpassed the Volkswagen Beetle.[1] Toyota reached the milestone of 50 million Corollas sold over twelve generations in 2021.[2] \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },

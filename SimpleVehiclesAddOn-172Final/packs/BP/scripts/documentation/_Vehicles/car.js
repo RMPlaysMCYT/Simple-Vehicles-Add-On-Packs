@@ -3,9 +3,9 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function BusInformation(player) {
+export function CarInformation(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Bike");
+  CreditsForm.title("Car");
   CreditsForm.body({
     rawtext: [
       {
