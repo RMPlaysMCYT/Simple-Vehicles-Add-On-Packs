@@ -9,7 +9,7 @@ export function AUVCarInformation(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "An AUV, or Asian Utility Vehicle, is a type of affordable, durable, and versatile vehicle popular in developing countries, especially the Philippines, designed to carry both passengers (7-16 seats) and cargo, often with a truck-like body-on-frame chassis for robustness \n\nSource: Gemini AI(However Looking for actual Sources in the next update)",
       },
       { text: "\n" },
       { text: "===============================" },

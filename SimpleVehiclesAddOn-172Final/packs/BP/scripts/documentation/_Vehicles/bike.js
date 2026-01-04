@@ -9,7 +9,7 @@ export function BikeInformation(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "A bicycle, also called a pedal cycle, bike, push-bike or cycle, is a human-powered or motor-assisted, pedal-driven, single-track vehicle, with two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist. \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },

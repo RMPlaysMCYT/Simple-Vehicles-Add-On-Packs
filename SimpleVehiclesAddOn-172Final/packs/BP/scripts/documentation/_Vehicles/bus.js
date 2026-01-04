@@ -5,11 +5,11 @@ import { _Page2Vehicles } from "../_page2";
 
 export function BusInformation(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Bike");
+  CreditsForm.title("Bus");
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "A bus (contracted from omnibus,[1] with variants multibus, motorbus, autobus, etc.) is a motor vehicle that carries significantly more passengers than an average car or van, but fewer than the average rail transport. It is most commonly used in public transport, but is also in use for charter purposes, or through private ownership. Although the average bus carries between 30 and 100 passengers, some buses have a capacity of up to 300 passengers.[2]. \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },

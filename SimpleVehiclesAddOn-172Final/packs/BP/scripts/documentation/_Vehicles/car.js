@@ -9,7 +9,7 @@ export function BusInformation(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "The AE86 series of the Toyota Corolla Levin/Sprinter Trueno are small, front-engine/rear-wheel-drive compact cars within the mostly front-engine/front-wheel-drive fifth generation Corolla (E80) range—marketed and manufactured by Toyota from 1983 to 1987 in coupé and liftback configurations.",
+        text: "A car, or an automobile, is a motor vehicle with wheels. Most definitions of cars state that they run primarily on roads, seat 1-8 people, have four wheels, and mainly transport people rather than cargo.[1][2] There are over 1.6 billion cars in use worldwide as of 2025. \n\nSource: Wikipedia",
       },
       { text: "\n" },
       { text: "===============================" },
