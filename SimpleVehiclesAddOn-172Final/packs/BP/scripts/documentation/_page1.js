@@ -6,9 +6,9 @@ export function _Page1GettingStarted(player) {
   GettingStarted.title("Credits");
   GettingStarted.body({
     rawtext: [
-      { text: "simveh172.text1" },
+      { text: "Created by RMPlaysMCYT" },
       { text: "\n" },
-      { text: "simveh172.text2" },
+      { text: "This Add-on is developed over 6 years and counting and also you can support me by downloading this add-on from MCPEDL, CurseForge, Modbay and also star the Simple Vehicles Add-On Packs on Github" },
       { text: "\n" },
       { text: "===============================" },
       { text: "\n" },

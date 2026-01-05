@@ -15,9 +15,9 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.title("Vehicles");
   Page2Vehicles.body({
     rawtext: [
-      { text: "simveh172.text1" },
+      { text: "These are the Vehicles Which were been added to the add-on" },
       { text: "\n" },
-      { text: "simveh172.text2" },
+      { text: "It has 70 vehicles overall and it's been like quantity over quality for some, however it's been better than expected unlike other add-ons where it has 30+ or what" },
       { text: "\n" },
       { text: "===============================" },
       { text: "\n" },
@@ -26,8 +26,8 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("AE 86", "textures/items/ae86"); //0
   Page2Vehicles.button("Ambulance", "textures/items/ambulance"); //1
   Page2Vehicles.button("AUV Car", "textures/items/auv_car"); //2
-  Page2Vehicles.button("Bike"); //3
-  Page2Vehicles.button("Bus"); //4
+  Page2Vehicles.button("Bike", "textures/items/bike"); //3
+  Page2Vehicles.button("Bus", "textures/items/bus"); //4
   Page2Vehicles.button("Sled/Sleigh"); //5
   Page2Vehicles.button("Car"); //6 
   Page2Vehicles.button("Car 4X4"); //7
