@@ -10,6 +10,7 @@ export function _Page1GettingStarted(player) {
       { text: "\n" },
       { text: "This Add-on is developed over 6 years and counting and also you can support me by downloading this add-on from MCPEDL, CurseForge, Modbay and also star the Simple Vehicles Add-On Packs on Github" },
       { text: "\n" },
+      { text: "\nThis Add-On is Licensed Under GNU General Public License for Version 1 to 1.7.3 which is 1.21 Compatible for Minecraft Bedrock, While The Latest One is Closed Source" },
       { text: "===============================" },
       { text: "\n" },
     ],
