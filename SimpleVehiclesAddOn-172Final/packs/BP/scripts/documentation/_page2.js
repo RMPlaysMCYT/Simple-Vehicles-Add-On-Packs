@@ -28,10 +28,10 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("AUV Car", "textures/items/auv_car"); //2
   Page2Vehicles.button("Bike", "textures/items/bike"); //3
   Page2Vehicles.button("Bus", "textures/items/bus"); //4
-  Page2Vehicles.button("Sled/Sleigh"); //5
-  Page2Vehicles.button("Car"); //6 
-  Page2Vehicles.button("Car 4X4"); //7
-  Page2Vehicles.button("Toyota Corolla"); //8
+  Page2Vehicles.button("Sled/Sleigh", "textures/items/sled"); //5
+  Page2Vehicles.button("Car", "textures/items/car"); //6 
+  Page2Vehicles.button("Car 4X4", "textures/items/car4x4"); //7
+  Page2Vehicles.button("Toyota Corolla", "textures/items/corolla"); //8
   Page2Vehicles.button("Go Back"); //9
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
