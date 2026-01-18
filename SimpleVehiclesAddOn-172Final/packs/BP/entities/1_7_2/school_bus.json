@@ -202,7 +202,7 @@
 				"triggers": [
 					{
 						"cause": "fall",
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			},
@@ -251,20 +251,6 @@
 				"remove": {
 					"component_groups": [
 						"simple_vehicles:activated"
-					]
-				}
-			},
-			"simple_vehicles:mode_breakable": {
-				"add": {
-					"component_groups": [
-						"simple_vehicles:destructive_mode"
-					]
-				}
-			},
-			"simple_vehicles:mode_reset": {
-				"remove": {
-					"component_groups": [
-						"simple_vehicles:destructive_mode"
 					]
 				}
 			}

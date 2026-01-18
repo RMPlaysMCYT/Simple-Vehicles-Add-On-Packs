@@ -122,7 +122,7 @@
 				"triggers": [
 					{
 						"cause": "fall",
-						"deals_damage": false
+						"deals_damage": "no"
 					}
 				]
 			},
