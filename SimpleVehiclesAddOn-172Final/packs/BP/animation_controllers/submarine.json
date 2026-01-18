@@ -6,7 +6,7 @@
 				"default": {
 					"transitions": [
 						{
-							"diving": "1"
+							"diving": "query.is_in_water&&query.has_rider"
 						}
 					],
 					"on_entry": [
@@ -16,7 +16,7 @@
 				"diving": {
 					"transitions": [
 						{
-							"default": "query.is_in_water&&query.has_rider"
+							"default": "!query.is_in_water&&query.has_rider"
 						}
 					],
 					"on_entry": [
