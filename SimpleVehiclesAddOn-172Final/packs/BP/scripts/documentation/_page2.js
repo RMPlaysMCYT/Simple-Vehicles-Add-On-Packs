@@ -9,6 +9,8 @@ import { SledInformation } from "./_vehicles/c_sled";
 import { CarInformation } from "./_vehicles/car";
 import { Car4x4Information } from "./_vehicles/car4x4";
 import { CorllaInformation } from "./_vehicles/corolla";
+import { Ev4Information } from "./_vehicles/ev4";
+import { FireTruckInformation } from "./_vehicles/fire_truck";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -32,7 +34,9 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("Car", "textures/items/car"); //6 
   Page2Vehicles.button("Car 4X4", "textures/items/car4x4"); //7
   Page2Vehicles.button("Toyota Corolla", "textures/items/corolla"); //8
-  Page2Vehicles.button("Go Back"); //9
+  Page2Vehicles.button("EV4", "textures/items/ev4"); //9
+  Page2Vehicles.button("Fire Truck", "textures/items/fire_truck"); //10
+  Page2Vehicles.button("Go Back"); //11
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
       showCustomForm(player);
@@ -55,6 +59,10 @@ export function _Page2Vehicles(player) {
     } else if (response.selection === 8) {
       CorllaInformation(player);
     } else if (response.selection === 9) {
+      Ev4Information(player);
+    } else if (response.selection === 10) {
+      FireTruckInformation(player);
+    } else if (response.selection === 11) {
       showCustomForm(player);
     }
   });

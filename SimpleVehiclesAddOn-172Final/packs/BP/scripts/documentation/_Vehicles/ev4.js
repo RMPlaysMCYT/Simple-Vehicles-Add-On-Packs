@@ -3,7 +3,7 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function CorllaInformation(player) {
+export function Ev4Information(player) {
   const CreditsForm = new ActionFormData();
   CreditsForm.title("EV4");
   CreditsForm.body({
