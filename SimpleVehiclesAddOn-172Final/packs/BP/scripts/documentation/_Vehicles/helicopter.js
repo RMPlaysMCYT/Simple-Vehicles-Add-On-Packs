@@ -9,7 +9,7 @@ export function Helicopter_Information(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A fire engine or fire truck (also spelled firetruck) is a vehicle, usually a specially designed or modified truck, that functions as a firefighting apparatus. The primary purposes of a fire engine include transporting firefighters and water to an incident as well as carrying equipment for firefighting operations in a fire drill. Some fire engines have specialized functions, such as wildfire suppression and aircraft rescue and firefighting, and may also carry equipment for technical rescue.",
+        text: "A helicopter is a type of rotorcraft in which lift and thrust are supplied by horizontally spinning rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward and laterally.[1] These attributes allow helicopters to be used in congested or isolated areas where fixed-wing aircraft and many forms of short take-off and landing (STOL) or short take-off and vertical landing (STOVL) aircraft cannot perform without a runway.",
       },
       { text: "\n" },
       { text: "===============================" },
