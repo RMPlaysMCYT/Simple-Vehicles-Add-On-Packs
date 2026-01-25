@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function Helicopter_Information(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Helicopter");
+  CreditsForm.title("Hoverboard");
   CreditsForm.body({
     rawtext: [
       {
