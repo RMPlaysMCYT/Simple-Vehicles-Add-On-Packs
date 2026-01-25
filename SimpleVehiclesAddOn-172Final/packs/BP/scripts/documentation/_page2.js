@@ -41,7 +41,10 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("EV4", "textures/items/ev4"); //9
   Page2Vehicles.button("Fire Truck", "textures/items/fire_truck"); //10
   Page2Vehicles.button("Helicopter", "textures/items/helicopter"); //11
-  Page2Vehicles.button("Go Back"); //12
+  Page2Vehicles.button("Hoverboard", "textures/items/hoverboard"); //12
+  Page2Vehicles.button("Jeep or Jeepney", "textures/items/jeep"); //13
+  Page2Vehicles.button("Limousine", "textures/items/limousine"); //14
+  Page2Vehicles.button("Go Back"); //15
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
       showCustomForm(player);
