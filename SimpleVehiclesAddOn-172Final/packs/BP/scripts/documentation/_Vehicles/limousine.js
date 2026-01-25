@@ -9,7 +9,7 @@ export function Limousine_Information(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A helicopter is a type of rotorcraft in which lift and thrust are supplied by horizontally spinning rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward and laterally.[1] These attributes allow helicopters to be used in congested or isolated areas where fixed-wing aircraft and many forms of short take-off and landing (STOL) or short take-off and vertical landing (STOVL) aircraft cannot perform without a runway.",
+        text: "A limousine (/ˈlɪməziːn/ or /lɪməˈziːn/), or limo (/ˈlɪmoʊ/) for short,[1] is a large, chauffeur-driven luxury vehicle with a partition between the driver compartment and the passenger compartment which can be operated mechanically by hand or by a button electronically.[2] A luxury sedan with a very long wheelbase and driven by a professional driver is called a stretch limousine.[3]",
       },
       { text: "\n" },
       { text: "===============================" },

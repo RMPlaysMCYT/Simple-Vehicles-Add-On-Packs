@@ -12,6 +12,9 @@ import { CorllaInformation } from "./_vehicles/corolla";
 import { Ev4Information } from "./_vehicles/ev4";
 import { FireTruckInformation } from "./_vehicles/fire_truck";
 import { Helicopter_Information } from "./_vehicles/helicopter";
+import { Hoverboard_Information } from "./_vehicles/hoverboarrd";
+import { Jeep_Information } from "./_vehicles/jeep";
+import { Limousine_Information } from "./_vehicles/limousine";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -67,6 +70,14 @@ export function _Page2Vehicles(player) {
     } else if (response.selection === 11) {
       Helicopter_Information(player);
     } else if (response.selection === 12) {
+      Hoverboard_Information(player);
+    }
+    else if (response.selection === 13) {
+      Jeep_Information(player);
+    }
+    else if (response.selection === 14) {
+      Limousine_Information(player);
+    } else if (response.selection === 15) {
       showCustomForm(player);
     }
   });

@@ -9,7 +9,7 @@ export function Hoverboard_Information(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A helicopter is a type of rotorcraft in which lift and thrust are supplied by horizontally spinning rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward and laterally.[1] These attributes allow helicopters to be used in congested or isolated areas where fixed-wing aircraft and many forms of short take-off and landing (STOL) or short take-off and vertical landing (STOVL) aircraft cannot perform without a runway.",
+        text: "A hoverboard (or hover board) is a fictional levitating board used for personal transportation, first described in science-fiction, and popularized by the Back to the Future film series.[1] The term has also been used for real-life self-balancing scooters, which do not actually hover.[2]",
       },
       { text: "\n" },
       { text: "===============================" },

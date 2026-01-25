@@ -5,11 +5,11 @@ import { _Page2Vehicles } from "../_page2";
 
 export function Jeep_Information(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Jeep");
+  CreditsForm.title("Jeep or Jeepney");
   CreditsForm.body({
     rawtext: [
       {
-        text: "A helicopter is a type of rotorcraft in which lift and thrust are supplied by horizontally spinning rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward and laterally.[1] These attributes allow helicopters to be used in congested or isolated areas where fixed-wing aircraft and many forms of short take-off and landing (STOL) or short take-off and vertical landing (STOVL) aircraft cannot perform without a runway.",
+        text: "A jeepney (Tagalog: [ˈdʒiːpni]), or simply a jeep (Tagalog: [ˈdʒiːp]), is a type of public utility vehicle (PUV) that serves as the most popular means of public transportation in the Philippines.[1] Known for its crowded seating and kitsch decorations, it is a cultural icon of the Philippines[2] and has its own art, Jeepney art.[3] At the 1964 New York World's Fair, a Sarao jeepney was exhibited in the Philippine pavilion as a national symbol for Filipinos.[4][5].",
       },
       { text: "\n" },
       { text: "===============================" },
