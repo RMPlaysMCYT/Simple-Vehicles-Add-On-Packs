@@ -3,7 +3,7 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function Mustang_Information(player) {
+export function Motorbike_Information(player) {
   const CreditsForm = new ActionFormData();
   CreditsForm.title("For Mustang");
   CreditsForm.body({
