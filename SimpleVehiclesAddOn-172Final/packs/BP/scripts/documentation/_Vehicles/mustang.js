@@ -5,11 +5,11 @@ import { _Page2Vehicles } from "../_page2";
 
 export function Mustang_Information(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("For Mustang");
+  CreditsForm.title("Ford Mustang");
   CreditsForm.body({
     rawtext: [
       {
-        text: "A limousine (/ˈlɪməziːn/ or /lɪməˈziːn/), or limo (/ˈlɪmoʊ/) for short,[1] is a large, chauffeur-driven luxury vehicle with a partition between the driver compartment and the passenger compartment which can be operated mechanically by hand or by a button electronically.[2] A luxury sedan with a very long wheelbase and driven by a professional driver is called a stretch limousine.[3]",
+        text: "The Ford Mustang is an American automobile manufactured and marketed by Ford since 1964, as Ford's longest nameplate in continuous production. Currently in its seventh generation, it is the fifth-best selling Ford car nameplate. The namesake of the pony car automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by its pronounced long hood, short deck proportions.[3]",
       },
       { text: "\n" },
       { text: "===============================" },

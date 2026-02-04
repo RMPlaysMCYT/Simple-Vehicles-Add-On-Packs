@@ -5,11 +5,11 @@ import { _Page2Vehicles } from "../_page2";
 
 export function Motorbike_Information(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("For Mustang");
+  CreditsForm.title("Motorbike");
   CreditsForm.body({
     rawtext: [
       {
-        text: "A limousine (/ˈlɪməziːn/ or /lɪməˈziːn/), or limo (/ˈlɪmoʊ/) for short,[1] is a large, chauffeur-driven luxury vehicle with a partition between the driver compartment and the passenger compartment which can be operated mechanically by hand or by a button electronically.[2] A luxury sedan with a very long wheelbase and driven by a professional driver is called a stretch limousine.[3]",
+        text: "A motorcycle (motorbike, bike, or, if three-wheeled, a trike) is a two or three-wheeled motor vehicle steered by a handlebar from a saddle-style seat.[1][2][3]",
       },
       { text: "\n" },
       { text: "===============================" },

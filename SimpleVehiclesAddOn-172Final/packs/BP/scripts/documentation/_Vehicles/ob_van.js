@@ -9,7 +9,7 @@ export function ObVan_Information(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A limousine (/ˈlɪməziːn/ or /lɪməˈziːn/), or limo (/ˈlɪmoʊ/) for short,[1] is a large, chauffeur-driven luxury vehicle with a partition between the driver compartment and the passenger compartment which can be operated mechanically by hand or by a button electronically.[2] A luxury sedan with a very long wheelbase and driven by a professional driver is called a stretch limousine.[3]",
+        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
       },
       { text: "\n" },
       { text: "===============================" },
