@@ -31,15 +31,13 @@
 				"ups": "animation.simple_vehicles_vespa_primavera.ups",
 				"downs": "animation.simple_vehicles_vespa_primavera.downs",
 				"setup": "animation.simple_vehicles_vespa_primavera.setup",
-				"setup2": "animation.simple_vehicles_vespa_primavera.setup2",
-				"general": "controller.animation.motorcycle.general",
-				"general2": "controller.animation.motorcycle.general2"
+				"setup2": "animation.simple_vehicles_vespa_primavera.setup2"
 			},
 			"scripts": {
 				"animate": [
 					"turn",
-					"general",
-					"general2",
+					"setup",
+					"setup2",
 					{
 						"walk": "query.is_moving"
 					},
