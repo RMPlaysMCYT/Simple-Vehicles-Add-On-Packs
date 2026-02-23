@@ -13,12 +13,6 @@
 				"default": "geometry.simple_vehicles_missile"
 			},
 			"scripts": {
-				"animate": [
-					"target"
-				]
-			},
-			"animations": {
-				"target": "animation.simple_vehicles_missile.target"
 			},
 			"render_controllers": [
 				"controller.render.slime"

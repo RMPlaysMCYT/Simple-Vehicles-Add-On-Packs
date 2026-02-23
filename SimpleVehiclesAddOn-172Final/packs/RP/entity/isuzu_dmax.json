@@ -35,31 +35,23 @@
 				"texture_index": 12
 			},
 			"animations": {
-				"walk": "animation.simple_vehicles_isuzu_dmax.move_2",
-				"steer": "animation.rancherogt_sass.turn",
-				"steer_ac": "controller.animation.vehicle.steer",
-				"doors_idle": "animation.simple_vehicles_isuzu_dmax.doors_idle",
-				"open": "animation.simple_vehicles_isuzu_dmax.open",
-				"close": "animation.simple_vehicles_isuzu_dmax.close",
-				"close2": "animation.simple_vehicles_isuzu_dmax.close2",
-				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
-				"up": "animation.chrysler_windsor.up",
-				"down": "animation.chrysler_windsor.down",
-				"general": "controller.animation.chrysler_windsor.general"
+				"walk": "animation.simple_vehicles_isuzu_dmax.move",
+				"steer": "animation.simple_vehicles_isuzu_dmax.steer"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
+				"pre_animation": [
+					"variable.steering_wheel = query.has_rider ? variable.steering : 0;",
+					"variable.steering = math.lerp(variable.steering, q.yaw_speed, 0.15);"
+				],
 				"animate": [
-					"steer_ac",
-					"general",
+					"steer",
 					{
 						"walk": "query.is_moving"
-					},
-					"door_mechanic"
+					}
 				]
-			},
-			"sound_effects": {
-				"isuzu_dmax_door_open": "simple_vehicles.corolla.open",
-				"isuzu_dmax_door_close": "simple_vehicles.corolla.close"
 			}
 		}
 	}

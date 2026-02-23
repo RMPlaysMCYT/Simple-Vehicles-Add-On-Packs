@@ -36,34 +36,16 @@
 			},
 			"animations": {
 				"walk": "animation.vehicles.move",
-				"idle": "animation.moto.idle",
 				"turn": "animation.car_lowrider.turn",
-				"v_turn": "controller.animation.vehicle.v_turn",
-				"doors_idle": "animation.simple_vehicles_minicar.doors_idle",
-				"open": "animation.simple_vehicles_minicar.open",
-				"close": "animation.simple_vehicles_minicar.close",
-				"close2": "animation.simple_vehicles_minicar.close2",
-				"ups": "animation.simple_vehicles_minicar.ups",
-				"downs": "animation.simple_vehicles_minicar.downs",
-				"minicar_general1": "controller.animation.simple_vehicles_minicar.general1",
-				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2"
+				"v_turn": "controller.animation.vehicle.v_turn"
 			},
 			"scripts": {
 				"animate": [
 					"v_turn",
 					{
 						"walk": "query.is_moving"
-					},
-					{
-						"idle": "!query.is_moving"
-					},
-					"minicar_general1",
-					"door_mechanic"
+					}
 				]
-			},
-			"sound_effects": {
-				"minicar_door_open": "simple_vehicles.corolla.open",
-				"minicar_door_close": "simple_vehicles.corolla.close"
 			}
 		}
 	}
