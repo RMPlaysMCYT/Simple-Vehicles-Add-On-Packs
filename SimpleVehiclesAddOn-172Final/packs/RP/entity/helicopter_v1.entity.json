@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "simple_vehicles:helicopter_v1",
+			"identifier": "simple_vehicles:helicopter",
 			"materials": {
 				"default": "witch"
 			},
