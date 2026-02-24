@@ -29,11 +29,7 @@
       "minecraft:bugfixer": {
         "minecraft:timer": {
           "time": [0.1, 0.1],
-          "looping": false,
-          "time_down_event": {
-            "event": "minecraft:bugfix",
-            "target": "self"
-          }
+          "looping": false
         }
       },
       "minecraft:horse_saddled": {
@@ -178,7 +174,6 @@
       "minecraft:physics": {
         "has_gravity": true
       },
-      "minecraft:fire_immune": true,
       "minecraft:knockback_resistance": {
         "value": 100,
         "max": 100
