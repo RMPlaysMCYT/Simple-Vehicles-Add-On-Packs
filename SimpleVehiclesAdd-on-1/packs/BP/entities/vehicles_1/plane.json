@@ -73,7 +73,6 @@
           "time": [0.08, 0.08],
           "looping": false,
           "time_down_event": {
-            "event": "minecraft:g1m",
             "target": "self"
           }
         }
@@ -86,7 +85,6 @@
           "time": [0.08, 0.08],
           "looping": false,
           "time_down_event": {
-            "event": "minecraft:g2m",
             "target": "self"
           }
         }
@@ -99,7 +97,6 @@
           "time": [0.08, 0.08],
           "looping": false,
           "time_down_event": {
-            "event": "minecraft:g3m",
             "target": "self"
           }
         }

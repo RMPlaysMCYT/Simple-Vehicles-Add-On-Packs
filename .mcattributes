@@ -7,3 +7,5 @@ diagnostic.disable.molang.texture.undefined=true
 diagnostic.disable.behaviorpack.block.components.material_instance_clash=true
 diagnostic.disable.molang.?=true
 diagnostic.disable.molang.variable.undefined=true
+diagnostic.disable.resourcepack.texture.missing=true
+diagnostic.disable.minecraft.commands.fill.syntax=true
