@@ -189,27 +189,21 @@
 			},
 			"minecraft:can_climb": {},
 			"minecraft:on_death": {
-				"event": "on:death",
 				"target": "self"
 			},
 			"minecraft:on_hurt": {
-				"event": "on:hurt",
 				"target": "self"
 			},
 			"minecraft:on_hurt_by_player": {
-				"event": "on:hurt_by_player",
 				"target": "self"
 			},
 			"minecraft:on_ignite": {
-				"event": "on:ignite",
 				"target": "self"
 			},
 			"minecraft:on_target_acquired": {
-				"event": "on:target_acquired",
 				"target": "self"
 			},
 			"minecraft:on_target_escape": {
-				"event": "on:target_escape",
 				"target": "self"
 			},
 			"minecraft:loot": {

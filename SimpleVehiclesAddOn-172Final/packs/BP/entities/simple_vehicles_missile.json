@@ -11,10 +11,7 @@
     "component_groups": {
       "exploding": {
         "minecraft:explode": {
-          "fuseLength": 0,
-          "power": 2,
-          "fuseLit": true,
-          "causesFire": true
+          "power": 2
         }
       }
     },
@@ -56,10 +53,7 @@
       },
       "minecraft:physics": {},
       "minecraft:explode": {
-        "fuseLength": 2,
-        "power": 1,
-        "fuseLit": true,
-        "causesFire": true
+        "power": 1
       }
     },
     "events": {

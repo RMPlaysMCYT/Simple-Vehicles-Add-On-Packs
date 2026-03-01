@@ -223,20 +223,11 @@
 		},
 		"events": {
 			"minecraft:entity_spawned": {
-				"sequence": [
-					{
-						"randomize": [
-							{
-								"weight": 80,
-								"add": {
-									"component_groups": [
-										"simple_vehicles:car"
-									]
-								}
-							}
-						]
-					}
-				]
+				"add": {
+					"component_groups": [
+						"simple_vehicles:car"
+					]
+				}
 			},
 			"simple_vehicles:jump_reset": {
 				"remove": {
