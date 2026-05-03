@@ -18,6 +18,10 @@ import { Limousine_Information } from "./_vehicles/limousine";
 import { Lowrider_Information } from "./_vehicles/lowrider";
 import { Mustang_Information } from "./_vehicles/mustang";
 import { ObVan_Information } from "./_vehicles/ob_van";
+import { PickUpTruck_Info } from "./_Vehicles/pick_up_truck";
+import { PlaneInfo } from "./_Vehicles/plane";
+import { PoliceCar_Info } from "./_Vehicles/police_car";
+import { SpeedBoat_Info } from "./_Vehicles/speed_boat";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -99,6 +103,14 @@ export function _Page2Vehicles(player) {
       Mustang_Information(player);
     } else if (response.selection === 18) {
       ObVan_Information(player);
+    } else if (response.selection === 19) {
+      PickUpTruck_Info(player);
+    } else if (response.selection === 20) {
+      PlaneInfo(player);
+    } else if (response.selection === 21) {
+      PoliceCar_Info(player);
+    } else if (response.selection === 22) {
+      SpeedBoat_Info(player);
     } else if (response.selection === 99) {
       showCustomForm(player);
     }

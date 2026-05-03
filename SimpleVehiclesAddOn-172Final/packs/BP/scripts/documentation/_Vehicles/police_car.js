@@ -3,7 +3,7 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function ObVan_Information(player) {
+export function PoliceCar_Info(player) {
   const CreditsForm = new ActionFormData();
   CreditsForm.title("Ob Van");
   CreditsForm.body({
