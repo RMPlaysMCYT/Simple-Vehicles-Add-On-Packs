@@ -53,7 +53,11 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("Motorbike", "textures/items/motorbike"); //16
   Page2Vehicles.button("Mustang", "textures/items/mustang"); //17
   Page2Vehicles.button("OB Van", "textures/items/ob_van"); //18
-  Page2Vehicles.button("Go Back"); //19
+  Page2Vehicles.button("OB Van", "textures/items/pick_up_truck"); //19
+  Page2Vehicles.button("OB Van", "textures/items/plane"); //20
+  Page2Vehicles.button("OB Van", "textures/items/police_car"); //21
+  Page2Vehicles.button("OB Van", "textures/items/speed_boat"); //22
+  Page2Vehicles.button("Go Back"); //99
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
       showCustomForm(player);
@@ -95,7 +99,7 @@ export function _Page2Vehicles(player) {
       Mustang_Information(player);
     } else if (response.selection === 18) {
       ObVan_Information(player);
-    } else if (response.selection === 19) {
+    } else if (response.selection === 99) {
       showCustomForm(player);
     }
   });
