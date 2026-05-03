@@ -57,10 +57,17 @@ export function _Page2Vehicles(player) {
   Page2Vehicles.button("Motorbike", "textures/items/motorbike"); //16
   Page2Vehicles.button("Mustang", "textures/items/mustang"); //17
   Page2Vehicles.button("OB Van", "textures/items/ob_van"); //18
-  Page2Vehicles.button("OB Van", "textures/items/pick_up_truck"); //19
-  Page2Vehicles.button("OB Van", "textures/items/plane"); //20
-  Page2Vehicles.button("OB Van", "textures/items/police_car"); //21
-  Page2Vehicles.button("OB Van", "textures/items/speed_boat"); //22
+  Page2Vehicles.button("PickUpTruck", "textures/items/pick_up_truck"); //19
+  Page2Vehicles.button("Plane", "textures/items/plane"); //20
+  Page2Vehicles.button("Police Car", "textures/items/police_car"); //21
+  Page2Vehicles.button("SpeedBoat Small", "textures/items/speed_boat"); //22
+  Page2Vehicles.button("Tank", "textures/items/tank"); //23
+  Page2Vehicles.button("Taxi", "textures/items/taxi"); //24
+  Page2Vehicles.button("Cyber Truck", "textures/items/tesla_truck"); //25
+  Page2Vehicles.button("Tractor", "textures/items/tractor"); //26
+  Page2Vehicles.button("Travis", "textures/items/travis"); //27
+  Page2Vehicles.button("Truck", "textures/items/truck"); //28
+  Page2Vehicles.button("Van", "textures/items/van"); //29
   Page2Vehicles.button("Go Back"); //99
   Page2Vehicles.show(player).then((response) => {
     if (response.canceled) {
@@ -111,7 +118,21 @@ export function _Page2Vehicles(player) {
       PoliceCar_Info(player);
     } else if (response.selection === 22) {
       SpeedBoat_Info(player);
-    } else if (response.selection === 99) {
+    } else if (response.selection === 23) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 24) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 25) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 26) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 27) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 28) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 29) {
+      SpeedBoat_Info(player);
+    } else if (response.selection === 30) {
       showCustomForm(player);
     }
   });
