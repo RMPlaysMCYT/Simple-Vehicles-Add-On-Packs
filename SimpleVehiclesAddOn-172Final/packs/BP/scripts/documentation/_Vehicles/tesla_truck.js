@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function TeslaCyberTruckInfo(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Ob Van");
+  CreditsForm.title("Tesla Cybertruck");
   CreditsForm.body({
     rawtext: [
       {
