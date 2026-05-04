@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function PoliceCar_Info(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Ob Van");
+  CreditsForm.title("Police Car");
   CreditsForm.body({
     rawtext: [
       {

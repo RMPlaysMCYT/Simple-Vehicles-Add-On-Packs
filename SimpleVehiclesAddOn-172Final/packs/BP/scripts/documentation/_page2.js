@@ -22,6 +22,13 @@ import { PickUpTruck_Info } from "./_Vehicles/pick_up_truck";
 import { PlaneInfo } from "./_Vehicles/plane";
 import { PoliceCar_Info } from "./_Vehicles/police_car";
 import { SpeedBoat_Info } from "./_Vehicles/speed_boat";
+import { TankInfo } from "./_Vehicles/tank";
+import { TaxiInfo } from "./_Vehicles/taxi";
+import { TeslaCyberTruckInfo } from "./_Vehicles/tesla_truck";
+import { TractorInfo } from "./_Vehicles/tractor";
+import { TravisInfo } from "./_Vehicles/travis";
+import { TruckInfo } from "./_Vehicles/truck";
+import { VanInfo } from "./_Vehicles/van";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -119,19 +126,19 @@ export function _Page2Vehicles(player) {
     } else if (response.selection === 22) {
       SpeedBoat_Info(player);
     } else if (response.selection === 23) {
-      SpeedBoat_Info(player);
+      TankInfo(player);
     } else if (response.selection === 24) {
-      SpeedBoat_Info(player);
+      TaxiInfo(player);
     } else if (response.selection === 25) {
-      SpeedBoat_Info(player);
+      TeslaCyberTruckInfo(player);
     } else if (response.selection === 26) {
-      SpeedBoat_Info(player);
+      TractorInfo(player);
     } else if (response.selection === 27) {
-      SpeedBoat_Info(player);
+      TravisInfo(player);
     } else if (response.selection === 28) {
-      SpeedBoat_Info(player);
+      TruckInfo(player);
     } else if (response.selection === 29) {
-      SpeedBoat_Info(player);
+      VanInfo(player);
     } else if (response.selection === 30) {
       showCustomForm(player);
     }
