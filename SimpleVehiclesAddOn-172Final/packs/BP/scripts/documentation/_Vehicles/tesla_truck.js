@@ -3,7 +3,7 @@ import { showCustomForm } from "../mainmenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
-export function SpeedBoat_Info(player) {
+export function TeslaCyberTruckInfo(player) {
   const CreditsForm = new ActionFormData();
   CreditsForm.title("Ob Van");
   CreditsForm.body({
