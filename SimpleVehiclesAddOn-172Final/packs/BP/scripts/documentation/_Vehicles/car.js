@@ -1,6 +1,6 @@
 import { ActionFormData } from "@minecraft/server-ui";
 import { showCustomForm } from "../MainMenu";
-import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
 import { _Page2Vehicles } from "../_page2";
 
 export function CarInformation(player) {

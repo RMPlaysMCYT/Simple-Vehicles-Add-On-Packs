@@ -1,8 +1,8 @@
-import { _Page1GettingStarted } from "./_page1";
-import { _Page2Vehicles } from "./_page2";
+import { _Page1GettingStarted } from "../documentation/_page1";
+import { _Page2Vehicles } from "../documentation/_page2";
 import { system, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { _Page3Items } from "./_page3";
+import { _Page3Items } from "../documentation/_page3";
 
 export function showCustomForm(player) {
   const GettingStarted = new ActionFormData();

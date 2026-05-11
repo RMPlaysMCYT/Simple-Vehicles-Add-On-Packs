@@ -1,4 +1,4 @@
-import { Classes, HealthTypes, SuitiableFor, VehicleSizes } from "./customvehicleitems";
+import { Classes, HealthTypes, SuitiableFor, VehicleSizes } from "./customVehicleItems";
 
 
 export const VEHICLES_EGGS = {
