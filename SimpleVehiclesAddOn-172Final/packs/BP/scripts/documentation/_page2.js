@@ -1,5 +1,5 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "./mainmenu";
+import { showCustomForm } from "./MainMenu";
 import { Ae86Information } from "./_vehicles/ae86";
 import { AmbulanceInformation } from "./_vehicles/ambulance";
 import { AUVCarInformation } from "./_vehicles/auv_car";

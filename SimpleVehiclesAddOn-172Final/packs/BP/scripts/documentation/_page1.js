@@ -1,5 +1,5 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "./mainmenu";
+import { showCustomForm } from "./MainMenu";
 
 export function _Page1GettingStarted(player) {
   const GettingStarted = new ActionFormData();

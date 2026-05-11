@@ -1,5 +1,5 @@
 import { ActionFormData } from "@minecraft/server-ui";
-import { showCustomForm } from "../mainmenu";
+import { showCustomForm } from "../MainMenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customvehicleitems";
 import { _Page2Vehicles } from "../_page2";
 
