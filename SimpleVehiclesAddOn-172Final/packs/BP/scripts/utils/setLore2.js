@@ -4,6 +4,8 @@ import {
   world,
   ItemComponentTypes,
   ItemStack,
+  ItemEnchantableComponent,
+  GameMode,
 } from "@minecraft/server";
 
 const lunaAxeId = [
@@ -21,12 +23,6 @@ world.afterEvents.itemUse.subscribe(({ source, itemStack }) => {
 
 import "./components/blockComponents";
 import { berryBlocks } from "./classes/berryManager";
-import {
-  world,
-  system,
-  ItemEnchantableComponent,
-  GameMode,
-} from "@minecraft/server";
 world.beforeEvents.playerBreakBlock.subscribe((data) => {
   const { block, dimension, player, itemStack } = data;
   try {
@@ -68,7 +64,6 @@ world.beforeEvents.playerBreakBlock.subscribe((data) => {
 });
 
 // Method 3
-import { system, world } from "@minecraft/server";
 const your_custom_item = "minecraft:diamond";
 function checkPlayerInventory() {
   for (const player of world.getPlayers()) {
@@ -98,8 +93,6 @@ checkPlayerInventory();
 //AG Remanxnce's simple lore replacements
 //Made for public use on 9/19/24
 //-----------------------------------------
-
-import { world, system } from "@minecraft/server";
 
 const lores = {
   //the item's typeId, followed by the lore in an array format.

@@ -59,3 +59,20 @@ item.spawn_egg.entity.aspire:motor_bike.name=MotorBike
 action.hint.exit.unknown=Use saddle so drive and jump to exit
 
 item.aspire:key=Key
+
+action.hint.paint.red=Paint to Red?
+action.hint.paint.green=Paint to Red?
+action.hint.paint.cyan=Paint to Red?
+action.hint.paint.magenta=Paint to Red?
+action.hint.paint.pink=Paint to Red?
+action.hint.paint.purple=Paint to Red?
+action.hint.paint.orange=Paint to Red?
+action.hint.paint.blue=Paint to Red?
+action.hint.paint.black=Paint to Red?
+action.hint.paint.brown=Paint to Red?
+action.hint.paint.yellow=Paint to Red?
+action.hint.paint.white=Paint to Red?
+action.hint.paint.light_gray=Paint to Light Gray?
+action.hint.paint.gray=Paint to Gray?
+action.hint.paint.lime=Paint to Lime?
+action.hint.paint.white=Paint to White?
