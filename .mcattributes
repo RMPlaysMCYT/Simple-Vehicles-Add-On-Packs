@@ -9,3 +9,5 @@ diagnostic.disable.molang.?=true
 diagnostic.disable.molang.variable.undefined=true
 diagnostic.disable.resourcepack.texture.missing=true
 diagnostic.disable.minecraft.commands.fill.syntax=true
+diagnostic.disable.minecraft.language.duplicate=true
+diagnostic.disable.minecraft.language.duplicate=true

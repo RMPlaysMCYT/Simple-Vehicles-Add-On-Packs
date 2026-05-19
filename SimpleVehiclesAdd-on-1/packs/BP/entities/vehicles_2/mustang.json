@@ -153,7 +153,7 @@
             },
             "use_item": true,
             "play_sounds": "explode",
-            "interact_text": "Paint into Red?"
+            "interact_text": "action.hint.paint.red"
           },
           {
             "on_interact": {
@@ -181,7 +181,7 @@
             },
             "use_item": true,
             "play_sounds": "explode",
-            "interact_text": "Paint into Blue?"
+            "interact_text": "action.hint.paint.blue"
           }
         ]
       },
