@@ -20,17 +20,20 @@ export function onWorldTicks() {
   for (const player of world.getAllPlayers()) {
     try {
       const currentVehicle = getPlayerSimpleVehicles(player);
+      const mountedVehicle = VehiclesMounted[player.id];
 
       // Not riding a valid vehicle
       if (!currentVehicle || !currentVehicle.isValid()) {
-        if (player.hasTag("simplevehicles_player_in_vehicle")) {
+        if (mountedVehicle) {
           onVehicleLeave(player);
+        } else if (player.hasTag("simplevehicles_player_in_vehicle")) {
+          player.removeTag("simplevehicles_player_in_vehicle");
         }
         continue;
       }
 
       // Just entered
-      if (!player.hasTag("simplevehicles_player_in_vehicle")) {
+      if (!mountedVehicle || mountedVehicle.id !== currentVehicle.id) {
         onVehicleEnter(player, currentVehicle);
       }
 
