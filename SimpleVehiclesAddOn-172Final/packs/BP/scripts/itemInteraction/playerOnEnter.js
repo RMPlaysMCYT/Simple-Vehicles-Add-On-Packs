@@ -1,4 +1,4 @@
-import { simpleVehiclesVehicles } from "../utils/vehiclelists"; // Adjust path if needed
+import { simpleVehiclesVehicles } from "../utils/vehicleLists"; // Adjust path if needed
 import {
   playerDeleteItemInventory,
   playerLoadItemInventory,
