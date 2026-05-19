@@ -9,7 +9,7 @@ import "./sets/honkitem";
 import "./sets/setloreinfo";
 import "./sets/_hud";
 
-import * as fck from "./iteminteraction/playeronenter";
+import * as fck from "./iteminteraction/playerOnEnter";
 
 let onWorldStartedSetup = false;
 let onWorldFinishedSetup = false;
