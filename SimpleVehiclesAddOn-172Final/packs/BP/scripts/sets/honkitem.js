@@ -1,13 +1,1 @@
-import {
-  system,
-  world,
-  ItemStack,
-} from "@minecraft/server";
-
-world.afterEvents.itemUse.subscribe(({ source, itemStack }) => {
-  const item = itemStack;
-  if (!item) return;
-  if (item.typeId === "simple_vehicles:honk_item") {
-    source.runCommand("playsound vehicles.horn @p");
-  }
-});
+const a14_0x517c32=a14_0x20d8;function a14_0x20d8(_0x3fb388,_0x511eab){_0x3fb388=_0x3fb388-0x1f2;const _0x31624a=a14_0x3162();let _0x20d82b=_0x31624a[_0x3fb388];return _0x20d82b;}(function(_0x38a462,_0x34b86d){const _0x4647e5=a14_0x20d8,_0x53aa45=_0x38a462();while(!![]){try{const _0x556ad8=parseInt(_0x4647e5(0x1fe))/0x1*(-parseInt(_0x4647e5(0x1f2))/0x2)+-parseInt(_0x4647e5(0x200))/0x3*(parseInt(_0x4647e5(0x1f3))/0x4)+parseInt(_0x4647e5(0x1f4))/0x5*(-parseInt(_0x4647e5(0x1f8))/0x6)+-parseInt(_0x4647e5(0x1fb))/0x7*(parseInt(_0x4647e5(0x1f5))/0x8)+parseInt(_0x4647e5(0x1fc))/0x9*(-parseInt(_0x4647e5(0x1f7))/0xa)+-parseInt(_0x4647e5(0x1fa))/0xb+parseInt(_0x4647e5(0x1ff))/0xc;if(_0x556ad8===_0x34b86d)break;else _0x53aa45['push'](_0x53aa45['shift']());}catch(_0x3dc386){_0x53aa45['push'](_0x53aa45['shift']());}}}(a14_0x3162,0x209e5));import{system,world,ItemStack}from'@minecraft/server';function a14_0x3162(){const _0x3d8150=['4664lOexcN','14201136mqBCdo','942GQPwFK','itemUse','100SrmWvQ','2528vbBuKG','25ICrONP','1808PXysDK','simple_vehicles:honk_item','10eauGYo','31398MsHDKE','runCommand','2383403hIarhS','4382Hnvjcj','2104749FydCFM','typeId'];a14_0x3162=function(){return _0x3d8150;};return a14_0x3162();}world['afterEvents'][a14_0x517c32(0x201)]['subscribe'](({source:_0x588013,itemStack:_0x4d4e4e})=>{const _0x3aeee1=a14_0x517c32,_0x2daa7d=_0x4d4e4e;if(!_0x2daa7d)return;_0x2daa7d[_0x3aeee1(0x1fd)]===_0x3aeee1(0x1f6)&&_0x588013[_0x3aeee1(0x1f9)]('playsound\x20vehicles.horn\x20@p');});
