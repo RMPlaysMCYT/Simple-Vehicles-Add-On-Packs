@@ -1,1 +1,30 @@
-(function(_0x5a583b,_0x320f37){const _0x93cf2e=a42_0x338c,_0x59c58d=_0x5a583b();while(!![]){try{const _0x2ffd56=-parseInt(_0x93cf2e(0x120))/0x1+-parseInt(_0x93cf2e(0x122))/0x2*(-parseInt(_0x93cf2e(0x126))/0x3)+parseInt(_0x93cf2e(0x113))/0x4+parseInt(_0x93cf2e(0x11e))/0x5+-parseInt(_0x93cf2e(0x121))/0x6+-parseInt(_0x93cf2e(0x119))/0x7*(-parseInt(_0x93cf2e(0x112))/0x8)+-parseInt(_0x93cf2e(0x114))/0x9;if(_0x2ffd56===_0x320f37)break;else _0x59c58d['push'](_0x59c58d['shift']());}catch(_0x324bc2){_0x59c58d['push'](_0x59c58d['shift']());}}}(a42_0x2f5a,0xbe841));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';function a42_0x2f5a(){const _0x27197e=['then','button','10910991ZQjsEQ','Go\x20Back','===============================','body','§lSpeed:\x20§r120\x20km/h\x20\x0a','2753310wJqztn','§lHealth:\x20§r','1500594apfCuB','3679050KGhywj','1465742zJYQBv','show','Specifictaions\x20\x0a','canceled','3BDLWLS','A\x20lowrider\x20or\x20low\x20rider\x20is\x20a\x20customized\x20car\x20with\x20a\x20lowered\x20body\x20that\x20emerged\x20in\x20the\x20post-WWII,\x201940s-1950\x27s\x20era.[3]\x20The\x20exact\x20origin\x20of\x20the\x20lowrider\x20is\x20debatable,\x20but\x20it\x20was\x20probably\x20birthed\x20in\x20Southern\x20California,\x20with\x20many\x20people\x20claiming\x20that\x20lowriders\x20really\x20started\x20in\x20Tijuana,\x20Texas,\x20or\x20New\x20Mexico.\x20Lowriders\x20were\x20particularly\x20popular\x20amongst\x20young\x20Chicanos,\x20who\x20adopted\x20the\x20art\x20of\x20rolling\x20“low\x20and\x20slow”\x20(or\x20bajito\x20y\x20suavecito),\x20directly\x20opposing\x20mainstream\x20culture\x20which\x20focused\x20on\x20fast\x20cars\x20such\x20as\x20hot\x20rods.\x20In\x20lowrider\x20culture,\x20lowriders\x20are\x20considered\x20to\x20serve\x20as\x20transportation\x20art\x20or\x20transported\x20art.[4]','8VqaIUQ','3711124GKVBhY','7883145FHCaye','§lSize:\x20§r','Lowrider'];a42_0x2f5a=function(){return _0x27197e;};return a42_0x2f5a();}import{_Page2Vehicles}from'../_page2';function a42_0x338c(_0x207df9,_0x449c9e){_0x207df9=_0x207df9-0x112;const _0x2f5a61=a42_0x2f5a();let _0x338c46=_0x2f5a61[_0x207df9];return _0x338c46;}export function Lowrider_Information(_0x4c5e6c){const _0x45ae25=a42_0x338c,_0x495124=new ActionFormData();_0x495124['title'](_0x45ae25(0x116)),_0x495124[_0x45ae25(0x11c)]({'rawtext':[{'text':_0x45ae25(0x127)},{'text':'\x0a'},{'text':_0x45ae25(0x11b)},{'text':_0x45ae25(0x124)},{'text':_0x45ae25(0x11d)},{'text':_0x45ae25(0x115)+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x45ae25(0x11f)+HealthTypes[0x2]}]}),_0x495124[_0x45ae25(0x118)](_0x45ae25(0x11a)),_0x495124[_0x45ae25(0x123)](_0x4c5e6c)[_0x45ae25(0x117)](_0x530f15=>{const _0x12255f=_0x45ae25;if(_0x530f15[_0x12255f(0x125)])showCustomForm(_0x4c5e6c);else _0x530f15['selection']===0x0&&_Page2Vehicles(_0x4c5e6c);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Lowrider_Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Lowrider");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A lowrider or low rider is a customized car with a lowered body that emerged in the post-WWII, 1940s-1950's era.[3] The exact origin of the lowrider is debatable, but it was probably birthed in Southern California, with many people claiming that lowriders really started in Tijuana, Texas, or New Mexico. Lowriders were particularly popular amongst young Chicanos, who adopted the art of rolling “low and slow” (or bajito y suavecito), directly opposing mainstream culture which focused on fast cars such as hot rods. In lowrider culture, lowriders are considered to serve as transportation art or transported art.[4]",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

@@ -1,1 +1,44 @@
-const a0_0x238493=a0_0x4c87;function a0_0x4c87(_0x3f758e,_0x5d5fac){_0x3f758e=_0x3f758e-0xdc;const _0x5a441f=a0_0x5a44();let _0x4c8723=_0x5a441f[_0x3f758e];return _0x4c8723;}function a0_0x5a44(){const _0x5a8f8b=['sendMessage','13365448BieLqC','4240yOQSng','172','playerSpawn','runInterval','afterEvents','5451RbCOfs','578062fulMKr','player','2zmGQPd','\x20Loaded','log','161287OYwSuY','onWorldTicks','Addon\x20Loaded','6984270vWQped','25713941XXvZiE','runCommand','Given\x20Player\x20Book','14453397yStiIi','10VRZzHt','world','SimpleVehiclesAddOn172','warn','tag\x20@s[tag=!',']\x20at\x20@s\x20run\x20give\x20@s\x20simple_vehicles:book_documents','length','24ZPjpEB','substring'];a0_0x5a44=function(){return _0x5a8f8b;};return a0_0x5a44();}(function(_0x1eb4c1,_0x237440){const _0x593e5a=a0_0x4c87,_0xa491e2=_0x1eb4c1();while(!![]){try{const _0x29c1c1=parseInt(_0x593e5a(0xf0))/0x1*(-parseInt(_0x593e5a(0xf2))/0x2)+parseInt(_0x593e5a(0xef))/0x3*(parseInt(_0x593e5a(0xea))/0x4)+-parseInt(_0x593e5a(0xf8))/0x5+parseInt(_0x593e5a(0xe6))/0x6*(parseInt(_0x593e5a(0xf5))/0x7)+parseInt(_0x593e5a(0xe9))/0x8+parseInt(_0x593e5a(0xde))/0x9+parseInt(_0x593e5a(0xdf))/0xa*(-parseInt(_0x593e5a(0xf9))/0xb);if(_0x29c1c1===_0x237440)break;else _0xa491e2['push'](_0xa491e2['shift']());}catch(_0x373bc6){_0xa491e2['push'](_0xa491e2['shift']());}}}(a0_0x5a44,0xefceb));const Version=a0_0x238493(0xeb);console[a0_0x238493(0xf4)](a0_0x238493(0xf7)),console[a0_0x238493(0xf4)]('Simple\x20Vehicles\x20Addon\x20'+Version+a0_0x238493(0xf3));import*as a0_0x5f1fe1 from'@minecraft/server';import{system,world}from'@minecraft/server';import'./documentation/MainMenu';import'./sets/honkitem';import'./sets/setloreinfo';import'./sets/_hud';import*as a0_0x1fc07c from'./itemInteraction/playerOnEnter';let onWorldStartedSetup=![],onWorldFinishedSetup=![];const DEBUGASSHOLE=![];var NameSpaces=a0_0x238493(0xe1),NamingBtch='SimpleVehiclesAddOn/172';function givePlayerBook(_0x57ecfb){const _0x12d9e5=a0_0x238493;_0x57ecfb[_0x12d9e5(0xdc)]('execute\x20as\x20@s[tag=!'+NameSpaces[_0x12d9e5(0xe7)](0x0,NamingBtch[_0x12d9e5(0xe5)]-0x1)+_0x12d9e5(0xe4)),_0x57ecfb['runCommand'](_0x12d9e5(0xe3)+NameSpaces['substring'](0x0,NamingBtch[_0x12d9e5(0xe5)]-0x1)+']\x20add\x20'+NameSpaces[_0x12d9e5(0xe7)](0x0,NamingBtch['length']-0x1)),DEBUGASSHOLE&&a0_0x5f1fe1['world'][_0x12d9e5(0xe8)](_0x12d9e5(0xdd));}a0_0x5f1fe1[a0_0x238493(0xe0)][a0_0x238493(0xee)][a0_0x238493(0xec)]['subscribe'](_0xaec432=>{const _0x3cc268=a0_0x238493;givePlayerBook(_0xaec432[_0x3cc268(0xf1)]);}),system[a0_0x238493(0xed)](()=>{const _0x5d30b7=a0_0x238493;try{a0_0x1fc07c[_0x5d30b7(0xf6)]();}catch(_0x5df3da){console[_0x5d30b7(0xe2)]('[Simple\x20Vehicles]\x20onWorldTicks\x20error:\x20'+_0x5df3da);}},0x1);
+const Version = "172";
+console.log("Addon Loaded");
+console.log(`Simple Vehicles Addon ${Version} Loaded`);
+
+import * as btch from "@minecraft/server";
+import { system, world } from "@minecraft/server";
+import "./documentation/MainMenu";
+import "./sets/honkitem";
+import "./sets/setloreinfo";
+import "./sets/_hud";
+
+import * as fck from "./itemInteraction/playerOnEnter";
+
+let onWorldStartedSetup = false;
+let onWorldFinishedSetup = false;
+
+const DEBUGASSHOLE = false;
+
+var NameSpaces = "SimpleVehiclesAddOn172";
+var NamingBtch = "SimpleVehiclesAddOn/172";
+
+function givePlayerBook(player) {
+  player.runCommand(
+    `execute as @s[tag=!${NameSpaces.substring(0, NamingBtch.length - 1)}] at @s run give @s simple_vehicles:book_documents`
+  );
+  player.runCommand(
+    `tag @s[tag=!${NameSpaces.substring(0, NamingBtch.length - 1)}] add ${NameSpaces.substring(0, NamingBtch.length - 1)}`
+  );
+  if (DEBUGASSHOLE) {
+    btch.world.sendMessage(`Given Player Book`);
+  }
+}
+
+btch.world.afterEvents.playerSpawn.subscribe((event) => {
+  givePlayerBook(event.player);
+});
+
+system.runInterval(() => {
+  try {
+    fck.onWorldTicks();
+  } catch (e) {
+    console.warn(`[Simple Vehicles] onWorldTicks error: ${e}`);
+  }
+}, 1);

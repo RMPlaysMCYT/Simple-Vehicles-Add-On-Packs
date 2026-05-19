@@ -1,1 +1,52 @@
-const a18_0x5f5e02=a18_0x156a;(function(_0x3f5c6f,_0x30b15e){const _0x4ce701=a18_0x156a,_0x9456bc=_0x3f5c6f();while(!![]){try{const _0x12f732=parseInt(_0x4ce701(0x1b7))/0x1*(-parseInt(_0x4ce701(0x1c3))/0x2)+-parseInt(_0x4ce701(0x1ba))/0x3+-parseInt(_0x4ce701(0x1c2))/0x4+-parseInt(_0x4ce701(0x1c6))/0x5*(parseInt(_0x4ce701(0x1c1))/0x6)+-parseInt(_0x4ce701(0x1bc))/0x7+parseInt(_0x4ce701(0x1c4))/0x8*(-parseInt(_0x4ce701(0x1b9))/0x9)+parseInt(_0x4ce701(0x1b8))/0xa*(parseInt(_0x4ce701(0x1bb))/0xb);if(_0x12f732===_0x30b15e)break;else _0x9456bc['push'](_0x9456bc['shift']());}catch(_0x48df22){_0x9456bc['push'](_0x9456bc['shift']());}}}(a18_0x2c4d,0x8fa18));function a18_0x156a(_0x495371,_0x1ac75f){_0x495371=_0x495371-0x1b7;const _0x2c4d4d=a18_0x2c4d();let _0x156abe=_0x2c4d4d[_0x495371];return _0x156abe;}export const CUSTOM_ITEMS={'simple_vehicles:honk_item':[a18_0x5f5e02(0x1bf),a18_0x5f5e02(0x1bd),a18_0x5f5e02(0x1c0)],'simple_vehicles:key':['This\x20is\x20an\x20required\x20item\x20tho\x20for\x20every\x20vehicle'],'simple_vehicles:wrench':['This\x20items\x20works\x20for\x20fixing\x20the\x20vehicle'],'simple_vehicles:small_engine':['This\x20items\x20works\x20for\x20adding\x20engine\x20to\x20the\x20vehicle'],'simple_vehicles:large_engine':[a18_0x5f5e02(0x1c5)]};export const SPRAY_ITEMS={'simple_vehicles:black_spray':['This\x20color\x20spray\x20makes\x20it\x20feels\x20professional\x20but\x20deadly'],'simple_vehicles:blue_spray':['This\x20color\x20spray\x20makes\x20it\x20feels\x20professional\x20but\x20deadly'],'simple_vehicles:brown_spray':['This\x20color\x20spray\x20makes\x20it\x20feels\x20professional\x20but\x20deadly'],'simple_vehicles:cyan_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:gray_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:green_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:light_blue_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:lime_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:magenta_spray':[a18_0x5f5e02(0x1be)],'simple_vehicles:orange_spray':[a18_0x5f5e02(0x1be)]};function a18_0x2c4d(){const _0x34653f=['407328IHAHuk','957dTKRKd','7702961ogEZHp','§rThis\x20is\x20the\x20second\x20line\x20of\x20the\x20item\x27s\x20lore','This\x20color\x20spray\x20makes\x20it\x20feels\x20professional\x20but\x20deadly','§rThis\x20is\x20the\x20first\x20line\x20of\x20the\x20item\x27s\x20lore','You\x20can\x20only\x20have\x2020\x20lines\x20and\x2050\x20characters','36588HwOjIK','2356228WQAbjA','5294SEnEqD','112YJENvK','This\x20items\x20works\x20for\x20adding\x20the\x20biggest\x20engine\x20to\x20the\x20vehicle','10sgkTYx','69iDoUXe','416770fNXXaN','654102erMINl'];a18_0x2c4d=function(){return _0x34653f;};return a18_0x2c4d();}
+export const CUSTOM_ITEMS = {
+  "simple_vehicles:honk_item": [
+    "\xA7rThis is the first line of the item's lore",
+    "\xA7rThis is the second line of the item's lore",
+    "You can only have 20 lines and 50 characters"
+  ],
+  "simple_vehicles:key": [
+    "This is an required item tho for every vehicle"
+  ],
+  "simple_vehicles:wrench": [
+    "This items works for fixing the vehicle"
+  ],
+  "simple_vehicles:small_engine": [
+    "This items works for adding engine to the vehicle"
+  ],
+  "simple_vehicles:large_engine": [
+    "This items works for adding the biggest engine to the vehicle"
+  ],
+};
+
+export const SPRAY_ITEMS = {
+  "simple_vehicles:black_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:blue_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:brown_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:cyan_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:gray_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:green_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:light_blue_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:lime_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:magenta_spray": [
+    "This color spray makes it feels professional but deadly"
+  ],
+  "simple_vehicles:orange_spray": [
+    "This color spray makes it feels professional but deadly"
+  ]
+}

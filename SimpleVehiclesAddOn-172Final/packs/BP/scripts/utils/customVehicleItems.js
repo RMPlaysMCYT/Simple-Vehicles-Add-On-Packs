@@ -1,1 +1,75 @@
-function a20_0x5366(){const _0x2cabbe=['Small','Bus','21PddSOF','Residential','10VOiIWI','Medium','Truck','210','8988452mBAXqy','280','330','1791152fRpRTi','360096DxZUBu','220','290','Country','4GdVKxC','134856JOwquy','221528KnYjtk','Parks','270','350','746928YJFQwL','18eldavh','180','Coast','160','Special','300','260','Village','250','230','Jungle','Boat','120','170','150','Mountains','Commercial','200','Provincial','Ocean','942030pjlkZl','240','310','Town','190','320','Regional','110'];a20_0x5366=function(){return _0x2cabbe;};return a20_0x5366();}const a20_0x5abaff=a20_0x27d1;(function(_0x1ed1a5,_0x22e8fa){const _0x2fa3cd=a20_0x27d1,_0x2f62b4=_0x1ed1a5();while(!![]){try{const _0x27b7c9=-parseInt(_0x2fa3cd(0xae))/0x1*(parseInt(_0x2fa3cd(0xb0))/0x2)+-parseInt(_0x2fa3cd(0xb4))/0x3+-parseInt(_0x2fa3cd(0xaa))/0x4+-parseInt(_0x2fa3cd(0xc9))/0x5+-parseInt(_0x2fa3cd(0xaf))/0x6*(parseInt(_0x2fa3cd(0xd3))/0x7)+-parseInt(_0x2fa3cd(0xa9))/0x8*(-parseInt(_0x2fa3cd(0xb5))/0x9)+parseInt(_0x2fa3cd(0xd5))/0xa*(parseInt(_0x2fa3cd(0xd9))/0xb);if(_0x27b7c9===_0x22e8fa)break;else _0x2f62b4['push'](_0x2f62b4['shift']());}catch(_0x23fc33){_0x2f62b4['push'](_0x2f62b4['shift']());}}}(a20_0x5366,0x376d6));export const VehicleSizes=[a20_0x5abaff(0xd1),a20_0x5abaff(0xd6),'Large'];function a20_0x27d1(_0x439de8,_0x165d05){_0x439de8=_0x439de8-0xa8;const _0x53665c=a20_0x5366();let _0x27d1b1=_0x53665c[_0x439de8];return _0x27d1b1;}export const VehicleTypes=['Car',a20_0x5abaff(0xd7),a20_0x5abaff(0xc0),a20_0x5abaff(0xd2),a20_0x5abaff(0xb9)];export const HealthTypes=['10','20','30','40','50','60','70','80','90','100',a20_0x5abaff(0xd0),a20_0x5abaff(0xc1),'130','140',a20_0x5abaff(0xc3),a20_0x5abaff(0xb8),a20_0x5abaff(0xc2),a20_0x5abaff(0xb6),a20_0x5abaff(0xcd),a20_0x5abaff(0xc6),a20_0x5abaff(0xd8),a20_0x5abaff(0xab),a20_0x5abaff(0xbe),a20_0x5abaff(0xca),a20_0x5abaff(0xbd),a20_0x5abaff(0xbb),a20_0x5abaff(0xb2),a20_0x5abaff(0xda),a20_0x5abaff(0xac),a20_0x5abaff(0xba),a20_0x5abaff(0xcb),a20_0x5abaff(0xce),a20_0x5abaff(0xa8),'340',a20_0x5abaff(0xb3)];export const Classes=[a20_0x5abaff(0xd4),a20_0x5abaff(0xc5),'Industrial','Military',a20_0x5abaff(0xb9)];export const SuitiableFor=[a20_0x5abaff(0xcc),a20_0x5abaff(0xad),'City',a20_0x5abaff(0xbc),a20_0x5abaff(0xc7),a20_0x5abaff(0xcf),a20_0x5abaff(0xb1),a20_0x5abaff(0xc4),'Desert',a20_0x5abaff(0xbf),a20_0x5abaff(0xc8),'Sea',a20_0x5abaff(0xb7)];
+export const VehicleSizes = [
+    "Small",
+    "Medium",
+    "Large"
+]
+
+export const VehicleTypes = [
+    "Car",
+    "Truck",
+    "Boat",
+    "Bus",
+    "Special"
+]
+
+export const HealthTypes = [
+    "10",
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90",
+    "100",
+    "110",
+    "120",
+    "130",
+    "140",
+    "150",
+    "160",
+    "170",
+    "180",
+    "190",
+    "200",
+    "210",
+    "220",
+    "230",
+    "240",
+    "250",
+    "260",
+    "270",
+    "280",
+    "290",
+    "300",
+    "310",
+    "320",
+    "330",
+    "340",
+    "350"
+]
+
+export const Classes =[
+    "Residential", //0
+    "Commercial",  //1
+    "Industrial",  //2
+    "Military",    //3
+    "Special"      //4
+]
+
+export const SuitiableFor = [
+    "Town",
+    "Country",
+    "City",
+    "Village",
+    "Provincial",
+    "Regional",
+    "Parks",
+    "Mountains",
+    "Desert",
+    "Jungle",
+    "Ocean",
+    "Sea",
+    "Coast",
+]

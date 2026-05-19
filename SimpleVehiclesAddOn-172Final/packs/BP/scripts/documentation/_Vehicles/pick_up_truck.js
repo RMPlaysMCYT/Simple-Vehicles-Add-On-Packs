@@ -1,1 +1,30 @@
-function a46_0x40d6(_0x51f08b,_0x345b41){_0x51f08b=_0x51f08b-0xbf;const _0x3bdf3f=a46_0x3bdf();let _0x40d688=_0x3bdf3f[_0x51f08b];return _0x40d688;}function a46_0x3bdf(){const _0x15cdc0=['1106fSDcId','selection','2258844KHhbOY','174485HlhrnV','834001iAGiRz','33624pOwElv','then','3551796eJiISr','button','Ob\x20Van','body','§lSpeed:\x20§r120\x20km/h\x20\x0a','show','canceled','§lHealth:\x20§r','5183568RzOLJo','903148YCwDBn','title','A\x20television\x20production\x20truck\x20or\x20OB\x20van\x20is\x20a\x20small\x20mobile\x20production\x20control\x20room\x20to\x20allow\x20filming\x20of\x20events\x20and\x20video\x20production\x20at\x20locations\x20outside\x20a\x20regular\x20television\x20studio.\x20They\x20are\x20used\x20for\x20remote\x20broadcasts,\x20outside\x20broadcasting\x20(OB),\x20and\x20electronic\x20field\x20production\x20(EFP).','Go\x20Back'];a46_0x3bdf=function(){return _0x15cdc0;};return a46_0x3bdf();}(function(_0x1b4f92,_0x191f2b){const _0xd05313=a46_0x40d6,_0x9f37d0=_0x1b4f92();while(!![]){try{const _0x52adea=parseInt(_0xd05313(0xd2))/0x1+-parseInt(_0xd05313(0xca))/0x2+parseInt(_0xd05313(0xd0))/0x3+-parseInt(_0xd05313(0xc1))/0x4+-parseInt(_0xd05313(0xd1))/0x5+-parseInt(_0xd05313(0xbf))/0x6*(-parseInt(_0xd05313(0xce))/0x7)+-parseInt(_0xd05313(0xc9))/0x8;if(_0x52adea===_0x191f2b)break;else _0x9f37d0['push'](_0x9f37d0['shift']());}catch(_0x1699ca){_0x9f37d0['push'](_0x9f37d0['shift']());}}}(a46_0x3bdf,0x6dddf));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function PickUpTruck_Info(_0x400c24){const _0x46edab=a46_0x40d6,_0x519593=new ActionFormData();_0x519593[_0x46edab(0xcb)](_0x46edab(0xc3)),_0x519593[_0x46edab(0xc4)]({'rawtext':[{'text':_0x46edab(0xcc)},{'text':'\x0a'},{'text':'==============================='},{'text':'Specifictaions\x20\x0a'},{'text':_0x46edab(0xc5)},{'text':'§lSize:\x20§r'+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x46edab(0xc8)+HealthTypes[0x2]}]}),_0x519593[_0x46edab(0xc2)](_0x46edab(0xcd)),_0x519593[_0x46edab(0xc6)](_0x400c24)[_0x46edab(0xc0)](_0x25fed8=>{const _0x31f9df=_0x46edab;if(_0x25fed8[_0x31f9df(0xc7)])showCustomForm(_0x400c24);else _0x25fed8[_0x31f9df(0xcf)]===0x0&&_Page2Vehicles(_0x400c24);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function PickUpTruck_Info(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Ob Van");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

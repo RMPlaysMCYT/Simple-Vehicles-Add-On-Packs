@@ -1,1 +1,136 @@
-(function(_0x2f4242,_0x2fc8bd){const _0x4ecf08=a9_0x54d3,_0x15f38b=_0x2f4242();while(!![]){try{const _0x5c2c9d=-parseInt(_0x4ecf08(0xd3))/0x1*(-parseInt(_0x4ecf08(0xbd))/0x2)+parseInt(_0x4ecf08(0xc0))/0x3+parseInt(_0x4ecf08(0xc8))/0x4+-parseInt(_0x4ecf08(0xbe))/0x5*(-parseInt(_0x4ecf08(0xbc))/0x6)+-parseInt(_0x4ecf08(0xd4))/0x7*(-parseInt(_0x4ecf08(0xd1))/0x8)+-parseInt(_0x4ecf08(0xc3))/0x9+-parseInt(_0x4ecf08(0xc6))/0xa;if(_0x5c2c9d===_0x2fc8bd)break;else _0x15f38b['push'](_0x15f38b['shift']());}catch(_0x528f77){_0x15f38b['push'](_0x15f38b['shift']());}}}(a9_0x410e,0x5b8b0));import{ItemLockMode,ItemStack}from'@minecraft/server';function a9_0x410e(){const _0x3ae6b0=['11562OxEVum','26rNabqW','1685sZhqZH','number','1744842ZuCFcF','[Simple\x20Vehicles]\x20load\x20inventory\x20failed:\x20','container','2412189BQcaUZ','selectedSlotIndex','none','7690140yxSduN','minecraft:stick','393148SdDXnY','[Simple\x20Vehicles]\x20populate\x20items\x20failed:\x20','getItem','simple_vehicles:honk_item','minecraft:book','[Simple\x20Vehicles]\x20save\x20inventory\x20failed:\x20','getComponent','setItem','simplevehicles_selected_slot_index','45056BfXPzq','lockMode','4195BXRjbd','35lmALOD','warn','simple_vehicles:key'];a9_0x410e=function(){return _0x3ae6b0;};return a9_0x410e();}function a9_0x54d3(_0xbb703,_0x2a3255){_0xbb703=_0xbb703-0xbb;const _0x410e51=a9_0x410e();let _0x54d3d6=_0x410e51[_0xbb703];return _0x54d3d6;}const HOTBAR_SIZE=0x9,memoryHotbars={};function getInventoryContainer(_0x59bdb9){const _0x25102c=a9_0x54d3,_0x4e8c11=_0x59bdb9[_0x25102c(0xce)]('minecraft:inventory');return _0x4e8c11?.[_0x25102c(0xc2)];}export function playerSaveItemInventory(_0x37dc90,_0x424e3c){const _0x1336a0=a9_0x54d3;try{const _0x21b5d0=getInventoryContainer(_0x37dc90);if(!_0x21b5d0)return;if(_0x424e3c?.['isValid']()){const _0xff854d=getInventoryContainer(_0x424e3c);if(_0xff854d)for(let _0x155d43=0x0;_0x155d43<HOTBAR_SIZE;_0x155d43++){_0xff854d[_0x1336a0(0xcf)](_0x155d43,_0x21b5d0['getItem'](_0x155d43));}}const _0x3c6099=[];for(let _0x5617f9=0x0;_0x5617f9<HOTBAR_SIZE;_0x5617f9++){_0x3c6099[_0x5617f9]=_0x21b5d0[_0x1336a0(0xca)](_0x5617f9);}memoryHotbars[_0x37dc90['id']]=_0x3c6099,_0x37dc90['setDynamicProperty'](_0x1336a0(0xd0),_0x37dc90['selectedSlotIndex']);}catch(_0x594118){console[_0x1336a0(0xd5)](_0x1336a0(0xcd)+_0x594118);}}export function playerLoadItemInventory(_0x49d68d,_0x315694){const _0x4384f6=a9_0x54d3;try{const _0x118841=getInventoryContainer(_0x49d68d);if(!_0x118841)return;let _0x1a8993=![];if(_0x315694?.['isValid']()){const _0x40d325=getInventoryContainer(_0x315694);if(_0x40d325){for(let _0x3a1453=0x0;_0x3a1453<HOTBAR_SIZE;_0x3a1453++){_0x118841['setItem'](_0x3a1453,_0x40d325['getItem'](_0x3a1453)),_0x40d325[_0x4384f6(0xcf)](_0x3a1453,undefined);}_0x1a8993=!![];}}if(!_0x1a8993){const _0x3b45a7=memoryHotbars[_0x49d68d['id']];if(_0x3b45a7)for(let _0x1ce2ff=0x0;_0x1ce2ff<HOTBAR_SIZE;_0x1ce2ff++){_0x118841[_0x4384f6(0xcf)](_0x1ce2ff,_0x3b45a7[_0x1ce2ff]);}}const _0x14db56=_0x49d68d['getDynamicProperty'](_0x4384f6(0xd0));if(typeof _0x14db56===_0x4384f6(0xbf))try{_0x49d68d[_0x4384f6(0xc4)]=_0x14db56;}catch{}delete memoryHotbars[_0x49d68d['id']];}catch(_0x51d5c9){console[_0x4384f6(0xd5)](_0x4384f6(0xc1)+_0x51d5c9);}}export function playerInventoryItems(_0x24201){const _0x29de17=a9_0x54d3;try{const _0x5b9402=getInventoryContainer(_0x24201);if(!_0x5b9402)return;const _0x5a3cc7=new ItemStack(_0x29de17(0xcb),0x1),_0x502b06=new ItemStack(_0x29de17(0xbb),0x1),_0x55cbfc=new ItemStack(_0x29de17(0xc7),0x1),_0x4e985d=new ItemStack(_0x29de17(0xcc),0x1);_0x5b9402[_0x29de17(0xcf)](0x0,_0x5a3cc7),_0x5b9402[_0x29de17(0xcf)](0x1,_0x502b06),_0x5b9402['setItem'](0x2,_0x55cbfc),_0x5b9402[_0x29de17(0xcf)](0x3,_0x4e985d);for(let _0xf7e79b=0x4;_0xf7e79b<HOTBAR_SIZE;_0xf7e79b++){_0x5b9402[_0x29de17(0xcf)](_0xf7e79b,undefined);}}catch(_0x453b13){console[_0x29de17(0xd5)](_0x29de17(0xc9)+_0x453b13);}}export function playerDeleteItemInventory(_0x3c747d){const _0x9db16=a9_0x54d3,_0x492c49=getInventoryContainer(_0x3c747d);if(!_0x492c49)return;for(let _0x213e69=0x0;_0x213e69<HOTBAR_SIZE;_0x213e69++){_0x492c49[_0x9db16(0xcf)](_0x213e69,undefined);}}export function playerLockInventory(_0xc6d3f8){const _0x10d9fe=a9_0x54d3,_0x546aab=getInventoryContainer(_0xc6d3f8);if(!_0x546aab)return;for(let _0x474f8e=0x0;_0x474f8e<HOTBAR_SIZE;_0x474f8e++){const _0x136670=_0x546aab['getItem'](_0x474f8e);if(!_0x136670)continue;_0x136670[_0x10d9fe(0xd2)]=ItemLockMode['slot'],_0x546aab['setItem'](_0x474f8e,_0x136670);}}export function playerUnlockInventory(_0x597882){const _0x324971=a9_0x54d3,_0x11d627=getInventoryContainer(_0x597882);if(!_0x11d627)return;for(let _0x3c7e96=0x0;_0x3c7e96<HOTBAR_SIZE;_0x3c7e96++){const _0x1cf700=_0x11d627[_0x324971(0xca)](_0x3c7e96);if(!_0x1cf700)continue;_0x1cf700['lockMode']=ItemLockMode[_0x324971(0xc5)],_0x11d627[_0x324971(0xcf)](_0x3c7e96,_0x1cf700);}}
+import { ItemLockMode, ItemStack } from "@minecraft/server";
+
+const HOTBAR_SIZE = 9;
+const memoryHotbars = {};
+
+function getInventoryContainer(entity) {
+  const inventory = entity.getComponent("minecraft:inventory");
+  return inventory?.container;
+}
+
+export function playerSaveItemInventory(player, vehicleEntity) {
+  try {
+    const playerInventory = getInventoryContainer(player);
+    if (!playerInventory) return;
+
+    if (vehicleEntity?.isValid()) {
+      const vehicleInventory = getInventoryContainer(vehicleEntity);
+      if (vehicleInventory) {
+        for (let index = 0; index < HOTBAR_SIZE; index++) {
+          vehicleInventory.setItem(index, playerInventory.getItem(index));
+        }
+      }
+    }
+
+    const snapshot = [];
+    for (let index = 0; index < HOTBAR_SIZE; index++) {
+      snapshot[index] = playerInventory.getItem(index);
+    }
+    memoryHotbars[player.id] = snapshot;
+
+    player.setDynamicProperty(
+      "simplevehicles_selected_slot_index",
+      player.selectedSlotIndex
+    );
+  } catch (e) {
+    console.warn(`[Simple Vehicles] save inventory failed: ${e}`);
+  }
+}
+
+export function playerLoadItemInventory(player, vehicleEntity) {
+  try {
+    const playerInventory = getInventoryContainer(player);
+    if (!playerInventory) return;
+
+    let restored = false;
+
+    if (vehicleEntity?.isValid()) {
+      const vehicleInventory = getInventoryContainer(vehicleEntity);
+      if (vehicleInventory) {
+        for (let index = 0; index < HOTBAR_SIZE; index++) {
+          playerInventory.setItem(index, vehicleInventory.getItem(index));
+          vehicleInventory.setItem(index, undefined);
+        }
+        restored = true;
+      }
+    }
+
+    if (!restored) {
+      const snapshot = memoryHotbars[player.id];
+      if (snapshot) {
+        for (let index = 0; index < HOTBAR_SIZE; index++) {
+          playerInventory.setItem(index, snapshot[index]);
+        }
+      }
+    }
+
+    const slotIndex = player.getDynamicProperty("simplevehicles_selected_slot_index");
+    if (typeof slotIndex === "number") {
+      try {
+        player.selectedSlotIndex = slotIndex;
+      } catch {}
+    }
+
+    delete memoryHotbars[player.id];
+  } catch (e) {
+    console.warn(`[Simple Vehicles] load inventory failed: ${e}`);
+  }
+}
+
+export function playerInventoryItems(player) {
+  try {
+    const inv = getInventoryContainer(player);
+    if (!inv) return;
+
+    const item0 = new ItemStack("simple_vehicles:honk_item", 1);
+    const item1 = new ItemStack("simple_vehicles:key", 1);
+    const item2 = new ItemStack("minecraft:stick", 1);
+    const item3 = new ItemStack("minecraft:book", 1);
+
+    inv.setItem(0, item0);
+    inv.setItem(1, item1);
+    inv.setItem(2, item2);
+    inv.setItem(3, item3);
+
+    for (let i = 4; i < HOTBAR_SIZE; i++) {
+      inv.setItem(i, undefined);
+    }
+  } catch (e) {
+    console.warn(`[Simple Vehicles] populate items failed: ${e}`);
+  }
+}
+
+export function playerDeleteItemInventory(player) {
+  const inv = getInventoryContainer(player);
+  if (!inv) return;
+
+  for (let index = 0; index < HOTBAR_SIZE; index++) {
+    inv.setItem(index, undefined);
+  }
+}
+
+export function playerLockInventory(player) {
+  const inv = getInventoryContainer(player);
+  if (!inv) return;
+
+  for (let index = 0; index < HOTBAR_SIZE; index++) {
+    const item = inv.getItem(index);
+    if (!item) continue;
+
+    item.lockMode = ItemLockMode.slot;
+    inv.setItem(index, item);
+  }
+}
+
+export function playerUnlockInventory(player) {
+  const inv = getInventoryContainer(player);
+  if (!inv) return;
+
+  for (let index = 0; index < HOTBAR_SIZE; index++) {
+    const item = inv.getItem(index);
+    if (!item) continue;
+
+    item.lockMode = ItemLockMode.none;
+    inv.setItem(index, item);
+  }
+}

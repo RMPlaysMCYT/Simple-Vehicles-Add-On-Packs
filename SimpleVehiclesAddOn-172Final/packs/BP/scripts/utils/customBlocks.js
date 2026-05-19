@@ -1,1 +1,49 @@
-const a17_0x3fd2c3=a17_0x19e5;function a17_0x1d50(){const _0x297570=['map','11779669hzYIid','loreConst','5760612vFuVRP','2KpghDO','§r§l','279828sTWzkf','typeId','setLore','305410OVKdTS','635PiFKDb','lore','3252ICdIYL','§rThis\x20Block\x20is\x20used\x20to\x20craft\x20vehicles\x20and\x20it\x27s\x20a\x20gateway\x20to\x20become\x20a\x20survival\x20gameplay\x20compatible','14fUSVCc','length','includes','repeat','2604552OpThqH','simple_vehicles:vehicle_workbench','10NFdtka','697314BGRpHA','§6Information:','item','Mainhand','§rThis\x20Item\x20use\x20to\x20jump\x20on\x20a\x20lowrider','setEquipment'];a17_0x1d50=function(){return _0x297570;};return a17_0x1d50();}(function(_0x15fecd,_0x2dcdf2){const _0x5826e2=a17_0x19e5,_0x3d36d7=_0x15fecd();while(!![]){try{const _0x5a5464=parseInt(_0x5826e2(0xca))/0x1*(-parseInt(_0x5826e2(0xcf))/0x2)+-parseInt(_0x5826e2(0xcc))/0x3+parseInt(_0x5826e2(0xd2))/0x4*(-parseInt(_0x5826e2(0xd0))/0x5)+-parseInt(_0x5826e2(0xdb))/0x6+parseInt(_0x5826e2(0xd4))/0x7*(-parseInt(_0x5826e2(0xd8))/0x8)+parseInt(_0x5826e2(0xe4))/0x9+parseInt(_0x5826e2(0xda))/0xa*(parseInt(_0x5826e2(0xe2))/0xb);if(_0x5a5464===_0x2dcdf2)break;else _0x3d36d7['push'](_0x3d36d7['shift']());}catch(_0x22a15b){_0x3d36d7['push'](_0x3d36d7['shift']());}}}(a17_0x1d50,0x6bd35));import{EquipmentSlot as a17_0x2f80bd}from'@minecraft/server';var loreSetup=class{static['setLore'](_0x47b8b5){const _0x5a7346=a17_0x19e5,_0x235b75=getHeldItem(_0x47b8b5);if(!_0x235b75||!hopliteWeapons[_0x5a7346(0xd6)](_0x235b75[_0x5a7346(0xcd)]))return;const _0x9b2237=_0x235b75['getLore']();if(_0x9b2237[_0x5a7346(0xd5)]!=0x0)return;let _0x124af9;for(const _0x465ed0 of this[_0x5a7346(0xe3)]){if(_0x465ed0[_0x5a7346(0xdd)]===_0x235b75['typeId']){_0x124af9=_0x465ed0[_0x5a7346(0xd1)];break;}}const _0x32a721=_0x235b75['clone']();_0x32a721[_0x5a7346(0xce)](_0x124af9),_0x47b8b5['getComponent']('equippable')?.[_0x5a7346(0xe0)](a17_0x2f80bd[_0x5a7346(0xde)],_0x32a721);}static{this[a17_0x3fd2c3(0xe3)]=[{'item':a17_0x3fd2c3(0xd9),'lore':formatLore(['§6Information:',a17_0x3fd2c3(0xd3)])},{'item':'simple_vehicles:jump1_item','lore':formatLore([a17_0x3fd2c3(0xdc),a17_0x3fd2c3(0xdf)])}];}};function formatLore(_0x27c9b8){const _0x2ab9ad=a17_0x3fd2c3;return['','§r§l'+'-'[_0x2ab9ad(0xd7)](0x18),..._0x27c9b8[_0x2ab9ad(0xe1)](_0x2cb146=>'§r'+_0x2cb146),_0x2ab9ad(0xcb)+'-'[_0x2ab9ad(0xd7)](0x18)];}function a17_0x19e5(_0x401382,_0x2ccc10){_0x401382=_0x401382-0xca;const _0x1d5068=a17_0x1d50();let _0x19e5cb=_0x1d5068[_0x401382];return _0x19e5cb;}export function itemLoreFormal(_0x3127cb){const _0xe9b940=a17_0x3fd2c3;loreSetup[_0xe9b940(0xce)](_0x3127cb);}
+import { EquipmentSlot as EquipmentSlot4 } from "@minecraft/server";
+var loreSetup = class {
+  static setLore(player) {
+    const held = getHeldItem(player);
+    if (!held || !hopliteWeapons.includes(held.typeId)) return;
+    const lore = held.getLore();
+    if (lore.length != 0) return;
+    let description;
+    for (const data of this.loreConst) {
+      if (data.item === held.typeId) {
+        description = data.lore;
+        break;
+      }
+    }
+    const newItem = held.clone();
+    newItem.setLore(description);
+    player.getComponent("equippable")?.setEquipment(EquipmentSlot4.Mainhand, newItem);
+  }
+  static {
+    this.loreConst = [
+      {
+        item: "simple_vehicles:vehicle_workbench",
+        lore: formatLore([
+          "\xA76Information:",
+          "\xA7rThis Block is used to craft vehicles and it's a gateway to become a survival gameplay compatible",
+          ])
+      },
+      {
+        item: "simple_vehicles:jump1_item",
+        lore: formatLore([
+          "\xA76Information:",
+          "\xA7rThis Item use to jump on a lowrider",
+          ])
+      }
+    ];
+  }
+};
+function formatLore(mainLore) {
+  return [
+    "",
+    "\xA7r\xA7l" + "-".repeat(24),
+    ...mainLore.map((line) => "\xA7r" + line),
+    "\xA7r\xA7l" + "-".repeat(24)
+  ];
+}
+
+export function itemLoreFormal(player){
+    loreSetup.setLore(player);
+}

@@ -1,1 +1,30 @@
-(function(_0x2d8530,_0x3fa070){const _0x1dbe87=a54_0x50c5,_0x4b1265=_0x2d8530();while(!![]){try{const _0x5ce089=parseInt(_0x1dbe87(0x15c))/0x1*(parseInt(_0x1dbe87(0x15d))/0x2)+parseInt(_0x1dbe87(0x155))/0x3*(parseInt(_0x1dbe87(0x150))/0x4)+-parseInt(_0x1dbe87(0x15b))/0x5+-parseInt(_0x1dbe87(0x148))/0x6*(-parseInt(_0x1dbe87(0x14c))/0x7)+-parseInt(_0x1dbe87(0x15e))/0x8*(parseInt(_0x1dbe87(0x14b))/0x9)+-parseInt(_0x1dbe87(0x156))/0xa*(-parseInt(_0x1dbe87(0x14a))/0xb)+parseInt(_0x1dbe87(0x159))/0xc;if(_0x5ce089===_0x3fa070)break;else _0x4b1265['push'](_0x4b1265['shift']());}catch(_0x1de23d){_0x4b1265['push'](_0x4b1265['shift']());}}}(a54_0x3b94,0x6b420));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';function a54_0x50c5(_0x2cc18c,_0x434401){_0x2cc18c=_0x2cc18c-0x148;const _0x3b94e4=a54_0x3b94();let _0x50c5e9=_0x3b94e4[_0x2cc18c];return _0x50c5e9;}function a54_0x3b94(){const _0x5c6f75=['6804127AulAjR','12627axRFeL','63CqoLSy','show','title','§lSize:\x20§r','2964OMkfza','Specifictaions\x20\x0a','then','§lHealth:\x20§r','button','843XyAlTY','10Evlinh','canceled','body','231852jQOaCw','===============================','4358515KUMOtA','113906ifggAn','4awsCxf','1272akDqAV','Go\x20Back','Isuzu\x20Travis','306798uPLopd','selection'];a54_0x3b94=function(){return _0x5c6f75;};return a54_0x3b94();}import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function TravisInfo(_0x4804c4){const _0x2643ba=a54_0x50c5,_0x4e9f18=new ActionFormData();_0x4e9f18[_0x2643ba(0x14e)](_0x2643ba(0x160)),_0x4e9f18[_0x2643ba(0x158)]({'rawtext':[{'text':'A\x20television\x20production\x20truck\x20or\x20OB\x20van\x20is\x20a\x20small\x20mobile\x20production\x20control\x20room\x20to\x20allow\x20filming\x20of\x20events\x20and\x20video\x20production\x20at\x20locations\x20outside\x20a\x20regular\x20television\x20studio.\x20They\x20are\x20used\x20for\x20remote\x20broadcasts,\x20outside\x20broadcasting\x20(OB),\x20and\x20electronic\x20field\x20production\x20(EFP).'},{'text':'\x0a'},{'text':_0x2643ba(0x15a)},{'text':_0x2643ba(0x151)},{'text':'§lSpeed:\x20§r120\x20km/h\x20\x0a'},{'text':_0x2643ba(0x14f)+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x2643ba(0x153)+HealthTypes[0x2]}]}),_0x4e9f18[_0x2643ba(0x154)](_0x2643ba(0x15f)),_0x4e9f18[_0x2643ba(0x14d)](_0x4804c4)[_0x2643ba(0x152)](_0x302367=>{const _0x2e5f14=_0x2643ba;if(_0x302367[_0x2e5f14(0x157)])showCustomForm(_0x4804c4);else _0x302367[_0x2e5f14(0x149)]===0x0&&_Page2Vehicles(_0x4804c4);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function TravisInfo(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Isuzu Travis");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

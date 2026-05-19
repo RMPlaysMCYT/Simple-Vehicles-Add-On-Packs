@@ -1,1 +1,30 @@
-(function(_0x4040cb,_0x5922f2){const _0x401e7c=a28_0x332d,_0x1487bc=_0x4040cb();while(!![]){try{const _0x3ead3e=parseInt(_0x401e7c(0x104))/0x1+-parseInt(_0x401e7c(0xfa))/0x2+parseInt(_0x401e7c(0x106))/0x3*(-parseInt(_0x401e7c(0x101))/0x4)+parseInt(_0x401e7c(0x102))/0x5*(parseInt(_0x401e7c(0x105))/0x6)+-parseInt(_0x401e7c(0x10e))/0x7*(-parseInt(_0x401e7c(0x10d))/0x8)+parseInt(_0x401e7c(0x110))/0x9*(-parseInt(_0x401e7c(0x103))/0xa)+-parseInt(_0x401e7c(0x109))/0xb*(-parseInt(_0x401e7c(0xfe))/0xc);if(_0x3ead3e===_0x5922f2)break;else _0x1487bc['push'](_0x1487bc['shift']());}catch(_0x4cbd0a){_0x1487bc['push'](_0x1487bc['shift']());}}}(a28_0x2824,0x20e3e));function a28_0x332d(_0x4e4979,_0x541c1a){_0x4e4979=_0x4e4979-0xfa;const _0x28247e=a28_0x2824();let _0x332d1a=_0x28247e[_0x4e4979];return _0x332d1a;}function a28_0x2824(){const _0x3383b5=['790630EmIFAy','217337zNeQZc','120JDViGF','121353jAtaXu','Health:\x20','Size:\x20','446259JhYUew','selection','body','canceled','1272TxUjrn','11179iYNfzW','then','27OJLafD','302544ilqNyn','title','Go\x20Back','show','72qSSVqh','Specifictaions\x20\x0a','===============================','20QwXYMb','2690HkqFXP'];a28_0x2824=function(){return _0x3383b5;};return a28_0x2824();}import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function AmbulanceInformation(_0x196ae8){const _0x485d10=a28_0x332d,_0x1f5fae=new ActionFormData();_0x1f5fae[_0x485d10(0xfb)]('AE\x2086'),_0x1f5fae[_0x485d10(0x10b)]({'rawtext':[{'text':'An\x20ambulance\x20is\x20a\x20medically\x20equipped\x20vehicle\x20used\x20to\x20transport\x20patients\x20to\x20treatment\x20facilities,\x20such\x20as\x20hospitals.[1]\x20Typically,\x20out-of-hospital\x20medical\x20care\x20is\x20provided\x20to\x20the\x20patient\x20during\x20the\x20transport.\x20Ambulances\x20are\x20used\x20to\x20respond\x20to\x20medical\x20emergencies\x20by\x20emergency\x20medical\x20services\x20(EMS),\x20and\x20can\x20rapidly\x20transport\x20paramedics\x20and\x20other\x20first\x20responders,\x20carry\x20equipment\x20for\x20administering\x20emergency\x20care,\x20and\x20transport\x20patients\x20to\x20hospital\x20or\x20other\x20definitive\x20care.\x20'},{'text':'\x0a'},{'text':_0x485d10(0x100)},{'text':_0x485d10(0xff)},{'text':'Speed:\x20120\x20km/h\x20\x0a'},{'text':_0x485d10(0x108)+VehicleSizes[0x2]+'\x20\x0a'},{'text':_0x485d10(0x107)+HealthTypes[0x6]}]}),_0x1f5fae['button'](_0x485d10(0xfc)),_0x1f5fae[_0x485d10(0xfd)](_0x196ae8)[_0x485d10(0x10f)](_0x3e4367=>{const _0x1b6c95=_0x485d10;if(_0x3e4367[_0x1b6c95(0x10c)])showCustomForm(_0x196ae8);else _0x3e4367[_0x1b6c95(0x10a)]===0x0&&_Page2Vehicles(_0x196ae8);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function AmbulanceInformation(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("AE 86");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "An ambulance is a medically equipped vehicle used to transport patients to treatment facilities, such as hospitals.[1] Typically, out-of-hospital medical care is provided to the patient during the transport. Ambulances are used to respond to medical emergencies by emergency medical services (EMS), and can rapidly transport paramedics and other first responders, carry equipment for administering emergency care, and transport patients to hospital or other definitive care. ",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `Speed: 120 km/h \n` },
+      { text: `Size: ${VehicleSizes[2]} \n` },
+      { text: `Health: ${HealthTypes[6]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

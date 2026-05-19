@@ -1,1 +1,46 @@
-const a23_0x6ed678=a23_0x1114;(function(_0x553d7a,_0x257b3b){const _0xc69c81=a23_0x1114,_0x1f27ec=_0x553d7a();while(!![]){try{const _0x406b24=parseInt(_0xc69c81(0xdb))/0x1+parseInt(_0xc69c81(0xd9))/0x2+parseInt(_0xc69c81(0xda))/0x3+-parseInt(_0xc69c81(0xdc))/0x4+parseInt(_0xc69c81(0xde))/0x5+parseInt(_0xc69c81(0xd6))/0x6+-parseInt(_0xc69c81(0xe0))/0x7;if(_0x406b24===_0x257b3b)break;else _0x1f27ec['push'](_0x1f27ec['shift']());}catch(_0x3d4677){_0x1f27ec['push'](_0x1f27ec['shift']());}}}(a23_0x558a,0x5d48f));import{world,system,TimeOfDay}from'@minecraft/server';let scoreboard=world['scoreboard'];export const overworld=world['getDimension'](a23_0x6ed678(0xd4));export const nether=world[a23_0x6ed678(0xdd)](a23_0x6ed678(0xd8));export const end=world['getDimension'](a23_0x6ed678(0xe1));export const dimensiones=[overworld,nether,end];export let player000=undefined;export function randomInt(_0x5918a3,_0x240fc4){return Math['floor'](Math['random']()*(_0x240fc4-_0x5918a3+0x1))+_0x5918a3;}export function floorVector(_0x26d02c){const _0xb57aa=a23_0x6ed678;return{'x':Math[_0xb57aa(0xd5)](_0x26d02c['x']),'y':Math[_0xb57aa(0xd5)](_0x26d02c['y']+0.5),'z':Math[_0xb57aa(0xd5)](_0x26d02c['z'])};}export async function runCommand(_0x35fda2,_0x4fbbc2){const _0x2eef11=a23_0x6ed678;if(_0x4fbbc2===undefined)return await overworld[_0x2eef11(0xdf)](_0x35fda2);return await _0x4fbbc2[_0x2eef11(0xdf)](_0x35fda2);}function a23_0x558a(){const _0x3fb669=['124008sJltkM','2011344EBLQRY','457839HDbCZO','2557708RgAvUD','getDimension','883690otIiJQ','runCommandAsync','7190022rbKSxo','the_end','overworld','floor','4089834wadoEY','runTimeout','nether'];a23_0x558a=function(){return _0x3fb669;};return a23_0x558a();}export async function runPlayer0Command(_0x2456ce){const _0x1a2ba0=a23_0x6ed678;return await player0[_0x1a2ba0(0xdf)](_0x2456ce);}export async function runPlayerCommand(_0x586bbe,_0x1061d4){const _0x262f8b=a23_0x6ed678;return await _0x586bbe[_0x262f8b(0xdf)](_0x1061d4);}function a23_0x1114(_0x3b34f9,_0x1ce68){_0x3b34f9=_0x3b34f9-0xd4;const _0x558a9a=a23_0x558a();let _0x111454=_0x558a9a[_0x3b34f9];return _0x111454;}export async function runDelayedPlayerCommand(_0x336b58,_0x349abf,_0x52775c){const _0x3f02e5=a23_0x6ed678;return await system[_0x3f02e5(0xd7)](()=>{runPlayerCommand(_0x349abf,_0x52775c);},_0x336b58);}export async function runDelayedEntityCommand(_0x1e1b97,_0x5a4347,_0xfdfdbe){const _0x42b228=a23_0x6ed678;return await system[_0x42b228(0xd7)](()=>{runEntityCommand(_0x5a4347,_0xfdfdbe);},_0x1e1b97);}export async function runMobCommand(_0x367740,_0x5d58b2){const _0x194adb=a23_0x6ed678;return await _0x367740[_0x194adb(0xdf)](_0x5d58b2);}export async function runEntityCommand(_0x4d2445,_0x4d5484){const _0x378157=a23_0x6ed678;return await _0x4d2445[_0x378157(0xdf)](_0x4d5484);}
+import { world, system, TimeOfDay } from "@minecraft/server";
+
+let scoreboard = world.scoreboard;
+export const overworld = world.getDimension("overworld");
+export const nether = world.getDimension("nether");
+export const end = world.getDimension("the_end");
+export const dimensiones = [overworld, nether, end];
+export let player000 = undefined;
+export function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+export function floorVector(vector) {
+  return {
+    x: Math.floor(vector.x),
+    y: Math.floor(vector.y + 0.5),
+    z: Math.floor(vector.z),
+  };
+}
+export async function runCommand(command, dim) {
+  if (dim === undefined) return await overworld.runCommandAsync(command);
+  return await dim.runCommandAsync(command);
+}
+
+export async function runPlayer0Command(command) {
+  return await player0.runCommandAsync(command);
+}
+
+export async function runPlayerCommand(entity, command) {
+  return await entity.runCommandAsync(command);
+}
+export async function runDelayedPlayerCommand(delay, entity, command) {
+  return await system.runTimeout(() => {
+    runPlayerCommand(entity, command);
+  }, delay);
+}
+export async function runDelayedEntityCommand(delay, entity, command) {
+  return await system.runTimeout(() => {
+    runEntityCommand(entity, command);
+  }, delay);
+}
+export async function runMobCommand(entity, command) {
+  return await entity.runCommandAsync(command);
+}
+export async function runEntityCommand(entity, command) {
+  return await entity.runCommandAsync(command);
+}

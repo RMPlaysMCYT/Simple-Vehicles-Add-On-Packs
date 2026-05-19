@@ -1,1 +1,30 @@
-(function(_0x17d2a5,_0x248b77){const _0x412db3=a29_0xa72a,_0x684a5d=_0x17d2a5();while(!![]){try{const _0x380fd9=-parseInt(_0x412db3(0x1e1))/0x1+-parseInt(_0x412db3(0x1e9))/0x2*(parseInt(_0x412db3(0x1e3))/0x3)+-parseInt(_0x412db3(0x1e7))/0x4*(parseInt(_0x412db3(0x1e2))/0x5)+parseInt(_0x412db3(0x1e6))/0x6+parseInt(_0x412db3(0x1e0))/0x7*(-parseInt(_0x412db3(0x1ea))/0x8)+parseInt(_0x412db3(0x1eb))/0x9+parseInt(_0x412db3(0x1dd))/0xa;if(_0x380fd9===_0x248b77)break;else _0x684a5d['push'](_0x684a5d['shift']());}catch(_0x2acca3){_0x684a5d['push'](_0x684a5d['shift']());}}}(a29_0x110a,0xce9a6));import{ActionFormData}from'@minecraft/server-ui';function a29_0xa72a(_0x3695ad,_0x14a550){_0x3695ad=_0x3695ad-0x1da;const _0x110a7c=a29_0x110a();let _0xa72a45=_0x110a7c[_0x3695ad];return _0xa72a45;}import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function AUVCarInformation(_0x3398e5){const _0x532e17=a29_0xa72a,_0x1693fa=new ActionFormData();_0x1693fa[_0x532e17(0x1e8)](_0x532e17(0x1ed)),_0x1693fa['body']({'rawtext':[{'text':'An\x20AUV,\x20or\x20Asian\x20Utility\x20Vehicle,\x20is\x20a\x20type\x20of\x20affordable,\x20durable,\x20and\x20versatile\x20vehicle\x20popular\x20in\x20developing\x20countries,\x20especially\x20the\x20Philippines,\x20designed\x20to\x20carry\x20both\x20passengers\x20(7-16\x20seats)\x20and\x20cargo,\x20often\x20with\x20a\x20truck-like\x20body-on-frame\x20chassis\x20for\x20robustness\x20\x0a\x0aSource:\x20Gemini\x20AI(However\x20Looking\x20for\x20actual\x20Sources\x20in\x20the\x20next\x20update)'},{'text':'\x0a'},{'text':_0x532e17(0x1df)},{'text':_0x532e17(0x1e4)},{'text':'§lSpeed:\x20§r120\x20km/h\x20\x0a'},{'text':'§lSize:\x20§r'+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x532e17(0x1e5)+HealthTypes[0x2]}]}),_0x1693fa[_0x532e17(0x1da)](_0x532e17(0x1db)),_0x1693fa['show'](_0x3398e5)[_0x532e17(0x1de)](_0x2c7ac1=>{const _0x4bdb02=_0x532e17;if(_0x2c7ac1[_0x4bdb02(0x1dc)])showCustomForm(_0x3398e5);else _0x2c7ac1[_0x4bdb02(0x1ec)]===0x0&&_Page2Vehicles(_0x3398e5);});}function a29_0x110a(){const _0x4a59b2=['Specifictaions\x20\x0a','§lHealth:\x20§r','4833300hxllas','6516ijugki','title','14iQHaxW','6413736KmHHnN','14998527OJctKy','selection','AUV\x20Car','button','Go\x20Back','canceled','5894890avOrDu','then','===============================','7ddRHLB','433350XliVMc','2420PQxUEJ','82197UJyxlT'];a29_0x110a=function(){return _0x4a59b2;};return a29_0x110a();}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function AUVCarInformation(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("AUV Car");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "An AUV, or Asian Utility Vehicle, is a type of affordable, durable, and versatile vehicle popular in developing countries, especially the Philippines, designed to carry both passengers (7-16 seats) and cargo, often with a truck-like body-on-frame chassis for robustness \n\nSource: Gemini AI(However Looking for actual Sources in the next update)",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

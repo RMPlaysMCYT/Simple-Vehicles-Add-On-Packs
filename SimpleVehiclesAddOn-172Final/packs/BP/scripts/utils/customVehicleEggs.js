@@ -1,1 +1,39 @@
-const a19_0x3f61ab=a19_0xbccb;(function(_0x1aa90c,_0x30f0fa){const _0x5933e0=a19_0xbccb,_0x5d6ff2=_0x1aa90c();while(!![]){try{const _0x826317=parseInt(_0x5933e0(0x133))/0x1+-parseInt(_0x5933e0(0x12d))/0x2+-parseInt(_0x5933e0(0x135))/0x3*(-parseInt(_0x5933e0(0x12f))/0x4)+parseInt(_0x5933e0(0x12e))/0x5*(parseInt(_0x5933e0(0x134))/0x6)+parseInt(_0x5933e0(0x128))/0x7*(parseInt(_0x5933e0(0x136))/0x8)+-parseInt(_0x5933e0(0x129))/0x9*(parseInt(_0x5933e0(0x12b))/0xa)+parseInt(_0x5933e0(0x12a))/0xb*(-parseInt(_0x5933e0(0x137))/0xc);if(_0x826317===_0x30f0fa)break;else _0x5d6ff2['push'](_0x5d6ff2['shift']());}catch(_0xcf5658){_0x5d6ff2['push'](_0x5d6ff2['shift']());}}}(a19_0x3a5b,0x9a49a));function a19_0x3a5b(){const _0x3b4d5d=['Size:\x20','974208HbHiBc','27740nuYqax','2405588NIYQOK','Class:\x20','Applies\x20to:','Health:\x20','1044172TykUQd','306qdaycZ','6WqkisU','8lPwChT','12xtenPe','\x20\x20\x20-','Speed:\x2043\x20km/h','4408733bjFeVC','2422845huGiQU','16524827ObEjDO','20IoICeC'];a19_0x3a5b=function(){return _0x3b4d5d;};return a19_0x3a5b();}function a19_0xbccb(_0x5acd17,_0x53be35){_0x5acd17=_0x5acd17-0x128;const _0x3a5b27=a19_0x3a5b();let _0xbccbea=_0x3a5b27[_0x5acd17];return _0xbccbea;}import{Classes,HealthTypes,SuitiableFor,VehicleSizes}from'./customVehicleItems';export const VEHICLES_EGGS={'simple_vehicles:ae86_spawn_egg':[a19_0x3f61ab(0x139),a19_0x3f61ab(0x130)+Classes[0x4],a19_0x3f61ab(0x12c)+VehicleSizes[0x0],a19_0x3f61ab(0x132)+HealthTypes[0x2],a19_0x3f61ab(0x131),a19_0x3f61ab(0x138)+SuitiableFor[0x2],a19_0x3f61ab(0x138)+SuitiableFor[0x1]],'simple_vehicles:ambulance_spawn_egg':[a19_0x3f61ab(0x139),a19_0x3f61ab(0x12c)+VehicleSizes[0x0],a19_0x3f61ab(0x132)+HealthTypes[0xb]],'simple_vehicles:apv_spawn_egg':[a19_0x3f61ab(0x139),a19_0x3f61ab(0x12c)+VehicleSizes[0x0],a19_0x3f61ab(0x132)+HealthTypes[0xb]],'simple_vehicles:bike_spawn_egg':[a19_0x3f61ab(0x139),a19_0x3f61ab(0x12c)+VehicleSizes[0x0],a19_0x3f61ab(0x132)+HealthTypes[0xb]],'simple_vehicles:bus_spawn_egg':['Speed:\x2043\x20km/h',a19_0x3f61ab(0x12c)+VehicleSizes[0x0],'Health:\x20'+HealthTypes[0xb]],'simple_vehicles:car_spawn_egg':[a19_0x3f61ab(0x139),a19_0x3f61ab(0x12c)+VehicleSizes[0x0],a19_0x3f61ab(0x132)+HealthTypes[0xb]]};
+import { Classes, HealthTypes, SuitiableFor, VehicleSizes } from "./customVehicleItems";
+
+
+export const VEHICLES_EGGS = {
+    "simple_vehicles:ae86_spawn_egg": [
+        "Speed: 43 km/h",
+        `Class: ${Classes[4]}`,
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[2]}`,
+        `Applies to:`,
+        `   -${SuitiableFor[2]}`,
+        `   -${SuitiableFor[1]}`,
+    ],
+    "simple_vehicles:ambulance_spawn_egg": [
+        "Speed: 43 km/h",
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
+    ],
+    "simple_vehicles:apv_spawn_egg": [
+        "Speed: 43 km/h",
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
+    ],
+    "simple_vehicles:bike_spawn_egg": [
+        "Speed: 43 km/h",
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
+    ],
+    "simple_vehicles:bus_spawn_egg": [
+        "Speed: 43 km/h",
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
+    ], 
+    "simple_vehicles:car_spawn_egg": [
+        "Speed: 43 km/h",
+        `Size: ${VehicleSizes[0]}`,
+        `Health: ${HealthTypes[11]}`,
+    ],
+}

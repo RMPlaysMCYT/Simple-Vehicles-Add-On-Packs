@@ -1,1 +1,26 @@
-(function(_0x4fb898,_0x523718){const _0x2d942d=a2_0x4b99,_0x6c76b0=_0x4fb898();while(!![]){try{const _0x12cdca=-parseInt(_0x2d942d(0x92))/0x1+parseInt(_0x2d942d(0x8d))/0x2*(-parseInt(_0x2d942d(0x98))/0x3)+parseInt(_0x2d942d(0x9c))/0x4*(-parseInt(_0x2d942d(0x8e))/0x5)+parseInt(_0x2d942d(0x8f))/0x6+-parseInt(_0x2d942d(0x95))/0x7+parseInt(_0x2d942d(0x9a))/0x8+parseInt(_0x2d942d(0x91))/0x9;if(_0x12cdca===_0x523718)break;else _0x6c76b0['push'](_0x6c76b0['shift']());}catch(_0x59bcb0){_0x6c76b0['push'](_0x6c76b0['shift']());}}}(a2_0x29cb,0xd850e));function a2_0x29cb(){const _0x89edd1=['Created\x20by\x20RMPlaysMCYT','canceled','1010JLNnZI','417080aYiisg','8993490EhXfPO','selection','18069399wBSsfD','58889GPEJXU','This\x20Add-on\x20is\x20developed\x20over\x206\x20years\x20and\x20counting\x20and\x20also\x20you\x20can\x20support\x20me\x20by\x20downloading\x20this\x20add-on\x20from\x20MCPEDL,\x20CurseForge,\x20Modbay\x20and\x20also\x20star\x20the\x20Simple\x20Vehicles\x20Add-On\x20Packs\x20on\x20Github','===============================','10259760WAyIwS','show','button','3972YkdJMi','Go\x20Back','8592648eoGtTg','title','72WNMMxL','Credits','body'];a2_0x29cb=function(){return _0x89edd1;};return a2_0x29cb();}import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'./MainMenu';function a2_0x4b99(_0x2632c8,_0x28c947){_0x2632c8=_0x2632c8-0x8d;const _0x29cb57=a2_0x29cb();let _0x4b99fa=_0x29cb57[_0x2632c8];return _0x4b99fa;}export function _Page1GettingStarted(_0x4b08f9){const _0xe6fd52=a2_0x4b99,_0x5effa0=new ActionFormData();_0x5effa0[_0xe6fd52(0x9b)](_0xe6fd52(0x9d)),_0x5effa0[_0xe6fd52(0x9e)]({'rawtext':[{'text':_0xe6fd52(0x9f)},{'text':'\x0a'},{'text':_0xe6fd52(0x93)},{'text':'\x0a'},{'text':'\x0aThis\x20Add-On\x20is\x20Licensed\x20Under\x20GNU\x20General\x20Public\x20License\x20for\x20Version\x201\x20to\x201.7.3\x20which\x20is\x201.21\x20Compatible\x20for\x20Minecraft\x20Bedrock,\x20While\x20The\x20Latest\x20One\x20is\x20Closed\x20Source'},{'text':_0xe6fd52(0x94)},{'text':'\x0a'}]}),_0x5effa0[_0xe6fd52(0x97)](_0xe6fd52(0x99)),_0x5effa0[_0xe6fd52(0x96)](_0x4b08f9)['then'](_0x32cedc=>{const _0x5a600d=_0xe6fd52;if(_0x32cedc[_0x5a600d(0xa0)])showCustomForm(_0x4b08f9);else _0x32cedc[_0x5a600d(0x90)]===0x0&&showCustomForm(_0x4b08f9);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "./MainMenu";
+
+export function _Page1GettingStarted(player) {
+  const GettingStarted = new ActionFormData();
+  GettingStarted.title("Credits");
+  GettingStarted.body({
+    rawtext: [
+      { text: "Created by RMPlaysMCYT" },
+      { text: "\n" },
+      { text: "This Add-on is developed over 6 years and counting and also you can support me by downloading this add-on from MCPEDL, CurseForge, Modbay and also star the Simple Vehicles Add-On Packs on Github" },
+      { text: "\n" },
+      { text: "\nThis Add-On is Licensed Under GNU General Public License for Version 1 to 1.7.3 which is 1.21 Compatible for Minecraft Bedrock, While The Latest One is Closed Source" },
+      { text: "===============================" },
+      { text: "\n" },
+    ],
+  });
+  GettingStarted.button("Go Back");
+  GettingStarted.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      showCustomForm(player);
+    }
+  });
+}

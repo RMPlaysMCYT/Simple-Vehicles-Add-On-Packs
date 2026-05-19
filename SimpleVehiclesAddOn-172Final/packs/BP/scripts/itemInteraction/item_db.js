@@ -1,1 +1,541 @@
-const a8_0x3f378c=a8_0x2776;(function(_0x59cd64,_0x3bbb63){const _0x2109ac=a8_0x2776,_0x2c0aba=_0x59cd64();while(!![]){try{const _0x2fee32=-parseInt(_0x2109ac(0x137))/0x1*(-parseInt(_0x2109ac(0x142))/0x2)+parseInt(_0x2109ac(0x12e))/0x3+-parseInt(_0x2109ac(0x117))/0x4*(parseInt(_0x2109ac(0x11b))/0x5)+parseInt(_0x2109ac(0x115))/0x6*(parseInt(_0x2109ac(0x12a))/0x7)+-parseInt(_0x2109ac(0x160))/0x8+parseInt(_0x2109ac(0x11a))/0x9*(-parseInt(_0x2109ac(0x140))/0xa)+parseInt(_0x2109ac(0x165))/0xb*(parseInt(_0x2109ac(0x10e))/0xc);if(_0x2fee32===_0x3bbb63)break;else _0x2c0aba['push'](_0x2c0aba['shift']());}catch(_0x1d5090){_0x2c0aba['push'](_0x2c0aba['shift']());}}}(a8_0x10ca,0xa3be0));import{ItemLockMode,ItemStack,StructureAnimationMode,StructureSaveMode,world}from'@minecraft/server';const emptyHotbar=[undefined,undefined,undefined,undefined,a8_0x3f378c(0x13d),undefined,undefined,undefined,undefined],honkItemSet={'default':'simple_vehicles:honk_item','toggledState':'simple_vehicles:honk_item','getItem'(_0x543c9c){const _0x21f473=a8_0x3f378c;return _0x543c9c[_0x21f473(0x12c)](_0x21f473(0x14b))?this[_0x21f473(0x129)]:this[_0x21f473(0x118)];}},jump1ItemSet={'default':a8_0x3f378c(0x124),'toggledState':a8_0x3f378c(0x124),'getItem'(_0x22a96f){const _0x4ffe29=a8_0x3f378c;return _0x22a96f[_0x4ffe29(0x12c)](_0x4ffe29(0x15f))?this[_0x4ffe29(0x129)]:this[_0x4ffe29(0x118)];}},jump2ItemSet={'default':'simple_vehicles:jump2_item','toggledState':a8_0x3f378c(0x151),'getItem'(_0x5900ff){const _0x3828cd=a8_0x3f378c;return _0x5900ff[_0x3828cd(0x12c)]('simple_vehicles:jump2_item_activated')?this['toggledState']:this[_0x3828cd(0x118)];}},defaultVehicleHotbar=[undefined,honkItemSet,a8_0x3f378c(0x162),undefined,undefined,undefined,undefined,undefined,undefined],VEHICLE_CONFIG={'simple_vehicles:ae86':{'collision':0x3,'hotbar':[[undefined,undefined,undefined,undefined,honkItemSet,jump2ItemSet,a8_0x3f378c(0x13d),undefined,undefined],emptyHotbar]},'simple_vehicles:ambulance':{'collision':0x3,'hotbar':[defaultVehicleHotbar,emptyHotbar]},'simple_vehicles:bike':{'collision':0x2,'hotbar':[[undefined,undefined,undefined,undefined,honkItemSet,undefined,undefined,undefined,undefined],emptyHotbar]}};function a8_0x2776(_0x4abf24,_0x2ee858){_0x4abf24=_0x4abf24-0x108;const _0x10ca45=a8_0x10ca();let _0x2776cf=_0x10ca45[_0x4abf24];return _0x2776cf;}class VehicleInventoryDatabase{[a8_0x3f378c(0x144)](_0x590d54){return'simple_vehicles:item_db_'+_0x590d54['id'];}[a8_0x3f378c(0x143)](_0x47e29f){const _0x1ebc3f=a8_0x3f378c,_0x2db952=_0x47e29f[_0x1ebc3f(0x14c)](_0x1ebc3f(0x132));if(!_0x2db952?.[_0x1ebc3f(0x13a)])return![];const _0x27c522=_0x47e29f[_0x1ebc3f(0x133)][_0x1ebc3f(0x156)]('simple_vehicles:item_db',_0x47e29f['location']);_0x27c522[_0x1ebc3f(0x131)](_0x47e29f['id']);const _0x1abd1f=_0x27c522['getComponent']('minecraft:inventory');if(!_0x1abd1f?.[_0x1ebc3f(0x13a)])return _0x27c522[_0x1ebc3f(0x153)](),![];for(let _0x5b840d=0x0;_0x5b840d<0x9;_0x5b840d++){const _0x493f00=_0x2db952[_0x1ebc3f(0x13a)][_0x1ebc3f(0x127)](_0x5b840d);_0x1abd1f[_0x1ebc3f(0x13a)][_0x1ebc3f(0x146)](_0x5b840d,_0x493f00);}const _0x1ba6c6=this[_0x1ebc3f(0x144)](_0x47e29f);try{world[_0x1ebc3f(0x11f)][_0x1ebc3f(0x15e)](_0x1ba6c6);}catch{}return world[_0x1ebc3f(0x11f)][_0x1ebc3f(0x159)](_0x1ba6c6,_0x47e29f[_0x1ebc3f(0x133)],_0x27c522[_0x1ebc3f(0x161)],_0x27c522[_0x1ebc3f(0x161)],{'includeBlocks':![],'includeEntities':!![],'saveMode':StructureSaveMode[_0x1ebc3f(0x108)]}),_0x27c522['remove'](),!![];}['loadHotbar'](_0x10fe42){const _0x10dab1=a8_0x3f378c,_0xe48d8f=_0x10fe42[_0x10dab1(0x14c)](_0x10dab1(0x132));if(!_0xe48d8f?.['container'])return![];const _0x3abbb9=this['getStructureId'](_0x10fe42),_0x4c12ab=world['structureManager'][_0x10dab1(0x147)](_0x3abbb9);if(!_0x4c12ab)return!![];if(_0x10fe42['location']['y']>_0x10fe42[_0x10dab1(0x133)][_0x10dab1(0x120)][_0x10dab1(0x155)])return![];const _0x3b4a20=_0x10fe42[_0x10dab1(0x133)]['getEntities']({'location':_0x10fe42[_0x10dab1(0x161)],'maxDistance':0x32});for(const _0xdf576 of _0x3b4a20){_0xdf576[_0x10dab1(0x131)](_0x10dab1(0x12d));}world[_0x10dab1(0x11f)][_0x10dab1(0x163)](_0x4c12ab,_0x10fe42[_0x10dab1(0x133)],_0x10fe42[_0x10dab1(0x161)],{'includeBlocks':![],'includeEntities':!![],'animationMode':StructureAnimationMode[_0x10dab1(0x121)]});const _0x52d981=_0x10fe42[_0x10dab1(0x133)][_0x10dab1(0x150)]({'type':'simple_vehicles:item_db','tags':[_0x10fe42['id']]});let _0x22c485=![];if(_0x52d981[_0x10dab1(0x12b)]>0x0){const _0x58a61e=_0x52d981[0x0],_0x95ba8d=_0x58a61e['getComponent'](_0x10dab1(0x132));if(_0x95ba8d?.[_0x10dab1(0x13a)]){for(let _0xdf54b7=0x0;_0xdf54b7<0x9;_0xdf54b7++){const _0x31d1a1=_0x95ba8d['container'][_0x10dab1(0x127)](_0xdf54b7);_0xe48d8f[_0x10dab1(0x13a)]['setItem'](_0xdf54b7,_0x31d1a1);}_0x58a61e[_0x10dab1(0x153)](),_0x22c485=!![];}}const _0x1fa274=_0x10fe42[_0x10dab1(0x133)][_0x10dab1(0x150)]({'location':_0x10fe42['location'],'maxDistance':0x32});for(const _0x30431d of _0x1fa274){if(!_0x30431d[_0x10dab1(0x14d)](_0x10dab1(0x12d))){if(_0x30431d[_0x10dab1(0x113)]())_0x30431d['remove']();}}for(const _0x47f220 of _0x3b4a20){_0x47f220[_0x10dab1(0x113)]()&&_0x47f220['hasTag'](_0x10dab1(0x12d))&&_0x47f220['removeTag'](_0x10dab1(0x12d));}return _0x22c485;}['dropSavedItems'](_0x4c0b9e){const _0x23f8f9=a8_0x3f378c,_0x144c60=this[_0x23f8f9(0x144)](_0x4c0b9e),_0x51bda4=world[_0x23f8f9(0x11f)]['get'](_0x144c60);if(!_0x51bda4)return![];const _0x3c8664={'x':_0x4c0b9e[_0x23f8f9(0x161)]['x'],'y':Math[_0x23f8f9(0x114)](_0x4c0b9e[_0x23f8f9(0x161)]['y'],_0x4c0b9e['dimension']['heightRange'][_0x23f8f9(0x155)]),'z':_0x4c0b9e['location']['z']},_0x18a970=_0x4c0b9e['dimension'][_0x23f8f9(0x150)]({'location':_0x3c8664,'maxDistance':0x32});for(const _0x22f20e of _0x18a970){_0x22f20e[_0x23f8f9(0x131)](_0x23f8f9(0x12d));}world[_0x23f8f9(0x11f)][_0x23f8f9(0x163)](_0x51bda4,_0x4c0b9e[_0x23f8f9(0x133)],_0x3c8664,{'includeBlocks':![],'includeEntities':!![],'animationMode':StructureAnimationMode[_0x23f8f9(0x121)]});try{world[_0x23f8f9(0x11f)][_0x23f8f9(0x15e)](_0x144c60);}catch{}const _0x1fd25d=_0x4c0b9e[_0x23f8f9(0x133)][_0x23f8f9(0x150)]({'type':_0x23f8f9(0x15d),'tags':[_0x4c0b9e['id']]});if(_0x1fd25d[_0x23f8f9(0x12b)]>0x0){const _0x4ee69=_0x1fd25d[0x0];_0x4ee69[_0x23f8f9(0x119)](_0x23f8f9(0x10d)),_0x4ee69[_0x23f8f9(0x131)](_0x23f8f9(0x10d));}const _0x2b25ef=_0x4c0b9e[_0x23f8f9(0x133)][_0x23f8f9(0x150)]({'location':_0x3c8664,'maxDistance':0x32});for(const _0x1cd439 of _0x2b25ef){if(!_0x1cd439[_0x23f8f9(0x113)]()||_0x1cd439[_0x23f8f9(0x14d)](_0x23f8f9(0x12d))||_0x1cd439['hasTag']('simple_vehicles:drop_items_and_despawn'))continue;_0x1cd439[_0x23f8f9(0x153)]();}for(const _0x1e084e of _0x18a970){_0x1e084e['isValid']()&&_0x1e084e[_0x23f8f9(0x14d)](_0x23f8f9(0x12d))&&_0x1e084e['removeTag'](_0x23f8f9(0x12d));}return!![];}[a8_0x3f378c(0x149)](_0xa5f189){const _0xf8e22c=a8_0x3f378c,_0x18075c=_0xa5f189[_0xf8e22c(0x14c)](_0xf8e22c(0x132));if(!_0x18075c?.['container'])return![];for(let _0x4bcbe1=0x0;_0x4bcbe1<0x9;_0x4bcbe1++){_0x18075c[_0xf8e22c(0x13a)][_0xf8e22c(0x146)](_0x4bcbe1,undefined);}return!![];}}const vehicleInventoryDatabase=new VehicleInventoryDatabase();export const DEFAULT_PLAYER_DATA={'hotbars':[]};class PlayerDataStore{constructor(){const _0xe0e16b=a8_0x3f378c;this[_0xe0e16b(0x110)]=new Map(),this[_0xe0e16b(0x128)]=new Map();}[a8_0x3f378c(0x139)](_0x26c495){const _0x21c589=a8_0x3f378c,_0x3f0f47=_0x26c495[_0x21c589(0x12c)](_0x21c589(0x15a));if(!_0x3f0f47)return undefined;try{return JSON[_0x21c589(0x12f)](_0x3f0f47);}catch{return undefined;}}[a8_0x3f378c(0x13b)](_0x332547,_0x132f3e){const _0x1daccb=a8_0x3f378c;_0x332547['setDynamicProperty'](_0x1daccb(0x15a),JSON['stringify'](_0x132f3e));}[a8_0x3f378c(0x148)](_0x27d348){const _0x45e750=a8_0x3f378c;let _0xd3c806=this[_0x45e750(0x139)](_0x27d348);!_0xd3c806&&(_0xd3c806=JSON[_0x45e750(0x12f)](JSON[_0x45e750(0x136)](DEFAULT_PLAYER_DATA)),this[_0x45e750(0x13b)](_0x27d348,_0xd3c806));for(const _0x548615 in DEFAULT_PLAYER_DATA){!(_0x548615 in _0xd3c806)&&(_0xd3c806[_0x548615]=DEFAULT_PLAYER_DATA[_0x548615]);}this[_0x45e750(0x110)][_0x45e750(0x125)](_0x27d348['id'],_0x27d348),this[_0x45e750(0x128)][_0x45e750(0x125)](_0x27d348['id'],_0xd3c806);}[a8_0x3f378c(0x11d)](_0x49227f){const _0x49ad45=a8_0x3f378c;this[_0x49ad45(0x110)]['delete'](_0x49227f['id']),this[_0x49ad45(0x128)]['delete'](_0x49227f['id']);}[a8_0x3f378c(0x14a)](_0x506b35,_0x1837e3){const _0xeabfe3=a8_0x3f378c;this[_0xeabfe3(0x128)][_0xeabfe3(0x125)](_0x506b35['id'],_0x1837e3),this['savePlayerData'](_0x506b35,_0x1837e3);}get[a8_0x3f378c(0x109)](){const _0x2f6c03=a8_0x3f378c;return Array[_0x2f6c03(0x13c)](this[_0x2f6c03(0x110)][_0x2f6c03(0x15b)]());}get[a8_0x3f378c(0x123)](){const _0x4e1b42=a8_0x3f378c;return Array[_0x4e1b42(0x13c)](this[_0x4e1b42(0x128)][_0x4e1b42(0x15b)]());}[a8_0x3f378c(0x122)](_0x223e0a){return this['dataMap']['get'](_0x223e0a);}}export const RMPlayerDATA=new PlayerDataStore();export class SimpleVehicleRiderData{['vehiclesBeingRidden']=[];[a8_0x3f378c(0x158)](_0xc8a974){const _0x16156b=a8_0x3f378c,_0x444dc1=_0xc8a974[_0x16156b(0x14c)]('minecraft:rideable');if(!_0x444dc1){if(_0xc8a974[_0x16156b(0x14d)](_0x16156b(0x13f))){if(_0xc8a974[_0x16156b(0x14d)](_0x16156b(0x13e))){const _0x4a7e0b=_0xc8a974[_0x16156b(0x14c)](_0x16156b(0x132));if(!_0x4a7e0b||!vehicleInventoryDatabase['loadHotbar'](_0xc8a974))return;_0xc8a974[_0x16156b(0x138)](_0x16156b(0x13e));}_0xc8a974[_0x16156b(0x138)](_0x16156b(0x13f));}_0xc8a974[_0x16156b(0x14d)](_0x16156b(0x13e))&&(vehicleInventoryDatabase['clearHotbar'](_0xc8a974)&&_0xc8a974[_0x16156b(0x138)](_0x16156b(0x13e)));return;}const _0x4f6c67=this[_0x16156b(0x157)](_0xc8a974);if(!_0x4f6c67)return;const _0x56bbe0=_0x4f6c67[_0x16156b(0x141)],_0xf0b189=VEHICLE_CONFIG[_0x56bbe0[_0x16156b(0x112)]],_0x689e70=_0xc8a974['getComponent'](_0x16156b(0x132));!_0x56bbe0['hasTag'](_0x16156b(0x134))&&(this[_0x16156b(0x10f)][_0x16156b(0x111)](_0x56bbe0),_0x56bbe0[_0x16156b(0x131)](_0x16156b(0x134))),!_0xc8a974[_0x16156b(0x14d)](_0x16156b(0x13f))&&_0xc8a974['location']['y']<=_0xc8a974['dimension'][_0x16156b(0x120)][_0x16156b(0x155)]-0x1&&_0x56bbe0['location']['y']<=_0x56bbe0['dimension']['heightRange'][_0x16156b(0x155)]-0x1&&_0x689e70?.[_0x16156b(0x13a)]&&(_0xf0b189?.[_0x16156b(0x14e)]&&(vehicleInventoryDatabase[_0x16156b(0x143)](_0xc8a974),this[_0x16156b(0x14f)](_0xc8a974,_0x689e70,_0x4f6c67),_0xc8a974[_0x16156b(0x11c)](_0x16156b(0x15c),_0x4f6c67[_0x16156b(0x10a)])),_0xc8a974[_0x16156b(0x131)](_0x16156b(0x13f)),_0xc8a974[_0x16156b(0x131)](_0x16156b(0x13e)));}['tick'](){const _0x2896a4=a8_0x3f378c;for(const _0x25c165 of RMPlayerDATA[_0x2896a4(0x109)]){if(!_0x25c165[_0x2896a4(0x113)]()||!_0x25c165['isSneaking'])continue;const _0x57cdda=_0x25c165[_0x2896a4(0x133)][_0x2896a4(0x150)]({'families':[_0x2896a4(0x145)],'maxDistance':0x1e,'location':_0x25c165[_0x2896a4(0x161)]});for(const _0x37957c of _0x57cdda){_0x37957c['playAnimation'](_0x2896a4(0x126),{'players':[_0x25c165[_0x2896a4(0x116)]]});}}}['giveVehicleHotbar'](_0x408c1f,_0x4bdace,_0x2384a7){const _0x5b18c9=a8_0x3f378c,_0x59d33=VEHICLE_CONFIG[_0x2384a7[_0x5b18c9(0x141)][_0x5b18c9(0x112)]];if(!_0x59d33?.[_0x5b18c9(0x14e)])return;const _0x3e0fcc=_0x59d33[_0x5b18c9(0x14e)][_0x2384a7[_0x5b18c9(0x10a)]];if(!_0x3e0fcc)return;for(let _0x4c7844=0x0;_0x4c7844<0x9;_0x4c7844++){const _0x10688a=_0x3e0fcc[_0x4c7844];if(_0x10688a===undefined){const _0x4056af=new ItemStack(_0x5b18c9(0x10c),0x1);_0x4056af['lockMode']=ItemLockMode[_0x5b18c9(0x164)],_0x4bdace['container']?.[_0x5b18c9(0x146)](_0x4c7844,_0x4056af);continue;}let _0x241b62=_0x10688a;typeof _0x10688a===_0x5b18c9(0x11e)&&typeof _0x10688a[_0x5b18c9(0x127)]==='function'&&(_0x241b62=_0x10688a[_0x5b18c9(0x127)](_0x2384a7[_0x5b18c9(0x141)]));const _0x33317d=new ItemStack(_0x241b62,0x1);_0x33317d['lockMode']=ItemLockMode[_0x5b18c9(0x164)],_0x4bdace[_0x5b18c9(0x13a)]?.[_0x5b18c9(0x146)](_0x4c7844,_0x33317d);}}[a8_0x3f378c(0x157)](_0x57cdc0){const _0x4c498b=a8_0x3f378c,_0x2a1b16=_0x57cdc0[_0x4c498b(0x133)][_0x4c498b(0x150)]({'families':[_0x4c498b(0x154),_0x4c498b(0x10b)],'maxDistance':0xa,'location':_0x57cdc0[_0x4c498b(0x161)]});for(const _0x317122 of _0x2a1b16){const _0x24df56=_0x317122['getComponent']('minecraft:rideable');if(!_0x24df56)continue;const _0x172cec=_0x24df56[_0x4c498b(0x130)]();for(let _0x6dfa84=0x0;_0x6dfa84<_0x172cec[_0x4c498b(0x12b)];_0x6dfa84++){if(_0x172cec[_0x6dfa84]['id']===_0x57cdc0['id'])return{'entity':_0x317122,'seatPosition':_0x6dfa84};}}return undefined;}[a8_0x3f378c(0x152)](_0x5ee3a0){const _0x3ff5b2=a8_0x3f378c;if(!_0x5ee3a0[_0x3ff5b2(0x135)]||!_0x5ee3a0['entity'])return;switch(_0x5ee3a0['itemStack'][_0x3ff5b2(0x112)]){case'simple_vehicles:honk_item':_0x5ee3a0[_0x3ff5b2(0x141)][_0x3ff5b2(0x11c)](_0x3ff5b2(0x14b),!![]);break;}}}export const BtchAll=new SimpleVehicleRiderData();function a8_0x10ca(){const _0x58ee60=['getRiddenVehicle','runPlayerDataInventory','createFromWorld','simple_vehicles:player_data','values','simple_vehicles:riding_seat_position','simple_vehicles:item_db','delete','simple_vehicles:jump1_item_activated','8610336xENPWd','location','simple_vehicles:book_documents','place','slot','55QerFAf','World','allPlayers','seatPosition','vehicles','simple_vehicles:empty_slot','simple_vehicles:drop_items_and_despawn','7612476gHPkXR','vehiclesBeingRidden','playerMap','push','typeId','isValid','min','478158webJkm','name','3585308rObwFx','default','triggerEvent','1823355QPIEtC','5MRiHFK','setDynamicProperty','removePlayer','object','structureManager','heightRange','None','getDataByPlayerId','allData','simple_vehicles:jump1_item','set','animation.aurrora_ve.vehicle.show_inventory_icon','getItem','dataMap','toggledState','7EFrmqE','length','getDynamicProperty','simple_vehicles:item_db_stay','695958dIKfwg','parse','getRiders','addTag','minecraft:inventory','dimension','simple_vehicles.riding_pushover','itemStack','stringify','2VwVjHr','removeTag','loadPlayerData','container','savePlayerData','from','minecraft:stick','simple_vehicles_vehiridehotbar','simple_vehicles_vehiride','50GQxxzn','entity','172738QLrron','saveHotbar','getStructureId','simple_vehicles.item_dbinventory','setItem','get','addPlayer','clearHotbar','modifyPlayerData','simple_vehicles:honk_set','getComponent','hasTag','hotbar','giveVehicleHotbar','getEntities','simple_vehicles:jump2_item','onItemUseAfter','remove','simple_vehicles_vehicles','max','spawnEntity'];a8_0x10ca=function(){return _0x58ee60;};return a8_0x10ca();}
+import {
+  ItemLockMode,
+  ItemStack,
+  StructureAnimationMode,
+  StructureSaveMode,
+  world,
+} from "@minecraft/server";
+
+/* =========================
+   Vehicle hotbar item sets
+========================= */
+
+const emptyHotbar = [
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  "minecraft:stick",
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+];
+
+const honkItemSet = {
+  default: "simple_vehicles:honk_item",
+  toggledState: "simple_vehicles:honk_item",
+  getItem(vehicle) {
+    return vehicle.getDynamicProperty("simple_vehicles:honk_set")
+      ? this.toggledState
+      : this.default;
+  },
+};
+
+const jump1ItemSet = {
+  default: "simple_vehicles:jump1_item",
+  toggledState: "simple_vehicles:jump1_item",
+  getItem(vehicle) {
+    return vehicle.getDynamicProperty("simple_vehicles:jump1_item_activated")
+      ? this.toggledState
+      : this.default;
+  },
+};
+
+const jump2ItemSet = {
+  default: "simple_vehicles:jump2_item",
+  toggledState: "simple_vehicles:jump2_item",
+  getItem(vehicle) {
+    return vehicle.getDynamicProperty("simple_vehicles:jump2_item_activated")
+      ? this.toggledState
+      : this.default;
+  },
+};
+
+const defaultVehicleHotbar = [
+  undefined,
+  honkItemSet,
+  "simple_vehicles:book_documents",
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+];
+
+const VEHICLE_CONFIG = {
+  "simple_vehicles:ae86": {
+    collision: 3,
+    hotbar: [
+      [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        honkItemSet,
+        jump2ItemSet,
+        "minecraft:stick",
+        undefined,
+        undefined,
+      ],
+      emptyHotbar,
+    ],
+  },
+
+  "simple_vehicles:ambulance": {
+    collision: 3,
+    hotbar: [defaultVehicleHotbar, emptyHotbar],
+  },
+
+  "simple_vehicles:bike": {
+    collision: 2,
+    hotbar: [
+      [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        honkItemSet,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+      ],
+      emptyHotbar,
+    ],
+  },
+};
+
+/* =========================
+   Inventory save / load
+========================= */
+
+class VehicleInventoryDatabase {
+  getStructureId(player) {
+    return `simple_vehicles:item_db_${player.id}`;
+  }
+
+  saveHotbar(player) {
+    const playerInventory = player.getComponent("minecraft:inventory");
+    if (!playerInventory?.container) return false;
+
+    const tempEntity = player.dimension.spawnEntity(
+      "simple_vehicles:item_db",
+      player.location
+    );
+
+    tempEntity.addTag(player.id);
+
+    const tempInventory = tempEntity.getComponent("minecraft:inventory");
+    if (!tempInventory?.container) {
+      tempEntity.remove();
+      return false;
+    }
+
+    for (let slot = 0; slot < 9; slot++) {
+      const item = playerInventory.container.getItem(slot);
+      tempInventory.container.setItem(slot, item);
+    }
+
+    const structureId = this.getStructureId(player);
+
+    try {
+      world.structureManager.delete(structureId);
+    } catch {}
+
+    world.structureManager.createFromWorld(
+      structureId,
+      player.dimension,
+      tempEntity.location,
+      tempEntity.location,
+      {
+        includeBlocks: false,
+        includeEntities: true,
+        saveMode: StructureSaveMode.World,
+      }
+    );
+
+    tempEntity.remove();
+    return true;
+  }
+
+  loadHotbar(player) {
+    const playerInventory = player.getComponent("minecraft:inventory");
+    if (!playerInventory?.container) return false;
+
+    const structureId = this.getStructureId(player);
+    const structure = world.structureManager.get(structureId);
+
+    if (!structure) {
+      return true;
+    }
+
+    if (player.location.y > player.dimension.heightRange.max) {
+      return false;
+    }
+
+    const nearbyBefore = player.dimension.getEntities({
+      location: player.location,
+      maxDistance: 50,
+    });
+
+    for (const entity of nearbyBefore) {
+      entity.addTag("simple_vehicles:item_db_stay");
+    }
+
+    world.structureManager.place(structure, player.dimension, player.location, {
+      includeBlocks: false,
+      includeEntities: true,
+      animationMode: StructureAnimationMode.None,
+    });
+
+    const dbEntities = player.dimension.getEntities({
+      type: "simple_vehicles:item_db",
+      tags: [player.id],
+    });
+
+    let loaded = false;
+
+    if (dbEntities.length > 0) {
+      const dbEntity = dbEntities[0];
+      const dbInventory = dbEntity.getComponent("minecraft:inventory");
+
+      if (dbInventory?.container) {
+        for (let slot = 0; slot < 9; slot++) {
+          const item = dbInventory.container.getItem(slot);
+          playerInventory.container.setItem(slot, item);
+        }
+
+        dbEntity.remove();
+        loaded = true;
+      }
+    }
+
+    const nearbyAfter = player.dimension.getEntities({
+      location: player.location,
+      maxDistance: 50,
+    });
+
+    for (const entity of nearbyAfter) {
+      if (!entity.hasTag("simple_vehicles:item_db_stay")) {
+        if (entity.isValid()) entity.remove();
+      }
+    }
+
+    for (const entity of nearbyBefore) {
+      if (entity.isValid() && entity.hasTag("simple_vehicles:item_db_stay")) {
+        entity.removeTag("simple_vehicles:item_db_stay");
+      }
+    }
+
+    return loaded;
+  }
+
+  dropSavedItems(player) {
+    const structureId = this.getStructureId(player);
+    const structure = world.structureManager.get(structureId);
+    if (!structure) return false;
+
+    const spawnLocation = {
+      x: player.location.x,
+      y: Math.min(player.location.y, player.dimension.heightRange.max),
+      z: player.location.z,
+    };
+
+    const nearbyBefore = player.dimension.getEntities({
+      location: spawnLocation,
+      maxDistance: 50,
+    });
+
+    for (const entity of nearbyBefore) {
+      entity.addTag("simple_vehicles:item_db_stay");
+    }
+
+    world.structureManager.place(structure, player.dimension, spawnLocation, {
+      includeBlocks: false,
+      includeEntities: true,
+      animationMode: StructureAnimationMode.None,
+    });
+
+    try {
+      world.structureManager.delete(structureId);
+    } catch {}
+
+    const dbEntities = player.dimension.getEntities({
+      type: "simple_vehicles:item_db",
+      tags: [player.id],
+    });
+
+    if (dbEntities.length > 0) {
+      const dbEntity = dbEntities[0];
+      dbEntity.triggerEvent("simple_vehicles:drop_items_and_despawn");
+      dbEntity.addTag("simple_vehicles:drop_items_and_despawn");
+    }
+
+    const nearbyAfter = player.dimension.getEntities({
+      location: spawnLocation,
+      maxDistance: 50,
+    });
+
+    for (const entity of nearbyAfter) {
+      if (
+        !entity.isValid() ||
+        entity.hasTag("simple_vehicles:item_db_stay") ||
+        entity.hasTag("simple_vehicles:drop_items_and_despawn")
+      ) {
+        continue;
+      }
+
+      entity.remove();
+    }
+
+    for (const entity of nearbyBefore) {
+      if (entity.isValid() && entity.hasTag("simple_vehicles:item_db_stay")) {
+        entity.removeTag("simple_vehicles:item_db_stay");
+      }
+    }
+
+    return true;
+  }
+
+  clearHotbar(player) {
+    const inventory = player.getComponent("minecraft:inventory");
+    if (!inventory?.container) return false;
+
+    for (let slot = 0; slot < 9; slot++) {
+      inventory.container.setItem(slot, undefined);
+    }
+
+    return true;
+  }
+}
+
+const vehicleInventoryDatabase = new VehicleInventoryDatabase();
+
+/* =========================
+   Player saved data
+========================= */
+
+export const DEFAULT_PLAYER_DATA = {
+  hotbars: [],
+};
+
+class PlayerDataStore {
+  constructor() {
+    this.playerMap = new Map();
+    this.dataMap = new Map();
+  }
+
+  loadPlayerData(player) {
+    const raw = player.getDynamicProperty("simple_vehicles:player_data");
+    if (!raw) return undefined;
+
+    try {
+      return JSON.parse(raw);
+    } catch {
+      return undefined;
+    }
+  }
+
+  savePlayerData(player, data) {
+    player.setDynamicProperty(
+      "simple_vehicles:player_data",
+      JSON.stringify(data)
+    );
+  }
+
+  addPlayer(player) {
+    let data = this.loadPlayerData(player);
+
+    if (!data) {
+      data = JSON.parse(JSON.stringify(DEFAULT_PLAYER_DATA));
+      this.savePlayerData(player, data);
+    }
+
+    for (const key in DEFAULT_PLAYER_DATA) {
+      if (!(key in data)) {
+        data[key] = DEFAULT_PLAYER_DATA[key];
+      }
+    }
+
+    this.playerMap.set(player.id, player);
+    this.dataMap.set(player.id, data);
+  }
+
+  removePlayer(player) {
+    this.playerMap.delete(player.id);
+    this.dataMap.delete(player.id);
+  }
+
+  modifyPlayerData(player, data) {
+    this.dataMap.set(player.id, data);
+    this.savePlayerData(player, data);
+  }
+
+  get allPlayers() {
+    return Array.from(this.playerMap.values());
+  }
+
+  get allData() {
+    return Array.from(this.dataMap.values());
+  }
+
+  getDataByPlayerId(playerId) {
+    return this.dataMap.get(playerId);
+  }
+}
+
+export const RMPlayerDATA = new PlayerDataStore();
+
+/* =========================
+   Rider / vehicle hotbar logic
+========================= */
+
+export class SimpleVehicleRiderData {
+  vehiclesBeingRidden = [];
+
+  runPlayerDataInventory(player) {
+    const rideableComponent = player.getComponent("minecraft:rideable");
+
+    if (!rideableComponent) {
+      if (player.hasTag("simple_vehicles_vehiride")) {
+        if (player.hasTag("simple_vehicles_vehiridehotbar")) {
+          const hasInventory = player.getComponent("minecraft:inventory");
+          if (!hasInventory || !vehicleInventoryDatabase.loadHotbar(player)) {
+            return;
+          }
+
+          player.removeTag("simple_vehicles_vehiridehotbar");
+        }
+
+        player.removeTag("simple_vehicles_vehiride");
+      }
+
+      if (player.hasTag("simple_vehicles_vehiridehotbar")) {
+        if (vehicleInventoryDatabase.clearHotbar(player)) {
+          player.removeTag("simple_vehicles_vehiridehotbar");
+        }
+      }
+
+      return;
+    }
+
+    const ridingData = this.getRiddenVehicle(player);
+    if (!ridingData) return;
+
+    const vehicle = ridingData.entity;
+    const vehicleConfig = VEHICLE_CONFIG[vehicle.typeId];
+    const playerInventory = player.getComponent("minecraft:inventory");
+
+    if (!vehicle.hasTag("simple_vehicles.riding_pushover")) {
+      this.vehiclesBeingRidden.push(vehicle);
+      vehicle.addTag("simple_vehicles.riding_pushover");
+    }
+
+    if (
+      !player.hasTag("simple_vehicles_vehiride") &&
+      player.location.y <= player.dimension.heightRange.max - 1 &&
+      vehicle.location.y <= vehicle.dimension.heightRange.max - 1 &&
+      playerInventory?.container
+    ) {
+      if (vehicleConfig?.hotbar) {
+        vehicleInventoryDatabase.saveHotbar(player);
+        this.giveVehicleHotbar(player, playerInventory, ridingData);
+        player.setDynamicProperty(
+          "simple_vehicles:riding_seat_position",
+          ridingData.seatPosition
+        );
+      }
+
+      player.addTag("simple_vehicles_vehiride");
+      player.addTag("simple_vehicles_vehiridehotbar");
+    }
+  }
+
+  tick() {
+    for (const player of RMPlayerDATA.allPlayers) {
+      if (!player.isValid() || !player.isSneaking) continue;
+
+      const entities = player.dimension.getEntities({
+        families: ["simple_vehicles.item_dbinventory"],
+        maxDistance: 30,
+        location: player.location,
+      });
+
+      for (const entity of entities) {
+        entity.playAnimation(
+          "animation.aurrora_ve.vehicle.show_inventory_icon",
+          {
+            players: [player.name],
+          }
+        );
+      }
+    }
+  }
+
+  giveVehicleHotbar(player, inventoryComponent, ridingData) {
+    const vehicleConfig = VEHICLE_CONFIG[ridingData.entity.typeId];
+    if (!vehicleConfig?.hotbar) return;
+
+    const seatHotbar = vehicleConfig.hotbar[ridingData.seatPosition];
+    if (!seatHotbar) return;
+
+    for (let slot = 0; slot < 9; slot++) {
+      const itemDef = seatHotbar[slot];
+
+      if (itemDef === undefined) {
+        const emptySlotItem = new ItemStack("simple_vehicles:empty_slot", 1);
+        emptySlotItem.lockMode = ItemLockMode.slot;
+        inventoryComponent.container?.setItem(slot, emptySlotItem);
+        continue;
+      }
+
+      let itemId = itemDef;
+      if (typeof itemDef === "object" && typeof itemDef.getItem === "function") {
+        itemId = itemDef.getItem(ridingData.entity);
+      }
+
+      const item = new ItemStack(itemId, 1);
+      item.lockMode = ItemLockMode.slot;
+      inventoryComponent.container?.setItem(slot, item);
+    }
+  }
+
+  getRiddenVehicle(player) {
+    const nearbyVehicles = player.dimension.getEntities({
+      families: ["simple_vehicles_vehicles", "vehicles"],
+      maxDistance: 10,
+      location: player.location,
+    });
+
+    for (const entity of nearbyVehicles) {
+      const rideable = entity.getComponent("minecraft:rideable");
+      if (!rideable) continue;
+
+      const riders = rideable.getRiders();
+      for (let i = 0; i < riders.length; i++) {
+        if (riders[i].id === player.id) {
+          return {
+            entity,
+            seatPosition: i,
+          };
+        }
+      }
+    }
+
+    return undefined;
+  }
+
+  onItemUseAfter(event) {
+    if (!event.itemStack || !event.entity) return;
+
+    switch (event.itemStack.typeId) {
+      case "simple_vehicles:honk_item":
+        event.entity.setDynamicProperty("simple_vehicles:honk_set", true);
+        break;
+    }
+  }
+}
+
+export const BtchAll = new SimpleVehicleRiderData();

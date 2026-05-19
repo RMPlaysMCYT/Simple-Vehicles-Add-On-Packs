@@ -1,1 +1,30 @@
-function a39_0x3cf6(_0x1a1d91,_0x33b0c6){_0x1a1d91=_0x1a1d91-0x1a8;const _0x22c1cd=a39_0x22c1();let _0x3cf62b=_0x22c1cd[_0x1a1d91];return _0x3cf62b;}(function(_0x1dc060,_0x3d0835){const _0x4939e0=a39_0x3cf6,_0x285b8c=_0x1dc060();while(!![]){try{const _0x3d5036=-parseInt(_0x4939e0(0x1a9))/0x1*(-parseInt(_0x4939e0(0x1bb))/0x2)+parseInt(_0x4939e0(0x1af))/0x3+parseInt(_0x4939e0(0x1ab))/0x4+-parseInt(_0x4939e0(0x1a8))/0x5*(parseInt(_0x4939e0(0x1b3))/0x6)+parseInt(_0x4939e0(0x1ae))/0x7*(-parseInt(_0x4939e0(0x1aa))/0x8)+parseInt(_0x4939e0(0x1ba))/0x9*(parseInt(_0x4939e0(0x1b5))/0xa)+parseInt(_0x4939e0(0x1b4))/0xb*(-parseInt(_0x4939e0(0x1b2))/0xc);if(_0x3d5036===_0x3d0835)break;else _0x285b8c['push'](_0x285b8c['shift']());}catch(_0x1b608b){_0x285b8c['push'](_0x285b8c['shift']());}}}(a39_0x22c1,0xc556c));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';function a39_0x22c1(){const _0x48be18=['button','show','selection','body','736010XIZDsf','166KnAmzJ','8xLPmpz','5156292dvVGpL','§lHealth:\x20§r','Go\x20Back','4958380GSWemw','2615502TpGqMj','A\x20hoverboard\x20(or\x20hover\x20board)\x20is\x20a\x20fictional\x20levitating\x20board\x20used\x20for\x20personal\x20transportation,\x20first\x20described\x20in\x20science-fiction,\x20and\x20popularized\x20by\x20the\x20Back\x20to\x20the\x20Future\x20film\x20series.[1]\x20The\x20term\x20has\x20also\x20been\x20used\x20for\x20real-life\x20self-balancing\x20scooters,\x20which\x20do\x20not\x20actually\x20hover.[2]','canceled','264NFmUnu','36XmEHvG','72369gXXcZT','782050elKkeM','§lSpeed:\x20§r120\x20km/h\x20\x0a','Specifictaions\x20\x0a','Hoverboard','title','27vUtgmG','1796YpmRYg'];a39_0x22c1=function(){return _0x48be18;};return a39_0x22c1();}import{_Page2Vehicles}from'../_page2';export function Hoverboard_Information(_0x1d2697){const _0xacc6a1=a39_0x3cf6,_0x40cc9a=new ActionFormData();_0x40cc9a[_0xacc6a1(0x1b9)](_0xacc6a1(0x1b8)),_0x40cc9a[_0xacc6a1(0x1bf)]({'rawtext':[{'text':_0xacc6a1(0x1b0)},{'text':'\x0a'},{'text':'==============================='},{'text':_0xacc6a1(0x1b7)},{'text':_0xacc6a1(0x1b6)},{'text':'§lSize:\x20§r'+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0xacc6a1(0x1ac)+HealthTypes[0x2]}]}),_0x40cc9a[_0xacc6a1(0x1bc)](_0xacc6a1(0x1ad)),_0x40cc9a[_0xacc6a1(0x1bd)](_0x1d2697)['then'](_0x1d4fda=>{const _0x33dcf7=_0xacc6a1;if(_0x1d4fda[_0x33dcf7(0x1b1)])showCustomForm(_0x1d2697);else _0x1d4fda[_0x33dcf7(0x1be)]===0x0&&_Page2Vehicles(_0x1d2697);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Hoverboard_Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Hoverboard");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A hoverboard (or hover board) is a fictional levitating board used for personal transportation, first described in science-fiction, and popularized by the Back to the Future film series.[1] The term has also been used for real-life self-balancing scooters, which do not actually hover.[2]",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

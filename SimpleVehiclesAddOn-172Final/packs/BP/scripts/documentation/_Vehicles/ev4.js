@@ -1,1 +1,30 @@
-function a36_0x1c94(_0x7e7c62,_0x47cb80){_0x7e7c62=_0x7e7c62-0x89;const _0x39753d=a36_0x3975();let _0x1c9415=_0x39753d[_0x7e7c62];return _0x1c9415;}(function(_0x3de7ab,_0x3c0a96){const _0x1c649=a36_0x1c94,_0x335134=_0x3de7ab();while(!![]){try{const _0x352535=parseInt(_0x1c649(0x90))/0x1*(parseInt(_0x1c649(0x94))/0x2)+-parseInt(_0x1c649(0x92))/0x3*(parseInt(_0x1c649(0x9a))/0x4)+parseInt(_0x1c649(0x8f))/0x5+-parseInt(_0x1c649(0x8c))/0x6*(-parseInt(_0x1c649(0x99))/0x7)+parseInt(_0x1c649(0x9d))/0x8*(parseInt(_0x1c649(0x8a))/0x9)+-parseInt(_0x1c649(0x89))/0xa*(parseInt(_0x1c649(0x8e))/0xb)+parseInt(_0x1c649(0x91))/0xc*(-parseInt(_0x1c649(0x98))/0xd);if(_0x352535===_0x3c0a96)break;else _0x335134['push'](_0x335134['shift']());}catch(_0x159117){_0x335134['push'](_0x335134['shift']());}}}(a36_0x3975,0xbd87e));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function Ev4Information(_0x23bce6){const _0x1b37cc=a36_0x1c94,_0x476ad2=new ActionFormData();_0x476ad2[_0x1b37cc(0x97)]('EV4'),_0x476ad2[_0x1b37cc(0x8b)]({'rawtext':[{'text':_0x1b37cc(0xa1)},{'text':'\x0a'},{'text':'==============================='},{'text':_0x1b37cc(0x93)},{'text':_0x1b37cc(0x9f)},{'text':_0x1b37cc(0x9e)+VehicleSizes[0x0]+'\x20\x0a'},{'text':'§lHealth:\x20§r'+HealthTypes[0x2]}]}),_0x476ad2[_0x1b37cc(0x8d)](_0x1b37cc(0xa0)),_0x476ad2[_0x1b37cc(0x9c)](_0x23bce6)[_0x1b37cc(0x96)](_0x1c9443=>{const _0x28a315=_0x1b37cc;if(_0x1c9443[_0x28a315(0x9b)])showCustomForm(_0x23bce6);else _0x1c9443[_0x28a315(0x95)]===0x0&&_Page2Vehicles(_0x23bce6);});}function a36_0x3975(){const _0x59befb=['9301832LulYQG','§lSize:\x20§r','§lSpeed:\x20§r120\x20km/h\x20\x0a','Go\x20Back','The\x20EV4\x20Is\x20a\x20fictional\x20Concept\x20From\x20the\x20Simple\x20Vehicles\x20Add-on,\x20it\x20is\x20an\x20electric\x20vehicle\x20with\x20decent\x20speed\x20and\x20acceleration,\x20making\x20it\x20a\x20fun\x20choice\x20for\x20players\x20who\x20enjoy\x20zipping\x20around\x20in\x20a\x20futuristic\x20ride.','10TSxlPN','9LwXttG','body','6AFbZpx','button','10281183rwIdOY','5216945aPjawv','1fJMYNH','25127292bgXzlB','6isHEsV','Specifictaions\x20\x0a','2602850iehohN','selection','then','title','13QSwYIz','9133873FVgVOZ','2014940lfjEpR','canceled','show'];a36_0x3975=function(){return _0x59befb;};return a36_0x3975();}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Ev4Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("EV4");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "The EV4 Is a fictional Concept From the Simple Vehicles Add-on, it is an electric vehicle with decent speed and acceleration, making it a fun choice for players who enjoy zipping around in a futuristic ride.",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

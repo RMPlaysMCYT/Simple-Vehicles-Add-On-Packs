@@ -1,1 +1,30 @@
-function a38_0x3359(){const _0x16f98a=['show','5381816XKWbaO','§lSize:\x20§r','§lHealth:\x20§r','title','Specifictaions\x20\x0a','button','§lSpeed:\x20§r120\x20km/h\x20\x0a','6630520cdNKVO','2310630sqEqdH','383516WTMMxb','A\x20helicopter\x20is\x20a\x20type\x20of\x20rotorcraft\x20in\x20which\x20lift\x20and\x20thrust\x20are\x20supplied\x20by\x20horizontally\x20spinning\x20rotors.\x20This\x20allows\x20the\x20helicopter\x20to\x20take\x20off\x20and\x20land\x20vertically,\x20to\x20hover,\x20and\x20to\x20fly\x20forward,\x20backward\x20and\x20laterally.[1]\x20These\x20attributes\x20allow\x20helicopters\x20to\x20be\x20used\x20in\x20congested\x20or\x20isolated\x20areas\x20where\x20fixed-wing\x20aircraft\x20and\x20many\x20forms\x20of\x20short\x20take-off\x20and\x20landing\x20(STOL)\x20or\x20short\x20take-off\x20and\x20vertical\x20landing\x20(STOVL)\x20aircraft\x20cannot\x20perform\x20without\x20a\x20runway.','2291973MqacgF','===============================','2GmdIod','body','Go\x20Back','then','21551679DfjFnD','9237040MqulNn','14NuevMH','canceled','selection'];a38_0x3359=function(){return _0x16f98a;};return a38_0x3359();}(function(_0x36d065,_0x5d3f18){const _0x41565b=a38_0x3778,_0xfc8c87=_0x36d065();while(!![]){try{const _0x4b818f=-parseInt(_0x41565b(0x16f))/0x1*(-parseInt(_0x41565b(0x16b))/0x2)+parseInt(_0x41565b(0x16d))/0x3+parseInt(_0x41565b(0x162))/0x4+-parseInt(_0x41565b(0x169))/0x5+-parseInt(_0x41565b(0x16a))/0x6*(-parseInt(_0x41565b(0x15e))/0x7)+parseInt(_0x41565b(0x15d))/0x8+-parseInt(_0x41565b(0x15c))/0x9;if(_0x4b818f===_0x5d3f18)break;else _0xfc8c87['push'](_0xfc8c87['shift']());}catch(_0xbe9567){_0xfc8c87['push'](_0xfc8c87['shift']());}}}(a38_0x3359,0xaa2ea));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';function a38_0x3778(_0xd9b4dc,_0x3433f8){_0xd9b4dc=_0xd9b4dc-0x159;const _0x33591c=a38_0x3359();let _0x377873=_0x33591c[_0xd9b4dc];return _0x377873;}import{_Page2Vehicles}from'../_page2';export function Helicopter_Information(_0x26abb6){const _0xec9561=a38_0x3778,_0x16060c=new ActionFormData();_0x16060c[_0xec9561(0x165)]('Helicopter'),_0x16060c[_0xec9561(0x159)]({'rawtext':[{'text':_0xec9561(0x16c)},{'text':'\x0a'},{'text':_0xec9561(0x16e)},{'text':_0xec9561(0x166)},{'text':_0xec9561(0x168)},{'text':_0xec9561(0x163)+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0xec9561(0x164)+HealthTypes[0x2]}]}),_0x16060c[_0xec9561(0x167)](_0xec9561(0x15a)),_0x16060c[_0xec9561(0x161)](_0x26abb6)[_0xec9561(0x15b)](_0x3653d6=>{const _0x3f9d62=_0xec9561;if(_0x3653d6[_0x3f9d62(0x15f)])showCustomForm(_0x26abb6);else _0x3653d6[_0x3f9d62(0x160)]===0x0&&_Page2Vehicles(_0x26abb6);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Helicopter_Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Helicopter");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A helicopter is a type of rotorcraft in which lift and thrust are supplied by horizontally spinning rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward and laterally.[1] These attributes allow helicopters to be used in congested or isolated areas where fixed-wing aircraft and many forms of short take-off and landing (STOL) or short take-off and vertical landing (STOVL) aircraft cannot perform without a runway.",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

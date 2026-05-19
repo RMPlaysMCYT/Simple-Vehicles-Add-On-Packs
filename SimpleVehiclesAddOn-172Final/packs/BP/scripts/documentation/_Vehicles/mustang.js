@@ -1,1 +1,30 @@
-function a44_0xddde(_0xec1927,_0x216fe7){_0xec1927=_0xec1927-0x16f;const _0x317390=a44_0x3173();let _0xddde64=_0x317390[_0xec1927];return _0xddde64;}(function(_0x3e3b0e,_0x2e4e8c){const _0x4e6f57=a44_0xddde,_0xa8cfc5=_0x3e3b0e();while(!![]){try{const _0x2aa60e=-parseInt(_0x4e6f57(0x180))/0x1*(-parseInt(_0x4e6f57(0x17f))/0x2)+-parseInt(_0x4e6f57(0x17e))/0x3+parseInt(_0x4e6f57(0x177))/0x4+parseInt(_0x4e6f57(0x174))/0x5+parseInt(_0x4e6f57(0x17b))/0x6*(parseInt(_0x4e6f57(0x181))/0x7)+parseInt(_0x4e6f57(0x17c))/0x8+-parseInt(_0x4e6f57(0x182))/0x9;if(_0x2aa60e===_0x2e4e8c)break;else _0xa8cfc5['push'](_0xa8cfc5['shift']());}catch(_0x5b453c){_0xa8cfc5['push'](_0xa8cfc5['shift']());}}}(a44_0x3173,0xe1d77));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';function a44_0x3173(){const _0x1dcda3=['20944287YeEdsW','The\x20Ford\x20Mustang\x20is\x20an\x20American\x20automobile\x20manufactured\x20and\x20marketed\x20by\x20Ford\x20since\x201964,\x20as\x20Ford\x27s\x20longest\x20nameplate\x20in\x20continuous\x20production.\x20Currently\x20in\x20its\x20seventh\x20generation,\x20it\x20is\x20the\x20fifth-best\x20selling\x20Ford\x20car\x20nameplate.\x20The\x20namesake\x20of\x20the\x20pony\x20car\x20automobile\x20segment,\x20the\x20Mustang\x20was\x20developed\x20as\x20a\x20highly\x20styled\x20line\x20of\x20sporty\x20coupes\x20and\x20convertibles\x20derived\x20from\x20existing\x20model\x20lines,\x20initially\x20distinguished\x20by\x20its\x20pronounced\x20long\x20hood,\x20short\x20deck\x20proportions.[3]','then','Specifictaions\x20\x0a','Go\x20Back','§lSize:\x20§r','body','button','9028210UjllXh','§lHealth:\x20§r','title','3513964Pwbfxp','Ford\x20Mustang','show','selection','6KzoMhy','1282064sMRsQC','canceled','418611vSKqjC','882998CDyvUV','1NnJNyT','740859CCvENC'];a44_0x3173=function(){return _0x1dcda3;};return a44_0x3173();}export function Mustang_Information(_0x41d521){const _0x35f2a8=a44_0xddde,_0x47a49b=new ActionFormData();_0x47a49b[_0x35f2a8(0x176)](_0x35f2a8(0x178)),_0x47a49b[_0x35f2a8(0x172)]({'rawtext':[{'text':_0x35f2a8(0x183)},{'text':'\x0a'},{'text':'==============================='},{'text':_0x35f2a8(0x16f)},{'text':'§lSpeed:\x20§r120\x20km/h\x20\x0a'},{'text':_0x35f2a8(0x171)+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x35f2a8(0x175)+HealthTypes[0x2]}]}),_0x47a49b[_0x35f2a8(0x173)](_0x35f2a8(0x170)),_0x47a49b[_0x35f2a8(0x179)](_0x41d521)[_0x35f2a8(0x184)](_0x5a1d4b=>{const _0x1ef6ca=_0x35f2a8;if(_0x5a1d4b[_0x1ef6ca(0x17d)])showCustomForm(_0x41d521);else _0x5a1d4b[_0x1ef6ca(0x17a)]===0x0&&_Page2Vehicles(_0x41d521);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Mustang_Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Ford Mustang");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "The Ford Mustang is an American automobile manufactured and marketed by Ford since 1964, as Ford's longest nameplate in continuous production. Currently in its seventh generation, it is the fifth-best selling Ford car nameplate. The namesake of the pony car automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by its pronounced long hood, short deck proportions.[3]",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

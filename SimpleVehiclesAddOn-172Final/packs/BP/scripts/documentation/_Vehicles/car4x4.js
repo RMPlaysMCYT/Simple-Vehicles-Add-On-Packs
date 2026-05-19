@@ -1,1 +1,30 @@
-function a33_0x387e(){const _0x285389=['383380SVPAQP','show','16051TbHGGs','292LyLSKB','1110ytwmnl','26192wKpxEr','selection','An\x20off-road\x20vehicle\x20(ORV)\x20is\x20any\x20vehicle\x20built\x20to\x20travel\x20on\x20rough,\x20unpaved\x20terrain\x20like\x20dirt\x20trails,\x20sand,\x20mud,\x20or\x20rocks,\x20featuring\x20specialized\x20components\x20such\x20as\x20large,\x20deep-treaded\x20tires,\x20high\x20ground\x20clearance,\x20and\x20flexible\x20suspension\x20to\x20handle\x20difficult\x20conditions\x20beyond\x20smooth\x20roads,\x20including\x20ATVs,\x20dirt\x20bikes,\x20dune\x20buggies,\x20and\x20specially\x20modified\x20trucks\x20or\x20SUVs.\x20\x0a\x0aSource:\x20Wikipedia','then','title','4064080HWTNQP','1121784nRNRlM','§lSpeed:\x20§r120\x20km/h\x20\x0a','===============================','button','Go\x20Back','Specifictaions\x20\x0a','9831nFfhUa','Car\x204X4','7871373fTjSgT'];a33_0x387e=function(){return _0x285389;};return a33_0x387e();}(function(_0x459903,_0x4e5e57){const _0x4f23b7=a33_0x325e,_0x14e052=_0x459903();while(!![]){try{const _0x5c96b3=parseInt(_0x4f23b7(0x156))/0x1+-parseInt(_0x4f23b7(0x159))/0x2*(-parseInt(_0x4f23b7(0x153))/0x3)+-parseInt(_0x4f23b7(0x15b))/0x4+parseInt(_0x4f23b7(0x160))/0x5+-parseInt(_0x4f23b7(0x15a))/0x6*(parseInt(_0x4f23b7(0x158))/0x7)+parseInt(_0x4f23b7(0x161))/0x8+-parseInt(_0x4f23b7(0x155))/0x9;if(_0x5c96b3===_0x4e5e57)break;else _0x14e052['push'](_0x14e052['shift']());}catch(_0x18c928){_0x14e052['push'](_0x14e052['shift']());}}}(a33_0x387e,0x7c647));function a33_0x325e(_0x4bd8bd,_0x29b0df){_0x4bd8bd=_0x4bd8bd-0x151;const _0x387e91=a33_0x387e();let _0x325e85=_0x387e91[_0x4bd8bd];return _0x325e85;}import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function Car4x4Information(_0x22e8ae){const _0x3e0d0d=a33_0x325e,_0x43b4e9=new ActionFormData();_0x43b4e9[_0x3e0d0d(0x15f)](_0x3e0d0d(0x154)),_0x43b4e9['body']({'rawtext':[{'text':_0x3e0d0d(0x15d)},{'text':'\x0a'},{'text':_0x3e0d0d(0x163)},{'text':_0x3e0d0d(0x152)},{'text':_0x3e0d0d(0x162)},{'text':'§lSize:\x20§r'+VehicleSizes[0x0]+'\x20\x0a'},{'text':'§lHealth:\x20§r'+HealthTypes[0x2]}]}),_0x43b4e9[_0x3e0d0d(0x164)](_0x3e0d0d(0x151)),_0x43b4e9[_0x3e0d0d(0x157)](_0x22e8ae)[_0x3e0d0d(0x15e)](_0x1179c4=>{const _0x9f9b5b=_0x3e0d0d;if(_0x1179c4['canceled'])showCustomForm(_0x22e8ae);else _0x1179c4[_0x9f9b5b(0x15c)]===0x0&&_Page2Vehicles(_0x22e8ae);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Car4x4Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Car 4X4");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "An off-road vehicle (ORV) is any vehicle built to travel on rough, unpaved terrain like dirt trails, sand, mud, or rocks, featuring specialized components such as large, deep-treaded tires, high ground clearance, and flexible suspension to handle difficult conditions beyond smooth roads, including ATVs, dirt bikes, dune buggies, and specially modified trucks or SUVs. \n\nSource: Wikipedia",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

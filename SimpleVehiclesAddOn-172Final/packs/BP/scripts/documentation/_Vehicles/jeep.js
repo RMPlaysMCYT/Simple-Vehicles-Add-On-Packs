@@ -1,1 +1,30 @@
-function a40_0x1229(_0x290009,_0x5c76a8){_0x290009=_0x290009-0xbd;const _0x3aef45=a40_0x3aef();let _0x1229b8=_0x3aef45[_0x290009];return _0x1229b8;}(function(_0x39d0d5,_0x5e675b){const _0x478c4d=a40_0x1229,_0x4389e0=_0x39d0d5();while(!![]){try{const _0x47051f=-parseInt(_0x478c4d(0xca))/0x1+parseInt(_0x478c4d(0xc8))/0x2*(-parseInt(_0x478c4d(0xbf))/0x3)+-parseInt(_0x478c4d(0xc1))/0x4+-parseInt(_0x478c4d(0xc9))/0x5+parseInt(_0x478c4d(0xd0))/0x6+-parseInt(_0x478c4d(0xc3))/0x7+-parseInt(_0x478c4d(0xc4))/0x8*(-parseInt(_0x478c4d(0xbd))/0x9);if(_0x47051f===_0x5e675b)break;else _0x4389e0['push'](_0x4389e0['shift']());}catch(_0x2f914f){_0x4389e0['push'](_0x4389e0['shift']());}}}(a40_0x3aef,0x3949f));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';function a40_0x3aef(){const _0x517979=['Specifictaions\x20\x0a','selection','24309FvruMv','===============================','6738TWHpsY','title','1108344ViDGFc','button','3172526CtSAGE','4616kSeBRQ','body','Jeep\x20or\x20Jeepney','§lSpeed:\x20§r120\x20km/h\x20\x0a','302RQgDcQ','1855225UzmfiR','45103HpjSQo','show','Go\x20Back','then','A\x20jeepney\x20(Tagalog:\x20[ˈdʒiːpni]),\x20or\x20simply\x20a\x20jeep\x20(Tagalog:\x20[ˈdʒiːp]),\x20is\x20a\x20type\x20of\x20public\x20utility\x20vehicle\x20(PUV)\x20that\x20serves\x20as\x20the\x20most\x20popular\x20means\x20of\x20public\x20transportation\x20in\x20the\x20Philippines.[1]\x20Known\x20for\x20its\x20crowded\x20seating\x20and\x20kitsch\x20decorations,\x20it\x20is\x20a\x20cultural\x20icon\x20of\x20the\x20Philippines[2]\x20and\x20has\x20its\x20own\x20art,\x20Jeepney\x20art.[3]\x20At\x20the\x201964\x20New\x20York\x20World\x27s\x20Fair,\x20a\x20Sarao\x20jeepney\x20was\x20exhibited\x20in\x20the\x20Philippine\x20pavilion\x20as\x20a\x20national\x20symbol\x20for\x20Filipinos.[4][5].','§lSize:\x20§r','970656lsjetj'];a40_0x3aef=function(){return _0x517979;};return a40_0x3aef();}import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function Jeep_Information(_0x375adc){const _0x438b5e=a40_0x1229,_0x235d87=new ActionFormData();_0x235d87[_0x438b5e(0xc0)](_0x438b5e(0xc6)),_0x235d87[_0x438b5e(0xc5)]({'rawtext':[{'text':_0x438b5e(0xce)},{'text':'\x0a'},{'text':_0x438b5e(0xbe)},{'text':_0x438b5e(0xd1)},{'text':_0x438b5e(0xc7)},{'text':_0x438b5e(0xcf)+VehicleSizes[0x0]+'\x20\x0a'},{'text':'§lHealth:\x20§r'+HealthTypes[0x2]}]}),_0x235d87[_0x438b5e(0xc2)](_0x438b5e(0xcc)),_0x235d87[_0x438b5e(0xcb)](_0x375adc)[_0x438b5e(0xcd)](_0x5adebf=>{const _0x169cd4=_0x438b5e;if(_0x5adebf['canceled'])showCustomForm(_0x375adc);else _0x5adebf[_0x169cd4(0xd2)]===0x0&&_Page2Vehicles(_0x375adc);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function Jeep_Information(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Jeep or Jeepney");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A jeepney (Tagalog: [ˈdʒiːpni]), or simply a jeep (Tagalog: [ˈdʒiːp]), is a type of public utility vehicle (PUV) that serves as the most popular means of public transportation in the Philippines.[1] Known for its crowded seating and kitsch decorations, it is a cultural icon of the Philippines[2] and has its own art, Jeepney art.[3] At the 1964 New York World's Fair, a Sarao jeepney was exhibited in the Philippine pavilion as a national symbol for Filipinos.[4][5].",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

@@ -1,1 +1,30 @@
-(function(_0x360564,_0x34003a){const _0xfaa7b6=a35_0x2437,_0x37c4e3=_0x360564();while(!![]){try{const _0x140d70=parseInt(_0xfaa7b6(0x110))/0x1+-parseInt(_0xfaa7b6(0x109))/0x2*(parseInt(_0xfaa7b6(0x113))/0x3)+parseInt(_0xfaa7b6(0x111))/0x4*(parseInt(_0xfaa7b6(0x10d))/0x5)+parseInt(_0xfaa7b6(0x10a))/0x6+parseInt(_0xfaa7b6(0x114))/0x7*(parseInt(_0xfaa7b6(0x10e))/0x8)+-parseInt(_0xfaa7b6(0x117))/0x9+-parseInt(_0xfaa7b6(0x112))/0xa;if(_0x140d70===_0x34003a)break;else _0x37c4e3['push'](_0x37c4e3['shift']());}catch(_0x5b3f0a){_0x37c4e3['push'](_0x37c4e3['shift']());}}}(a35_0x3756,0xe83e0));import{ActionFormData}from'@minecraft/server-ui';import{showCustomForm}from'../MainMenu';function a35_0x3756(){const _0x5e3ac5=['1587957McqTkY','then','===============================','33273SGGglF','selection','535886IiktoM','3764340IanNbJ','§lSize:\x20§r','A\x20sled,\x20skid,\x20sledge,\x20or\x20sleigh,\x20is\x20a\x20land\x20vehicle\x20that\x20slides\x20across\x20a\x20surface,\x20usually\x20of\x20ice\x20or\x20snow.\x20It\x20is\x20built\x20with\x20either\x20a\x20smooth\x20underside\x20or\x20a\x20separate\x20body\x20supported\x20by\x20two\x20or\x20more\x20smooth,\x20relatively\x20narrow,\x20longitudinal\x20runners\x20similar\x20in\x20principle\x20to\x20skis.\x20This\x20reduces\x20the\x20amount\x20of\x20friction,\x20which\x20helps\x20to\x20carry\x20heavy\x20loads.\x20\x0a\x0aSource:\x20Wikipedia','37315RIyFCl','24POOMww','§lHealth:\x20§r','1442502hiSoVD','1000YtHpMm','33932910BKnqAS','3XoFrrD'];a35_0x3756=function(){return _0x5e3ac5;};return a35_0x3756();}import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';function a35_0x2437(_0x299de6,_0x29e6c0){_0x299de6=_0x299de6-0x109;const _0x375624=a35_0x3756();let _0x243713=_0x375624[_0x299de6];return _0x243713;}import{_Page2Vehicles}from'../_page2';export function SledInformation(_0x16050a){const _0x1802c6=a35_0x2437,_0x2ad8c2=new ActionFormData();_0x2ad8c2['title']('Sled'),_0x2ad8c2['body']({'rawtext':[{'text':_0x1802c6(0x10c)},{'text':'\x0a'},{'text':_0x1802c6(0x116)},{'text':'Specifictaions\x20\x0a'},{'text':'§lSpeed:\x20§r120\x20km/h\x20\x0a'},{'text':_0x1802c6(0x10b)+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x1802c6(0x10f)+HealthTypes[0x2]}]}),_0x2ad8c2['button']('Go\x20Back'),_0x2ad8c2['show'](_0x16050a)[_0x1802c6(0x115)](_0x2d3def=>{const _0x36c54f=_0x1802c6;if(_0x2d3def['canceled'])showCustomForm(_0x16050a);else _0x2d3def[_0x36c54f(0x118)]===0x0&&_Page2Vehicles(_0x16050a);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function SledInformation(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Sled");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A sled, skid, sledge, or sleigh, is a land vehicle that slides across a surface, usually of ice or snow. It is built with either a smooth underside or a separate body supported by two or more smooth, relatively narrow, longitudinal runners similar in principle to skis. This reduces the amount of friction, which helps to carry heavy loads. \n\nSource: Wikipedia",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

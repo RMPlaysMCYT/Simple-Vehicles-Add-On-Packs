@@ -1,1 +1,355 @@
-const a10_0x5f48ee=a10_0x19e7;function a10_0x4828(){const _0x31de11=['slot','Inventory','remove','allPlayers','stringify','addTag','getRiders','getComponent','simplevehiclesGiveHotBar','seatPosition','length','_Data','container','simple_vehicles.item_dbinventory','isSneaking','removePlayerData','isValid','delete','655lbqPoS','1057574bkFTdi','Riding','getDynamicProperty','simple_vehicles:book_documents','hasTag','simple_vehicles_vehiRideHotbar','dimension','Rideable','structureManager','simple_vehicles:honk_item','setItem','136286WVyiVk','triggerEvent','1708992xJVvma','from','getItem','itemDatabaseLoad','push','_DataP','object','simple_vehicles:player_data','ItemStack','simple_vehicles:drop_items_and_despawn','minecraft:stick','default','values','111374qCxgOf','SimpleVehicles_VehiclesBeingRidden','lockMode','addPlayerData','tick','getDataByPlayerId','runInterval','allData','simple_vehicles_itemDBStay','556941RiHKLF','spawnEntity','simple_vehicles_vehiRide','itemDatabaseSave','typeId','parse','loadPlayerData','savePlayerData','createFromWorld','None','animation.aurrora_ve.vehicle.show_inventory_icon','getEntities','runPlayerDataInventory','setDynamicProperty','simple_vehicles:item_db','location','hotbar','max','set','get','entity','4696RZmSuR','simple_vehicles:honk_set','removeTag','playAnimation','place','simple_vehicles:item_db_','997410hmAydN','simple_vehicles_vehicles','itemDatabaseClearOnExit','simpleVehiclesGetRidingEntitiers','heightRange'];a10_0x4828=function(){return _0x31de11;};return a10_0x4828();}(function(_0x1c68f5,_0x4327c7){const _0xe98e66=a10_0x19e7,_0xeff62f=_0x1c68f5();while(!![]){try{const _0x7217e5=parseInt(_0xe98e66(0x1a9))/0x1+parseInt(_0xe98e66(0x1b8))/0x2+parseInt(_0xe98e66(0x1c1))/0x3+parseInt(_0xe98e66(0x1d6))/0x4*(-parseInt(_0xe98e66(0x1f3))/0x5)+-parseInt(_0xe98e66(0x1dc))/0x6+-parseInt(_0xe98e66(0x1f4))/0x7+parseInt(_0xe98e66(0x1ab))/0x8;if(_0x7217e5===_0x4327c7)break;else _0xeff62f['push'](_0xeff62f['shift']());}catch(_0x54f554){_0xeff62f['push'](_0xeff62f['shift']());}}}(a10_0x4828,0x1d545));function a10_0x19e7(_0x510096,_0x267e8d){_0x510096=_0x510096-0x1a9;const _0x482850=a10_0x4828();let _0x19e76a=_0x482850[_0x510096];return _0x19e76a;}import{EquipmentSlot,ItemLockMode,ItemStack,EntityComponentTypes,StructureSaveMode,StructureAnimationMode,system,world}from'@minecraft/server';var iTEMDBFCK=class{[a10_0x5f48ee(0x1c4)](_0xfe843b){const _0x4a7b6c=a10_0x5f48ee;let _0x258eb6=_0xfe843b['getComponent'](EntityComponentTypes[_0x4a7b6c(0x1e2)]);if(!_0x258eb6)return;let _0x3801bd=_0xfe843b[_0x4a7b6c(0x1fa)][_0x4a7b6c(0x1c2)](_0x4a7b6c(0x1cf),_0xfe843b[_0x4a7b6c(0x1d0)]);_0x3801bd[_0x4a7b6c(0x1e6)](_0xfe843b['id']);let _0x42c902=_0x3801bd[_0x4a7b6c(0x1e8)](EntityComponentTypes['Inventory']);if(!_0x42c902)return;let _0x5e62be=[];for(let _0xe9c58=0x0;_0xe9c58<0x9;_0xe9c58++){let _0x55927d=_0x258eb6['container']?.[_0x4a7b6c(0x1ad)](_0xe9c58);_0x42c902[_0x4a7b6c(0x1ed)]?.[_0x4a7b6c(0x1fe)](_0xe9c58,_0x55927d),_0x5e62be[_0x4a7b6c(0x1af)](_0x55927d);}world[_0x4a7b6c(0x1fc)]['delete'](_0x4a7b6c(0x1db)+_0xfe843b['id']),world[_0x4a7b6c(0x1fc)][_0x4a7b6c(0x1c9)](_0x4a7b6c(0x1db)+_0xfe843b['id'],_0xfe843b[_0x4a7b6c(0x1fa)],_0x3801bd['location'],_0x3801bd[_0x4a7b6c(0x1d0)],{'includeBlocks':!0x1,'includeEntities':!0x0,'saveMode':StructureSaveMode['World']}),_0x3801bd[_0x4a7b6c(0x1e3)]();}['itemDatabaseDrop'](_0x2de3bf){const _0x1277c9=a10_0x5f48ee;let _0x2d50ad=world[_0x1277c9(0x1fc)][_0x1277c9(0x1d4)](_0x1277c9(0x1db)+_0x2de3bf['id']);if(!_0x2d50ad)return!0x1;let _0x43f0b3=_0x2de3bf[_0x1277c9(0x1d0)];for(;_0x43f0b3['y']>_0x2de3bf[_0x1277c9(0x1fa)][_0x1277c9(0x1e0)][_0x1277c9(0x1d2)];)_0x43f0b3['y']-=0x1;let _0x28d8e4=_0x2de3bf[_0x1277c9(0x1fa)][_0x1277c9(0x1cc)]({'location':_0x43f0b3,'maxDistance':0x32,'minDistance':0x0});for(let _0x2cdc66 of _0x28d8e4)_0x2cdc66['addTag'](_0x1277c9(0x1c0));world[_0x1277c9(0x1fc)]['place'](_0x2d50ad,_0x2de3bf[_0x1277c9(0x1fa)],_0x43f0b3,{'includeBlocks':!0x1,'includeEntities':!0x0,'animationMode':StructureAnimationMode[_0x1277c9(0x1ca)]}),world[_0x1277c9(0x1fc)][_0x1277c9(0x1f2)](_0x2d50ad);let _0x4cc3d6=_0x2de3bf['dimension'][_0x1277c9(0x1cc)]({'type':'simple_vehicles:item_db','tags':[_0x2de3bf['id']]});_0x4cc3d6[0x0][_0x1277c9(0x1aa)]('simple_vehicles:drop_items_and_despawn'),_0x4cc3d6[0x0][_0x1277c9(0x1e6)]('simple_vehicles:drop_items_and_despawn');let _0xe13b59=_0x2de3bf['dimension'][_0x1277c9(0x1cc)]({'location':_0x43f0b3,'minDistance':0x0,'maxDistance':0x32});for(let _0x4e21f0 of _0xe13b59)!_0x4e21f0[_0x1277c9(0x1f1)]()||_0x4e21f0[_0x1277c9(0x1f8)]('simple_vehicles_itemDBStay')||_0x4e21f0['hasTag'](_0x1277c9(0x1b4))||_0x4e21f0[_0x1277c9(0x1e3)]();for(let _0x4a7be5 of _0x28d8e4)!_0x4a7be5[_0x1277c9(0x1f1)]()||!_0x4a7be5['hasTag'](_0x1277c9(0x1c0))||_0x4a7be5[_0x1277c9(0x1d8)](_0x1277c9(0x1c0));return!0x0;}[a10_0x5f48ee(0x1ae)](_0x483088){const _0x106cdd=a10_0x5f48ee;let _0x50606a=_0x483088[_0x106cdd(0x1e8)](EntityComponentTypes['Inventory']);if(!_0x50606a)return!0x1;let _0x33b1ee=world['structureManager'][_0x106cdd(0x1d4)](_0x106cdd(0x1db)+_0x483088['id']);if(!_0x33b1ee)return!0x0;if(_0x483088[_0x106cdd(0x1d0)]['y']>_0x483088[_0x106cdd(0x1fa)][_0x106cdd(0x1e0)][_0x106cdd(0x1d2)])return!0x1;let _0x41c8bd=_0x483088['dimension']['getEntities']({'location':_0x483088['location'],'maxDistance':0x32,'minDistance':0x0});for(let _0x20c1cf of _0x41c8bd)_0x20c1cf[_0x106cdd(0x1e6)]('simple_vehicles_itemDBStay');world[_0x106cdd(0x1fc)][_0x106cdd(0x1da)](_0x33b1ee,_0x483088[_0x106cdd(0x1fa)],_0x483088[_0x106cdd(0x1d0)],{'includeBlocks':!0x1,'includeEntities':!0x0,'animationMode':StructureAnimationMode[_0x106cdd(0x1ca)]});let _0x31d8bb=_0x483088[_0x106cdd(0x1fa)]['getEntities']({'type':'simple_vehicles:item_db','tags':[_0x483088['id']]}),_0x56a547=!0x1;if(_0x31d8bb[_0x106cdd(0x1eb)]!==0x0){let _0x39953b=_0x31d8bb[0x0][_0x106cdd(0x1e8)](EntityComponentTypes[_0x106cdd(0x1e2)]);if(_0x39953b){for(let _0x4b42ff=0x0;_0x4b42ff<0x9;_0x4b42ff++){let _0xa7f2da=_0x39953b['container']?.[_0x106cdd(0x1ad)](_0x4b42ff);_0x50606a[_0x106cdd(0x1ed)]?.[_0x106cdd(0x1fe)](_0x4b42ff,_0xa7f2da);}_0x31d8bb[0x0][_0x106cdd(0x1e3)](),_0x56a547=!0x0;}}let _0x22fcb5=_0x483088[_0x106cdd(0x1fa)]['getEntities']({'location':_0x483088[_0x106cdd(0x1d0)],'maxDistance':0x32,'minDistance':0x0});for(let _0x7fb162 of _0x22fcb5)_0x7fb162[_0x106cdd(0x1f8)](_0x106cdd(0x1c0))||_0x7fb162[_0x106cdd(0x1e3)]();for(let _0x3ad2c8 of _0x41c8bd){!_0x3ad2c8[_0x106cdd(0x1f1)]()||!_0x3ad2c8[_0x106cdd(0x1f8)](_0x106cdd(0x1c0))||_0x3ad2c8[_0x106cdd(0x1d8)]('simple_vehicles_itemDBStay');}return _0x56a547;}[a10_0x5f48ee(0x1de)](_0x5430f1){const _0x26d1da=a10_0x5f48ee;let _0x135324=_0x5430f1[_0x26d1da(0x1e8)](EntityComponentTypes[_0x26d1da(0x1e2)]);if(!_0x135324)return!0x1;for(let _0x2261d6=0x0;_0x2261d6<0x9;_0x2261d6++)_0x135324[_0x26d1da(0x1ed)]?.[_0x26d1da(0x1fe)](_0x2261d6,void 0x0);return!0x0;}},itemSave=new iTEMDBFCK(),btchsItems=[void 0x0,void 0x0,void 0x0,void 0x0,a10_0x5f48ee(0x1b5),void 0x0,void 0x0,void 0x0,void 0x0],itemSet1={'default':a10_0x5f48ee(0x1fd),'toggledState':a10_0x5f48ee(0x1fd),'getItem':function(_0x6e9e24){const _0x2a3dc7=a10_0x5f48ee;return _0x6e9e24[_0x2a3dc7(0x1f6)](_0x2a3dc7(0x1d7))?this['toggledState']:this[_0x2a3dc7(0x1b6)];}},hotbars=[void 0x0,itemSet1,a10_0x5f48ee(0x1f7),void 0x0,void 0x0,void 0x0,void 0x0,void 0x0,void 0x0],vehiclesAndShit={'simple_vehicles:ae86':{'hotbar':[[hotbars,void 0x0],btchsItems]},'simple_vehicles:ambulance':{'hotbar':[[hotbars,void 0x0],btchsItems]}},Fck={'hotbars':[]},FCK2=class{[a10_0x5f48ee(0x1b0)]=new Map();['_Data']=new Map();['loadPlayerData'](_0x105afe){const _0x17d858=a10_0x5f48ee;let _0x4f046a=_0x105afe[_0x17d858(0x1f6)](_0x17d858(0x1b2));if(_0x4f046a)return JSON[_0x17d858(0x1c6)](_0x4f046a);}[a10_0x5f48ee(0x1c8)](_0x1bbf19,_0x1d9771){const _0x432bee=a10_0x5f48ee;_0x1bbf19[_0x432bee(0x1ce)](_0x432bee(0x1b2),JSON[_0x432bee(0x1e5)](_0x1d9771));}[a10_0x5f48ee(0x1bb)](_0x4c5959){const _0x4bd528=a10_0x5f48ee;let _0x559556=this[_0x4bd528(0x1c7)](_0x4c5959);_0x559556||(_0x559556=JSON[_0x4bd528(0x1c6)](JSON[_0x4bd528(0x1e5)](Fck)),this[_0x4bd528(0x1c8)](_0x4c5959,_0x559556));for(let _0x5eb56c in Fck)_0x5eb56c in _0x559556||(_0x559556[_0x5eb56c]=Fck[_0x5eb56c]);this[_0x4bd528(0x1b0)]['set'](_0x4c5959['id'],_0x4c5959),this['_Data'][_0x4bd528(0x1d3)](_0x4c5959['id'],_0x559556);}[a10_0x5f48ee(0x1f0)](_0x5957ca){const _0x7fe87f=a10_0x5f48ee;for(let [_0x120cf7]of this[_0x7fe87f(0x1ec)])if(_0x120cf7===_0x5957ca['id']){this['_Data']['delete'](_0x120cf7);break;}for(let [_0x213e7e]of this[_0x7fe87f(0x1b0)])if(_0x213e7e===_0x5957ca['id']){this[_0x7fe87f(0x1b0)][_0x7fe87f(0x1f2)](_0x213e7e);break;}}['modifyPlayerData'](_0x502f81,_0x33367d){const _0x15364d=a10_0x5f48ee;this[_0x15364d(0x1b0)]['set'](_0x502f81['id'],_0x33367d),this['savePlayerData'](_0x502f81,_0x33367d);}get[a10_0x5f48ee(0x1bf)](){const _0xf1656e=a10_0x5f48ee;return Array['from'](this[_0xf1656e(0x1ec)]['values']());}get[a10_0x5f48ee(0x1e4)](){const _0x263c69=a10_0x5f48ee;return Array[_0x263c69(0x1ac)](this[_0x263c69(0x1b0)][_0x263c69(0x1b7)]());}[a10_0x5f48ee(0x1bd)](_0x220391){const _0x507962=a10_0x5f48ee;return this[_0x507962(0x1ec)]['get'](_0x220391);}},RMPlayerDATA=new FCK2(),SimpleVehicleRiderData=class{[a10_0x5f48ee(0x1b9)]=[];[a10_0x5f48ee(0x1cd)](_0x387586){const _0x3f9d40=a10_0x5f48ee;if(!_0x387586[_0x3f9d40(0x1e8)](EntityComponentTypes[_0x3f9d40(0x1f5)])){if(_0x387586[_0x3f9d40(0x1f8)](_0x3f9d40(0x1c3))){if(_0x387586[_0x3f9d40(0x1f8)](_0x3f9d40(0x1f9))){if(!_0x387586['getComponent'](EntityComponentTypes['Inventory'])||!itemSave[_0x3f9d40(0x1ae)](btch))return;_0x387586[_0x3f9d40(0x1d8)](_0x3f9d40(0x1f9));}_0x387586[_0x3f9d40(0x1d8)](_0x3f9d40(0x1c3));}_0x387586[_0x3f9d40(0x1f8)](_0x3f9d40(0x1f9))&&itemSave[_0x3f9d40(0x1de)](btch)&&_0x387586[_0x3f9d40(0x1d8)](_0x3f9d40(0x1f9));return;}let _0x258f5b=this[_0x3f9d40(0x1df)](_0x387586),_0x475a03=vehiclesAndShit[_0x258f5b['typeId']],_0x545f33=_0x387586[_0x3f9d40(0x1e8)](EntityComponentTypes[_0x3f9d40(0x1e2)]);if(!_0x387586[_0x3f9d40(0x1f8)](_0x3f9d40(0x1c3))&&_0x387586[_0x3f9d40(0x1d0)]['y']<=_0x387586[_0x3f9d40(0x1fa)]['heightRange'][_0x3f9d40(0x1d2)]-0x1){if(_0x475a03?.[_0x3f9d40(0x1d1)]&&(itemSave[_0x3f9d40(0x1c4)](btch),this['simplevehiclesGiveHotBar'](_0x387586,_0x545f33,_0x475a03),_0x387586[_0x3f9d40(0x1e6)](_0x3f9d40(0x1c3)))){}}}[a10_0x5f48ee(0x1bc)](){const _0x5e83f9=a10_0x5f48ee;for(let _0x4f2d49 of RMPlayerDATA['allPlayers']){if(!_0x4f2d49[_0x5e83f9(0x1ef)])continue;let _0x51dd9d=_0x4f2d49[_0x5e83f9(0x1fa)][_0x5e83f9(0x1cc)]({'families':[_0x5e83f9(0x1ee)],'maxDistance':0x1e,'location':_0x4f2d49[_0x5e83f9(0x1d0)]});for(let _0x33ee66 of _0x51dd9d)_0x33ee66[_0x5e83f9(0x1d9)](_0x5e83f9(0x1cb),{'players':[_0x4f2d49['name']]});}}[a10_0x5f48ee(0x1e9)](_0x24e068,_0xb99009,_0x27ef01){const _0x3e65f5=a10_0x5f48ee;let _0x1bea10=vehiclesAndShit[_0x27ef01['entity'][_0x3e65f5(0x1c5)]];if(!(!_0x1bea10||!_0x1bea10['hotbar']))for(let _0x47a640=0x0;_0x47a640<0x9;_0x47a640++){if(_0x47a640>_0x1bea10[_0x3e65f5(0x1d1)][_0x27ef01[_0x3e65f5(0x1ea)]][_0x3e65f5(0x1eb)]-0x1||_0x1bea10[_0x3e65f5(0x1d1)][_0x27ef01['seatPosition']][_0x47a640]===void 0x0){let _0x3544d2=new ItemStack('simple_vehicles:empty_slot',0x1);_0x3544d2['lockMode']=ItemLockMode['slot'],_0xb99009[_0x3e65f5(0x1ed)]?.[_0x3e65f5(0x1fe)](_0x47a640,_0x3544d2);continue;}let _0xa660b1=_0x1bea10[_0x3e65f5(0x1d1)][_0x27ef01['seatPosition']][_0x47a640];typeof _0xa660b1==_0x3e65f5(0x1b1)&&(_0xa660b1=_0xa660b1[_0x3e65f5(0x1ad)](_0x27ef01['entity']));let _0x46f43a=new ItemStack(_0xa660b1,0x1);_0x46f43a[_0x3e65f5(0x1ba)]=ItemLockMode[_0x3e65f5(0x1e1)],_0xb99009['container']?.['setItem'](_0x47a640,_0x46f43a);}}[a10_0x5f48ee(0x1df)](_0x2c8ce7){const _0xb198a3=a10_0x5f48ee;for(let _0x259e46 of _0x2c8ce7[_0xb198a3(0x1fa)][_0xb198a3(0x1cc)]({'families':[_0xb198a3(0x1dd)],'maxDistance':0xa,'location':_0x2c8ce7[_0xb198a3(0x1d0)]})){let _0x45ab62=_0x259e46[_0xb198a3(0x1e8)](EntityComponentTypes[_0xb198a3(0x1fb)]);if(!_0x45ab62)continue;let _0xc4957a=_0x45ab62[_0xb198a3(0x1e7)]();if(_0xc4957a[_0xb198a3(0x1eb)]!==_0x2c8ce7)for(let _0x334007=0x0;_0x334007<_0xc4957a[_0xb198a3(0x1eb)];_0x334007++){if(_0xc4957a[_0x334007]['id']===_0x2c8ce7['id'])return{'entity':_0x259e46,'seatPosition':_0x334007};}}}['ItemUseAfterEvent'](_0x22a239){const _0x8ae56a=a10_0x5f48ee;switch(_0x22a239[_0x8ae56a(0x1b3)][_0x8ae56a(0x1c5)]){case _0x8ae56a(0x1fd):_0x22a239[_0x8ae56a(0x1d5)][_0x8ae56a(0x1ce)](_0x8ae56a(0x1d7),!0x0);break;}}},BtchAll=new SimpleVehicleRiderData();function BtchAsTick(){const _0x2a1a79=a10_0x5f48ee;for(let _0x23336f of RMPlayerDATA[_0x2a1a79(0x1e4)])BtchAll[_0x2a1a79(0x1cd)](_0x23336f);BtchAll[_0x2a1a79(0x1bc)]();}system[a10_0x5f48ee(0x1be)](BtchAsTick,0x0);
+import {
+  EquipmentSlot,
+  ItemLockMode,
+  ItemStack,
+  EntityComponentTypes,
+  StructureSaveMode,
+  StructureAnimationMode,
+  system,
+  world,
+} from "@minecraft/server";
+
+var iTEMDBFCK = class {
+
+  /* This was work in progress as well */
+    // itemSimpleVehiclesDatabaseSave(event){
+    //   let a = event.getComponent("minecraft:inventory");
+    //   if (!a) return;
+    //   let e = event.dimension.spawnEntity("simple_vehicles:item_db", event.location);
+    //   e.addTag(event.id);
+    //   let t = e.getComponent(EntityComponentTypes.Inventory);
+    //   if (!t) return;
+    //   let n = [];
+    //   for (let i = 0; i < 9; i++) {
+    //     let c = a.container?.getItem(i);
+    //     t.container?.setItem(i, c), n.push(c);
+    //   }
+    //   world.structureManager.delete(`simple_vehicles:item_db_${event.id}`),
+    //     world.structureManager.createFromWorld(
+    //       `simple_vehicles:item_db_${event.id}`,
+    //       event.dimension,
+    //       e.location,
+    //       e.location,
+    //       { includeBlocks: !1, includeEntities: !0, saveMode: StructureSaveMode.World }
+    //     ),
+    //     e.remove();
+    // }
+
+
+    itemDatabaseSave(btch) {
+      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      if (!bro) return;
+      let hoe = btch.dimension.spawnEntity("simple_vehicles:item_db",btch.location);
+      hoe.addTag(btch.id);
+      let sis = hoe.getComponent(EntityComponentTypes.Inventory);
+      if (!sis) return;
+      let yword = [];
+      for (let i = 0; i < 9; i++) {
+        let azyk = bro.container?.getItem(i);
+        sis.container?.setItem(i, azyk), yword.push(azyk);
+      }
+      world.structureManager.delete(`simple_vehicles:item_db_${btch.id}`),
+        world.structureManager.createFromWorld(
+          `simple_vehicles:item_db_${btch.id}`,
+          btch.dimension,
+          hoe.location,
+          hoe.location,
+          {
+            includeBlocks: !1,
+            includeEntities: !0,
+            saveMode: StructureSaveMode.World,
+          }
+        ),
+        hoe.remove();
+    }
+
+    itemDatabaseDrop(btch) {
+      let bro = world.structureManager.get(`simple_vehicles:item_db_${btch.id}`);
+      if (!bro) return !1;
+      let hoe = btch.location;
+      for (; hoe.y > btch.dimension.heightRange.max; ) hoe.y -= 1;
+      let noe = btch.dimension.getEntities({
+        location: hoe,
+        maxDistance: 50,
+        minDistance: 0,
+      });
+      for (let azyk of noe) azyk.addTag("simple_vehicles_itemDBStay");
+      world.structureManager.place(bro, btch.dimension, hoe, {
+        includeBlocks: !1,
+        includeEntities: !0,
+        animationMode: StructureAnimationMode.None,
+      }),
+        world.structureManager.delete(bro);
+      let yword = btch.dimension.getEntities({
+        type: "simple_vehicles:item_db",
+        tags: [btch.id],
+      });
+      yword[0].triggerEvent("simple_vehicles:drop_items_and_despawn"),
+        yword[0].addTag("simple_vehicles:drop_items_and_despawn");
+
+      let hap = btch.dimension.getEntities({
+        location: hoe,
+        minDistance: 0,
+        maxDistance: 50,
+      });
+
+      for (let azyk of hap)
+        !azyk.isValid() ||
+          azyk.hasTag("simple_vehicles_itemDBStay") ||
+          azyk.hasTag("simple_vehicles:drop_items_and_despawn") ||
+          azyk.remove();
+      for (let azyk of noe)
+        !azyk.isValid() ||
+          !azyk.hasTag("simple_vehicles_itemDBStay") ||
+          azyk.removeTag("simple_vehicles_itemDBStay");
+      return !0;
+    }
+
+    itemDatabaseLoad(btch) {
+      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      if (!bro) return !1;
+      let hoe = world.structureManager.get(
+        `simple_vehicles:item_db_${btch.id}`
+      );
+      if (!hoe) return !0;
+      if (btch.location.y > btch.dimension.heightRange.max) return !1;
+      let noe = btch.dimension.getEntities({
+        location: btch.location,
+        maxDistance: 50,
+        minDistance: 0,
+      });
+      for (let desire of noe) desire.addTag("simple_vehicles_itemDBStay");
+      world.structureManager.place(hoe, btch.dimension, btch.location, {
+        includeBlocks: !1,
+        includeEntities: !0,
+        animationMode: StructureAnimationMode.None,
+      });
+      let assist = btch.dimension.getEntities({
+          type: "simple_vehicles:item_db",
+          tags: [btch.id],
+        }),
+        i = !1;
+      if (assist.length !== 0) {
+        let desire = assist[0].getComponent(EntityComponentTypes.Inventory);
+        if (desire) {
+          for (let u = 0; u < 9; u++) {
+            let sd = desire.container?.getItem(u);
+            bro.container?.setItem(u, sd);
+          }
+          assist[0].remove(), (i = !0);
+        }
+      }
+      let ayzk = btch.dimension.getEntities({
+        location: btch.location,
+        maxDistance: 50,
+        minDistance: 0,
+      });
+      for (let desire of ayzk)
+        desire.hasTag("simple_vehicles_itemDBStay") || desire.remove();
+      for (let desire of noe) {
+        !desire.isValid() ||
+          !desire.hasTag("simple_vehicles_itemDBStay") ||
+          desire.removeTag("simple_vehicles_itemDBStay");
+      }
+      return i;
+    }
+
+    itemDatabaseClearOnExit(btch) {
+      let bro = btch.getComponent(EntityComponentTypes.Inventory);
+      if (!bro) return !1;
+      for (let hoe = 0; hoe < 9; hoe++) bro.container?.setItem(hoe, void 0);
+      return !0;
+    }
+  },
+  itemSave = new iTEMDBFCK();
+
+var btchsItems = [
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    "minecraft:stick",
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+  ],
+  itemSet1 = {
+    default: "simple_vehicles:honk_item",
+    toggledState: "simple_vehicles:honk_item",
+    getItem: function (activated) {
+      return activated.getDynamicProperty("simple_vehicles:honk_set")
+        ? this.toggledState
+        : this.default;
+    },
+  },
+  hotbars = [
+    void 0,
+    itemSet1,
+    "simple_vehicles:book_documents",
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+    void 0,
+  ],
+  vehiclesAndShit = {
+    "simple_vehicles:ae86": {
+      hotbar: [[hotbars, void 0], btchsItems],
+    },
+    "simple_vehicles:ambulance": {
+      hotbar: [[hotbars, void 0], btchsItems],
+    },
+  };
+
+var Fck = {
+    hotbars: [],
+  },
+  FCK2 = class {
+    _DataP = new Map();
+    _Data = new Map();
+    loadPlayerData(e) {
+      let bas = e.getDynamicProperty("simple_vehicles:player_data");
+      if (bas) return JSON.parse(bas);
+    }
+    savePlayerData(e, r) {
+      e.setDynamicProperty("simple_vehicles:player_data", JSON.stringify(r));
+    }
+    addPlayerData(e) {
+      let bas = this.loadPlayerData(e);
+      bas ||
+        ((bas = JSON.parse(JSON.stringify(Fck))), this.savePlayerData(e, bas));
+      for (let t in Fck) t in bas || (bas[t] = Fck[t]);
+      this._DataP.set(e.id, e), this._Data.set(e.id, bas);
+    }
+    removePlayerData(e) {
+      for (let [r] of this._Data)
+        if (r === e.id) {
+          this._Data.delete(r);
+          break;
+        }
+      for (let [r] of this._DataP)
+        if (r === e.id) {
+          this._DataP.delete(r);
+          break;
+        }
+    }
+    modifyPlayerData(e, r) {
+      this._DataP.set(e.id, r), this.savePlayerData(e, r);
+    }
+    get allData() {
+      return Array.from(this._Data.values());
+    }
+    get allPlayers() {
+      return Array.from(this._DataP.values());
+    }
+    getDataByPlayerId(e) {
+      return this._Data.get(e);
+    }
+  },
+  RMPlayerDATA = new FCK2();
+
+var SimpleVehicleRiderData = class {
+    SimpleVehicles_VehiclesBeingRidden = [];
+    runPlayerDataInventory(e) {
+      if (!e.getComponent(EntityComponentTypes.Riding)) {
+        if (e.hasTag("simple_vehicles_vehiRide")) {
+          if (e.hasTag("simple_vehicles_vehiRideHotbar")) {
+            if (
+              !e.getComponent(EntityComponentTypes.Inventory) ||
+              !itemSave.itemDatabaseLoad(btch)
+            )
+              return;
+            e.removeTag("simple_vehicles_vehiRideHotbar");
+          }
+          e.removeTag("simple_vehicles_vehiRide");
+        }
+        e.hasTag("simple_vehicles_vehiRideHotbar") &&
+          itemSave.itemDatabaseClearOnExit(btch) &&
+          e.removeTag("simple_vehicles_vehiRideHotbar");
+        return;
+      }
+      let t = this.simpleVehiclesGetRidingEntitiers(e);
+      let fgc = vehiclesAndShit[t.typeId]
+      let btcasa = e.getComponent(EntityComponentTypes.Inventory);
+      if (
+        !e.hasTag("simple_vehicles_vehiRide") && e.location.y <= e.dimension.heightRange.max - 1
+      ) {
+        if (
+          (fgc?.hotbar && 
+            (itemSave.itemDatabaseSave(btch),
+            this.simplevehiclesGiveHotBar(e, btcasa, fgc),
+            e.addTag("simple_vehicles_vehiRide")
+          ))
+        ){}
+      }
+    }
+    tick() {
+      for (let e of RMPlayerDATA.allPlayers) {
+        if (!e.isSneaking) continue;
+        let r = e.dimension.getEntities({
+          families: ["simple_vehicles.item_dbinventory"],
+          maxDistance: 30,
+          location: e.location,
+        });
+        for (let t of r)
+          t.playAnimation("animation.aurrora_ve.vehicle.show_inventory_icon", {
+            players: [e.name],
+          });
+      }
+    }
+    simplevehiclesGiveHotBar(e, r, ter) {
+      let n = vehiclesAndShit[ter.entity.typeId];
+      if (!(!n || !n.hotbar))
+        for (let bth = 0; bth < 9; bth++) {
+          if (
+            bth > n.hotbar[ter.seatPosition].length - 1 ||
+            n.hotbar[ter.seatPosition][bth] === void 0
+          ) {
+            let d = new ItemStack("simple_vehicles:empty_slot", 1);
+            (d.lockMode = ItemLockMode.slot), r.container?.setItem(bth, d);
+            continue;
+          }
+          let i = n.hotbar[ter.seatPosition][bth];
+          typeof i == "object" && (i = i.getItem(ter.entity));
+          let c = new ItemStack(i, 1);
+          (c.lockMode = ItemLockMode.slot), r.container?.setItem(bth, c);
+        }
+    }
+    simpleVehiclesGetRidingEntitiers(e) {
+      for (let btch of e.dimension.getEntities({
+        families: ["simple_vehicles_vehicles"],
+        maxDistance: 10,
+        location: e.location,
+      })) {
+        let asts = btch.getComponent(EntityComponentTypes.Rideable);
+        if (!asts) continue;
+        let asds = asts.getRiders();
+        if (asds.length !== e) {
+          for (let sis = 0; sis < asds.length; sis++) {
+            if (asds[sis].id === e.id)
+              return {
+                entity: btch,
+                seatPosition: sis,
+              };
+          }
+        }
+      }
+    }
+    ItemUseAfterEvent(e) {
+      switch (e.ItemStack.typeId) {
+        case "simple_vehicles:honk_item":
+          e.entity.setDynamicProperty("simple_vehicles:honk_set", !0);
+          break;
+      }
+    }
+  },
+  BtchAll = new SimpleVehicleRiderData();
+
+function BtchAsTick() {
+  for (let a of RMPlayerDATA.allPlayers) BtchAll.runPlayerDataInventory(a);
+  BtchAll.tick();
+}
+
+system.runInterval(BtchAsTick, 0);

@@ -1,1 +1,30 @@
-(function(_0x5c7371,_0x1d89d7){const _0x724ab6=a53_0x1d04,_0x2406c9=_0x5c7371();while(!![]){try{const _0x587cd9=-parseInt(_0x724ab6(0xa2))/0x1+parseInt(_0x724ab6(0xab))/0x2*(-parseInt(_0x724ab6(0xae))/0x3)+parseInt(_0x724ab6(0xad))/0x4+-parseInt(_0x724ab6(0x9f))/0x5*(parseInt(_0x724ab6(0xb5))/0x6)+-parseInt(_0x724ab6(0x9e))/0x7*(-parseInt(_0x724ab6(0xb2))/0x8)+parseInt(_0x724ab6(0xa9))/0x9+-parseInt(_0x724ab6(0xa0))/0xa*(parseInt(_0x724ab6(0xa3))/0xb);if(_0x587cd9===_0x1d89d7)break;else _0x2406c9['push'](_0x2406c9['shift']());}catch(_0x39736f){_0x2406c9['push'](_0x2406c9['shift']());}}}(a53_0xac9d,0x9bb05));function a53_0x1d04(_0x17970c,_0x53933c){_0x17970c=_0x17970c-0x9e;const _0xac9dd7=a53_0xac9d();let _0x1d0489=_0xac9dd7[_0x17970c];return _0x1d0489;}import{ActionFormData}from'@minecraft/server-ui';function a53_0xac9d(){const _0x3aef03=['button','3377712JAPqln','1514103YzDjKC','then','§lHealth:\x20§r','selection','2560yPDLZm','A\x20television\x20production\x20truck\x20or\x20OB\x20van\x20is\x20a\x20small\x20mobile\x20production\x20control\x20room\x20to\x20allow\x20filming\x20of\x20events\x20and\x20video\x20production\x20at\x20locations\x20outside\x20a\x20regular\x20television\x20studio.\x20They\x20are\x20used\x20for\x20remote\x20broadcasts,\x20outside\x20broadcasting\x20(OB),\x20and\x20electronic\x20field\x20production\x20(EFP).','§lSpeed:\x20§r120\x20km/h\x20\x0a','34266mqGCoY','25907SOAXDV','165QkBikY','53510xQsdGF','show','164063jZzQgr','957GsVkDN','body','Specifictaions\x20\x0a','canceled','title','Tractor','3927762iJlhbU','Go\x20Back','4XHJGkw'];a53_0xac9d=function(){return _0x3aef03;};return a53_0xac9d();}import{showCustomForm}from'../MainMenu';import{HealthTypes,VehicleSizes}from'../../utils/customVehicleItems';import{_Page2Vehicles}from'../_page2';export function TractorInfo(_0x36ef4b){const _0x2a80b5=a53_0x1d04,_0x5592c4=new ActionFormData();_0x5592c4[_0x2a80b5(0xa7)](_0x2a80b5(0xa8)),_0x5592c4[_0x2a80b5(0xa4)]({'rawtext':[{'text':_0x2a80b5(0xb3)},{'text':'\x0a'},{'text':'==============================='},{'text':_0x2a80b5(0xa5)},{'text':_0x2a80b5(0xb4)},{'text':'§lSize:\x20§r'+VehicleSizes[0x0]+'\x20\x0a'},{'text':_0x2a80b5(0xb0)+HealthTypes[0x2]}]}),_0x5592c4[_0x2a80b5(0xac)](_0x2a80b5(0xaa)),_0x5592c4[_0x2a80b5(0xa1)](_0x36ef4b)[_0x2a80b5(0xaf)](_0x5c367b=>{const _0x49d56c=_0x2a80b5;if(_0x5c367b[_0x49d56c(0xa6)])showCustomForm(_0x36ef4b);else _0x5c367b[_0x49d56c(0xb1)]===0x0&&_Page2Vehicles(_0x36ef4b);});}
+import { ActionFormData } from "@minecraft/server-ui";
+import { showCustomForm } from "../MainMenu";
+import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
+import { _Page2Vehicles } from "../_page2";
+
+export function TractorInfo(player) {
+  const CreditsForm = new ActionFormData();
+  CreditsForm.title("Tractor");
+  CreditsForm.body({
+    rawtext: [
+      {
+        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+      },
+      { text: "\n" },
+      { text: "===============================" },
+      { text: "Specifictaions \n" },
+      { text: `\xA7lSpeed: \xA7r120 km/h \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
+    ],
+  });
+  CreditsForm.button("Go Back");
+  CreditsForm.show(player).then((response) => {
+    if (response.canceled) {
+      showCustomForm(player);
+    } else if (response.selection === 0) {
+      _Page2Vehicles(player);
+    }
+  });
+}

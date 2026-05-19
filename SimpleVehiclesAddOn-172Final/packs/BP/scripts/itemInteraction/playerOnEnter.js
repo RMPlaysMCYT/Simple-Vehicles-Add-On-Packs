@@ -1,1 +1,85 @@
-(function(_0x65cf5c,_0x14ddcf){const _0x3979dc=a12_0x51e5,_0x221894=_0x65cf5c();while(!![]){try{const _0x5f189a=parseInt(_0x3979dc(0xb8))/0x1*(-parseInt(_0x3979dc(0xbc))/0x2)+-parseInt(_0x3979dc(0xa6))/0x3*(-parseInt(_0x3979dc(0xb5))/0x4)+-parseInt(_0x3979dc(0xb1))/0x5*(parseInt(_0x3979dc(0xac))/0x6)+parseInt(_0x3979dc(0xb4))/0x7*(parseInt(_0x3979dc(0xa5))/0x8)+parseInt(_0x3979dc(0xaa))/0x9*(-parseInt(_0x3979dc(0xbb))/0xa)+-parseInt(_0x3979dc(0xaf))/0xb+parseInt(_0x3979dc(0xa7))/0xc*(parseInt(_0x3979dc(0xae))/0xd);if(_0x5f189a===_0x14ddcf)break;else _0x221894['push'](_0x221894['shift']());}catch(_0x1a858e){_0x221894['push'](_0x221894['shift']());}}}(a12_0x37c9,0x8f69e));import{simpleVehiclesVehicles}from'../utils/vehicleLists';import{playerDeleteItemInventory,playerLoadItemInventory,playerLockInventory,playerSaveItemInventory,playerUnlockInventory,playerInventoryItems}from'./item_db2';function a12_0x37c9(){const _0x28d836=['1295VwGOvb','96qTndif','isValid','hasTag','201237lRcfPk','addTag','getAllPlayers','30cydmZF','2PwBDyF','22872nXbUrY','28563McHTHK','26300112UqOwXP','simplevehicles_player_in_vehicle','warn','628668gOQaXw','minecraft:riding','6KVlEym','removeTag','13IoBCMu','10075483JWkfAt','typeId','5174635sTGKPx','[Simple\x20Vehicles]\x20tick\x20error:\x20','entityRidingOn'];a12_0x37c9=function(){return _0x28d836;};return a12_0x37c9();}import{world}from'@minecraft/server';const VehiclesMounted={};export function onWorldTicks(){const _0x2c502a=a12_0x51e5;for(const _0x370a30 of world[_0x2c502a(0xba)]()){try{const _0x55ed17=getPlayerSimpleVehicles(_0x370a30),_0x19d8ca=VehiclesMounted[_0x370a30['id']];if(!_0x55ed17||!_0x55ed17['isValid']()){if(_0x19d8ca)onVehicleLeave(_0x370a30);else _0x370a30[_0x2c502a(0xb7)](_0x2c502a(0xa8))&&_0x370a30[_0x2c502a(0xad)](_0x2c502a(0xa8));continue;}(!_0x19d8ca||_0x19d8ca['id']!==_0x55ed17['id'])&&onVehicleEnter(_0x370a30,_0x55ed17),VehiclesMounted[_0x370a30['id']]=_0x55ed17;}catch(_0x298a2d){console[_0x2c502a(0xa9)](_0x2c502a(0xb2)+_0x298a2d);}}}function getPlayerSimpleVehicles(_0x22680d){const _0x43c65d=a12_0x51e5,_0x4537c4=_0x22680d['getComponent'](_0x43c65d(0xab));if(!_0x4537c4)return undefined;const _0x56df9f=_0x4537c4[_0x43c65d(0xb3)];if(!_0x56df9f||!_0x56df9f[_0x43c65d(0xb6)]()||!simpleVehiclesVehicles['includes'](_0x56df9f[_0x43c65d(0xb0)]))return undefined;return _0x56df9f;}function onVehicleEnter(_0x3ae2b7,_0x34ed42){const _0x3cc80f=a12_0x51e5;if(!_0x34ed42['isValid']())return;_0x3ae2b7[_0x3cc80f(0xb9)](_0x3cc80f(0xa8)),playerSaveItemInventory(_0x3ae2b7,_0x34ed42),playerDeleteItemInventory(_0x3ae2b7),playerInventoryItems(_0x3ae2b7),playerLockInventory(_0x3ae2b7);}function a12_0x51e5(_0x472aaf,_0x2e5e85){_0x472aaf=_0x472aaf-0xa5;const _0x37c903=a12_0x37c9();let _0x51e5b2=_0x37c903[_0x472aaf];return _0x51e5b2;}function onVehicleLeave(_0x15afe3){const _0x30f422=a12_0x51e5,_0x38c979=VehiclesMounted[_0x15afe3['id']];_0x15afe3[_0x30f422(0xad)](_0x30f422(0xa8)),playerUnlockInventory(_0x15afe3),playerDeleteItemInventory(_0x15afe3),playerLoadItemInventory(_0x15afe3,_0x38c979),delete VehiclesMounted[_0x15afe3['id']];}
+import { simpleVehiclesVehicles } from "../utils/vehicleLists"; // Adjust path if needed
+import {
+  playerDeleteItemInventory,
+  playerLoadItemInventory,
+  playerLockInventory,
+  playerSaveItemInventory,
+  playerUnlockInventory,
+  playerInventoryItems
+} from "./item_db2";
+import { world } from "@minecraft/server";
+
+// Cache: map player.id -> vehicle entity the player is riding
+const VehiclesMounted = {};
+
+/**
+ * Tick loop: detects enter/leave and manages hotbar items & locks.
+ * Call this from main.js via system.runInterval.
+ */
+export function onWorldTicks() {
+  for (const player of world.getAllPlayers()) {
+    try {
+      const currentVehicle = getPlayerSimpleVehicles(player);
+      const mountedVehicle = VehiclesMounted[player.id];
+
+      // Not riding a valid vehicle
+      if (!currentVehicle || !currentVehicle.isValid()) {
+        if (mountedVehicle) {
+          onVehicleLeave(player);
+        } else if (player.hasTag("simplevehicles_player_in_vehicle")) {
+          player.removeTag("simplevehicles_player_in_vehicle");
+        }
+        continue;
+      }
+
+      // Just entered
+      if (!mountedVehicle || mountedVehicle.id !== currentVehicle.id) {
+        onVehicleEnter(player, currentVehicle);
+      }
+
+      // Keep current reference
+      VehiclesMounted[player.id] = currentVehicle;
+    } catch (error) {
+      console.warn(`[Simple Vehicles] tick error: ${error}`);
+    }
+  }
+}
+
+function getPlayerSimpleVehicles(player) {
+  const ridingComponent = player.getComponent("minecraft:riding");
+  if (!ridingComponent) return undefined;
+
+  const ridingEntity = ridingComponent.entityRidingOn;
+  if (!ridingEntity || !ridingEntity.isValid() || !simpleVehiclesVehicles.includes(ridingEntity.typeId)) {
+    return undefined;
+  }
+  return ridingEntity;
+}
+
+function onVehicleEnter(player, vehicleEntity) {
+  if (!vehicleEntity.isValid()) return;
+
+  player.addTag("simplevehicles_player_in_vehicle");
+
+  // Save inventory (vehicle inventory if present, plus memory snapshot)
+  playerSaveItemInventory(player, vehicleEntity);
+
+  // Replace hotbar items and lock slots
+  playerDeleteItemInventory(player);
+  playerInventoryItems(player); // deterministic setItem into hotbar
+  playerLockInventory(player);
+}
+
+function onVehicleLeave(player) {
+  // Correctly fetch the cached entity (fixes previous typo bug)
+  const vehicleEntity = VehiclesMounted[player.id];
+
+  player.removeTag("simplevehicles_player_in_vehicle");
+  playerUnlockInventory(player);
+  playerDeleteItemInventory(player);
+
+  // Restore inventory
+  playerLoadItemInventory(player, vehicleEntity);
+
+  delete VehiclesMounted[player.id];
+}
