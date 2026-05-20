@@ -52,6 +52,39 @@
         }
       },
       "minecraft:donkey_saddled": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "all_of": [
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "simple_vehicles:key"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "event": "minecraft:donkey_unsaddled"
+              }
+            }
+          ]
+        },
         "minecraft:is_saddled": {},
         "minecraft:input_ground_controlled": {},
         "minecraft:can_power_jump": {}
@@ -156,7 +189,7 @@
       "minecraft:inventory": {
         "additional_slots_per_strength": 0,
         "can_be_siphoned_from": false,
-        "container_type": "horse",
+        "container_type": "container",
         "inventory_size": 9,
         "private": false,
         "restrict_to_owner": false
