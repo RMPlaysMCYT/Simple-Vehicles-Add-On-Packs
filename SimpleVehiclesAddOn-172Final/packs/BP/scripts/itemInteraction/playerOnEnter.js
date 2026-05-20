@@ -66,7 +66,7 @@ function onVehicleEnter(player, vehicleEntity) {
 
   // Replace hotbar items and lock slots
   playerDeleteItemInventory(player);
-  playerInventoryItems(player); // deterministic setItem into hotbar
+  playerInventoryItems(player, vehicleEntity); // deterministic setItem into hotbar
   playerLockInventory(player);
 }
 

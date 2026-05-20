@@ -12,7 +12,7 @@
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
           "seat_count": 3,
-          "crouching_skip_interact": false,
+          "crouching_skip_interact": true,
           "family_types": ["player", "villager", "cat", "npc"],
           "interact_text": "Drive",
           "pull_in_entities": true,

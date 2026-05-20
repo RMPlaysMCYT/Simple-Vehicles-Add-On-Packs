@@ -2,10 +2,39 @@ import { ItemLockMode, ItemStack } from "@minecraft/server";
 
 const HOTBAR_SIZE = 9;
 const memoryHotbars = {};
+const DEFAULT_VEHICLE_CONTROL_ITEMS = ["simple_vehicles:honk_item"];
+
+const VehicleControlItemSetPacks = {
+  "simple_vehicles:ae86": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+    "minecraft:iron_ingot",
+  ],
+  "simple_vehicles:ambulance": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+  ],
+};
+
+const SimVehAllControls = new Set([
+  "simple_vehicles:honk_item",
+  "simple_vehicles:key",
+  "minecraft:iron_ingot",
+  "minecraft:water_bucket",
+]);
 
 function getInventoryContainer(entity) {
   const inventory = entity.getComponent("minecraft:inventory");
   return inventory?.container;
+}
+
+function getVehicleControlItemIds(vehicleEntity) {
+  const vehicleTypeId = vehicleEntity?.typeId;
+  const itemIds = vehicleTypeId
+    ? VehicleControlItemSetPacks[vehicleTypeId] ?? DEFAULT_VEHICLE_CONTROL_ITEMS
+    : DEFAULT_VEHICLE_CONTROL_ITEMS;
+
+  return itemIds.filter((itemId) => SimVehAllControls.has(itemId));
 }
 
 export function playerSaveItemInventory(player, vehicleEntity) {
@@ -77,22 +106,19 @@ export function playerLoadItemInventory(player, vehicleEntity) {
   }
 }
 
-export function playerInventoryItems(player) {
+export function playerInventoryItems(player, vehicleEntity) {
   try {
     const inv = getInventoryContainer(player);
     if (!inv) return;
 
-    const item0 = new ItemStack("simple_vehicles:honk_item", 1);
-    const item1 = new ItemStack("simple_vehicles:key", 1);
-    const item2 = new ItemStack("minecraft:stick", 1);
-    const item3 = new ItemStack("minecraft:book", 1);
+    const controlItems = getVehicleControlItemIds(vehicleEntity);
 
-    inv.setItem(0, item0);
-    inv.setItem(1, item1);
-    inv.setItem(2, item2);
-    inv.setItem(3, item3);
+    for (let i = 0; i < HOTBAR_SIZE; i++) {
+      const itemId = controlItems[i];
+      inv.setItem(i, itemId ? new ItemStack(itemId, 1) : undefined);
+    }
 
-    for (let i = 4; i < HOTBAR_SIZE; i++) {
+    for (let i = controlItems.length; i < HOTBAR_SIZE; i++) {
       inv.setItem(i, undefined);
     }
   } catch (e) {
