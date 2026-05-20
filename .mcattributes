@@ -11,3 +11,4 @@ diagnostic.disable.resourcepack.texture.missing=true
 diagnostic.disable.minecraft.commands.fill.syntax=true
 diagnostic.disable.minecraft.language.duplicate=true
 diagnostic.disable.minecraft.language.duplicate=true
+diagnostic.disable.molang.function.query.spellcolor.r=true

@@ -9,6 +9,10 @@
 	"regolith": {
 		"dataPath": "./packs/data",
 		"filterDefinitions": {
+			"fast_ts": {
+				"url": "github.com/lightyisreal/regolith-filters",
+				"version": "869d61032fd27189801bf8cdc9595d8d660b2ec7"
+			},
 			"js_obfuscator": {
 				"url": "github.com/lightyisreal/regolith-filters",
 				"version": "ce8cc237070ccfab7e884e5de60e5ced0f9049b1"
