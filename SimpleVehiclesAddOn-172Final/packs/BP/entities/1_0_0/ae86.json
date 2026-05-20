@@ -144,39 +144,6 @@
       }
     },
     "components": {
-      "minecraft:interact": {
-        "interactions": [
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
-                  },
-                  {
-                    "test": "is_riding",
-                    "subject": "other",
-                    "value": true
-                  },
-                  {
-                    "all_of": [
-                      {
-                        "test": "has_equipment",
-                        "subject": "other",
-                        "domain": "hand",
-                        "value": "simple_vehicles:key"
-                      }
-                    ]
-                  }
-                ]
-              },
-              "event": "minecraft:donkey_saddled"
-            }
-          }
-        ]
-      },
       "minecraft:is_saddled": {},
       "minecraft:input_ground_controlled": {},
       "minecraft:can_power_jump": {},
@@ -250,9 +217,8 @@
         "priority": 0
       },
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
+      "minecraft:push_through": {
+        "value": 0
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/ae86.json"

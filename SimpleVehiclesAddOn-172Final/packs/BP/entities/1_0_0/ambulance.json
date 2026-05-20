@@ -1,5 +1,5 @@
 {
-  "format_version": "1.10.0",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "simple_vehicles:ambulance",
@@ -9,9 +9,43 @@
     },
     "component_groups": {
       "minecraft:minecar": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "all_of": [
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "simple_vehicles:key"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "event": "minecraft:donkey_saddled"
+              }
+            }
+          ]
+        },
         "minecraft:is_tamed": {},
         "minecraft:rideable": {
           "seat_count": 3,
+          "rider_can_interact": true,
           "crouching_skip_interact": true,
           "family_types": ["player", "villager", "cat", "npc"],
           "interact_text": "Drive",
@@ -221,7 +255,7 @@
       },
       "minecraft:horse_unsaddled": {
         "add": {
-          "component_groups": ["minecraft:bugfixer"]
+          "component_groups": ["minecraft:bugfixer", "minecraft:minecar"]
         },
         "remove": {
           "component_groups": ["minecraft:horse_saddled"]
