@@ -27,7 +27,6 @@
           "time": [0.1, 0.1],
           "looping": false,
           "time_down_event": {
-            "event": "minecraft:bugfix",
             "target": "self"
           }
         }
@@ -147,7 +146,6 @@
         "private": false
       },
       "minecraft:is_chested": {},
-      "minecraft:fire_immune": true,
       "minecraft:equippable": {
         "slots": [
           {

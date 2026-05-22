@@ -1,5 +1,5 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "simple_vehicles:vespa_primavera",
@@ -86,9 +86,6 @@
       "minecraft:collision_box": {
         "height": 0.9,
         "width": 0.5
-      },
-      "minecraft:fall_damage": {
-        "value": 0.0
       },
       "minecraft:movement": {
         "value": 0.35,
