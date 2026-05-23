@@ -158,10 +158,7 @@
 				"max": 50
 			},
 			"minecraft:nameable": {
-				"alwaysShow": false,
-				"allowNameTagRenaming": false
 			},
-			"minecraft:fire_immune": true,
 			"minecraft:inventory": {
 				"inventory_size": 16,
 				"container_type": "horse"
@@ -193,30 +190,6 @@
 				"value": 1
 			},
 			"minecraft:can_climb": {},
-			"minecraft:on_death": {
-				"event": "on:death",
-				"target": "self"
-			},
-			"minecraft:on_hurt": {
-				"event": "on:hurt",
-				"target": "self"
-			},
-			"minecraft:on_hurt_by_player": {
-				"event": "on:hurt_by_player",
-				"target": "self"
-			},
-			"minecraft:on_ignite": {
-				"event": "on:ignite",
-				"target": "self"
-			},
-			"minecraft:on_target_acquired": {
-				"event": "on:target_acquired",
-				"target": "self"
-			},
-			"minecraft:on_target_escape": {
-				"event": "on:target_escape",
-				"target": "self"
-			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/simple_vehicles_car_lowrider_v2_red.json"
 			}
