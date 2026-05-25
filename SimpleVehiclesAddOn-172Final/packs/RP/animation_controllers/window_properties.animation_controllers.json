@@ -7,11 +7,53 @@
 				"default": {
 					"transitions": [
 						{
-							"riding": "!query.has_rider"
+							"open": "query.property('simple_vehicles:window_toggle')=='open'"
+						},
+						{
+							"opening": "query.property('simple_vehicles:window_toggle')=='opening'"
+						},
+						{
+							"close": "query.property('simple_vehicles:window_toggle')=='close'"
+						},
+						{
+							"closing": "query.property('simple_vehicles:window_toggle')=='closing'"
 						}
 					]
 				},
-				"riding": {
+				"open": {
+					"animations":[
+
+					],
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					]
+				},
+				"opening": {
+					"animations":[
+
+					],
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					]
+				},
+				"open": {
+					"animations":[
+
+					],
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					]
+				},
+				"open": {
+					"animations":[
+
+					],
 					"transitions": [
 						{
 							"default": "query.has_rider"
