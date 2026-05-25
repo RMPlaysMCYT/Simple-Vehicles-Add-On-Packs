@@ -1384,6 +1384,11 @@
       "textures": [
         "textures/items/SimpleVehiclesBook"
       ]
+    },
+    "tool_window_open": {
+      "textures": [
+        "textures/items/window_open"
+      ]
     }
   }
 }
