@@ -22,11 +22,11 @@
 				},
 				"open": {
 					"animations":[
-
+						"windows_open"
 					],
 					"transitions": [
 						{
-							"default": "query.has_rider"
+							"opening": "query.has_rider"
 						}
 					]
 				},
@@ -36,27 +36,27 @@
 					],
 					"transitions": [
 						{
-							"default": "query.has_rider"
+							"close": "query.has_rider"
 						}
 					]
 				},
-				"open": {
+				"close": {
 					"animations":[
 
 					],
 					"transitions": [
 						{
-							"default": "query.has_rider"
+							"closing": "query.has_rider"
 						}
 					]
 				},
-				"open": {
+				"closing": {
 					"animations":[
 
 					],
 					"transitions": [
 						{
-							"default": "query.has_rider"
+							"open": "query.has_rider"
 						}
 					]
 				}
