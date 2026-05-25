@@ -26,7 +26,7 @@
 					],
 					"transitions": [
 						{
-							"opening": "query.has_rider"
+							"opening": "query.property('simple_vehicles:window_toggle')=='opening'"
 						}
 					]
 				},
@@ -36,7 +36,7 @@
 					],
 					"transitions": [
 						{
-							"close": "query.has_rider"
+							"close": "query.property('simple_vehicles:window_toggle')=='close'"
 						}
 					]
 				},
@@ -46,7 +46,7 @@
 					],
 					"transitions": [
 						{
-							"closing": "query.has_rider"
+							"closing": "query.all_animations_finished"
 						}
 					]
 				},
@@ -56,7 +56,7 @@
 					],
 					"transitions": [
 						{
-							"open": "query.has_rider"
+							"open": "query.property('simple_vehicles:window_toggle')=='open'"
 						}
 					]
 				}
