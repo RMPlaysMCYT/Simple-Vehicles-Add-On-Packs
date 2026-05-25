@@ -1389,6 +1389,16 @@
       "textures": [
         "textures/items/window_open"
       ]
+    },
+    "tool_windshield": {
+      "textures": [
+        "textures/items/window_open"
+      ]
+    },
+    "tool_roof_convertible": {
+      "textures": [
+        "textures/items/window_open"
+      ]
     }
   }
 }
