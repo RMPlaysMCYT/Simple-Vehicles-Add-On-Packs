@@ -8,6 +8,7 @@ import "./documentation/MainMenu";
 import "./sets/honkitem";
 import "./sets/setloreinfo";
 import "./sets/_hud";
+import "./vehiclecontrol";
 
 import * as fck from "./itemInteraction/playerOnEnter";
 

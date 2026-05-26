@@ -5,7 +5,20 @@
       "identifier": "simple_vehicles:ambulance",
       "is_spawnable": true,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties":{
+        "simple_vehicles:window_toggle":{
+          "type": "enum",
+          "values": [
+            "open",
+            "opening",
+            "close",
+            "closing"
+          ],
+          "default": "closing",
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
       "minecraft:minecar": {
