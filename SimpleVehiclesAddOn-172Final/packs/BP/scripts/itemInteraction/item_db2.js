@@ -8,21 +8,29 @@ const VehicleControlItemSetPacks = {
   "simple_vehicles:ae86": [
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
-    "minecraft:iron_ingot",
+    "simple_vehicles:tool_window_open",
   ],
   "simple_vehicles:ambulance": [
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
   ],
-  "simple_vehicles:auv_car": [
+  "simple_vehicles:apv": [
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
   ],
-  "simple_vehicles:bus_v2": [
+  "simple_vehicles:bus_2": [
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
   ],
   "simple_vehicles:bus": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+  ],
+  "simple_vehicles:apv": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+  ],
+  "simple_vehicles:car": [
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
   ],
@@ -31,8 +39,8 @@ const VehicleControlItemSetPacks = {
 const SimVehAllControls = new Set([
   "simple_vehicles:honk_item",
   "simple_vehicles:key",
-  "minecraft:iron_ingot",
-  "minecraft:water_bucket",
+  "simple_vehicles:tool_window_open",
+  "simple_vehicles:tool_windshield",
 ]);
 
 function getInventoryContainer(entity) {
