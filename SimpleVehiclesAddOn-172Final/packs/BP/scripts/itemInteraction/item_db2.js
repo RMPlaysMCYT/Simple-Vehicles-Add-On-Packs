@@ -34,6 +34,14 @@ const VehicleControlItemSetPacks = {
     "simple_vehicles:honk_item",
     "simple_vehicles:key",
   ],
+  "simple_vehicles:corolla": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+  ],
+  "simple_vehicles:ev_4": [
+    "simple_vehicles:honk_item",
+    "simple_vehicles:key",
+  ],
 };
 
 const SimVehAllControls = new Set([
