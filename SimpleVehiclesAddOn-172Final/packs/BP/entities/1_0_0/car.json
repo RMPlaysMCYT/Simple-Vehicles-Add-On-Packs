@@ -22,6 +22,39 @@
 		},
 		"component_groups": {
 			"minecraft:minecar": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:key"
+												}
+											]
+										}
+									]
+								},
+								"event": "minecraft:donkey_saddled"
+							}
+						}
+					]
+				},
 				"minecraft:rideable": {
 					"seat_count": 4,
 					"crouching_skip_interact": true,
@@ -79,6 +112,39 @@
 				}
 			},
 			"minecraft:horse_saddled": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "is_riding",
+											"subject": "other",
+											"value": true
+										},
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:key"
+												}
+											]
+										}
+									]
+								},
+								"event": "minecraft:donkey_unsaddled"
+							}
+						}
+					]
+				},
 				"minecraft:input_ground_controlled": {},
 				"minecraft:can_power_jump": {},
 				"minecraft:behavior.player_ride_tamed": {}
@@ -171,23 +237,6 @@
 			"minecraft:scale": {
 				"value": 1
 			},
-			"minecraft:equippable": {
-				"slots": [
-					{
-						"slot": 0,
-						"item": "simple_vehicles:key",
-						"accepted_items": [
-							"simple_vehicles:key"
-						],
-						"on_equip": {
-							"event": "minecraft:horse_saddled"
-						},
-						"on_unequip": {
-							"event": "minecraft:horse_unsaddled"
-						}
-					}
-				]
-			},
 			"minecraft:type_family": {
 				"family": [
 					"aspire",
@@ -209,8 +258,8 @@
 				}
 			},
 			"minecraft:inventory": {
-				"inventory_size": 15,
-				"container_type": "horse",
+				"inventory_size": 27,
+				"container_type": "container",
 				"private": false
 			},
 			"minecraft:movement": {
