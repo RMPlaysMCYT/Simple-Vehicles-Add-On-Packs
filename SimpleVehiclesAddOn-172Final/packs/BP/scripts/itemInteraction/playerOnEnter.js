@@ -1,4 +1,4 @@
-import { simpleVehiclesVehicles } from "../utils/vehicleLists"; // Adjust path if needed
+import { simpleVehiclesVehicles } from "../utils/vehicleLists";
 import {
   playerDeleteItemInventory,
   playerLoadItemInventory,
@@ -9,7 +9,6 @@ import {
 } from "./item_db2";
 import { world } from "@minecraft/server";
 
-// Cache: map player.id -> vehicle entity the player is riding
 const VehiclesMounted = {};
 
 /**
@@ -22,7 +21,7 @@ export function onWorldTicks() {
       const currentVehicle = getPlayerSimpleVehicles(player);
       const mountedVehicle = VehiclesMounted[player.id];
 
-      // Not riding a valid vehicle
+      
       if (!currentVehicle || !currentVehicle.isValid()) {
         if (mountedVehicle) {
           onVehicleLeave(player);
@@ -32,12 +31,12 @@ export function onWorldTicks() {
         continue;
       }
 
-      // Just entered
+      
       if (!mountedVehicle || mountedVehicle.id !== currentVehicle.id) {
         onVehicleEnter(player, currentVehicle);
       }
 
-      // Keep current reference
+      
       VehiclesMounted[player.id] = currentVehicle;
     } catch (error) {
       console.warn(`[Simple Vehicles] tick error: ${error}`);
