@@ -8,20 +8,44 @@
 			"bones": {
 				"leg2": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
 					}
 				},
 				"leg0": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
 					}
 				},
 				"leg1": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"1.0": [360, 0, 0]
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
 					}
 				}
 			}
@@ -30,7 +54,11 @@
 			"loop": true,
 			"bones": {
 				"steer": {
-					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
 				}
 			}
 		},
@@ -38,7 +66,18 @@
 			"loop": true,
 			"bones": {
 				"steer": {
-					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							"-(query.property('simple_vehicles:steering')-360)/12"
+						],
+						"1.0": [
+							0,
+							0,
+							"-(query.property('simple_vehicles:steering')-360)/12"
+						]
+					}
 				}
 			}
 		},
@@ -46,7 +85,11 @@
 			"loop": true,
 			"bones": {
 				"steering_wheel": {
-					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
 				}
 			}
 		}
