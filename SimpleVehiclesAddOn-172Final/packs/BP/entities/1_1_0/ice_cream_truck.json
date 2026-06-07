@@ -121,10 +121,6 @@
       "minecraft:physics": {},
       "minecraft:loot": {
         "table": "loot_tables/entities/simple_vehicles/ice_cream_truck.json"
-      },
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
       }
     },
     "events": {
