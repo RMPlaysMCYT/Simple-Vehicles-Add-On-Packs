@@ -129,7 +129,7 @@
 				"table": "loot_tables/entities/submarine.json"
 			},
 			"minecraft:underwater_movement": {
-				"value": 0.16
+				"value": 0.12
 			},
 			"minecraft:environment_sensor": {
 				"triggers": [
