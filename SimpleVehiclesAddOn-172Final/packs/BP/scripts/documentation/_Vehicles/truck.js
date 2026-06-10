@@ -9,13 +9,13 @@ export function TruckInfo(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+        text: "A truck (North American and Australian English) or lorry (British English) is a motor vehicle designed to transport freight, carry specialized payloads, or perform other utilitarian work. ",
       },
       { text: "\n" },
       { text: "===============================" },
       { text: "Specifictaions \n" },
       { text: `\xA7lSpeed: \xA7r120 km/h \n` },
-      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[2]} \n` },
       { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
     ],
   });

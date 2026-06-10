@@ -9,13 +9,13 @@ export function TractorInfo(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+        text: "A tractor is an engineering vehicle specifically designed to deliver a high tractive effort (or torque) at slow speeds, for the purposes of hauling a trailer or machinery, such as that used in agriculture, mining or construction. Most commonly, the term is used to describe a farm vehicle that provides the power and traction to mechanize agricultural tasks, especially (and originally) tillage, and now many more. Agricultural implements may be towed behind or mounted on the tractor, and the tractor may also provide a source of power if the implement is mechanised.",
       },
       { text: "\n" },
       { text: "===============================" },
       { text: "Specifictaions \n" },
       { text: `\xA7lSpeed: \xA7r120 km/h \n` },
-      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[1]} \n` },
       { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
     ],
   });

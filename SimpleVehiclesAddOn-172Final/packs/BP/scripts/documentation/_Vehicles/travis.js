@@ -9,13 +9,13 @@ export function TravisInfo(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+        text: "The Isuzu Traga is a small cab over pickup truck manufactured by Isuzu since 2018. It is developed to compete with the Mitsubishi L300 in the Indonesian medium pickup truck market.[3] It replaces the L300-based Bison and Panther pickup in the market. It is manufactured and primarily sold in Indonesia, and is exported to other Southeast Asian countries since 2019 as well. The Philippines is the first export destination, where it is sold as the Isuzu Traviz.",
       },
       { text: "\n" },
       { text: "===============================" },
       { text: "Specifictaions \n" },
       { text: `\xA7lSpeed: \xA7r120 km/h \n` },
-      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[1]} \n` },
       { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
     ],
   });
