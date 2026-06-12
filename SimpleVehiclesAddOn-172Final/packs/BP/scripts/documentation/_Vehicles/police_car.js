@@ -9,13 +9,13 @@ export function PoliceCar_Info(player) {
   CreditsForm.body({
     rawtext: [
       {
-        text: "A television production truck or OB van is a small mobile production control room to allow filming of events and video production at locations outside a regular television studio. They are used for remote broadcasts, outside broadcasting (OB), and electronic field production (EFP).",
+        text: "A police car is an emergency vehicle used by police for transportation during patrols and responses to calls for service. Police cars are used by police officers to patrol a beat, quickly reach incident scenes, and transport and temporarily detain suspects.",
       },
       { text: "\n" },
       { text: "===============================" },
       { text: "Specifictaions \n" },
       { text: `\xA7lSpeed: \xA7r120 km/h \n` },
-      { text: `\xA7lSize: \xA7r${VehicleSizes[0]} \n` },
+      { text: `\xA7lSize: \xA7r${VehicleSizes[1]} \n` },
       { text: `\xA7lHealth: \xA7r${HealthTypes[2]}` },
     ],
   });
