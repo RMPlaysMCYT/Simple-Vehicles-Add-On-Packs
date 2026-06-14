@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function PlaneInfo(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Ob Van");
+  CreditsForm.title("Plane");
   CreditsForm.body({
     rawtext: [
       {
