@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function VolkswagenBeetleInfo(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Opel Corsa");
+  CreditsForm.title("Volkswagen Beetle");
   CreditsForm.body({
     rawtext: [
       {
