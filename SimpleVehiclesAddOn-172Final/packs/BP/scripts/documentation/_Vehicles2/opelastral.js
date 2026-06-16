@@ -3,9 +3,9 @@ import { showCustomForm } from "../MainMenu";
 import { HealthTypes, VehicleSizes } from "../../utils/customVehicleItems";
 import { _Page2Vehicles } from "../_page2";
 
-export function IceCraeamTruckInfo(player) {
+export function OpelAstralInfo(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Ice Cream Truck");
+  CreditsForm.title("Opel Astral");
   CreditsForm.body({
     rawtext: [
       {
