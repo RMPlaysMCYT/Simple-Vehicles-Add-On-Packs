@@ -5,7 +5,7 @@ import { _Page2Vehicles } from "../_page2";
 
 export function OpelCorsaInfo(player) {
   const CreditsForm = new ActionFormData();
-  CreditsForm.title("Opel Astral");
+  CreditsForm.title("Opel Corsa");
   CreditsForm.body({
     rawtext: [
       {
