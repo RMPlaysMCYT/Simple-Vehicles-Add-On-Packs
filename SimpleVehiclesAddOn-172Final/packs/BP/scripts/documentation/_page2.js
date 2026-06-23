@@ -29,6 +29,8 @@ import { TractorInfo } from "./_Vehicles/tractor";
 import { TravisInfo } from "./_Vehicles/travis";
 import { TruckInfo } from "./_Vehicles/truck";
 import { VanInfo } from "./_Vehicles/van";
+import { CadillabDTSInfo } from "./_Vehicles2/cadillac_dts";
+import { HondaAccordInfo } from "./_Vehicles2/hondaaccord";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -137,6 +139,12 @@ export function _Page2Vehicles(player) {
       TravisInfo(player);
     } else if (response.selection === 28) {
       TruckInfo(player);
+    } else if (response.selection === 29) {
+      VanInfo(player);
+    } else if (response.selection === 29) {
+      CadillabDTSInfo(player);
+    } else if (response.selection === 29) {
+      HondaAccordInfo(player);
     } else if (response.selection === 29) {
       VanInfo(player);
     } else if (response.selection === 30) {
