@@ -32,6 +32,7 @@ import { VanInfo } from "./_Vehicles/van";
 import { CadillabDTSInfo } from "./_Vehicles2/cadillac_dts";
 import { HondaAccordInfo } from "./_Vehicles2/hondaaccord";
 import { OpelCorsaInfo } from "./_Vehicles2/opelcorsa";
+import { OpelAstralInfo } from "./_Vehicles2/opelastral";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -148,6 +149,8 @@ export function _Page2Vehicles(player) {
       HondaAccordInfo(player);
     } else if (response.selection === 29) {
       OpelCorsaInfo(player);
+    } else if (response.selection == 29) {
+      OpelAstralInfo(player);
     } else if (response.selection === 30) {
       showCustomForm(player);
     }
