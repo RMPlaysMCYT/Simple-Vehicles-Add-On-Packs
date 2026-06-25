@@ -145,11 +145,11 @@ export function _Page2Vehicles(player) {
       TruckInfo(player);
     } else if (response.selection === 29) {
       VanInfo(player);
-    } else if (response.selection === 29) {
+    } else if (response.selection === 30) {
       CadillabDTSInfo(player);
-    } else if (response.selection === 29) {
+    } else if (response.selection === 31) {
       HondaAccordInfo(player);
-    } else if (response.selection === 29) {
+    } else if (response.selection === 32) {
       OpelCorsaInfo(player);
     } else if (response.selection == 29) {
       OpelAstralInfo(player);
