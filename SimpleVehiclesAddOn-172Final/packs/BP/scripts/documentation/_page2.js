@@ -157,7 +157,7 @@ export function _Page2Vehicles(player) {
       VolkswagenBeetleInfo(player);
     } else if (response.selection == 35) {
       VoltBikeInfo(player);
-    } else if (response.selection === 30) {
+    } else if (response.selection === 36) {
       showCustomForm(player);
     }
   });
