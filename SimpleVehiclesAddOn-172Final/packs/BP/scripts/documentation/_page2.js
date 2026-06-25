@@ -151,11 +151,11 @@ export function _Page2Vehicles(player) {
       HondaAccordInfo(player);
     } else if (response.selection === 32) {
       OpelCorsaInfo(player);
-    } else if (response.selection == 29) {
+    } else if (response.selection == 33) {
       OpelAstralInfo(player);
-    } else if (response.selection == 29) {
+    } else if (response.selection == 34) {
       VolkswagenBeetleInfo(player);
-    } else if (response.selection == 29) {
+    } else if (response.selection == 35) {
       VoltBikeInfo(player);
     } else if (response.selection === 30) {
       showCustomForm(player);
