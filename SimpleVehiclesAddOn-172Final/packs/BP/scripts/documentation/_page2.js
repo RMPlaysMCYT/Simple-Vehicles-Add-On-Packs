@@ -34,6 +34,7 @@ import { HondaAccordInfo } from "./_Vehicles2/hondaaccord";
 import { OpelCorsaInfo } from "./_Vehicles2/opelcorsa";
 import { OpelAstralInfo } from "./_Vehicles2/opelastral";
 import { VolkswagenBeetleInfo } from "./_Vehicles2/volkswgenbeetle";
+import { VoltBikeInfo } from "./_Vehicles2/voltbike";
 
 export function _Page2Vehicles(player) {
   const Page2Vehicles = new ActionFormData();
@@ -154,6 +155,8 @@ export function _Page2Vehicles(player) {
       OpelAstralInfo(player);
     } else if (response.selection == 29) {
       VolkswagenBeetleInfo(player);
+    } else if (response.selection == 29) {
+      VoltBikeInfo(player);
     } else if (response.selection === 30) {
       showCustomForm(player);
     }
